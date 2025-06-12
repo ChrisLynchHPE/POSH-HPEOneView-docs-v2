@@ -6,7 +6,7 @@ Param
 
     [Parameter (Mandatory = $false, HelpMessage = "Provide the root directory to where the Library source is located.")]
     [ValidateNotNullorEmpty()]
-    [System.IO.FileInfo]$Path = ((Split-Path $MyInvocation.MyCommand.Path -parent) + '\..\source\HPEOneView.910_CmdletHelp.json'),
+    [System.IO.FileInfo]$Path = ((Split-Path $MyInvocation.MyCommand.Path -parent) + '\..\source\HPEOneView.1000_CmdletHelp.json'),
 
     [Parameter (Mandatory = $false, HelpMessage = "Provide the root directory path to save the generated help markdown files to.")]
     [ValidateNotNullorEmpty()]

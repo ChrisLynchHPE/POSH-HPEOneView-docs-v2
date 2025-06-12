@@ -9,8 +9,9 @@ description: Modify remote Syslog audit log forwarding.
 ```powershell
 Set-OVApplianceAuditLogForwarding
     [-Enable]
-    [-ComputerName] <String[]>
+    [-ComputerName <String[]>]
     [-Port <Int>]
+    [-Protocol <String>]
     [-RemoveComputerName <String[]>]
     [-ApplianceConnection <Object>]
     [<CommonParameters>]
@@ -51,12 +52,20 @@ Enable appliance remote Syslog audit log forwarding to the specified hosts and c
 ###  Example 3 
 
 ```powershell
+Set-OVApplianceAuditLogForwarding -Enable -ComputerName MyTargetHost1.domain.com, MyTargetHost2.domain.com -Port 5514 -Protocol TLS
+```
+
+Enable appliance remote Syslog audit log forwarding to the specified hosts and custom UDP target port.
+
+###  Example 4 
+
+```powershell
 Set-OVApplianceAuditLogForwarding -RemoveComputerName MyTargetHost2.domain.com
 ```
 
 Remove the specified host from the existing remote Syslog audit log forwarding configuration.
 
-###  Example 4 
+###  Example 5 
 
 ```powershell
 Set-OVApplianceAuditLogForwarding -Disable
@@ -129,6 +138,23 @@ Using this parameter will disable remote Syslog audit log forwarding on the spec
 ### -Enable &lt;SwitchParameter&gt;
 
 Using this parameter will enable remote Syslog audit log forwarding on the specified appliance.
+
+| Aliases | None |
+| :--- | :--- |
+| Required? | False |
+| Position? | Named |
+| Default value |  |
+| Accept pipeline input? | false |
+| Accept wildcard characters? | False |
+
+### -Protocol &lt;String&gt;
+
+Supported values:
+
+	* UDP
+	* TLS
+
+Specify the protocol needed for the provided destination(s).  If not specified, the default is UDP.
 
 | Aliases | None |
 | :--- | :--- |
