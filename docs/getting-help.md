@@ -54,9 +54,8 @@ End time: 20191028114046
 **********************
 ```
 
-{% hint style="warning" %}
-Please remove or replace the PII data from the log file before submitting an issue to the project Issues tracker.
-{% endhint %}
+    ???+ warning
+        Please remove or replace the PII data from the log file before submitting an issue to the project Issues tracker.
 
 You have a general question about the library? For general questions, or need to discuss a topic that doesn't need to be tracked in the issue tracker, please join the new GitHub Discussions for the project: [![Join the discussion][github-chat-badge-url]][github-chat-link]
 

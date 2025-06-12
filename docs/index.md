@@ -43,99 +43,82 @@ This PowerShell module requires the following minimum versions:
     ???+ note
         .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
+=== "HPE OneView 8.40"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 8.40 or newer |
 
-{% tab title="HPE OneView 8.40" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 8.40 or newer |
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
+=== "HPE OneView 8.30"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 8.30 or newer |
 
-{% tab title="HPE OneView 8.30" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 8.30 or newer |
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
+=== "HPE OneView 8.00"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 8.00 or newer |
 
-{% tab title="HPE OneView 8.00" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 8.00 or newer |
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
+=== "HPE OneView 7.20"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 5.1, 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 7.20 or newer |
 
-{% tab title="HPE OneView 7.20" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 5.1, 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 7.20 or newer |
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
+=== "HPE OneView 7.10"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 5.1, 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 7.10 or newer |
 
-{% tab title="HPE OneView 7.10" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 5.1, 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 7.10 or newer |
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.}
 
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
+=== "HPE OneView 7.00"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 5.1, 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 7.00 or newer |
 
-{% tab title="HPE OneView 7.00" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 5.1, 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 7.00 or newer |
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
+=== "HPE OneView 6.60"
+    | Component | Version |
+    | :--- | :--- |
+    | .NetStandard | 2.0 or newer |
+    | PowerShell | 5.1, 7.0 or newer |
+    | PowerShellCore | 7.0 or newer |
+    | HPE OneView/HPE Synergy | 6.60 or newer |
 
-{% tab title="HPE OneView 6.60" %}
-| Component | Version |
-| :--- | :--- |
-| .NetStandard | 2.0 or newer |
-| PowerShell | 5.1, 7.0 or newer |
-| PowerShellCore | 7.0 or newer |
-| HPE OneView/HPE Synergy | 6.60 or newer |
-
-{% hint style="info" %}
-.NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
-{% endhint %}
-{% endtab %}
-
-{% endtabs %}
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
 ### **Table 2. Deprecated releases**
 
