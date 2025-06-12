@@ -12,7 +12,7 @@
         <meta name="author" content="ChrisLynchHPE">
       
       
-        <link rel="canonical" href="https://chrislynchhpe.github.io/cmdlets/appliance/set-ovapplianceauditlogforwarding/">
+        <link rel="canonical" href="https://chrislynchhpe.github.io/9.10/cmdlets/appliance/set-ovapplianceauditlogforwarding/">
       
       
         <link rel="prev" href="../set-ovalert/">
@@ -4371,15 +4371,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#example-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 5
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -4444,15 +4435,6 @@
   <a href="#-enable-switchparameter" class="md-nav__link">
     <span class="md-ellipsis">
       -Enable &lt;SwitchParameter&gt;
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#-protocol-string" class="md-nav__link">
-    <span class="md-ellipsis">
-      -Protocol &lt;String&gt;
     </span>
   </a>
   
@@ -12063,15 +12045,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#example-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 5
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -12136,15 +12109,6 @@
   <a href="#-enable-switchparameter" class="md-nav__link">
     <span class="md-ellipsis">
       -Enable &lt;SwitchParameter&gt;
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#-protocol-string" class="md-nav__link">
-    <span class="md-ellipsis">
-      -Protocol &lt;String&gt;
     </span>
   </a>
   
@@ -12227,9 +12191,8 @@
 <h2 id="syntax">Syntax</h2>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceAuditLogForwarding</span>
     <span class="p">[</span><span class="n">-Enable</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ComputerName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">[]&gt;]</span>
+    <span class="p">[</span><span class="n">-ComputerName</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">[]&gt;</span>
     <span class="p">[</span><span class="n">-Port</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Protocol</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
     <span class="p">[</span><span class="n">-RemoveComputerName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">[]&gt;]</span>
     <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
     <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
@@ -12255,14 +12218,10 @@
 </code></pre></div>
 <p>Enable appliance remote Syslog audit log forwarding to the specified hosts and custom UDP target port.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceAuditLogForwarding</span> <span class="n">-Enable</span> <span class="n">-ComputerName</span> <span class="n">MyTargetHost1</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span><span class="p">,</span> <span class="n">MyTargetHost2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">-Port</span> <span class="n">5514</span> <span class="n">-Protocol</span> <span class="n">TLS</span>
-</code></pre></div>
-<p>Enable appliance remote Syslog audit log forwarding to the specified hosts and custom UDP target port.</p>
-<h3 id="example-4">Example 4</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceAuditLogForwarding</span> <span class="n">-RemoveComputerName</span> <span class="n">MyTargetHost2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
 </code></pre></div>
 <p>Remove the specified host from the existing remote Syslog audit log forwarding configuration.</p>
-<h3 id="example-5">Example 5</h3>
+<h3 id="example-4">Example 4</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceAuditLogForwarding</span> <span class="n">-Disable</span>
 </code></pre></div>
 <p>Disable remote Syslog audit log forwarding configuration.</p>
@@ -12429,42 +12388,6 @@
 </table>
 <h3 id="-enable-switchparameter">-Enable &lt;SwitchParameter&gt;</h3>
 <p>Using this parameter will enable remote Syslog audit log forwarding on the specified appliance.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Aliases</th>
-<th style="text-align: left;">None</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Required?</td>
-<td style="text-align: left;">False</td>
-</tr>
-<tr>
-<td style="text-align: left;">Position?</td>
-<td style="text-align: left;">Named</td>
-</tr>
-<tr>
-<td style="text-align: left;">Default value</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">Accept pipeline input?</td>
-<td style="text-align: left;">false</td>
-</tr>
-<tr>
-<td style="text-align: left;">Accept wildcard characters?</td>
-<td style="text-align: left;">False</td>
-</tr>
-</tbody>
-</table>
-<h3 id="-protocol-string">-Protocol &lt;String&gt;</h3>
-<p>Supported values:</p>
-<pre><code>* UDP
-* TLS
-</code></pre>
-<p>Specify the protocol needed for the provided destination(s).  If not specified, the default is UDP.</p>
 <table>
 <thead>
 <tr>
