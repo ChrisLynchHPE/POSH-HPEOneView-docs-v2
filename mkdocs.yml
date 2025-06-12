@@ -1,8 +1,8 @@
 site_name: HPE OneView PowerShell Module Documentation
 site_author: ChrisLynchHPE
-repo_name: HewlettPackard/POSH-HPEOneView-docs
-repo_url: https://github.com/HewlettPackard/POSH-HPEOneView-docs
-site_url: https://hewlettpackard.github.io/
+repo_name: chrislynchhpe/POSH-HPEOneView-docs-v2
+repo_url: https://github.com/chrislynchhpe/POSH-HPEOneView-docs-v2
+site_url: https://chrislynchhpe.github.io/
 edit_uri: edit/master/docs
 
 copyright: >
