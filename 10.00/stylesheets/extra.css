@@ -13,7 +13,7 @@ table tr:nth-child(even) {
 }
 
 [data-md-color-scheme="slate"] .md-typeset__table thead {
-  background-color: darkgrey; /* Example for dark mode */
+  background-color: rgb(224, 10, 10); /* Example for dark mode */
 }
 
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
