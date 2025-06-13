@@ -1,0 +1,20 @@
+/* Table header color */
+table thead {
+  background-color: var(--m3c6, #1f2d41);
+}
+
+/* Alternating row colors */
+table tr:nth-child(even) {
+  background-color: darkgrey;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--nvzc33, #303134);
+}
+
+/* [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
+/*  background-color: darkblue; /* Example for dark mode */
+/*}
+/*[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n+1) {
+/*  background-color: darkgreen; /* Example for dark mode */
+/*} */
