@@ -9,19 +9,16 @@ table tr:nth-child(odd) {
 }
 
 table tr:nth-child(even) {
-  background-color: var(--nvzc33, #303134);
+  background-color: whitesmoke;
 }
 
-[data-md-color-scheme="slate"] .md-typeset__table thead {
-  background-color: rgb(224, 10, 10); /* Example for dark mode */
-}
 
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
-  background-color: darkblue; /* Example for dark mode */
+  background-color: whitesmoke; /* Example for dark mode */
 }
 
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n+1) {
-  background-color: darkgreen; /* Example for dark mode */
+  background-color: #7C7C7C; /* Example for dark mode */
 }
 
 :root  > * {
