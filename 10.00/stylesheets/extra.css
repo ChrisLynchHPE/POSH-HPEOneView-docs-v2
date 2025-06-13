@@ -12,9 +12,14 @@ table tr:nth-child(even) {
   background-color: var(--nvzc33, #303134);
 }
 
-/* [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
-/*  background-color: darkblue; /* Example for dark mode */
-/*}
-/*[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n+1) {
-/*  background-color: darkgreen; /* Example for dark mode */
-/*} */
+[data-md-color-scheme="slate"] .md-typeset__table thead {
+  background-color: darkgrey; /* Example for dark mode */
+}
+
+[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
+  background-color: darkblue; /* Example for dark mode */
+}
+
+[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n+1) {
+  background-color: darkgreen; /* Example for dark mode */
+}
