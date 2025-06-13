@@ -279,7 +279,7 @@
   
     
   
-  Verb Mapping
+  Verb mapping
 
       </a>
     </li>
@@ -353,7 +353,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -444,6 +446,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#table-1-requirements" class="md-nav__link">
     <span class="md-ellipsis">
       Table 1. Requirements
@@ -451,13 +463,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#table-2-deprecated-releases" class="md-nav__link">
     <span class="md-ellipsis">
       Table 2. Deprecated releases
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -638,7 +655,7 @@
   
   
   <span class="md-ellipsis">
-    Verb Mapping
+    Verb mapping
     
   </span>
   
@@ -11954,6 +11971,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -11973,6 +11992,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#table-1-requirements" class="md-nav__link">
     <span class="md-ellipsis">
       Table 1. Requirements
@@ -11980,13 +12009,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#table-2-deprecated-releases" class="md-nav__link">
     <span class="md-ellipsis">
       Table 2. Deprecated releases
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -12138,6 +12172,8 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
   
@@ -12158,6 +12194,7 @@
 
 
 <h1 id="introduction">Introduction</h1>
+<h2 id="introduction_1">Introduction</h2>
 <p>HPE OneView makes it simple to deploy and manage today’s complex hybrid cloud infrastructure. HPE OneView can help you transform your data center to software-defined, and it supports HPE’s broad portfolio of servers, storage, and networking solutions, ensuring the simple and automated management of your hybrid infrastructure. Software-defined intelligence enables a template-driven approach for deploying, provisioning, updating, and integrating compute, storage, and networking infrastructure.</p>
 <p>This library enables PowerShell developers, IT automation engineers, or devops teams the ability to utilize HPE OneView's open REST API to automate infrastructure policies and operations. Starting with the HPE OneView 5.00 PowerShell library, PowerShell Core is now supported.</p>
 <p>This PowerShell module requires the following minimum versions:</p>
@@ -12998,10 +13035,15 @@ New-OVServerProfile -Name $name -Description $description -AssignmentType Server
 
 
 
+  
+  
+
 
 
   
 
+
+  
 
 
   <form class="md-feedback" name="feedback" hidden>
