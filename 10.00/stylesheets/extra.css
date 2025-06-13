@@ -14,11 +14,11 @@ table tr:nth-child(even) {
 
 
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
-  background-color: #636363; /* Example for dark mode */
+  background-color: #7C7C7C; /* Example for dark mode */
 }
 
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n+1) {
-  background-color: #7C7C7C; /* Example for dark mode */
+  background-color: #636363; /* Example for dark mode */
 }
 
 :root  > * {

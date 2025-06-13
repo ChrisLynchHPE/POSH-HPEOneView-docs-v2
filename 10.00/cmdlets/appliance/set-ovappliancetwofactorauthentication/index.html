@@ -12266,7 +12266,10 @@
 <p>Enabling two-factor authentication allows you to use smart cards ï¿½ for example, Common Access Cards (CAC), or Personal Identity Verification (PIV) cards ï¿½ to authenticate within HPE OneView. The client certificate embedded in the smart card is presented to HPE OneView by the library. The client certificate must be signed by a root or intermediate Certificate Authority (CA) that has been previously imported into the HPE OneView appliance. The appliance authenticates the client certificate to validate that the user name specified in the certificate is that of a valid user recognized by the directory server configuration in HPE OneView.</p>
 <p>When two-factor authentication is enabled, HPE OneView uses a Microsoft Active Directory service account set up and owned by the user to access an Active Directory entry for the user, rather than using an account associated with the user name received during first time login.</p>
 <p>Use this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.</p>
-<p>Required: Infrastructure administrator</p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceTwoFactorAuthentication</span> <span class="n">-ValidationOids</span> <span class="p">@(@{</span><span class="s2">&quot;1.3.6.1.4.1.311.20.2.2&quot;</span> <span class="p">=</span> <span class="s2">&quot;Smart Card Logon&quot;</span><span class="p">;</span> <span class="s2">&quot;1.3.6.1.5.5.7.3.2&quot;</span> <span class="p">=</span> <span class="s2">&quot;Client Authentication&quot;</span><span class="p">})</span>
