@@ -23,3 +23,9 @@ table tr:nth-child(even) {
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n+1) {
   background-color: darkgreen; /* Example for dark mode */
 }
+
+:root  > * {
+  --md-primary-fg-color:        #01A982;
+  --md-primary-fg-color--light: #FFFFFF;
+  --md-primary-fg-color--dark:  #000000;
+}
