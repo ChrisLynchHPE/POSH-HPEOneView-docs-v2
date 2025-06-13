@@ -12261,8 +12261,8 @@
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Network administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Add-OVFabricManager</span> <span class="n">-Name</span> <span class="n">ProdFabricManager</span> <span class="n">-ManagementAddress</span> <span class="n">fabricmgr1-vip</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">local</span> <span class="n">-SecondaryManagementAddress</span> <span class="n">fabricmgr1-vip2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">local</span>
@@ -12564,8 +12564,8 @@
 <p>When you disable automatic remediation, you must confirm to resolve all the inconsistencies that are eligible for remediation.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>By default, automatic remediation is disabled on fabric managers that were added in older versions of HPE OneView.</p>
+</details>
 <p>Manual remediation</p>
 <p>Manual remediation means that the proposed remediation has a confict with the existing configuration of the HPE OneView and need to be resolved manually.</p>
 <p>Use the activity log (<code>Get-OVAlert</code>) to view the remediation status of the inconsistencies. In the activity log, an alert is created for every inconsistency and a task is created for every remediation. The alert status of all inconsistencies that were resolved automatically is set to cleared. The alert status of all inconsistencies that require manual remediation remain active.</p>

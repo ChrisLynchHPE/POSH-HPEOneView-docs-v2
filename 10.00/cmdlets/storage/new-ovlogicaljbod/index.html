@@ -12369,11 +12369,10 @@
 <li>You can choose the drive enclosures that belong to the same SAS logical interconnect to create the logical JBOD.</li>
 <li>You can create a logical JBOD using homogenous drives like SAS SSD, SAS HDD, SATA SSD, or SATA HDD. You cannot mix different types of drives in a logical JBOD.</li>
 <li>You cannot add or remove drives to a logical JBOD after it is created.</li>
-<li>You can choose to either erase or retain the drive data when you delete the logical JBOD by setting using the -EraseDataOnDelete parameter during the creation of a logical JBOD. You can change the Erase on delete settings later, using the Set-OVLogicalJBOD Cmdlet, only if you set -EraseDataOnDelete to True during creation.</li>
+<li>You can choose to either erase or retain the drive data when you delete the logical JBOD by setting using the <code>-EraseDataOnDelete</code> parameter during the creation of a logical JBOD. You can change the Erase on delete settings later, using the Set-OVLogicalJBOD Cmdlet, only if you set <code>-EraseDataOnDelete</code> to True during creation.</li>
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator</p>
 <ul>
 <li>A logical interconnect group is created with the interconnect type Synergy 12 GB SAS Connection Module.</li>
@@ -12381,6 +12380,7 @@
 <li>A logical enclosure is created. A SAS logical interconnect is created as part of creating the logical enclosure.</li>
 <li>If scopes have been defined, make sure that sufficient number of drive enclosures are mapped to the user scopes.</li>
 </ul>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD1&quot;</span> <span class="p">`</span>
@@ -12524,8 +12524,8 @@
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Auto is not supported when attempting to create an HPE Synergy D3940 Logical or JBOD disk.  You must specify a disk technology type with <code>-DriveType</code> or <code>-AvailableDriveType</code> is used.</p>
+</details>
 <table>
 <thead>
 <tr>

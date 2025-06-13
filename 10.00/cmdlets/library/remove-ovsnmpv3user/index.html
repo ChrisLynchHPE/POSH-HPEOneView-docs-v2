@@ -12135,12 +12135,12 @@
 <p>Additionally, if you have Gen6 or Gen7 servers being monitored by HPE OneView in your environment, you can configure the read community string that HPE OneView uses for monitoring these servers with SNMPv1. </p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>To configure SNMP trap forwarding for network devices (interconnects and switches), use the New-OVSnmpV3User and include it within the New-OVSnmpTrapDestination Cmdlet.</p>
+</details>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$Snmpv3User</span> <span class="p">=</span> <span class="nb">Get-OVSnmpV3User</span> <span class="n">-Name</span> <span class="n">Tr</span><span class="nv">@pUser</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Remove-OVSnmpV3User</span>

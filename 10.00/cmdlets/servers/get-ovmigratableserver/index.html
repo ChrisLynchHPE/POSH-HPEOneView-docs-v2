@@ -12122,11 +12122,11 @@
 <li>other HPE OneView 7.0 or newer appliances</li>
 </ul>
 <p>Please see the HPE OneView online help "Migrating server hardware" help topic for more information and best practices.</p>
-<p>This Cmdlet will connect to the source appliance, in order to retrieve a list of supported and migratable servers.  Use the returned list to then initiate the server migration process with the Invoke-OVMigrateServer Cmdlet.  If there are no available servers to migrate, a non-trappable error is generated, which can be overridden using the -ErrorAction common switch parameter.</p>
+<p>This Cmdlet will connect to the source appliance, in order to retrieve a list of supported and migratable servers.  Use the returned list to then initiate the server migration process with the Invoke-OVMigrateServer Cmdlet.  If there are no available servers to migrate, a non-trappable error is generated, which can be overridden using the <code>-ErrorAction</code> common switch parameter.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator and Server administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$SourceServerMigrationHost</span> <span class="p">=</span> <span class="s2">&quot;appliance1.domain.com&quot;</span>

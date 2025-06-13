@@ -12431,8 +12431,8 @@
 <p>Use the <code>-Advanced</code> parameter to customize the selection of support dump logs while creating the support dump. Customizing the selection of support dump logs reduces the size of the collection and as a result enables faster creation and download of the collection.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Hewlett Packard Enterprise recommends that you customize the selection of the support dump logs with the help of an authorized technical support representative.</p>
+</details>
 <p>Some error messages recommend that you create a support dump of the HPE Synergy Composer and send it to authorized technical support for analysis. The support dump process performs the following functions:</p>
 <ul>
 <li>Deletes any previous support dump file</li>
@@ -12457,10 +12457,10 @@
 <p>Items logged in the support dump file are recorded according to UTC time.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Network administrator, Server administrator, Infrastructure administrator, Backup administrator, Read only</p>
-<p>NOTE
-:  Only the Infrastructure administrator has the option of not encrypting a support dump file. When a user with a different role creates a support dump file, it is encrypted automatically.</p>
+<p>NOTE</p>
+</details>
+<p>:  Only the Infrastructure administrator has the option of not encrypting a support dump file. When a user with a different role creates a support dump file, it is encrypted automatically.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">New-OVSupportDump</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span> <span class="n">-Type</span> <span class="n">Appliance</span>

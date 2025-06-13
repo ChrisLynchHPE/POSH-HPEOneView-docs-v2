@@ -12170,11 +12170,11 @@
     <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
-<p>When configuring a second NIC on a virtual machine appliance, static routes can be configured as only a single appliance NIC can be configured with a default gateway.  Both IPv4 and IPv6 static routes are supported.  Use Get-OVApplianceIPAddress to display the configured NIC interfaces, and supply the interface name with the -Interface parameter.</p>
+<p>When configuring a second NIC on a virtual machine appliance, static routes can be configured as only a single appliance NIC can be configured with a default gateway.  Both IPv4 and IPv6 static routes are supported.  Use Get-OVApplianceIPAddress to display the configured NIC interfaces, and supply the interface name with the <code>-Interface</code> parameter.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges:  Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVapplianceStaticRoute</span> <span class="n">-Destination</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">78</span><span class="p">.</span><span class="n">0</span><span class="p">/</span><span class="n">24</span> <span class="p">|</span> <span class="nb">Set-OVApplianceStaticRoute</span> <span class="n">-Gateway</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">12</span><span class="p">.</span><span class="n">254</span>

@@ -12546,8 +12546,8 @@
 <p>Use a comma-separated list to include multiple values in the entry field, allowing HPE OneView to search multiple Subject Alternative Name attributes for a valid user name.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). See subject entry in the "Certificate owner" field for details.</p>
+</details>
 <p>Subject Alternative Name multiple attribute entry example
 <code>[OtherName.UPN]</code>=(.<em>),OtherName.RFC822Name=(.</em>),RFC822Name=(.<em>),DirName=(.</em>)</p>
 <table>
@@ -12593,8 +12593,8 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
 <p>Use a comma separated list to include multiple values in the entry field, allowing HPE OneView to search multiple Subject attributes for a valid user name. </p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). </p>
+</details>
 <p>Subject multiple attribute entry example
 * CN=(.<em>),E=(.</em>),UID=(.<em>),DN=(.</em>) </p>
 <p>Variations for the CN attribute: examples
@@ -12603,8 +12603,8 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
     To match user names containing only numbers CN=(^[0-9]+$) </p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>This is applicable when there are multiple CN attributes configured in a certificate and the user wants to specify a specific attribute rather than the first available in the CN attribute. It is recommended to use patterns that begin with "^" and ends with "$" so that the system can perform an exact match. </p>
+</details>
 <table>
 <thead>
 <tr>
@@ -12640,8 +12640,8 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
 <p>By default, one combination is configured, containing the OID combination Smart Card Logon (1.3.6.1.4.1.311.20.2.2), Client Authentication (1.3.6.1.5.5.7.3.2). This combination requires the certificate on the smart card to be configured to allow the certificate to be used for smart card logon and for client authentication. It should work for most installations. You can edit this field to opt for a different combination of OIDs, or to add additional OIDs. A maximum of ten OIDs can be configured in a single string.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>If you specify multiple OID combinations and one is a super-set of another, configure the more restrictive combination first.</p>
+</details>
 <table>
 <thead>
 <tr>

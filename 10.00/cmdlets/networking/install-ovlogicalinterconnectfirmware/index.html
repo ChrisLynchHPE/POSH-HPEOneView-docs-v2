@@ -12404,8 +12404,8 @@
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>When updating firmware based on the logical interconnect, if one or more interconnects are already running the targeted firmware version, HPE OneView excludes those interconnects from the firmware update.</p>
+</details>
 <p>FORCE INSTALLATION</p>
 <p>By using the Force parameter, the update requires (forces) firmware update on every member interconnect regardless of its current installed version.</p>
 <p>This option is not available if you select Activate for the Update parameter.</p>
@@ -12414,8 +12414,8 @@
 <p>INSTALLATION METHODS</p>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>Firmware updates using parallel activation must be performed during a maintenance window.</p>
+</details>
 <ul>
 <li>OddEven - Will perform updates to all odd module bays first, then even.  An activation delay can be specified with the EthernetActivateDelay parameter.</li>
 <li>Serial - Will perform updates to all device bays, starting with the first bay.  An activation delay can be specified with the EthernetActivateDelay parameter.</li>
@@ -12444,7 +12444,7 @@
 <li>
 <p>Manual - You can orchestrate the update in a stepwise approach using the following operations. These operations are not possible with the Parallel and Orchestrated firmware activation options.</p>
 <ul>
-<li>Select and update one side of the interconnect topology at a time by using the -ManualOrder parameter. You must specify the appropriate Bay side to update first.</li>
+<li>Select and update one side of the interconnect topology at a time by using the <code>-ManualOrder</code> parameter. You must specify the appropriate Bay side to update first.</li>
 <li>
 <p>Once the update for the chosen side is complete, proceed to update the other side. If the firmware update on the interconnect module side that is updated first is not satisfactory, roll back to the original firmware version.</p>
 <p>Manual orchestration is available on the following modules:</p>
@@ -12464,9 +12464,9 @@
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
+<p>Minimum required privileges: Network administrator, Server administrator </p>
 </details>
-<p>Minimum required privileges: Network administrator, Server administrator 
-(for the HPE Synergy 12Gb SAS Connection Module), or Infrastructure administrator.</p>
+<p>(for the HPE Synergy 12Gb SAS Connection Module), or Infrastructure administrator.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$li</span> <span class="p">=</span> <span class="nb">Get-OVLogicalInterconnect</span> <span class="n">Encl1-LI</span>

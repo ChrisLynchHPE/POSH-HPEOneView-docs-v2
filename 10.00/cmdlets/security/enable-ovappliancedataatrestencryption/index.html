@@ -12140,11 +12140,11 @@ When restoring a backup taken when a different AEK was in effect.</p>
 <p>A backup is being restored to a different new Composer or to the same Composer that has been factory reset.</p>
 <p>The administrator must store the recovery AEK in a secure location, where it can be only accessed by authorized personnel. In the rare circumstance where the key cannot be read from the Composer NVRAM or the key gets corrupted, the administrator must use the appliance maintenance console to upload the AEK recovery copy, based on the error resolution message displayed. In the rare circumstance where the Composer NVRAM itself becomes inaccessible, users can choose to disable secure-data-at-rest option until the hardware issue itself is resolved.</p>
 <p>If the downloaded recovery key and the AEK stored in the Composer NVRAM are both lost, the appliance data cannot be recovered.</p>
-<p>Using this Cmdlet will enable data at rest encryption for supported HPE Synergy composers.  The appliance encryption key (AEK) will automatically be downloaded and saved to the value of the -Location parameter.  By default, this will be the working directory where the Cmdlet is executed in.</p>
+<p>Using this Cmdlet will enable data at rest encryption for supported HPE Synergy composers.  The appliance encryption key (AEK) will automatically be downloaded and saved to the value of the <code>-Location</code> parameter.  By default, this will be the working directory where the Cmdlet is executed in.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Enable-OVApplianceDataAtRestEncryption</span>

@@ -12118,8 +12118,8 @@ disabled.</p>
 <p>If certificate validation is disabled, any sensitive data such as credentials are transmitted insecurely. Make sure to use only local user accounts and not enterprise directory-based accounts to avoid transmitting enterprise login credentials over the network when certificate validation is disabled.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>When upgrading from earlier releases, the certificates in use by the currently monitored or managed devices are</p>
+</details>
 <p>imported into the HPE OneView trust store and alerts are generated for issues such as expired certificates. These automatically added certificates are either a device"s self signed certificate or the leaf certificate for a certificate authority (CA) signed certificate. Using CA-signed certificates can simplify the device trust process.</p>
 <p>Certificate checking is enabled by default, but some of the stricter validation checks are relaxed to maintain communications with all devices, even those with certificate issues. The relaxed checking includes:</p>
 <pre><code>* Not performing expiration checks for self signed certificates
@@ -12131,16 +12131,16 @@ disabled.</p>
 <p>HPE OneView enables users to import a CA CRL file and to perform the appropriate revocation checking on existing certificates in the trust store and for certificates received during communication with a managed device or external server.</p>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>Modifying the appliance setting will require the appliance to be rebooted.</p>
+</details>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>If 2-factor authentication is configured, this policy cannot be disabled.</p>
+</details>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Disable-OVCertificateValidation</span>

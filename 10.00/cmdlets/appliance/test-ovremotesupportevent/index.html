@@ -12134,11 +12134,11 @@
 <p>Register with Hewlett Packard Enterprise to allow automatic case creation for hardware failures on servers and enclosures and to enable Proactive Care. Once enabled, all eligible devices added in the future will be automatically enabled for remote support.</p>
 <p>Hewlett Packard Enterprise recommends enabling all features and benefits provided by HPE OneView Remote Support so you can receive fast, accurate 'phone home' support and service per your contractual terms with Hewlett Packard Enterprise. Hewlett Packard Enterprise securely collects your HPE IT hardware diagnostics, configuration and telemetry information to provide you with remote support and services. The data is handled and managed to respect your privacy. For more information, Hewlett Packard Enterprise's Privacy Statement can be found at http://privacy.hpe.com.</p>
 <p>Enabling Remote Support configures your devices being remotely supported to securely send support or service events, IT configuration information, diagnostic, and telemetry information to Hewlett Packard Enterprise, together with your support contact information. No other business information is collected and the data is managed according to the Hewlett Packard Enterprise's Privacy Statement.</p>
-<p>This Cmdlet will initiate a Remote Support test event for supported servers and compute modules.  Remote Support must be enabled globally on the appliance in order to use this Cmdlet.  Either basic connectivity (omitting -CreateTestCase parameter) or a support case (-CreateTestCase parameter) can be requested.  Requesting a test event may take up to 20 minutes and will send data back to Hewlett Packard Enterprise.</p>
+<p>This Cmdlet will initiate a Remote Support test event for supported servers and compute modules.  Remote Support must be enabled globally on the appliance in order to use this Cmdlet.  Either basic connectivity (omitting <code>-CreateTestCase</code> parameter) or a support case (-CreateTestCase parameter) can be requested.  Requesting a test event may take up to 20 minutes and will send data back to Hewlett Packard Enterprise.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Test-OVRemoteSupportEvent</span>

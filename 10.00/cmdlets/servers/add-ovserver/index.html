@@ -12286,8 +12286,8 @@
 <p>You cannot remove a server that is part of an enclosure or rack manager from the appliance using either Remove-OVServer. You must remove the rack manager instead using Remove-OVRackManager. Removing a rack manager from management removes its partitions and associations.  To remove a HPE BladeSystem or HPE Synergy server, it must be physically removed from the enclosure it is hosted within.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Server administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Add-OVServer</span> <span class="n">-Hostname</span> <span class="n">serverilo</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span> <span class="n">-Credential</span> <span class="p">(</span><span class="nb">Get-Credential</span><span class="p">)</span> <span class="n">-LicenseIntent</span> <span class="n">OneView</span>

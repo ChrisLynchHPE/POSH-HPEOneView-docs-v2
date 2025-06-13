@@ -12079,14 +12079,14 @@
 <p>The forwarding protocol used is the standard UDP-based syslog protocol described in RFC5424 and RFC5426. The syslog protocol is supported by all common syslog servers such as rsyslog, syslog-ng and SIEM products.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Ensure that any firewalls between HPE OneView and the remote syslog server allow UDP traffic. The default UDP port used is 514.</p>
+</details>
 <p>As audit log entries are forwarded over UDP, the entries are not encrypted and delivery is not guaranteed. Even when you have HPE OneView and all managed devices on a dedicated, isolated management LAN, forwarding audit log entries to external systems can pose a security risk. In an environment where encryption is required, use the REST API /rest/audit-logs to schedule a job to download the appliance audit logs. </p>
 <p>This Cmdlet will return the current status, remote Syslog destination and port currently configured on the appliance.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVApplianceAuditLogForwarding</span>

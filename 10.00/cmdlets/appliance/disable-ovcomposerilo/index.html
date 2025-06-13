@@ -12221,8 +12221,8 @@
 <p>Use this Cmdlet to disable remote access to the HPE Synergy Composer2 iLO.  Disabling external iLO access will delete the configured iLO user account and unassign the user specified static IPv4 and IPv6 addresses.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$ComposerAppliance</span> <span class="p">=</span> <span class="nb">Get-OVComposerIloStatus</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="n">IsExternallyAccessible</span>
