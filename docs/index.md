@@ -18,8 +18,8 @@ This PowerShell module requires the following minimum versions:
     | PowerShellCore | 7.0 or newer |
     | HPE OneView/HPE Synergy | 10.00 or newer |
 
-    ???+ note
-        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) clients.
+???+ note
+    .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) clients.
 
 === "HPE OneView 9.10"
     | Component | Version |
@@ -96,7 +96,7 @@ This PowerShell module requires the following minimum versions:
     | HPE OneView/HPE Synergy | 7.10 or newer |
 
     ???+ note
-        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.}
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) clients.
 
 === "HPE OneView 7.00"
     | Component | Version |
@@ -219,12 +219,12 @@ There are 5 primary CMDLETs to interact with the HPE OneView appliance:
 ???+ note
     Cmdlet suffix names changed starting with the HPE OneView 5.30 release, and removed the HP part of the suffix which was `HPOV`.
 
-New in the HPE OneView 2.00 library is the ability to connect to multiple appliances, which allows the user to execute various CMDLETs without requiring to disconnect and reconnect to other appliances within your PowerShell session. The `Connect-OVMgmt` CMDLET will authenticate you to the requested appliance. From there, a session object \(Type `[HPEOneView.Appliance.Connection]`\) is created and added to a global variable `$ConnectedSessions` \(Type `[System.Collections.ArrayList]`\) in your PowerShell runtime environment that other CMDLETs will use. Within the `[HPEOneView.Appliance.Connection]` object contains a number of properties, of which the connected appliance `hostname` value provided by `Connect-OVMgmt` is stored, along with the `SessionID` of your user session.
+New in the HPE OneView 2.00 library is the ability to connect to multiple appliances, which allows the user to execute various CMDLETs without requiring to disconnect and reconnect to other appliances within your PowerShell session. The [`Connect-OVMgmt`](cmdlets/library/connect-ovmgmt.md) CMDLET will authenticate you to the requested appliance. From there, a session object \(Type `[HPEOneView.Appliance.Connection]`\) is created and added to a global variable `$ConnectedSessions` \(Type `[System.Collections.ArrayList]`\) in your PowerShell runtime environment that other CMDLETs will use. Within the `[HPEOneView.Appliance.Connection]` object contains a number of properties, of which the connected appliance `hostname` value provided by `Connect-OVMgmt` is stored, along with the `SessionID` of your user session.
 
 ???+ note
     For more information about multiple appliance connection support, please review `get-help about_Appliance_Connections` from your PowerShell console, or read the online wiki page for [about\_Appliance\_Connections](about/about_appliance_connections.md).
 
-The [`New-OVResource`](), [`Set-OVRequest`]() and [`Remove-OVResource`]() Cmdlets are mainly for callers to perform Create, Update and Delete operations where a native Cmdlet hasn't been developed. The following diagram is an example of flow, where [`Send-OVRequest`]() is the main Cmdlet that directly communicates with the HPE OneView REST API.
+The [`New-OVResource`](cmdlets/library/new-ovresource.md), [`Set-OVRequest`](cmdlets/library/set-ovresource.md) and [`Remove-OVResource`](cmdlets/library/remove-ovresource.md) Cmdlets are mainly for callers to perform Create, Update and Delete operations where a native Cmdlet hasn't been developed. The following diagram is an example of flow, where [`Send-OVRequest`](cmdlets/library/send-ovrequest.md) is the main Cmdlet that directly communicates with the HPE OneView REST API.
 
 ### Authentication with HPE OneView appliance flow
 ```mermaid
@@ -282,7 +282,7 @@ classDiagram
     }
 ```
 
-Once completed, you can either close out of your PowerShell console, or issue the [`Disconnect-OVMgmt`]() CMDLET to terminate your session, and return you back to your PowerShell consoles prior state.
+Once completed, you can either close out of your PowerShell console, or issue the [`Disconnect-OVMgmt`](cmdlets/library/disconnect-ovmgmt.md) CMDLET to terminate your session, and return you back to your PowerShell consoles prior state.
 
 ### Sample Scripts
 
@@ -318,7 +318,7 @@ la---           4/27/2022  2:23 PM           8014 Wipe_Appliance.ps1
 
 ### Generating sample code
 
-Introduced in the HPE OneView 4.10 library, the [`ConvertTo-OVPowerShellScript`](/cmdlets/v6.60/library/convertto-ovpowershellscript) Cmdlet will take supported resources that were created either with the UI or other REST API client or HPE OneView SDK's, and generate PowrShell script code.
+Introduced in the HPE OneView 4.10 library, the [`ConvertTo-OVPowerShellScript`](cmdlets/library/convertto-ovpowershellscript.md) Cmdlet will take supported resources that were created either with the UI or other REST API client or HPE OneView SDK's, and generate PowrShell script code.
 
 Here is an example of generating PowerShell script code from an HPE Synergy server profile created in the UI:
 
@@ -417,27 +417,6 @@ Others have contributed example scripts to further automate management within th
 
 **HPE OneView Community**
 
-* [HPE OneView Community Forums](http://hpe.com/info/oneviewcommunity)
+* [HPE OneView Community Forums](https://hpe.com/info/oneviewcommunity)
 
-Learn more about HPE OneView at [hpe.com/info/oneview](http://hpe.com/info/oneview)
-
-
-
-
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Learn more about HPE OneView at [hpe.com/info/oneview](https://hpe.com/info/oneview)

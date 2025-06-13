@@ -12168,7 +12168,7 @@
 <p>This library enables PowerShell developers, IT automation engineers, or devops teams the ability to utilize HPE OneView's open REST API to automate infrastructure policies and operations. Starting with the HPE OneView 5.00 PowerShell library, PowerShell Core is now supported.</p>
 <p>This PowerShell module requires the following minimum versions:</p>
 <h3 id="table-1-requirements"><strong>Table 1. Requirements</strong></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:10"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><input id="__tabbed_1_9" name="__tabbed_1" type="radio" /><input id="__tabbed_1_10" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPE OneView 10.00</label><label for="__tabbed_1_2">HPE OneView 9.10</label><label for="__tabbed_1_3">HPE OneView 8.60</label><label for="__tabbed_1_4">HPE OneView 8.40</label><label for="__tabbed_1_5">HPE OneView 8.30</label><label for="__tabbed_1_6">HPE OneView 8.00</label><label for="__tabbed_1_7">HPE OneView 7.20</label><label for="__tabbed_1_8">HPE OneView 7.10</label><label for="__tabbed_1_9">HPE OneView 7.00</label><label for="__tabbed_1_10">HPE OneView 6.60</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPE OneView 10.00</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <table>
@@ -12197,11 +12197,15 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 <details class="note" open="open">
 <summary>Note</summary>
 <p>.NetStandard 2.0 API's are supported by both the <a href="https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/">.NetFramework 4.7.2 Windows</a> and <a href="https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/">DotNetCore 2.1</a> clients.</p>
 </details>
-</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:9"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><input id="__tabbed_2_6" name="__tabbed_2" type="radio" /><input id="__tabbed_2_7" name="__tabbed_2" type="radio" /><input id="__tabbed_2_8" name="__tabbed_2" type="radio" /><input id="__tabbed_2_9" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPE OneView 9.10</label><label for="__tabbed_2_2">HPE OneView 8.60</label><label for="__tabbed_2_3">HPE OneView 8.40</label><label for="__tabbed_2_4">HPE OneView 8.30</label><label for="__tabbed_2_5">HPE OneView 8.00</label><label for="__tabbed_2_6">HPE OneView 7.20</label><label for="__tabbed_2_7">HPE OneView 7.10</label><label for="__tabbed_2_8">HPE OneView 7.00</label><label for="__tabbed_2_9">HPE OneView 6.60</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
 <table>
 <thead>
@@ -12423,7 +12427,7 @@
 </table>
 <details class="note" open="open">
 <summary>Note</summary>
-<p>.NetStandard 2.0 API's are supported by both the <a href="https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/">.NetFramework 4.7.2 Windows</a> and <a href="https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/">DotNetCore 2.0</a> clients.}</p>
+<p>.NetStandard 2.0 API's are supported by both the <a href="https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/">.NetFramework 4.7.2 Windows</a> and <a href="https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/">DotNetCore 2.0</a> clients.</p>
 </details>
 </div>
 <div class="tabbed-block">
@@ -12819,12 +12823,12 @@
 <summary>Note</summary>
 <p>Cmdlet suffix names changed starting with the HPE OneView 5.30 release, and removed the HP part of the suffix which was <code>HPOV</code>.</p>
 </details>
-<p>New in the HPE OneView 2.00 library is the ability to connect to multiple appliances, which allows the user to execute various CMDLETs without requiring to disconnect and reconnect to other appliances within your PowerShell session. The <code>Connect-OVMgmt</code> CMDLET will authenticate you to the requested appliance. From there, a session object (Type <code>[HPEOneView.Appliance.Connection]</code>) is created and added to a global variable <code>$ConnectedSessions</code> (Type <code>[System.Collections.ArrayList]</code>) in your PowerShell runtime environment that other CMDLETs will use. Within the <code>[HPEOneView.Appliance.Connection]</code> object contains a number of properties, of which the connected appliance <code>hostname</code> value provided by <code>Connect-OVMgmt</code> is stored, along with the <code>SessionID</code> of your user session.</p>
+<p>New in the HPE OneView 2.00 library is the ability to connect to multiple appliances, which allows the user to execute various CMDLETs without requiring to disconnect and reconnect to other appliances within your PowerShell session. The <a href="cmdlets/library/connect-ovmgmt/"><code>Connect-OVMgmt</code></a> CMDLET will authenticate you to the requested appliance. From there, a session object (Type <code>[HPEOneView.Appliance.Connection]</code>) is created and added to a global variable <code>$ConnectedSessions</code> (Type <code>[System.Collections.ArrayList]</code>) in your PowerShell runtime environment that other CMDLETs will use. Within the <code>[HPEOneView.Appliance.Connection]</code> object contains a number of properties, of which the connected appliance <code>hostname</code> value provided by <code>Connect-OVMgmt</code> is stored, along with the <code>SessionID</code> of your user session.</p>
 <details class="note" open="open">
 <summary>Note</summary>
 <p>For more information about multiple appliance connection support, please review <code>get-help about_Appliance_Connections</code> from your PowerShell console, or read the online wiki page for <a href="about/about_appliance_connections/">about_Appliance_Connections</a>.</p>
 </details>
-<p>The <a href=""><code>New-OVResource</code></a>, <a href=""><code>Set-OVRequest</code></a> and <a href=""><code>Remove-OVResource</code></a> Cmdlets are mainly for callers to perform Create, Update and Delete operations where a native Cmdlet hasn't been developed. The following diagram is an example of flow, where <a href=""><code>Send-OVRequest</code></a> is the main Cmdlet that directly communicates with the HPE OneView REST API.</p>
+<p>The <a href="cmdlets/library/new-ovresource/"><code>New-OVResource</code></a>, <a href="cmdlets/library/set-ovresource/"><code>Set-OVRequest</code></a> and <a href="cmdlets/library/remove-ovresource/"><code>Remove-OVResource</code></a> Cmdlets are mainly for callers to perform Create, Update and Delete operations where a native Cmdlet hasn't been developed. The following diagram is an example of flow, where <a href="cmdlets/library/send-ovrequest/"><code>Send-OVRequest</code></a> is the main Cmdlet that directly communicates with the HPE OneView REST API.</p>
 <h3 id="authentication-with-hpe-oneview-appliance-flow">Authentication with HPE OneView appliance flow</h3>
 <pre class="mermaid"><code>sequenceDiagram
     Connect-OVMgmt-&gt;&gt;Send-OVRequest: Appliance Authentication request
@@ -12869,7 +12873,7 @@
         }
 
     }</code></pre>
-<p>Once completed, you can either close out of your PowerShell console, or issue the <a href=""><code>Disconnect-OVMgmt</code></a> CMDLET to terminate your session, and return you back to your PowerShell consoles prior state.</p>
+<p>Once completed, you can either close out of your PowerShell console, or issue the <a href="cmdlets/library/disconnect-ovmgmt/"><code>Disconnect-OVMgmt</code></a> CMDLET to terminate your session, and return you back to your PowerShell consoles prior state.</p>
 <h3 id="sample-scripts">Sample Scripts</h3>
 <p>To ease the use of the HPE OneView PowerShell library, we have included a number of sample scripts administrators can use to quickly get familiar with the capabilities of the library. The sample scripts are part of the source code and installer. Depending on which installation scope you chose, a Samples directory contains all of the sample scripts. By no means are they exhaustive, but will help you get more familiar with the library.</p>
 <div class="highlight"><pre><span></span><code>[PS] ...\Samples&gt; dir
@@ -12899,7 +12903,7 @@ la---           8/23/2022  7:27 PM           4395 Server_Profile_Template_Rack_S
 la---           4/27/2022  2:23 PM           8014 Wipe_Appliance.ps1
 </code></pre></div>
 <h3 id="generating-sample-code">Generating sample code</h3>
-<p>Introduced in the HPE OneView 4.10 library, the <a href="/cmdlets/v6.60/library/convertto-ovpowershellscript"><code>ConvertTo-OVPowerShellScript</code></a> Cmdlet will take supported resources that were created either with the UI or other REST API client or HPE OneView SDK's, and generate PowrShell script code.</p>
+<p>Introduced in the HPE OneView 4.10 library, the <a href="cmdlets/library/convertto-ovpowershellscript/"><code>ConvertTo-OVPowerShellScript</code></a> Cmdlet will take supported resources that were created either with the UI or other REST API client or HPE OneView SDK's, and generate PowrShell script code.</p>
 <p>Here is an example of generating PowerShell script code from an HPE Synergy server profile created in the UI:</p>
 <p><img alt="Server profile resource created by the HPE OneView graphical user interface (GUI)." src="images/8392c5dd-5303-4c61-82f3-f788c40dab26.png" /></p>
 <div class="highlight"><pre><span></span><code># Get the profile and generate PowerShell script code
@@ -12990,24 +12994,9 @@ New-OVServerProfile -Name $name -Description $description -AssignmentType Server
 </ul>
 <p><strong>HPE OneView Community</strong></p>
 <ul>
-<li><a href="http://hpe.com/info/oneviewcommunity">HPE OneView Community Forums</a></li>
+<li><a href="https://hpe.com/info/oneviewcommunity">HPE OneView Community Forums</a></li>
 </ul>
-<p>Learn more about HPE OneView at <a href="http://hpe.com/info/oneview">hpe.com/info/oneview</a></p>
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<p>Learn more about HPE OneView at <a href="https://hpe.com/info/oneview">hpe.com/info/oneview</a></p>
 
 
 
