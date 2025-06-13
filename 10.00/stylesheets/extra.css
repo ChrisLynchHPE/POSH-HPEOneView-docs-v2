@@ -4,11 +4,11 @@ table thead {
 }
 
 /* Alternating row colors */
-table tr:nth-child(even) {
+table tr:nth-child(odd) {
   background-color: darkgrey;
 }
 
-table tr:nth-child(odd) {
+table tr:nth-child(even) {
   background-color: var(--nvzc33, #303134);
 }
 
