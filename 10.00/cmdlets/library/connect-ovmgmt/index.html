@@ -12508,19 +12508,21 @@
 <div class="tabbed-block"></div>
 </div>
 </div>
-<p>When a valid connection is established with an appliance, this object is then added to '${Global:ConnectedSessions}' connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
+<p>When a valid connection is established with an appliance, this object is then added to <code>${Global:ConnectedSessions}</code> connection tracker variable. 
+ The object returned will contain the following public properties: 
+     ==============================================================================
      | Name                   | Type       | Value                                |
-     |-----------------------------------------------------------------------------
+     ------------------------------------------------------------------------------
      | AuthLoginDomain        | String     | Local                                |
      ------------------------------------------------------------------------------
      | ConnectionId           | Int        | 1                                    |
      ------------------------------------------------------------------------------
      | Name                   | String     | Hostname value                       |
-     ---------------------- -------------------------------------------------------
+     ------------------------------------------------------------------------------
      | SessionID              | String     | AUTH string returned from API        |
      ------------------------------------------------------------------------------
      | ApplianceType          | String     | Indicate connected appliance type.   |
-     -------------------- ---------------------------------------------------------
+     ------------------------------------------------------------------------------
      | UserName               | String     | Username value                       |
      ------------------------------------------------------------------------------
      | AuthType               | String     | Credential or Certificate/2FA        |
