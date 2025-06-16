@@ -12236,7 +12236,7 @@
     <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
-<p>This Cmdlet establishes a connection to the specified HPE OneView or HPE Synergy Composer appliance.  When the connection is successful, the user establishes a session for use with subsequent Cmdlet requests.  The effective user permissions are established on the first connection.  Please refer to <a href="about/about_appliance_connection_permissions.md"><code>about_appliance_connection_permissions</code></a> and <a href="about/about_appliance_connections.md"><code>about_appliance_connections</code></a> for more information about initiating multiple appliance connections.</p>
+<p>This Cmdlet establishes a connection to the specified HPE OneView or HPE Synergy Composer appliance.  When the connection is successful, the user establishes a session for use with subsequent Cmdlet requests.  The effective user permissions are established on the first connection.  Please refer to <a href="/about/about_appliance_connection_permissions.md"><code>about_appliance_connection_permissions</code></a> and <a href="/about/about_appliance_connections.md"><code>about_appliance_connections</code></a> for more information about initiating multiple appliance connections.</p>
 <p>Appliance hostname or IP can include an alternate TCP port number.  While the appliance does not allow the default TCP port 443 to be changed, the appliance could reside behind a firewall, which is redirecting an alternate TCP port number.</p>
 <p>If the appliance is configured to Common Access Card (CAC) authentication, the <code>-Certificate</code> parameter is required.  If the CAC requires a PIN to unlock, the user will be prompted by the credential service to provide that value.  The Cmdlet does not offer the ability to retrieve or store the CAC PIN.</p>
 <details class="info" open="open">
@@ -12497,10 +12497,18 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">None.  You cannot pipe objects to this Cmdlet.</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.Connection</strong></em></p>
-<p>When a valid connection is established with an appliance, this object is then added to ${Global:ConnectedSessions} connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Appliance.Connection</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>When a valid connection is established with an appliance, this object is then added to '${Global:ConnectedSessions}' connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
      | Name                   | Type       | Value                                |
      |-----------------------------------------------------------------------------
      | AuthLoginDomain        | String     | Local                                |
@@ -12523,13 +12531,17 @@
      ------------------------------------------------------------------------------
      | Default                | Boolean    | Is connection default for library    |
      ------------------------------------------------------------------------------</p>
-<p><em><strong>System.Management.Automation.ErrorRecord</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">System.Management.Automation.ErrorRecord</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <p>On error, appliance response is returned as a terminating error.</p>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../disconnect-ovmgmt/">Disconnect-OVMgmt</a></li>
-<li><a href="https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connection_permissions">about_Appliance_Connection_Permissions</a></li>
-<li><a href="https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections">[${Global:ConnectedSessions}]</a></li>
+<li><a href="/about/about_appliance_connection_permissions">about_Appliance_Connection_Permissions</a></li>
+<li><a href="/about/about_appliance_connections">[${Global:ConnectedSessions}]</a></li>
 </ul>
 
 
