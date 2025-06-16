@@ -124,15 +124,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
+=== "System.String"
+ 
 License key in String Format, from Get-Content or an Array of String
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.License**_
-
+=== "HPEOneView.Appliance.License"
+ 
 The License resource just added to the apliance
+ 
 
 ## Related Links
 

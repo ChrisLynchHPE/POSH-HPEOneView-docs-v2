@@ -94,13 +94,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.SecurityMode**_
-
+=== "HPEOneView.Appliance.SecurityMode"
+ 
 The current appliance security mode.
+ 
 
 ## Related Links
 

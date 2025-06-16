@@ -116,15 +116,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.Baseline [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.Baseline [System.Management.Automation.PSCustomObject]"
+ 
 Source HPE OneView Baseline from Get-OVBaseline
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task object to monitor.
+ 
 
 ## Related Links
 

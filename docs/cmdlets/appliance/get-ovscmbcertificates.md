@@ -125,19 +125,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Security.SecureString**_
-
+=== "System.Security.SecureString"
+ 
 Password for PFX file
+ 
 
 ## Return Values
 
-_**3 files will be created:**_
-
+=== "3 files will be created:"
+ 
  * {ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority * {ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key * {ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate
+ 
 
-_**Pkcs12/PFX certificate file**_
-
+=== "Pkcs12/PFX certificate file"
+ 
 If ConvertToPfX is used, the Pkcs12/PFX compliant certificate file is created, {ApplianceConnection_Name}_privateKey.pfx
+ 
 
 ## Related Links
 

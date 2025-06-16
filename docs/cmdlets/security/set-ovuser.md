@@ -239,15 +239,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
+ 
 HPE OneView User Account object created on an appliance
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
+ 
 If successful, returns a user resource
+ 
 
 ## Related Links
 

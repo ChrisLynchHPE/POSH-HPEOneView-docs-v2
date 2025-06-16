@@ -202,15 +202,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.NetworkSet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.NetworkSet [System.Management.Automation.PSCustomObject]"
+ 
 Single Network Set resource
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Update Network Set resource task
+ 
 
 ## Related Links
 

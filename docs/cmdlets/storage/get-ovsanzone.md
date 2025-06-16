@@ -111,15 +111,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]"
+ 
 Managed SAN resource from Get-OVManagedSan
+ 
 
 ## Return Values
 
-_**HPEOneView.Storage.ManagedSan.Zone [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.ManagedSan.Zone [System.Management.Automation.PSCustomObject]"
+ 
 Managed SAN Zone resource object
+ 
 
 ## Related Links
 

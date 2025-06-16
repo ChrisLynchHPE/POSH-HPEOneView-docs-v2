@@ -92,19 +92,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.License**_
-
+=== "HPEOneView.Appliance.License"
+ 
 HPE OneView License object
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Success message
+ 
 
-_**System.Management.Automation.ErrorRecord**_
-
+=== "System.Management.Automation.ErrorRecord"
+ 
 Error message of in use license key
+ 
 
 ## Related Links
 

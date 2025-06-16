@@ -204,15 +204,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Enclosure**_
-
+=== "HPEOneView.Enclosure"
+ 
 Resource from Get-OVEnclosure.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource to monitor
+ 
 
 ## Related Links
 

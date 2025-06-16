@@ -1227,19 +1227,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
+=== "System.String"
+ 
 The full path to the Server Profile JSON export file
+ 
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Server Hardware resource object
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 If successful returns a task resource which may be polled to follow the progress of the profile creation.  Otherwise, a request validation error will be returned
+ 
 
 ## Related Links
 

@@ -63,15 +63,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.ScopeCollection**_
-
+=== "HPEOneView.Appliance.ScopeCollection"
+ 
 Scope resource object from Get-OVScope.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Response indicating the resource was deleted successfully.
+ 
 
 ## Related Links
 

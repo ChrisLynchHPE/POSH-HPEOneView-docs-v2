@@ -114,19 +114,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
+=== "System.String"
+ 
 Network Name or URI
+ 
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Network Resource Object
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async Removal task
+ 
 
 ## Related Links
 

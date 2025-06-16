@@ -128,19 +128,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Resource Object to find associated resources
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Single association index entry
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple association index entries  The matching index entries
+ 
 
 ## Related Links
 

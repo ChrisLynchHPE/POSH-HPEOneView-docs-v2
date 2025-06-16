@@ -74,15 +74,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Alert [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Alert [System.Management.Automation.PSCustomObject]"
+ 
 Alert resource object (i.e. Get-OVAlert)
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Status object indicating the resource was removed.
+ 
 
 ## Related Links
 

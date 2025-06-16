@@ -105,19 +105,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]"
+ 
 Logical Switch resource.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
+The async task resource object to monitor (if -Async was used) or results.
+ 
 
-The async task resource object to monitor (if `-Async` was used) or results.
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+ 
 Collection of remove Logical Switch async task resources.
+ 
 
 ## Related Links
 

@@ -159,21 +159,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
+ 
 Logical Interconnect resource object from Get-OVLogicalInterconnect
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Networking.LogicalInterconnect>    **_
-
+=== "System.Collections.ArrayList <HPEOneView.Networking.LogicalInterconnect>    "
+ 
 Multiple Logical Interconnects
+ 
 
-_**A Logical Interconnect or collection of Logical Interconnects**_
+=== "A Logical Interconnect or collection of Logical Interconnects"
+ 
 
-
+ 
 
 ## Related Links
 

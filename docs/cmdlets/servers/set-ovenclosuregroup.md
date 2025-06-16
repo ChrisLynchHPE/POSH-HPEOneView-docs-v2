@@ -273,15 +273,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+ 
 Enclosure group resource from Get-OVEnclosureGroup.
+ 
 
 ## Return Values
 
-_**HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+ 
 The updated enclosure group resource.
+ 
 
 ## Related Links
 

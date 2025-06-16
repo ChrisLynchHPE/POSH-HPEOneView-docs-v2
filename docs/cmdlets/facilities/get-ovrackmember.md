@@ -91,15 +91,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Facilities.Rack**_
-
+=== "HPEOneView.Facilities.Rack"
+ 
 Rack resource object from Get-OVRack.
+ 
 
 ## Return Values
 
-_**HPEOneView.Facilities.RackMember**_
-
+=== "HPEOneView.Facilities.RackMember"
+ 
 The individual rack member resource object.
+ 
 
 ## Related Links
 

@@ -92,21 +92,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.SasInterconnectType [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.SasInterconnectType [System.Management.Automation.PSCustomObject]"
+ 
 Single SAS Interconnect Type resource
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Networking.SasInterconnectType>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Networking.SasInterconnectType>"
+ 
 Multiple SAS Interconnect Type resources or formatted table dispalying basic Interconnect Type information
+ 
 
-_**A SAS Interconnect Type or collection of SAS Interconnect Types.**_
+=== "A SAS Interconnect Type or collection of SAS Interconnect Types."
+ 
 
-
+ 
 
 ## Related Links
 

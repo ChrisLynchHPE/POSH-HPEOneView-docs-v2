@@ -89,15 +89,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardwareType**_
-
+=== "HPEOneView.ServerHardwareType"
+ 
 Resource from Get-OVServerHardwareType.
+ 
 
 ## Return Values
 
-_**HPEOneView.ServerHardwareType**_
-
+=== "HPEOneView.ServerHardwareType"
+ 
 The updated resource object.
+ 
 
 ## Related Links
 

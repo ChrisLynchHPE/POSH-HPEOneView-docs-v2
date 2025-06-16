@@ -322,15 +322,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**Accepts pipeline input from Get-OVLogicalEnclosure only.**_
+=== "Accepts pipeline input from Get-OVLogicalEnclosure only."
+ 
 
-
+ 
 
 ## Return Values
 
-_**The generated Support Dump File**_
+=== "The generated Support Dump File"
+ 
 
-
+ 
 
 ## Related Links
 

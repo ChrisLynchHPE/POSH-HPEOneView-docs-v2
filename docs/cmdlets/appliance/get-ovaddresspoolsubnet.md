@@ -77,17 +77,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  This Cmdlet does not support pipeline operations.**_
+=== "None.  This Cmdlet does not support pipeline operations."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
+ 
 Single IPv4 Subnet address pool range.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Appliance.IPAddressSubnet>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Appliance.IPAddressSubnet>"
+ 
 Collection of IPv4 Subnet address pool range(s).
+ 
 
 ## Related Links
 

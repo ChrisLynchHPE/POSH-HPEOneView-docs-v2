@@ -791,15 +791,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Collections.Hashtable**_
-
+=== "System.Collections.Hashtable"
+ 
 Hashtable containing Interconnect Bay layout and associated interconnect module
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Logical Interconnect Group creation async task
+ 
 
 ## Related Links
 

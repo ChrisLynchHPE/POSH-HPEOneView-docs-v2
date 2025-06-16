@@ -430,15 +430,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.Pool [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.Pool [System.Management.Automation.PSCustomObject]"
+ 
 Storage Pool resource object
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async create task
+ 
 
 ## Related Links
 

@@ -188,15 +188,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.IO.FileInfo**_
-
+=== "System.IO.FileInfo"
+ 
 The filesystem object of the X.509 public SSL certificate to add.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource to monitor.
+ 
 
 ## Related Links
 

@@ -172,16 +172,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None. You cannot pipe objects to this Cmdlet.**_
+=== "None. You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 If collection of resources (.i.e. GET /rest/ethernet-networks)
+ 
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Single object returned from appliance
  
      If Async task, a Hashtable is returned with the following contents:
@@ -193,9 +197,10 @@ Single object returned from appliance
              taskState = "New";
              resource = @{};
          }
+ 
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 If no resources are found, a PsCustomObject is returned that contains:
  
          @{
@@ -203,6 +208,7 @@ If no resources are found, a PsCustomObject is returned that contains:
              statusMessage = [string]HTTP Status Message;
              lastCall = [string]URI;
          }
+ 
 
 ## Related Links
 

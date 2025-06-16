@@ -164,26 +164,30 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
+ 
 Single Logical Interconnect resource object
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Networking.LogicalInterconnect>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Networking.LogicalInterconnect>"
+ 
 Collection of Logical Interconnect Names, URIs or System.Management.Automation.PSCustomObject
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Single async Update Task
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+ 
 Multiple async Update Tasks
+ 
 
-_**HPEOneView.Library.CompareObject**_
-
+=== "HPEOneView.Library.CompareObject"
+ 
 The Cmdlet will return a compare object with the Parent and Child object and settings that are different.  Otherwise, no object is returned.
 
     Property Name | Description
@@ -200,6 +204,7 @@ The Cmdlet will return a compare object with the Parent and Child object and set
     ----------------------------------------------------------
     Description   | Description Name of difference
     ----------------------------------------------------------
+ 
 
 ## Related Links
 

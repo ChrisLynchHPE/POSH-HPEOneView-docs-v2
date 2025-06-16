@@ -63,13 +63,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Name, value, description, and uri for the global setting(s)
+ 
 
 ## Related Links
 

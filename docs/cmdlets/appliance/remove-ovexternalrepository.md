@@ -96,19 +96,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.BaselineRepository [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.BaselineRepository [System.Management.Automation.PSCustomObject]"
+ 
 The external repository object from Get-OVBaselineRepository
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 The async task for the caller to monitor.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+ 
 Multiple async task resource objects.
+ 
 
 ## Related Links
 

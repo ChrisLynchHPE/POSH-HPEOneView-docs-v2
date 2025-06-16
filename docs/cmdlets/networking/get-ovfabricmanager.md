@@ -104,13 +104,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.FabricManager**_
-
+=== "HPEOneView.Networking.FabricManager"
+ 
 Configured fabric manager resource object.
+ 
 
 ## Related Links
 

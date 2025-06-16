@@ -268,15 +268,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Resource object (i.e. Get-OVServer).
+ 
 
 ## Return Values
 
-_**HPEOneView.Alert [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Alert [System.Management.Automation.PSCustomObject]"
+ 
 HPE OneView alert.
+ 
 
 ## Related Links
 

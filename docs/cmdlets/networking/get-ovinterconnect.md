@@ -123,25 +123,32 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]"
+ 
 Single Interconnect object.
+ 
 
-_**HPEOneView.Networking.SasInterconnect [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.SasInterconnect [System.Management.Automation.PSCustomObject]"
+ 
 Single SAS Interconnect object.
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple Interconnect objects.
+ 
 
-_**An Interconnect or collection of Interconnects**_
+=== "An Interconnect or collection of Interconnects"
+ 
 
-
+ 
 
 ## Related Links
 

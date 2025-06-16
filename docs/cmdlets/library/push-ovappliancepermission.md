@@ -84,16 +84,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.ConnectionPermission**_
-
+=== "HPEOneView.Appliance.ConnectionPermission"
+ 
 One or more appliance connection permissions and their active state.
+ 
 
 ## Related Links
 
 * [Pop-OVAppliancePermission](pop-ovappliancepermission.md)
-* [about_Appliance_Connection_Permissions](https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connection_permissions)
-* [[${Global:ConnectedSessions}]](https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections)
+* [about_Appliance_Connection_Permissions](../../about/about_appliance_connection_permissions.md)
+* [[${Global:ConnectedSessions}]](../../about/about_appliance_connections.md)

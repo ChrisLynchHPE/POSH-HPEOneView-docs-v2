@@ -81,17 +81,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]"
+ 
 Single address pool and its contents.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Appliance.AddressPool>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Appliance.AddressPool>"
+ 
 Collection of address pools and their contents.
+ 
 
 ## Related Links
 

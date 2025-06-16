@@ -144,23 +144,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Server Hardware resource object.
+ 
 
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+ 
 Server Profile resource object.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 SSO Url Object
+ 
 
-_**System.Array**_
-
+=== "System.Array"
+ 
 Multiple SSO URL objects.
+ 
 
 ## Related Links
 

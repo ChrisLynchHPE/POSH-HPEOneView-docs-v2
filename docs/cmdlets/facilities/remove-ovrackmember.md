@@ -60,15 +60,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Facilities.RackMember**_
-
+=== "HPEOneView.Facilities.RackMember"
+ 
 Rack member resource from Get-OVRackMember.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource**_
-
+=== "HPEOneView.Appliance.TaskResource"
+ 
 Async task object of updating the associated rack.
+ 
 
 ## Related Links
 

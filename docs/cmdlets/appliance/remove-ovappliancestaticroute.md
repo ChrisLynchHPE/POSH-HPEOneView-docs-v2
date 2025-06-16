@@ -75,15 +75,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.StaticRoute**_
-
+=== "HPEOneView.Appliance.StaticRoute"
+ 
 Configured static route object from Get-OVApplianceStaticRoute.
+ 
 
 ## Return Values
 
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource to monitor.
+ 
 
 ## Related Links
 

@@ -166,17 +166,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]"
+ 
 Single Storage System
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Storage.System>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Storage.System>"
+ 
 Multiple Storage Systems
+ 
 
 ## Related Links
 

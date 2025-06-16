@@ -102,15 +102,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Cluster.ClusterNode [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Cluster.ClusterNode [System.Management.Automation.PSCustomObject]"
+ 
 Cluster node member from Get-OVClusterNode.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource to monitor.
+ 
 
 ## Related Links
 

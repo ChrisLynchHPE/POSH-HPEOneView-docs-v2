@@ -282,15 +282,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+ 
 Enclosure Group Resource that will be used to set the Enlosure policy.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task Resource object for monitoring the enclosure import process.
+ 
 
 ## Related Links
 

@@ -328,23 +328,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardwareType [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardwareType [System.Management.Automation.PSCustomObject]"
+ 
 Server Hardware Type resource object.
+ 
 
-_**HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]"
+ 
 Server Profile Template resource object.
+ 
 
 ## Return Values
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Single Server Hardware resource
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple Server Hardware resources
+ 
 
 ## Related Links
 

@@ -210,19 +210,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Server hardware resource from Get-OVServer.
+ 
 
 ## Return Values
 
-_**HPEOneView.Servers.ServerHardware+FirmwareCompliancePreview**_
-
+=== "HPEOneView.Servers.ServerHardware+FirmwareCompliancePreview"
+ 
 A collection of server firmware installation report.  Will contain identified installed components and which have available updates from the supplied baseline.
+ 
 
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource to monitor.
+ 
 
 ## Related Links
 

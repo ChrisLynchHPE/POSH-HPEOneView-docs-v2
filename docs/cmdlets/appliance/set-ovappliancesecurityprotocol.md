@@ -84,13 +84,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.SecurityProtocol**_
-
+=== "HPEOneView.Appliance.SecurityProtocol"
+ 
 After appliance reboots, the updated security protocol configuration is returned.
+ 
 
 ## Related Links
 

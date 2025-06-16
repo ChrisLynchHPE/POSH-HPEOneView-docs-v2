@@ -388,19 +388,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]"
+ 
 Logical Switch Group resource.
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]"
+ 
 Single Logical Switch resource.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitch>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitch>"
+ 
 Collection of Logical Switch resources.
+ 
 
 ## Related Links
 

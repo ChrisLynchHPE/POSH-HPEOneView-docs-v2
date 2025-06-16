@@ -88,17 +88,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]"
+ 
 Single SAN Manager resource
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Storage.SanManager>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Storage.SanManager>"
+ 
 Multiple SAN Manager resources
+ 
 
 ## Related Links
 

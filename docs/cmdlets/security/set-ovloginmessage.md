@@ -98,14 +98,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+=== "None.  You cannot pipe objects to this cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.LoginMessage**_
-
+=== "HPEOneView.Appliance.LoginMessage"
+ 
 Returns the login message configured on the appliance.
 
+ 
 
 ## Related Links
 

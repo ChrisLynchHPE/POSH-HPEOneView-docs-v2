@@ -155,15 +155,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.IO.FileSystemInfo**_
-
+=== "System.IO.FileSystemInfo"
+ 
 File System object from Get-ChildItem of the baseline ISO image to upload.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 The progress of uploading the file to the appliance, and in-progress or completion result.
+ 
 
 ## Related Links
 

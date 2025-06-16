@@ -129,15 +129,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]"
+ 
 Rack resource object from Get-OVRack.
+ 
 
 ## Return Values
 
-_**HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]"
+ 
 Updated rack object with the newly added resources in the contents property.
+ 
 
 ## Related Links
 

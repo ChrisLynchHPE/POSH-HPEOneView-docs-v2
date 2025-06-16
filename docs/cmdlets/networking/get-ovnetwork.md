@@ -278,27 +278,32 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
+=== "System.String"
+ 
 Network Resource Name(s)
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.EthernetNetwork**_
-
+=== "HPEOneView.Networking.EthernetNetwork"
+ 
 Single Ethernet Network resource
+ 
 
-_**HPEOneView.Networking.FibreChannelNetwork**_
-
+=== "HPEOneView.Networking.FibreChannelNetwork"
+ 
 Single Fibre Channel Network resource
+ 
 
-_**HPEOneView.Networking.FCoENetwork**_
-
+=== "HPEOneView.Networking.FCoENetwork"
+ 
 Single FCoE Network resource
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple Network Object resources
+ 
 
 ## Related Links
 

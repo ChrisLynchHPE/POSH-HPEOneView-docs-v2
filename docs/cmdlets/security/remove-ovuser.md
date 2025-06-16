@@ -83,15 +83,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
+ 
 HPE OneView User Account object created on an appliance
+ 
 
 ## Return Values
 
-_**System.Collections.Hashtable**_
-
+=== "System.Collections.Hashtable"
+ 
 Success message if user was deleted
+ 
 
 ## Related Links
 

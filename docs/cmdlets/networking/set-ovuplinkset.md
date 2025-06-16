@@ -325,19 +325,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]"
+ 
 Logical Interconnect Group resource from Get-OVLogicalInterconnectGroup.
+ 
 
-_**HPEOneView.Networking.UplinkSet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.UplinkSet [System.Management.Automation.PSCustomObject]"
+ 
 Uplink set resource from Get-OVUplinkSet.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource object to monitor.
+ 
 
 ## Related Links
 

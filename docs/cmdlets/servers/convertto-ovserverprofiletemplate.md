@@ -109,19 +109,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+ 
 A Server Profile resource object from Get-OVServerProfile.
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject] objects.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject] objects.**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject] objects."
+ 
 Asynchronous task of the Server Profile Template creation request.
+ 
 
 ## Related Links
 

@@ -67,17 +67,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None. You cannot pipe objects to this Cmdlet.**_
+=== "None. You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.RemoteSyslog [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.RemoteSyslog [System.Management.Automation.PSCustomObject]"
+ 
 If successful, returns Appliance Syslog settings
+ 
 
-_**System.Collections.ArrayList <HPEOneView.RemoteSyslog>**_
-
+=== "System.Collections.ArrayList <HPEOneView.RemoteSyslog>"
+ 
 Collection of Appliance Syslog settings
+ 
 
 ## Related Links
 

@@ -71,19 +71,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject] or HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject] or HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+ 
 Server Hardware or Enclosure resource.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 If successful, returns Appliance Async Task object to monitor.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+ 
 Collection of Appliance Async Task objects to monitor.
+ 
 
 ## Related Links
 

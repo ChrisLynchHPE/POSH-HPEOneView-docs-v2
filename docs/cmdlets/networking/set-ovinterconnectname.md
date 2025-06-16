@@ -147,15 +147,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]"
+ 
 HPE Synergy FlexFabric Ethernet module from Get-OVInterconnect.
+ 
 
 ## Return Values
 
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource to monitor.
+ 
 
 ## Related Links
 

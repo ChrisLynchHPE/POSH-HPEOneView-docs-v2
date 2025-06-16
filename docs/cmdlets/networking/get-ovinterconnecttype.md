@@ -100,21 +100,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.InterconnectType [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.InterconnectType [System.Management.Automation.PSCustomObject]"
+ 
 Single Interconnect Type resource.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Networking.InterconnectType>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Networking.InterconnectType>"
+ 
 Multiple Interconnect Type resources or formatted table dispalying basic Interconnect Type information.
+ 
 
-_**An Interconnect Type or collection of Interconnect Types.**_
+=== "An Interconnect Type or collection of Interconnect Types."
+ 
 
-
+ 
 
 ## Related Links
 

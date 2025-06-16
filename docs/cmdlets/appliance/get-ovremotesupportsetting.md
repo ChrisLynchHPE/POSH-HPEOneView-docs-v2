@@ -91,19 +91,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Server hardware resource object.
+ 
 
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+ 
 Enclosure resource object.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupport.ResourceSetting [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.RemoteSupport.ResourceSetting [System.Management.Automation.PSCustomObject]"
+ 
 Remote Support Settings object.
+ 
 
 ## Related Links
 

@@ -163,17 +163,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.NetworkSet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.NetworkSet [System.Management.Automation.PSCustomObject]"
+ 
 Single Network Set
+ 
 
-_**System.Collections.ArrayList <HPEOneView.Networking.NetworkSet>**_
-
+=== "System.Collections.ArrayList <HPEOneView.Networking.NetworkSet>"
+ 
 Multiple Network Sets
+ 
 
 ## Related Links
 

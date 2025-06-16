@@ -165,15 +165,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.DriveEnclosure [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.DriveEnclosure [System.Management.Automation.PSCustomObject]"
+ 
 Drive enclosure resource from Get-OVDriveEnclosure Cmdlet.
+ 
 
 ## Return Values
 
-_**HPEOneView.Storage.Drive**_
-
+=== "HPEOneView.Storage.Drive"
+ 
 The drive class object from the API.
+ 
 
 ## Related Links
 

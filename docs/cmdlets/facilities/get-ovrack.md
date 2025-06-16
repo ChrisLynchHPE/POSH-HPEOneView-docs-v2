@@ -89,13 +89,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Facilities.Rack**_
-
+=== "HPEOneView.Facilities.Rack"
+ 
 A Rack resource object.
+ 
 
 ## Related Links
 

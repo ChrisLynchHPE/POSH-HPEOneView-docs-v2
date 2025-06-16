@@ -95,19 +95,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.SnmpV1TrapDestination**_
-
+=== "HPEOneView.Appliance.SnmpV1TrapDestination"
+ 
 Appliance SNMPv1 trap destination from Get-OVApplianceTrapDestination.
+ 
 
-_**HPEOneView.Appliance.SnmpV3TrapDestination**_
-
+=== "HPEOneView.Appliance.SnmpV3TrapDestination"
+ 
 Appliance SNMPv3 trap destination from Get-OVApplianceTrapDestination.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Success message of deleted resource.
+ 
 
 ## Related Links
 

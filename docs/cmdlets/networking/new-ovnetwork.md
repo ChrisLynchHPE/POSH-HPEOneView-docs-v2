@@ -445,15 +445,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]"
+ 
 ManagedSan resource object to be assigned to a FC or FCoE Network
+ 
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 A custom status object or array of objects containing the following PsCustomObject keys:  * Name - name of the network object attempted to be created * Status - status of the creation attempt (Failed for http error return; Complete if a task object is returned) * Description - Task object or Error object * Exception -  System.Management.Automation.ErrorRecord object of the error generated
+ 
 
 ## Related Links
 

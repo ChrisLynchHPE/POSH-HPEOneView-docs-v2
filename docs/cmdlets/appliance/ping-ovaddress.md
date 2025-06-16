@@ -93,15 +93,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Net.IPAddress**_
-
+=== "System.Net.IPAddress"
+ 
 IP Address of target node to ping
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Task resource of the PING request
+ 
 
 ## Related Links
 

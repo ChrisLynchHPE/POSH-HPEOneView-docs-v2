@@ -117,14 +117,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+=== "None.  You cannot pipe objects to this cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupport.PortalConnectionToken**_
-
+=== "HPEOneView.Appliance.RemoteSupport.PortalConnectionToken"
+ 
 The appliance token used to establish a secure connection with the HPESC, and launch the clients default web browser.
 
+ 
 
 ## Related Links
 

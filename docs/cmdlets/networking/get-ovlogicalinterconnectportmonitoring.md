@@ -72,15 +72,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
+ 
 Logical Interconnect resource object from Get-OVLogicalInterconnect
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalInterconnect+PortMonitoringConfig**_
-
+=== "HPEOneView.Networking.LogicalInterconnect+PortMonitoringConfig"
+ 
 The current port monitor configuration of the provided logical interconnect(s).
+ 
 
 ## Related Links
 

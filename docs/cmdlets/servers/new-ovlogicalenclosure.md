@@ -279,15 +279,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+ 
 Single Enclosure (Synergy Frame) resource object
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 The async task resource
+ 
 
 ## Related Links
 

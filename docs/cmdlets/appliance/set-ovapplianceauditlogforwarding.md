@@ -171,13 +171,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.AuditLogForwardingConfig**_
-
+=== "HPEOneView.Appliance.AuditLogForwardingConfig"
+ 
 The appliance audit log forwarding configuration.
+ 
 
 ## Related Links
 

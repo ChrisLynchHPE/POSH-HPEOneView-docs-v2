@@ -139,15 +139,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.LogicalJBOD[]**_
-
+=== "HPEOneView.Storage.LogicalJBOD[]"
+ 
 One or more logical JBOD resources from Get-OVLogicalJBOD.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource to monitor.
+ 
 
 ## Related Links
 

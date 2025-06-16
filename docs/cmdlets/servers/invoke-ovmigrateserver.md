@@ -123,15 +123,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Servers.MigratableServer**_
-
+=== "HPEOneView.Servers.MigratableServer"
+ 
 Class object of migratable server resources from Get-OVMigratableServer.
+ 
 
 ## Return Values
 
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource to monitor.
+ 
 
 ## Related Links
 

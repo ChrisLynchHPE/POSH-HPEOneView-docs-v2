@@ -53,13 +53,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+ None.  You cannot pipe objects to this Cmdlet 
+ 
 
 ## Return Values
 
-_**Write-Progress**_
-
+=== "Write-Progress"
+ 
 The Write-Progress Cmdlet is used to display the startup progress
+ 
 
 ## Related Links
 

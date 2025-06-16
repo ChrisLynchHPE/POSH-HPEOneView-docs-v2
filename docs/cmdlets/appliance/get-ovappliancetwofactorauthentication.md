@@ -54,13 +54,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.Security.TwoFactorAuthConfiguration**_
-
+=== "HPEOneView.Appliance.Security.TwoFactorAuthConfiguration"
+ 
 Appliance two-factor security settings.
+ 
 
 ## Related Links
 

@@ -81,15 +81,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.SecurityMode**_
-
+=== "HPEOneView.Appliance.SecurityMode"
+ 
 Available security mode from Get-OVApplianceAvailableSecurityMode.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.SecurityModeCompatibilityReport**_
-
+=== "HPEOneView.Appliance.SecurityModeCompatibilityReport"
+ 
 Security mode compatibility report.
+ 
 
 ## Related Links
 

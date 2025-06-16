@@ -132,15 +132,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.ScopeCollection**_
-
+=== "HPEOneView.Appliance.ScopeCollection"
+ 
 Scope resource object from Get-OVScope.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource that updates the Scope and associated resources.
+ 
 
 ## Related Links
 

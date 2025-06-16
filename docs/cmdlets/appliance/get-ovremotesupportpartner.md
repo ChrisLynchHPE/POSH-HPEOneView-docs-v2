@@ -73,13 +73,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupport.Partner [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.RemoteSupport.Partner [System.Management.Automation.PSCustomObject]"
+ 
 Defined HPE authorized reseller and/or support partners.
+ 
 
 ## Related Links
 

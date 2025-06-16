@@ -1053,19 +1053,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
+=== "System.String"
+ 
 The full path to the Server Profile JSON export file
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 If successful returns a task resource which may be polled to follow the progress of the profile creation.  Otherwise, a request validation error will be returned
+ 
 
-_**HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]**_
-
-When using the `-PassThru` parameter, the created server profile template object is returned.
+=== "HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]"
+ 
+When using the -PassThru parameter, the created server profile template object is returned.
+ 
 
 ## Related Links
 

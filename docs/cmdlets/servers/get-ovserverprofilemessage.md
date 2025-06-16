@@ -59,19 +59,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+ 
 Server Profile resource object from Get-OVServerProfile
+ 
 
 ## Return Values
 
-_**HPEOneView.ServerProfileMessage [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerProfileMessage [System.Management.Automation.PSCustomObject]"
+ 
 Server Profile message object.
+ 
 
-_**System.Collections.ArrayList <HPEOneView.ServerProfileMessage>**_
-
+=== "System.Collections.ArrayList <HPEOneView.ServerProfileMessage>"
+ 
 Server Profile message object.
+ 
 
 ## Related Links
 

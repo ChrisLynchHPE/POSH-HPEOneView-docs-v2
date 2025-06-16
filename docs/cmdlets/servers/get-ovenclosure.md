@@ -211,17 +211,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**System.Object**_
-
+=== "System.Object"
+ 
 Enclosure Report
+ 
 
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+ 
 The matching enclosure hardware resources.
+ 
 
 ## Related Links
 

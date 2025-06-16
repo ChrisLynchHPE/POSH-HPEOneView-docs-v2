@@ -165,15 +165,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async Task resource object, from New-OVLogicalSwitch.
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]"
+ 
 Single Logical Switch resource.
+ 
 
 ## Related Links
 

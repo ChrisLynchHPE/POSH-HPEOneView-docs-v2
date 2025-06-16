@@ -107,21 +107,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.ApplianceServerConfiguration [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.ApplianceServerConfiguration [System.Management.Automation.PSCustomObject]"
+ 
 A collection object containing the properties and values of the primary network interface of the appliance.
+ 
 
-_**HPEOneView.Appliance.ApplianceServerConfiguration.ApplianceNetworks [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.ApplianceServerConfiguration.ApplianceNetworks [System.Management.Automation.PSCustomObject]"
+ 
 The applianceNetworks property will display the appliance Networking in either a Format-Table (default) or Format-List view.
+ 
 
-_**System.IO.FileSystemInfo**_
-
+=== "System.IO.FileSystemInfo"
+ 
 If exporting the appliance network configuration, the file object created will be returned.
+ 
 
 ## Related Links
 

@@ -427,19 +427,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.AvailableDriveType**_
-
+=== "HPEOneView.Storage.AvailableDriveType"
+ 
 An available disk drive type from Get-OVAvailableDriveType Cmdlet.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Logical Disk configuration object
+ 
 
-_**System.Collections.ArrayList<System.Management.Automation.PSCustomObject>**_
-
+=== "System.Collections.ArrayList<System.Management.Automation.PSCustomObject>"
+ 
 Collection of Logical Disk configuration objects
+ 
 
 ## Related Links
 

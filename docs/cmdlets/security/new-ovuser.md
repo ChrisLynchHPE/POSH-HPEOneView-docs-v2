@@ -170,13 +170,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None. You cannot pipe objects to this Cmdlet.**_
+=== "None. You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
+ 
 If successful, returns a user resource
+ 
 
 ## Related Links
 

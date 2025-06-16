@@ -95,15 +95,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.SnmpV3User**_
-
+=== "HPEOneView.Appliance.SnmpV3User"
+ 
 Appliance SNMPv3 user account from Get-OVSnmpV3User.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Success message of deleted resource.
+ 
 
 ## Related Links
 

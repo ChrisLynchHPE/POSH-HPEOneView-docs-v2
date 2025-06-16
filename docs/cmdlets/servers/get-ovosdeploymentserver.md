@@ -82,17 +82,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.OSDeploymentServer**_
-
+=== "HPEOneView.Appliance.OSDeploymentServer"
+ 
 An HPE Synergy Image Streamer appliance object.
+ 
 
-_**System.Collections.ArrayList<HPEOneView.Appliance.OSDeploymentServer>**_
-
+=== "System.Collections.ArrayList<HPEOneView.Appliance.OSDeploymentServer>"
+ 
 A collection of HPE Synergy Image Streamer appliance objects.
+ 
 
 ## Related Links
 

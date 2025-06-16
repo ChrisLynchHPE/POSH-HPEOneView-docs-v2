@@ -141,17 +141,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.SnmpV1TrapDestination**_
-
+=== "HPEOneView.Appliance.SnmpV1TrapDestination"
+ 
 The configured SNMPv1 Trap Destination on the appliance.
+ 
 
-_**HPEOneView.Appliance.SnmpV3TrapDestination**_
-
+=== "HPEOneView.Appliance.SnmpV3TrapDestination"
+ 
 The configured SNMPv3 Trap Destination on the appliance.
+ 
 
 ## Related Links
 

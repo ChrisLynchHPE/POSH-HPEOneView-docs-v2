@@ -156,15 +156,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerProfileTemplate**_
-
+=== "HPEOneView.ServerProfileTemplate"
+ 
 The Server Profile Template resource object to transform.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async Task resource to monitor progress of the Server Profile transformation.
+ 
 
 ## Related Links
 

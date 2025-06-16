@@ -83,14 +83,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+=== "None.  You cannot pipe objects to this cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupport.PortalConnection**_
-
+=== "HPEOneView.Appliance.RemoteSupport.PortalConnection"
+ 
 The current appliance secure connection status to the HPE Support Center.
 
+ 
 
 ## Related Links
 

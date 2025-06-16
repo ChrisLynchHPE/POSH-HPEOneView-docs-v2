@@ -113,15 +113,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
+ 
 IPv4 Address Subnet
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
+ 
 Updated IPv4 Address Subnet
+ 
 
 ## Related Links
 

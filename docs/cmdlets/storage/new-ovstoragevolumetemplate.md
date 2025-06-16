@@ -585,15 +585,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.System.Pool [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.System.Pool [System.Management.Automation.PSCustomObject]"
+ 
 Managed Storage Pool resource
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Created Storage Volume Template resource
+ 
 
 ## Related Links
 

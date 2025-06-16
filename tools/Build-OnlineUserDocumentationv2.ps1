@@ -18,6 +18,7 @@ Param
 
 $Script:FindTabbedItemListRegexPattern             = [System.Text.RegularExpressions.RegEx]::new('\s{4}\*\s', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindParameterRegexPattern                  = [System.Text.RegularExpressions.RegEx]::new('(?<=\s)-\w+', [System.Text.RegularExpressions.RegexOptions]::Multiline)
+$Script:FindVariableRegexPattern                   = [System.Text.RegularExpressions.RegEx]::new('(?:\$(\S+))', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindCmdletRegexPattern                     = [System.Text.RegularExpressions.RegEx]::new('\b(?<=\s\()\w*-\w*\b(?!`)(?<!-\))', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindFullyQualifiedClassWithoutBracePattern = [System.Text.RegularExpressions.RegEx]::new('(?<=\s)([a-zA-Z]+[.])+[a-zA-Z]+', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindFullyQualifiedClassPattern             = [System.Text.RegularExpressions.RegEx]::new('(?<=\s)\[([a-zA-Z]+[.])+[a-zA-Z]+[\]]?', [System.Text.RegularExpressions.RegexOptions]::Multiline)
@@ -27,11 +28,11 @@ $Script:NoteMessagePattern                         = [System.Text.RegularExpress
 $Script:WarningMessagePattern                      = [System.Text.RegularExpressions.RegEx]::new("(?:^WARNING: (?'subtext'[\s\w]+.+)(?'table'\n*(\s{1,4}\*.+\n)+)?)", [System.Text.RegularExpressions.RegexOptions]::Multiline -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 $Script:CriticalMessagePattern                     = [System.Text.RegularExpressions.RegEx]::new("(?:^CRITICAL: (?'subtext'[\s\w]+.+))", [System.Text.RegularExpressions.RegexOptions]::Multiline -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 $Script:ParentLinkableAssociatedLinks              = [Ordered]@{
-    '[${Global:ConnectedSessions}]'          = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections';
-    '${Global:ConnectedSessions}'            = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections';
-    'about_appliance_connections'            = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections'
-    'about_Appliance_Connection_Permissions' = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connection_permissions';
-    'about_two_factor_authentication'        = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_two_factor_authentication'
+    '[${Global:ConnectedSessions}]'          = '../../about/about_appliance_connections.md';
+    '${Global:ConnectedSessions}'            = '../../about/about_appliance_connections.md';
+    'about_appliance_connections'            = '../../about/about_appliance_connections.md'
+    'about_Appliance_Connection_Permissions' = '../../about/about_appliance_connection_permissions.md';
+    'about_two_factor_authentication'        = '../../about/about_two_factor_authentication.md'
 }
 
 $H1 = "# "
@@ -89,20 +90,28 @@ class DisplayHint
 
 }
 
+# This class is used to build the tabs for Input Types and Return Values
+# It is used to create the tab entries for the documentation.
+
 class Tabs
 {
 
-    static [string]$NewTab           = '=== "{0}"'
-    static [string]$TabText          = '```text{0}{1}{0}```'
+    static [string]$NewTab           = '=== "{0}"' + [System.Environment]::NewLine
+    static [string]$TabText          = '{0}{1}{0}'
     static [string]$EndTab           = '{0}' -f [System.Environment]::NewLine
 
-    static [String] BuildTabEntry ([String]$Title, [String]$Description)
+    static [string] BuildTabEntry ([string]$Title, [string]$Description, [string]$CmdletName)
     {
 
         $FinalString = [System.Collections.ArrayList]::new()
 
         $_NewTab = [Tabs]::NewTab -f $Title
         [void]$FinalString.Add($_NewTab)
+
+        # Find variables in the description and encase with the single tick
+        $Description = $Script:FindVariableRegexPattern.Replace($Description, "'`$0'")
+
+        LinkifyString -String $Description -CmdletName $CmdletName
 
         $_TabText = [Tabs]::TabText -f [System.Environment]::NewLine, $Description
         [void]$FinalString.Add($_TabText)
@@ -259,12 +268,20 @@ function LinkifyString ([String]$String, [String]$CmdletName)
 
     }
 
-    if ($FindAboutTopicReferencePattern.Matches($UpdatedString).Success)
+    ForEach ($HelpTopicReference in $FindAboutTopicReferencePattern.Matches($UpdatedString))
     {
 
-        $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, '[`$0`](/about/$0.md)')
+        $ReplaceString = "[`{0}`]({1})" -f $HelpTopicReference.Value, $ParentLinkableAssociatedLinks[$HelpTopicReference.Value]
+        $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, $ReplaceString)
 
     }
+
+    # if ($FindAboutTopicReferencePattern.Matches($UpdatedString).Success)
+    # {
+
+    #     $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, '[`$0`](/about/$0.md)')
+
+    # }
 
     $Match = $FindCmdletRegexPattern.Match($UpdatedString)
 
@@ -624,16 +641,22 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
                 ForEach ($Type in $Cmdlet.Contents.InputTypes)
                 {
 
-                    $InputTypeHeaderString = '_**{0}**_{1}' -f $Type.Value, [System.Environment]::NewLine
-                    [void]$FinalMarkdownOutput.Add($InputTypeHeaderString)
-
-                    if (-not $Type.Value.StartsWith('None.'))
-                    {
-
-                        $InputTypeDescription = LinkifyString -String $Type.Text -CmdletName $Cmdlet.Name
-                        [void]$FinalMarkdownOutput.Add($InputTypeDescription)
-
+                    [Tabs]::BuildTabEntry($Type.Value, $Type.Text, $Cmdlet.Name) | ForEach-Object { 
+                        
+                        [void]$FinalMarkdownOutput.Add($_) 
+                    
                     }
+
+                    # $InputTypeHeaderString = '_**{0}**_{1}' -f $Type.Value, [System.Environment]::NewLine
+                    # [void]$FinalMarkdownOutput.Add($InputTypeHeaderString)
+
+                    # if (-not $Type.Value.StartsWith('None.'))
+                    # {
+
+                    #     $InputTypeDescription = LinkifyString -String $Type.Text -CmdletName $Cmdlet.Name
+                    #     [void]$FinalMarkdownOutput.Add($InputTypeDescription)
+
+                    # }
 
                 }
 
@@ -641,14 +664,25 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
                 $ReturnValuesSectionHeader = '{0}Return Values{1}' -f $H2, [System.Environment]::NewLine
                 [void]$FinalMarkdownOutput.Add($ReturnValuesSectionHeader)
 
+
+                # {
+                #     "Value": "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]",
+                #     "Text": "Async create task"
+                # }
                 ForEach ($Return in $Cmdlet.Contents.ReturnValues)
                 {
 
-                    $ReturnValueHeaderString = '_**{0}**_{1}' -f $Return.Value, [System.Environment]::NewLine
-                    [void]$FinalMarkdownOutput.Add($ReturnValueHeaderString)
+                    [Tabs]::BuildTabEntry($Return.Value, $Return.Text, $Cmdlet.Name) | ForEach-Object { 
+                        
+                        [void]$FinalMarkdownOutput.Add($_) 
+                    
+                    }
 
-                    $ReturnValueDescription = LinkifyString -String $Return.Text -CmdletName $Cmdlet.Name
-                    [void]$FinalMarkdownOutput.Add($ReturnValueDescription)
+                    # $ReturnValueHeaderString = '_**{0}**_{1}' -f $Return.Value, [System.Environment]::NewLine
+                    # [void]$FinalMarkdownOutput.Add($ReturnValueHeaderString)
+
+                    # $ReturnValueDescription = LinkifyString -String $Return.Text -CmdletName $Cmdlet.Name
+                    # [void]$FinalMarkdownOutput.Add($ReturnValueDescription)
 
                 }
 

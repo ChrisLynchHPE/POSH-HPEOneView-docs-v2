@@ -124,19 +124,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]"
+ 
 HPE Synergy Logical Enclosure to convert.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 If the Logical Enclosure cannot be removed or re-created, as PSCustomObject with original Server Profile location is provided.  Object properties are Name, ProfileUri, ServerSerialNumber.
+ 
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 The async task for each Server Profile that will be re-assigned for the caller to monitor.
+ 
 
 ## Related Links
 

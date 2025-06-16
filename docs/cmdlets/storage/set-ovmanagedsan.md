@@ -294,23 +294,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]"
+ 
 Single Resource
+ 
 
-_**System.Collection.ArrayList <HPEOneView.Storage.ManagedSan>**_
-
+=== "System.Collection.ArrayList <HPEOneView.Storage.ManagedSan>"
+ 
 Multiple Resources
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 Single Resource
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple Resources
+ 
 
 ## Related Links
 

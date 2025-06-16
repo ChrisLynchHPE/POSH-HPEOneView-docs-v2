@@ -105,13 +105,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+=== "None.  You cannot pipe objects to this cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource to monitor.
+ 
 
 ## Related Links
 

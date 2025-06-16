@@ -166,23 +166,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Netwroking.Interconnect.Port [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Netwroking.Interconnect.Port [System.Management.Automation.PSCustomObject]"
+ 
 An Interconnect Port object
+ 
 
 ## Return Values
 
-_**HPEOneView.Networking.PortStatistics.Ethernet [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.PortStatistics.Ethernet [System.Management.Automation.PSCustomObject]"
+ 
 Ethernet Uplink Port statistics
+ 
 
-_**HPEOneView.Networking.PortStatistics.FibreChannel [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.PortStatistics.FibreChannel [System.Management.Automation.PSCustomObject]"
+ 
 Ethernet Uplink Port statistics
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Collection of multiple Interconnect Port statistics
+ 
 
 ## Related Links
 

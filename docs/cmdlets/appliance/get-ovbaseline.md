@@ -158,17 +158,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.Baseline**_
-
+=== "HPEOneView.Appliance.Baseline"
+ 
 SPP baseline resource object.
+ 
 
-_**HPEOneView.Appliance.BaselineHotfix : HPEOneView.Appliance.Baseline**_
-
+=== "HPEOneView.Appliance.BaselineHotfix : HPEOneView.Appliance.Baseline"
+ 
 Baseline hotfix resource.  Class derived from HPEOneView.Appliance.Baseline base class.
+ 
 
 ## Related Links
 

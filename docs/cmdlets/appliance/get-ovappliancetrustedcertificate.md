@@ -115,23 +115,27 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware**_
-
+=== "HPEOneView.ServerHardware"
+ 
 Server hardware resource from Get-OVServer.
+ 
 
-_**HPEOneView.Enclosure**_
-
+=== "HPEOneView.Enclosure"
+ 
 Enclosure resource from Get-OVEnclosure.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TrustedCertificate**_
-
+=== "HPEOneView.Appliance.TrustedCertificate"
+ 
 Appliance trusted certificate object.
+ 
 
-_**HPEOneView.Appliance.TrustedCertificateAuthority**_
-
+=== "HPEOneView.Appliance.TrustedCertificateAuthority"
+ 
 Appliance trusted certificate authority object.
+ 
 
 ## Related Links
 

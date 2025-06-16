@@ -176,18 +176,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Server hardware resource from Get-OVServer.
+ 
 
 ## Return Values
 
-_**HPEOneView.Servers.StorageController**_
-
+=== "HPEOneView.Servers.StorageController"
+ 
 Storage controller object that provide specific information about available controllers available from a server resources inventory.  Will include Controller Mode capabilities, and drives attached to each controller.  The "Default" Type can be used to identify what controller families and base capabilities supplied by either SmartRAID (SR) or MegaRAID (MR) controller models.
 
 If the server generation is Gen10 or newer and no controllers in specific DeviceSlot have been identified, ensure the server has powered on at least once and successfully completed POST.
 
+ 
 
 ## Related Links
 

@@ -69,13 +69,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.EulaStatus**_
-
+=== "HPEOneView.Appliance.EulaStatus"
+ 
 Object that returns the Appliance Name and if the EULA has been accepted with a boolean "Accepted" property.
+ 
 
 ## Related Links
 

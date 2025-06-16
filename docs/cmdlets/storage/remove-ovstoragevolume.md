@@ -119,15 +119,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.System.Volume [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Storage.System.Volume [System.Management.Automation.PSCustomObject]"
+ 
 Storage Volume resource object
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async removal task
+ 
 
 ## Related Links
 

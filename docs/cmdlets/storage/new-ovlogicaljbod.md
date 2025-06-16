@@ -290,15 +290,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.AvailableDriveType**_
-
+=== "HPEOneView.Storage.AvailableDriveType"
+ 
 The available drive type from Get-OVAvailableDriveType
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource to monitor.
+ 
 
 ## Related Links
 

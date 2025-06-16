@@ -64,15 +64,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.Connection**_
-
+=== "HPEOneView.Appliance.Connection"
+ 
 HPE OneView Appliance Connection object.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
+=== "System.Management.Automation.PSCustomObject"
+ 
 
-
+ 
 
 ## Related Links
 

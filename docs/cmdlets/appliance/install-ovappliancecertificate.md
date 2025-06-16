@@ -104,15 +104,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.IO.FileInfo**_
-
+=== "System.IO.FileInfo"
+ 
 Certificate file path
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Async task resource object to monitor committing certificate, and deploying HPE SSO certificate update to managed/monitored devices
+ 
 
 ## Related Links
 

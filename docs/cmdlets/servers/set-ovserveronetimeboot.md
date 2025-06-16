@@ -147,19 +147,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+ 
 Server hardware resource object from Get-OVServer.
+ 
 
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+ 
 Server profile resource object from Get-OVServerProfile.
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+ 
 Asynchronous task resource to monitor.
+ 
 
 ## Related Links
 

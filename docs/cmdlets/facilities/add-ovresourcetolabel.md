@@ -82,15 +82,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Array**_
-
+=== "System.Array"
+ 
 Collection of resources to associate with the label.
+ 
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
+=== "System.Management.Automation.PSCustomObject"
+ 
 The created or modified Label resource.
+ 
 
 ## Related Links
 

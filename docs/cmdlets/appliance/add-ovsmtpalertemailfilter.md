@@ -202,15 +202,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**Net.Mail.MailAddress[]**_
-
+=== "Net.Mail.MailAddress[]"
+ 
 Array of email address recipient(s).
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}**_
-
+=== "HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}"
+ 
 Returns an async task resource to monitor.
+ 
 
 ## Related Links
 

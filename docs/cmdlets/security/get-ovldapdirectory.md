@@ -106,17 +106,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+=== "None.  You cannot pipe objects to this Cmdlet."
+ 
+
+ 
 
 ## Return Values
 
-_**HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
+ 
 Authentication Directory settings object
+ 
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 Multiple Authentication Directory settings objects
+ 
 
 ## Related Links
 

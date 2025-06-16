@@ -178,15 +178,17 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]**_
-
+=== "HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]"
+ 
 A logical interconnect resource.
+ 
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
+=== "System.Collections.ArrayList"
+ 
 A Logical Interconnect Group or collection of Logical Interconnect Groups
+ 
 
 ## Related Links
 
