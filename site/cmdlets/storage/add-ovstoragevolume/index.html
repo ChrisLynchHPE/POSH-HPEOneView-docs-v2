@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12256,8 +12258,8 @@
 <p>The Storage Volume's WWN or device name will be needed, which can be retrieved from the storage system management console.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Storage administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageSystem</span> <span class="p">(</span><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span><span class="p">)</span> <span class="n">-StorageDeviceName</span> <span class="n">MyStorageVol1</span> <span class="n">-VolumeName</span> <span class="n">MyStorageVol1</span>
@@ -12307,8 +12309,8 @@
 <h3 id="-volumeid-string">-VolumeID &lt;String&gt;</h3>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>This parameter is deprecated. Please use the <code>-StorageDeviceName</code> parameter.</p>
+</details>
 <p>The 128bit WWN FC address of the volume to be imported.  Address must be in the following format: AA:BB:CC:DD:EE:AA:BB:CC:DD:EE:AA:BB:CC:DD:EE:AA</p>
 <table>
 <thead>

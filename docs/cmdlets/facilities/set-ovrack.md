@@ -35,7 +35,8 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will update existing rack resources with updated properties.  This includes updating the name, part number, serial number, model, supported thermal capacity, rack dimensions including rack units, height, width and depth.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator
+    Minimum required privileges: Infrastructure administrator or Server administrator
+    
 
 ## Examples
 

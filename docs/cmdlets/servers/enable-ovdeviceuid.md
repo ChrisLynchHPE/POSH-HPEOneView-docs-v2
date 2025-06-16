@@ -22,12 +22,13 @@ A UID icon is displayed on the Enclosures screen, the Server Hardware screen, an
 Use this Cmdlet to enable the UID light on a resource.
 
 ???+ info
-The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.
+    The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator 
+    Minimum required privileges: Infrastructure administrator, Server administrator 
 (for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)
+
 ## Examples
 
 ###  Example 1 

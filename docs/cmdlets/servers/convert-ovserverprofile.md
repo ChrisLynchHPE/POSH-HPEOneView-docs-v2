@@ -32,7 +32,8 @@ a different server hardware type may change the capabilities available to the se
 * If the server profile is associated with a server profile template, the server profile will become inconsistent with the template.  The server profile should be unassociated with the template before or after the migration.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator.
+    Minimum required privileges: Infrastructure administrator or Server administrator.
+    
 
 ## Examples
 

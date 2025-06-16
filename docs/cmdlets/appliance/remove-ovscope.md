@@ -18,7 +18,8 @@ Remove-OVScope
 This Cmdlet will remove a specific Scope.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

@@ -29,7 +29,8 @@ Two types of repositories are supported:
 The Cmdlet will get the appliance repositories.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

@@ -27,7 +27,8 @@ NOTE:
 * HPE Virtual Connect 16Gb 24-Port Fibre Channel Module firmware must be 4.00 or later 
 
 ???+ info
-Minimum required privileges: Network administrator
+    Minimum required privileges: Network administrator
+    
 
 ## Examples
 

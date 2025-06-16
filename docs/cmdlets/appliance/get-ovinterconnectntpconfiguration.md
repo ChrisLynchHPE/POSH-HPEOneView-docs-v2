@@ -17,9 +17,10 @@ Get-OVInterconnectNTPConfiguration
 When HPE OneView manages interconnect resources, it will automatically by default set the management processor NTP settings to external NTP servers applied within the logical interconnect group resource.  Using this Cmdlet, you can get the current time synchronize policy of supported interconnects managed by the appliance.  When the global policy is set to sync with external NTP servers, a property is added to the returned object called NTPServers.  The array contains the appliance configured NTP server(s).
 
 ???+ info
-Minimum required privileges:
-
-* Read-Only
+    Minimum required privileges:
+    
+    * Read-Only
+    
 
 ## Examples
 

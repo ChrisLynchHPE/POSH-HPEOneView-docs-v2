@@ -29,11 +29,12 @@ Reverting a volume to a snapshot will revert to the data the volume contained wh
 Reverting to a snapshot of a volume will cause all data created or changed since the snapshot was taken to be lost. Backup your data to prevent data loss.
 
 ???+ info
- You cannot create a volume from an HPE Nimble storage system snapshot from HPE OneView.
+     You cannot create a volume from an HPE Nimble storage system snapshot from HPE OneView.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.
+    Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.
+    
 
 ## Examples
 

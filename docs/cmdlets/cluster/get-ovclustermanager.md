@@ -27,7 +27,8 @@ You can register a hypervisor manager with HPE OneView by using Add-OVClusterMan
 This Cmdlet will get the configured hypervisor cluster manager on the appliance.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

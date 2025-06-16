@@ -28,7 +28,8 @@ The appliance provides for as many as 100 recipient and filter combinations, and
 This Cmdlet will remove configured email alert filters from the appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
+    
 
 ## Examples
 

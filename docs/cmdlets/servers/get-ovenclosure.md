@@ -42,7 +42,8 @@ An enclosure (HPE c-Class BladeSystem enclosure or Synergy frame) is a physical 
 This Cmdlet will get the managed and/or monitored enclosure resources from an appliance.  This can include HPE BladeSystem c7000, HPE Synergy or HPE Superdome X enclosure resources.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

@@ -40,10 +40,11 @@ In production environments, Hewlett Packard Enterprise strongly recommends that 
 This Cmdlet will allow an administrator to add X.509 compliant SSL certificates to the appliance trusted store.
 
 ???+ info
-Minimum required privileges:
-
-* Infrastructure Administrator to add certificate authority certificates and server certificates.
-* Network administrator, Server administrator, Software administrator, or Storage administrator to add server certificates.
+    Minimum required privileges:
+    
+    * Infrastructure Administrator to add certificate authority certificates and server certificates.
+    * Network administrator, Server administrator, Software administrator, or Storage administrator to add server certificates.
+    
 
 ## Examples
 

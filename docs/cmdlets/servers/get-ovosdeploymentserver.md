@@ -25,7 +25,8 @@ The HPE OneView Infrastructure administrator can add an OS deployment server. HP
 This Cmdlet will return the discovered OS deployment servers.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

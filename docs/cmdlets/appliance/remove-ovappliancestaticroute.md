@@ -18,7 +18,8 @@ Remove-OVApplianceStaticRoute
 When configuring a second NIC on a virtual machine appliance, static routes can be configured as only a single appliance NIC can be configured with a default gateway.  Both IPv4 and IPv6 static routes are supported.  Use this Cmdlet to remove a static route configured on an appliance.
 
 ???+ info
-Minimum required privileges:  Infrastructure administrator
+    Minimum required privileges:  Infrastructure administrator
+    
 
 ## Examples
 

@@ -115,7 +115,8 @@ Logical switch configuration guidelines
 * HPE OneView can detect configuration changes that occur on the switches specified in the logical switch when it no longer matches the configuration that HPE OneView provisions. Warning alerts are generated. Administrators can correct the configuration manually or reapply the configuration on the associated logical interconnects to recover.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Network administrator
+    Minimum required privileges: Infrastructure administrator or Network administrator
+    
 
 ## Examples
 

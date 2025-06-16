@@ -23,11 +23,12 @@ Use this Cmdlet to change the enabled security protocol(s) on the appliance. The
 * Disabling all the protocols is not allowed.
 
 ???+ warning
-Changing active security protocol(s) will require an immediate appliance reboot.
+    Changing active security protocol(s) will require an immediate appliance reboot.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

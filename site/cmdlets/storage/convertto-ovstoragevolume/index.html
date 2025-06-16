@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12193,12 +12195,12 @@ A snapshot is a static copy of a volume at the point the snapshot is created. Sn
 <p>Reverting to a snapshot of a volume will cause all data created or changed since the snapshot was taken to be lost. Backup your data to prevent data loss.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>You cannot create a volume from an HPE Nimble storage system snapshot from HPE OneView.</p>
+</details>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$Volume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">PrivVolume1</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Last</span> <span class="n">1</span>

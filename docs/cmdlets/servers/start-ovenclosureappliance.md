@@ -20,7 +20,8 @@ Start-OVEnclosureAppliance
 This Cmdlet will assist server administrators in powering on appliance devices within HPE Synergy frames. Additional power operations for Frame devices are provided by Reset-OVEnclosureDevice.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator
+    Minimum required privileges: Infrastructure administrator, Server administrator
+    
 
 ## Examples
 

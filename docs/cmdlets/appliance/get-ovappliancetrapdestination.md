@@ -21,7 +21,8 @@ HPE OneView can be used as a proxy to forward device traps from servers, enclosu
 Use this Cmdlet to retrieve configured SNMPv1 and/or SNMPv3 appliance trap destinations, configured by an Infrastructure Administrator.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

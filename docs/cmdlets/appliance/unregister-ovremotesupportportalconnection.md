@@ -21,9 +21,10 @@ This feature provides an improvement over the existing contact-based access. It 
 Use this Cmdlet to unregister the appliance from the HPESC.
 
 ???+ info
-Minimum required privileges:
-
-* Infrastructure Administrator
+    Minimum required privileges:
+    
+    * Infrastructure Administrator
+    
 
 ## Examples
 

@@ -32,7 +32,8 @@ If the downloaded recovery key and the AEK stored in the Composer NVRAM are both
 Using this Cmdlet will disable data at rest encryption on configured and support HPE Synergy Composer appliances.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
+    
 
 ## Examples
 

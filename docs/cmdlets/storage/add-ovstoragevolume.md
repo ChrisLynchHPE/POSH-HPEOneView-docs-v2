@@ -40,7 +40,8 @@ This Cmdlet will help add an existing storage volume that was provisioned on the
 The Storage Volume's WWN or device name will be needed, which can be retrieved from the storage system management console.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Storage administrator.
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
+    
 
 ## Examples
 
@@ -85,7 +86,7 @@ The Storage System where the volume will be imported from.  Volume to be importe
 ### -VolumeID &lt;String&gt;
 
 ???+ warning
-This parameter is deprecated. Please use the `-StorageDeviceName` parameter.
+    This parameter is deprecated. Please use the `-StorageDeviceName` parameter.
 
 
 The 128bit WWN FC address of the volume to be imported.  Address must be in the following format: AA:BB:CC:DD:EE:AA:BB:CC:DD:EE:AA:BB:CC:DD:EE:AA

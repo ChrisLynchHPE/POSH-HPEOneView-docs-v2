@@ -45,7 +45,7 @@ The recommended types of external web servers to use with the repository follow:
 * Internet Information Services (IIS)
 
 ???+ info
-Only one external repository can be added.
+    Only one external repository can be added.
 
 
 This Cmdlet supports modifying an existing external repository.  Use this Cmdlet to modify the Name, authentication credentials and/or HTTP SSL certificate.

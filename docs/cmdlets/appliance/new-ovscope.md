@@ -36,7 +36,7 @@ The resources are arranged by categories. All the resources in these categories 
 * Logical Switch Groups
 
 ???+ info
-Resources in other categories are considered to be included in all scopes, and they cannot be removed.
+    Resources in other categories are considered to be included in all scopes, and they cannot be removed.
 
 
 When scopes are defined and resources assigned to them, you can:
@@ -45,7 +45,8 @@ When scopes are defined and resources assigned to them, you can:
 * Filter email notifications for alerts based on the scope of the associated resources.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

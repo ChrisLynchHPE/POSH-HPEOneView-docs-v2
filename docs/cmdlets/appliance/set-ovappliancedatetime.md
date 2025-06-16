@@ -27,10 +27,11 @@ Set-OVApplianceDateTime
 
 Update the appliance Date and Time configuration, including Locale, NTP Servers, and NTP Polling.
 
-Using the -SyncWithHost parameter will set the NTPServers property to null, and is only applicable to a virtual machine applinace.
+Using the `-SyncWithHost` parameter will set the NTPServers property to null, and is only applicable to a virtual machine applinace.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

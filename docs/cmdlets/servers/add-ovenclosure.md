@@ -65,19 +65,20 @@ An enclosure (HPE c-Class BladeSystem enclosure or Synergy frame) is a physical 
 This Cmdlet will import an HPE BladeSystem c7000 enclosure for HPE OneView management. The Onboard Administrator needs to have at least an IP Address for each OA module, and a valid Administrator account. An Enclosure Group must also be created.
 
 ???+ info
-HPE Synergy enclosures are automatically discovered when their frame link manager is connected to the Synergy management ring.
+    HPE Synergy enclosures are automatically discovered when their frame link manager is connected to the Synergy management ring.
 
 
 This Cmdlet will attempt a connection to the XML Reply interface to examine if an existing VC Domain is present. If so, you are prompted if you wish to continue and force import the enclosure. 
 
 ???+ danger
-FORCE IMPORT OF AN ENCLOSURE WILL DELETE ANY EXISTING VC DOMAIN CONFIGURATION, AND NOT PERFORM ANY VC DOMAIN CONFIGURATION MIGRATION. PLEASE BACKUP YOUR VC DOMAIN IF YOU WISH TO RESTORE TO ITS ORIGINAL CONFIGURATION.
+    FORCE IMPORT OF AN ENCLOSURE WILL DELETE ANY EXISTING VC DOMAIN CONFIGURATION, AND NOT PERFORM ANY VC DOMAIN CONFIGURATION MIGRATION. PLEASE BACKUP YOUR VC DOMAIN IF YOU WISH TO RESTORE TO ITS ORIGINAL CONFIGURATION.
 
 
 If you wish to migrate the enclosure from a Virtual Connect Manager or Virtual Connect Enterprise Manager configuration, please use the Invoke-OVVcmMigration Cmdlet.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator.
+    Minimum required privileges: Infrastructure administrator or Server administrator.
+    
 
 ## Examples
 

@@ -57,6 +57,7 @@ class DisplayHint
 {
 
     static [string]$StartHintStyle = '???+ {0}{1}'
+    static [string]$Indent = '    '
 
     static [String] Build ([HintStyleEnum]$HintStyleEnum, [String]$Description)
     {
@@ -65,7 +66,22 @@ class DisplayHint
 
         $_StartHintStyle = [DisplayHint]::StartHintStyle -f $HintStyleEnum, [System.Environment]::NewLine
         [void]$FinalString.Append($_StartHintStyle)
-        [void]$FinalString.Append($Description + [System.Environment]::NewLine)
+
+        # Need to split the $Description into individual lines so $Indent can be inserted as a prefix to each line
+        $DescriptionLines = $Description -split '\n'
+
+        ForEach ($line in $DescriptionLines)
+        {
+
+            $NumberOfIndents = $line.StartsWith("*") ? [DisplayHint]::Indent + [DisplayHint]::Indent : [DisplayHint]::Indent
+
+            $_Line = '{0}{1}{2}' -f $NumberOfIndents, $line, [System.Environment]::NewLine
+            [void]$FinalString.Append($_Line)
+
+        }
+
+        # This code shouldn't be needed, but it is here just in case
+        # [void]$FinalString.Append($Description + [System.Environment]::NewLine)
 
         return $FinalString.ToString()
 
@@ -246,7 +262,7 @@ function LinkifyString ([String]$String, [String]$CmdletName)
     if ($FindAboutTopicReferencePattern.Matches($UpdatedString).Success)
     {
 
-        $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, '[`$0`](../../../$0.md)')
+        $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, '[`$0`](/about/$0.md)')
 
     }
 
@@ -497,11 +513,11 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
 
                 $UpdatedDescription = LinkifyString -String $Description -CmdletName $Cmdlet.Name
 
-                if (($MinimumPermissionsPattern.Match($Description)).Success)
+                if (($MinimumPermissionsPattern.Match($UpdatedDescription)).Success)
                 {
 
-                    $UpdatedText        = [DisplayHint]::Build([HintStyleEnum]::info, '$0')
-                    $UpdatedDescription = $MinimumPermissionsPattern.Replace($Description, $UpdatedText)
+                    $UpdatedText        = [DisplayHint]::Build([HintStyleEnum]::info, $MinimumPermissionsPattern.Match($UpdatedDescription).Value)
+                    $UpdatedDescription = $MinimumPermissionsPattern.Replace($UpdatedDescription, $UpdatedText)
 
                 }
 

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12115,8 +12117,8 @@
 <p>Remote frame link topologies, which include remote HPE Synergy Frames, do not include Synergy Composers. Management LAN connectivity enables remote frame link topologies to be managed by the Synergy Composers in the primary frame link topology. You can use the Add remote enclosures option to bring remote frame link topologies under management. The remote frame link topology must be in the same VLAN as the primary frame link topology, due to IPv6 Link Local restrictions.  You can use this Cmdlet to add remote enclosures to manage enclosures for which LINK cabling is not directly connected to the primary frame link topology. This allows HPE OneView to manage enclosures that are spread across racks and rows in the datacenter.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Hardware setup.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Add-OVRemoteFrame</span> <span class="n">-Hostname</span> <span class="n">fe80</span><span class="p">::</span><span class="n">c8f</span><span class="p">:</span><span class="n">fbcb</span><span class="p">:</span><span class="n">aa8a</span><span class="p">:</span><span class="n">97c8</span>

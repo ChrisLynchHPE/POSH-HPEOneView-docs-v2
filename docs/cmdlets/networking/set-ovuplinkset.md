@@ -50,7 +50,8 @@ Please know that the UplinkPorts parameter syntax is different between HPE Blade
 Use this Cmdlet to modify an existing Logical Interconect Group uplink set, or Logical Interconnect uplink set.  Logical Interconnect Group uplink sets are a poperty of the Logical Interconnect Group resource.  Logical Interconnect uplink sets are a different resource, and are not directly a member of the Logical Interconnect.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Network administrator
+    Minimum required privileges: Infrastructure administrator, Network administrator
+    
 
 ## Examples
 

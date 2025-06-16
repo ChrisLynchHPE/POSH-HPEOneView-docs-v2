@@ -22,7 +22,8 @@ Logical JBODs are created and assigned to server hardware from server profiles o
 This Cmdlet will help display the available  Synergy DAS Enclosures, and their associated inventory data.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

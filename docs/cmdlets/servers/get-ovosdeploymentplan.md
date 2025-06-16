@@ -21,7 +21,8 @@ An OS Deployment Plan is a recipe on how to deploy and configure an operating sy
 Use this Cmdlet to return defined OS Deployment Plans on an HPE Synergy Image Streamer appliance.  The resource object will also provide the custom attributes allowed. Use the Get-OVOSDeploymentPlanAttribute to return the collection object of attributes.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

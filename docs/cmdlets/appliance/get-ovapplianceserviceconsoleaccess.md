@@ -19,7 +19,8 @@ HPE OneView contains a technical feature that you can use to allow an authorized
 This Cmdlet will return the existing configuration state of the appliance service console.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

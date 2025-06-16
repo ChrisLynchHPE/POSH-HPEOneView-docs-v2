@@ -19,7 +19,8 @@ HPE GreenLake for Compute Ops Management is a cloud-based as-a-Service applicati
 This Cmdlet is used to re-connect an already configured, yet disconnected appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12314,8 +12316,8 @@
 <p>When adding supported HPE 3PAR storage systems, please make sure "startwsapi" has been executed from the HPE 3PAR CLI, which enables the HPE 3PAR REST API that is required by HPE OneView.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Storage administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$task</span> <span class="p">=</span> <span class="nb">Add-OVStorageSystem</span> <span class="n">-hostname</span> <span class="s2">&quot;3par-array.consoto.com&quot;</span> <span class="n">-Credential</span> <span class="p">(</span><span class="nb">Get-Credential</span><span class="p">)</span> <span class="n">-Async</span>
@@ -12442,8 +12444,8 @@
 <h3 id="-username-string">-Username &lt;String&gt;</h3>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>This parameter is now deprecated.  Please update to the <code>-Credential</code> parameter.</p>
+</details>
 <p>Administrator account of the target storage system.</p>
 <table>
 <thead>
@@ -12478,8 +12480,8 @@
 <h3 id="-password-object">-Password &lt;Object&gt;</h3>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>This parameter is now deprecated.  Please update to the <code>-Credential</code> parameter.</p>
+</details>
 <p>Password of administrator account password.  Can either be String or <code>[System.Security.SecureString]</code>.</p>
 <table>
 <thead>

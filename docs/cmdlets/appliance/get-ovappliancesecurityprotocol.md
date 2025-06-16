@@ -16,10 +16,11 @@ Get-OVApplianceSecurityProtocol
 
 ## Description
 
-Get the appliance available security protocols, and their active state. By default the appliance current security mode will return the available security protocols and their configuration state. Use the -SecurityMode parameter to specify one or more modes. Use the -TlsVersion to specify one or more security protocols to return.
+Get the appliance available security protocols, and their active state. By default the appliance current security mode will return the available security protocols and their configuration state. Use the `-SecurityMode` parameter to specify one or more modes. Use the `-TlsVersion` to specify one or more security protocols to return.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

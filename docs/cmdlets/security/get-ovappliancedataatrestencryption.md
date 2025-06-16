@@ -29,7 +29,8 @@ If the downloaded recovery key and the AEK stored in the Composer NVRAM are both
 Using this Cmdlet will get the data at rest encryption current configuration from supported HPE Synergy Composer appliances.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
+    
 
 ## Examples
 

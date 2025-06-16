@@ -54,7 +54,8 @@ HPE OneView supports SAN managers from different vendors.  Supported SAN Manager
 * Cisco MDS (FC-only)
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Storage administrator.
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
+    
 
 ## Examples
 

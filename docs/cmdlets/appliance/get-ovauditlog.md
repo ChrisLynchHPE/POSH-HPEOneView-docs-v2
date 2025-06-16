@@ -79,7 +79,8 @@ The audit log includes entries for all Maintenance console events except for vie
 Use this Cmdlet to retrieve appliance audit log entries.  Audit log entries can be filtered based on number of entries to return, and a date range.
 
 ???+ info
-Minimum required privileges:  Infrastructure administrator
+    Minimum required privileges:  Infrastructure administrator
+    
 
 ## Examples
 

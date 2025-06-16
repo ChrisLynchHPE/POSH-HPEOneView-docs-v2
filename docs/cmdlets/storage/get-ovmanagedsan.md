@@ -26,7 +26,7 @@ Direct attach SANs
 HPE OneView creates a direct attach SAN (flat SAN) automatically when you configure an enclosure with a logical interconnect that contains a direct attach uplink set. HPE OneView names the direct attach SAN using the format <interconnect><uplink set>. The created SAN is a Fibre Channel (FC) direct attach SAN that is not zoned, and cannot be edited.
 
 ???+ info
-HPE OneView creates a SAN for each interconnect module that is connected to a direct attach Fibre Channel network.
+    HPE OneView creates a SAN for each interconnect module that is connected to a direct attach Fibre Channel network.
 
 
 Zoning policy
@@ -34,7 +34,7 @@ Zoning policy
 A SAN zone enables communication between devices connected to the SAN. SAN zoning policies determine how zoning should be configured on a SAN. SAN zoning policies define whether or not zoning is automated as well as the naming format of zones and aliases. In HPE OneView, you can specify the name format of the zones and aliases that will be created when you associate a storage volume to a server profile via a volume attachment. By specifying zone name and alias formats using text strings and server profile objects, you can create names that are meaningful and conform with your naming conventions.
 
 ???+ info
-HPE OneView performs zoning only when you add a connection to a server profile and attach a SAN storage volume to it. When you do this, HPE OneView will determine if the current zoning allows connectivity. If current zoning does not allow connectivity, HPE OneView will create the necessary zoning based on the specified zoning policy.
+    HPE OneView performs zoning only when you add a connection to a server profile and attach a SAN storage volume to it. When you do this, HPE OneView will determine if the current zoning allows connectivity. If current zoning does not allow connectivity, HPE OneView will create the necessary zoning based on the specified zoning policy.
 
 
 Automate zoning
@@ -47,7 +47,8 @@ Automated zoning enables HPE OneView to automatically create, edit, and delete z
 This Cmdlet is used to display or list the discovered and available Managed SAN resources in the appliance once a supported SAN manager has been added to the appliance.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

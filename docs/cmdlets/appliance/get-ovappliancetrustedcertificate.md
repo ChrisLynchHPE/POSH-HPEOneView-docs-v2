@@ -38,7 +38,8 @@ HPE OneView supports the use of both self signed certificates and certificate au
 This Cmdlet will get X.509 compliant certificates and/or certificate authority trusted certificates an Infrastructure Administrator or other administrator who has added a trusted device from the appliance trusted store.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

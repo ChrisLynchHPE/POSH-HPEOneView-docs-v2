@@ -32,10 +32,11 @@ In order to connect to  connect to the HPE OneView SCMB, a proper message queue 
 
 This Cmdlet will retrieve and store the certificates necessary to register with the State Change Message Bus.  If the SCMB certificate has not been created, a new one will be generated.  The generated certificate is mapped to a private, internal user account with Read-Only permissions.  In order to write changes, a REST API bind-back is necessary.
 
-The generated and/or downloaded SCMB certificate can also be exported to PFX format for secure storage, using the -ConvertToPFx parameter.
+The generated and/or downloaded SCMB certificate can also be exported to PFX format for secure storage, using the `-ConvertToPFx` parameter.
 
 ???+ info
-Minimum required privileges: Infrastructure Administrator
+    Minimum required privileges: Infrastructure Administrator
+    
 
 ## Examples
 

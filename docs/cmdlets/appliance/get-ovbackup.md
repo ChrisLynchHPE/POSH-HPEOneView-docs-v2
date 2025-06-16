@@ -23,7 +23,8 @@ The backup process involves creating a backup file and then downloading that fil
 Use this Cmdlet to return any existing backups that have not been downloaded or offloaded on the appliance.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

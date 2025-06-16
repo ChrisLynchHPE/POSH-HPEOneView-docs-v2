@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12212,14 +12214,14 @@
 <p>Obtain an iLO SSO Token URL to authenticate to an iLO.  If the server hardware is unsupported, the resulting URL will not use SSO and the iLO web interface will prompt for credentials.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>this is not supported on G7 or earlier servers.</p>
+</details>
 <p>The generated SSO object or URL can be used with other HPE libraries that support iLO session tokens.</p>
 <details class="info" open="open">
 <summary>Info</summary>
+<p>Minimum required privileges: Read-only. Know that your user account role within OneView will be mapped to a specific iLO role.  Please review the HPE OneView online help for more information, searching for </p>
 </details>
-<p>Minimum required privileges: Read-only. Know that your user account role within OneView will be mapped to a specific iLO role.  Please review the HPE OneView online help for more information, searching for 
-"Mapping of SSO roles".</p>
+<p>"Mapping of SSO roles".</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$SSOObjects</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="p">|</span> <span class="nb">Get-OVIloSso</span>

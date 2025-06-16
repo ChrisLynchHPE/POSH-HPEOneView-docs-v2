@@ -21,7 +21,8 @@ An enclosure group is a logical resource that defines a consistent configuration
 This Cmdlet will get all available enclosure group resources configured on an appliance.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

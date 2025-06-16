@@ -43,10 +43,11 @@ This Cmdlet will help you enable or disable the appliance update condition.  If 
 
 To specify an automatic update schedule, you will need to provide the weekly frequency (1-52), day of the week and time of day (will be converted to UTC time).
 
-The HPE support center user token uniquely identifies your HPESC user profile. The token is required to enable inventory-based firmware downloads and used to verify access to the software and firmware components. You must generate a token on the HPE Support Center Portal (https://support.hpe.com/hpesc/swd/entitlement-token-service/generate) and then use the -ActivationKey parameter to complete the configuration on the appliance.
+The HPE support center user token uniquely identifies your HPESC user profile. The token is required to enable inventory-based firmware downloads and used to verify access to the software and firmware components. You must generate a token on the HPE Support Center Portal (https://support.hpe.com/hpesc/swd/entitlement-token-service/generate) and then use the `-ActivationKey` parameter to complete the configuration on the appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator, and Network administrator
+    Minimum required privileges: Infrastructure administrator, Server administrator, and Network administrator
+    
 
 ## Examples
 

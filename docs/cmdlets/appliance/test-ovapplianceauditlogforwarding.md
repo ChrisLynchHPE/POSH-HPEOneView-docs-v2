@@ -17,7 +17,8 @@ Test-OVApplianceAuditLogForwarding
 This Cmdlet will generate a syslog message to test connectivity to the appliance configured remote Syslog server.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

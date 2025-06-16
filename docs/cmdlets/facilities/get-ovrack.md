@@ -24,7 +24,8 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will retrieve all or a specific Rack resource object.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

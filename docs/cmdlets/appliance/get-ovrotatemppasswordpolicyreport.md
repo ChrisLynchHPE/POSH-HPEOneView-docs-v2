@@ -36,12 +36,13 @@ If a server is engaged in another task, password rotation is skipped for the ser
 
 Only non-HPE Synergy Servers are supported.
 
-Use this Cmdlet to generate a report of the last executed task.  To get all previous and current password rotation task results, use the -GetAllReports switch parameter.
+Use this Cmdlet to generate a report of the last executed task.  To get all previous and current password rotation task results, use the `-GetAllReports` switch parameter.
 
 ???+ info
-Minimum required privileges:
-
-* Read-only
+    Minimum required privileges:
+    
+    * Read-only
+    
 
 ## Examples
 

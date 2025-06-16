@@ -42,9 +42,10 @@ Only non-HPE Synergy Servers are supported.
 Use this Cmdlet to enable or disable a password rotation policy.
 
 ???+ info
-Minimum required privileges:
-
-* Infrastructure administrator
+    Minimum required privileges:
+    
+    * Infrastructure administrator
+    
 
 ## Examples
 

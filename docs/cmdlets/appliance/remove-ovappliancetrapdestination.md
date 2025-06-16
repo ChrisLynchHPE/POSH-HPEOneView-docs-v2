@@ -18,7 +18,8 @@ Remove-OVApplianceTrapDestination
 Use this Cmdlet to remove configured SNMPv1 and/or SNMPv3 trap destinations.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

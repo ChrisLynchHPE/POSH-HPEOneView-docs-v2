@@ -20,7 +20,8 @@ Register with Hewlett Packard Enterprise to allow automatic case creation for ha
 Use this Cmdlet to change or update the HPE OneView Remote Support secondary Contact.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

@@ -25,7 +25,8 @@ The SAN Endpoints, or SAN zones, contain all device ports actively logged into o
 This Cmdlet will display the Managed SAN Zone details, which include Zone Name, state, status, Managed SAN and Alias members with their WWN(s). By default, all SAN Zones will be returned. You can filter the results based on Managed SAN resource.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

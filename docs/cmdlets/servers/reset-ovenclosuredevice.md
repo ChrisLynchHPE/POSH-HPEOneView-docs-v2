@@ -42,7 +42,8 @@ E-Fuse stands for Electronic Fuse. Setting the power state of a device to "E-Fus
 A reset on the active Synergy Frame Link Module causes a failover to the standby Synergy Frame Link Module. The reset will fail if the Synergy Frame Link Module's firmware is being updated. An E-Fuse against an active Synergy Frame Link Module is not allowed.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator
+    Minimum required privileges: Infrastructure administrator, Server administrator
+    
 
 ## Examples
 

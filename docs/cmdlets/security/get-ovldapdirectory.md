@@ -32,7 +32,8 @@ When you use a directory service, directory users are granted HPE OneView permis
 This Cmdlet will retrieve the configured authentication directory(ies) configured on the appliance.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

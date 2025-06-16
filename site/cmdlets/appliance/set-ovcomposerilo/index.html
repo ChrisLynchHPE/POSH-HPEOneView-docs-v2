@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12430,13 +12432,13 @@
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>The iLO user account is assigned a predefined set of privileges that allows the user to perform a restricted set of iLO operations. Specifically, the iLO account has permissions to control power, use the iLO Integrated Remote Console (iLO IRC), and use the iLO Virtual Media.</p>
+</details>
 <p>Use this Cmdlet to change the existing iLO configuration.  This Cmdlet supports changing the iLO Hostname, user account, its password, configured IPv4 or IPv6 addresses.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure Administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$UpdatedSecurePassword</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Password&quot;</span> <span class="n">-AsSecureString</span>

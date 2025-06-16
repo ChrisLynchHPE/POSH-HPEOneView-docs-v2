@@ -20,7 +20,7 @@ Register with Hewlett Packard Enterprise to allow automatic case creation for ha
 Eligible devices are Gen8 and newer blades and enclosures. 
 
 ???+ warning
-Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
+    Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
 
 
 Hewlett Packard Enterprise will contact you to ship a replacement part or send an engineer for devices that are under warranty or support contract.
@@ -34,7 +34,8 @@ Once the appliance is configured, it cannot be unauthorized or disabled.
 Use this Cmdlet to retrieve a supported resources Remote Support settings of an enabled resource (compute or enclosure), defined Parimary and Secondary contact, and authorized reseller or support partners.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

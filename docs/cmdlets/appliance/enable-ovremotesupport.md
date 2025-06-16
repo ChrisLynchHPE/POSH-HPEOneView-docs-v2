@@ -25,7 +25,8 @@ Enabling Remote Support configures your devices being remotely supported to secu
 This Cmdlet will enable Remote Support for a compute or enclosure resource.  Remote Support must be enabled globally on the appliance in order to use this Cmdlet.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator
+    Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator
+    
 
 ## Examples
 

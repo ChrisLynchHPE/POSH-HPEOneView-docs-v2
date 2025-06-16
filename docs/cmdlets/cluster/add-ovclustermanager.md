@@ -32,7 +32,8 @@ The user must have an infrastructure administrator privilege to register or upda
 HPE OneView. You can assign scopes to the hypervisor manager resource in HPE OneView.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

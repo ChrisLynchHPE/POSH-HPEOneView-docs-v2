@@ -39,7 +39,8 @@ You can configure the HPE Synergy Composer2 for remote access through its embedd
 Use this Cmdlet to disable remote access to the HPE Synergy Composer2 iLO.  Disabling external iLO access will delete the configured iLO user account and unassign the user specified static IPv4 and IPv6 addresses.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

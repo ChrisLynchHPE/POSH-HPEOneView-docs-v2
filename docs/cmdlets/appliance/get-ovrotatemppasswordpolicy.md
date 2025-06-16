@@ -33,9 +33,10 @@ Only non-HPE Synergy Servers are supported.
 Use this Cmdlet to get the current password rotation policy configuration.
 
 ???+ info
-Minimum required privileges:
-
-* Read-only
+    Minimum required privileges:
+    
+    * Read-only
+    
 
 ## Examples
 

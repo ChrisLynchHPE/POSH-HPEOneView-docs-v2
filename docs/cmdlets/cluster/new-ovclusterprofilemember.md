@@ -16,10 +16,11 @@ New-OVClusterProfileMember
 
 ## Description
 
-This is a helper Cmdlet to create a valid resourc object New-OVClusterProfile will then use for the -Servers parameter.
+This is a helper Cmdlet to create a valid resourc object New-OVClusterProfile will then use for the `-Servers` parameter.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.
+    Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.
+    
 
 ## Examples
 

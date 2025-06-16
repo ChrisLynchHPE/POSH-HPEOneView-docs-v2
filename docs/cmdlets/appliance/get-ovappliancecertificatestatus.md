@@ -29,7 +29,8 @@ HPE OneView supports the use of both self signed certificates and certificate au
 This Cmdlet will return the appliance HTTPS certificate.  The certificate can then be examined for validity, or to import the public certificate into a certificate trust store.
 
 ???+ info
-Minimum required privileges: No minimum required
+    Minimum required privileges: No minimum required
+    
 
 ## Examples
 

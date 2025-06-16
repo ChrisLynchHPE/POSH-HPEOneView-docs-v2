@@ -25,9 +25,10 @@ Set-OVServerNTPConfiguration
 When HPE OneView manages or monitors server or compute resources, it will automatically by default set the management processor NTP settings to the appliance's IP Address.  Using this Cmdlet, you can set the current time synchronize policy of the managed and monitored server hardware on the appliance.  SyncWithNtp will use the NTP server(s) configured on the appliance.
 
 ???+ info
-Minimum required privileges:
-
-* Infrastructure Administrator
+    Minimum required privileges:
+    
+    * Infrastructure Administrator
+    
 
 ## Examples
 

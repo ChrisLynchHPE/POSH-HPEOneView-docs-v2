@@ -25,7 +25,7 @@ The recommended types of external web servers to use with the repository follow:
 * Internet Information Services (IIS)
 
 ???+ info
-Only one external repository can be added.
+    Only one external repository can be added.
 
 
 This Cmdlet supports removing an existing external repository.  Removing an external baseline will cause any assigned baselines in Server Profiles or Server Profile Templates to report the baseline as "removed".  Any server profile that is configured to use a firmware bundle residing in the external repository must not be in "staging" state.

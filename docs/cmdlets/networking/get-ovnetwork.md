@@ -27,11 +27,11 @@ A virtual connect interconnect in an enclosure supports the following types of d
 * Fibre Channel over Ethernet (FCoE) for storage networks where storage traffic is carried over a dedicated Ethernet VLAN.
 
 ???+ info
-The networking features described here apply to enclosures and servers only. The appliance does not monitor or manage the network features and hardware for rack mount servers or networking equipment outside the enclosures without using a supported logical switch or fabric manager.
+    The networking features described here apply to enclosures and servers only. The appliance does not monitor or manage the network features and hardware for rack mount servers or networking equipment outside the enclosures without using a supported logical switch or fabric manager.
 
 
 ???+ info
-You can associate a network to both an IPv4 subnet.
+    You can associate a network to both an IPv4 subnet.
 
 
 The details of your networks and any alerts associated with them appear on the Networks screen. If no resources are listed, you must add a resource. See Create networks.
@@ -53,7 +53,8 @@ An Ethernet and FCoE network must be provisioned to a logical interconnect and b
 This Cmdlet is used to retrieve a collection of network resources which have the specified type and/or name. The default connection information is included in the returned network resources.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

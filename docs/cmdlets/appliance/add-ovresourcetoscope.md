@@ -57,11 +57,12 @@ or removed from a scope:
 * Volumes
 
 ???+ info
-Resources in other categories are considered to be included in all scopes, and they cannot be removed.
+    Resources in other categories are considered to be included in all scopes, and they cannot be removed.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, scope administrator, scope operator
+    Minimum required privileges: Infrastructure administrator, scope administrator, scope operator
+    
 
 ## Examples
 

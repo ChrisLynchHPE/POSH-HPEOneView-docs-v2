@@ -28,7 +28,8 @@ Use this Cmdlet to change the Server Hardware Type and/or Enclosure Group set wi
 * Any change in the server hardware type will lead to the associated volume loss.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator.
+    Minimum required privileges: Infrastructure administrator or Server administrator.
+    
 
 ## Examples
 

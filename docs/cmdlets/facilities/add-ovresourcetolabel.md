@@ -23,7 +23,8 @@ Resources supporting labels also have filters to allow you to filter by the labe
 Using this Cmdlet will add supported resources to a new or existing Label.  If the Label does not exist, it will be created.
 
 ???+ info
-Minimum required privileges: Edit privileges for the resource.
+    Minimum required privileges: Edit privileges for the resource.
+    
 
 ## Examples
 

@@ -45,7 +45,7 @@ The recommended types of external web servers to use with the repository follow:
 * Internet Information Services (IIS)
 
 ???+ info
-Only one external repository can be added.
+    Only one external repository can be added.
 
 
 ## Examples

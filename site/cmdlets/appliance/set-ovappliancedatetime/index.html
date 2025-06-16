@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12173,11 +12175,11 @@
 </code></pre></div>
 <h2 id="description">Description</h2>
 <p>Update the appliance Date and Time configuration, including Locale, NTP Servers, and NTP Polling.</p>
-<p>Using the -SyncWithHost parameter will set the NTPServers property to null, and is only applicable to a virtual machine applinace.</p>
+<p>Using the <code>-SyncWithHost</code> parameter will set the NTPServers property to null, and is only applicable to a virtual machine applinace.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceDateTime</span> <span class="n">-NTPServers</span> <span class="n">10</span><span class="p">.</span><span class="n">55</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">1</span><span class="p">,</span> <span class="n">10</span><span class="p">.</span><span class="n">54</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">1</span> <span class="n">-PollingInterval</span> <span class="n">60</span>

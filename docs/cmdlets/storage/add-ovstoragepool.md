@@ -17,7 +17,7 @@ Add-OVStoragePool
 ## Description
 
 ???+ info
-This Cmdlet has been replaced by Set-OVStoragePool.  This Cmdlet only exists for backwards compatibility.
+    This Cmdlet has been replaced by Set-OVStoragePool.  This Cmdlet only exists for backwards compatibility.
 
 
 A storage pool is an aggregation of physical storage resources (disks) in a storage system. Storage systems contain information about the storage ports through which they can be accessed. You can provision logical storage spaces, known as volumes, from storage pools.
@@ -25,7 +25,7 @@ A storage pool is an aggregation of physical storage resources (disks) in a stor
 You can select one or more storage pools for management when adding a storage system to the appliance. Storage pools are created on a storage system using the management software for that system.
 
 ???+ info
-For HPE Nimble storage, you can define folders within pools in the Nimble administrative user interface.
+    For HPE Nimble storage, you can define folders within pools in the Nimble administrative user interface.
 
 You cannot create or delete storage pools from the appliance. Storage pools are automatically discovered during the storage system add or refresh. After you elect to manage storage pools, you can provision volumes on them.
 
@@ -36,7 +36,8 @@ A storage system must first be added to the appliance before a storage pool can 
 Storage pools are scoped resources. You can associate a scope to a pool to restrict who can use the pool.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Storage administrator.
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
+    
 
 ## Examples
 

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12179,8 +12181,8 @@
 <p>When you add a rack manager, HPE OneView automatically applies the HPE OneView Standard license to the rack manager. HPE OneView discovers and monitors the hardware subcomponents of the rack manager.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Server administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$Credential</span> <span class="p">=</span> <span class="nb">Get-Credential</span> <span class="n">-Username</span> <span class="n">Administrator</span> <span class="n">-Message</span> <span class="s2">&quot;RackManager Password&quot;</span> <span class="nb">Add-OVRackManager</span> <span class="n">-ComputerName</span> <span class="n">rackmanger1</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">-Credential</span> <span class="nv">$Credential</span>

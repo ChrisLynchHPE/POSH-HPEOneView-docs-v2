@@ -44,7 +44,8 @@ Please note that any file name that contains the . (period, CHAR46) character wi
 Example: My.Spp.To.Upload.201605.iso will become My_Spp_To_Upload_201605.iso.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

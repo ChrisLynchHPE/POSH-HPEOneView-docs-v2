@@ -20,12 +20,13 @@ Authorized users can control the unit identification (UID) light on an HPE Syner
 A UID icon is displayed on the Enclosures screen, the Server Hardware screen, and the Interconnects screen. On the Enclosures screen, the enclosure overview displays the UID icon on its frame link modules, servers, and interconnects.
 
 ???+ warning
-The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.
+    The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator 
+    Minimum required privileges: Infrastructure administrator, Server administrator 
 (for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)
+
 ## Examples
 
 ###  Example 1 
@@ -43,7 +44,7 @@ Disable the UID for "MyEncl, Bay 1" server.
 Resource object to turn off the UID.  Supported resources are server hardware, enclosures and interconnects. 
 
 ???+ info
- HPE BladeSystem C7000 enclosures and interconnects are not supported, but the inserted servers are.
+     HPE BladeSystem C7000 enclosures and interconnects are not supported, but the inserted servers are.
 
 
 | Aliases | Server, Enclosure, Frame, Resource |

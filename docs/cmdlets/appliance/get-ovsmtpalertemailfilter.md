@@ -28,7 +28,8 @@ The appliance provides for as many as 100 recipient and filter combinations, and
 This Cmdlet will help get the configured email alert filter(s) configured on the appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
+    
 
 ## Examples
 

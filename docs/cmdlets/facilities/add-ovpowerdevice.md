@@ -65,7 +65,7 @@ Hostname of the iPDU, either IP Address or FQDN.
 ### -Username &lt;String&gt;
 
 ???+ warning
-This parameter is deprecated. Please transition to the `-Credential` parameter.
+    This parameter is deprecated. Please transition to the `-Credential` parameter.
 
 
 Administrator account of the target iPDU.
@@ -81,7 +81,7 @@ Administrator account of the target iPDU.
 ### -Password &lt;String&gt;
 
 ???+ warning
-This parameter is deprecated. Please transition to the `-Credential` parameter.
+    This parameter is deprecated. Please transition to the `-Credential` parameter.
 
 
 Account password of the iPDU specified.

@@ -58,7 +58,8 @@ When you add a rack manager, either the HPE OneView Standard license or the HPE 
 This Cmdlet will assist with the installation of a new HPE OneView Advanced or HPE OneView Advanced without iLO Advanced license key.  The type is automatically detected based on the validity of the license key.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

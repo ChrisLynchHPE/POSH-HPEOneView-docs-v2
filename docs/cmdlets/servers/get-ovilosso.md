@@ -29,14 +29,15 @@ Get-OVIloSso
 Obtain an iLO SSO Token URL to authenticate to an iLO.  If the server hardware is unsupported, the resulting URL will not use SSO and the iLO web interface will prompt for credentials.
 
 ???+ info
-this is not supported on G7 or earlier servers.
+    this is not supported on G7 or earlier servers.
 
 
 The generated SSO object or URL can be used with other HPE libraries that support iLO session tokens.
 
 ???+ info
-Minimum required privileges: Read-only. Know that your user account role within OneView will be mapped to a specific iLO role.  Please review the HPE OneView online help for more information, searching for 
+    Minimum required privileges: Read-only. Know that your user account role within OneView will be mapped to a specific iLO role.  Please review the HPE OneView online help for more information, searching for 
 "Mapping of SSO roles".
+
 ## Examples
 
 ###  Example 1 

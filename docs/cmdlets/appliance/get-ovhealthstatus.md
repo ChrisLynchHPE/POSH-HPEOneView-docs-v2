@@ -17,7 +17,8 @@ Get-OVHealthStatus
 Display the HPE OneView appliance health status.  This includes CPU, Memory and Disk Space.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

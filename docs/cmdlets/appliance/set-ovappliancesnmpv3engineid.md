@@ -18,7 +18,8 @@ Set-OVApplianceSnmpV3EngineId
 Change or update the appliance SNMPv3 engine ID.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 

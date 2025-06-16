@@ -27,7 +27,8 @@ After Synergy frames are discovered automatically during hardware setup, you mus
 This Cmdlet will retrieve a collection of Logical Enclosure resources, or a single Logical Enclosure with the specified name.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

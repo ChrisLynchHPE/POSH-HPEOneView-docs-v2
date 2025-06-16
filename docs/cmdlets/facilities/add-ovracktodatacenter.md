@@ -29,7 +29,7 @@ You can use the appliance to view and manage your rack configuration and power d
 The appliance automatically discovers the rack height and rack model for a ProLiant server with Location Discovery Services and updates the physical locations of devices when they are relocated within and between racks for c7000 enclosures.
 
 ???+ info
- When the appliance discovers Intelligent Series Racks, it sets the rack height automatically using the Intelligent Rack Location Discovery Services for c7000 enclosures. For non-intelligent racks or for empty racks, the default rack height is 42U.
+     When the appliance discovers Intelligent Series Racks, it sets the rack height automatically using the Intelligent Rack Location Discovery Services for c7000 enclosures. For non-intelligent racks or for empty racks, the default rack height is 42U.
 
 
 After adding a rack to the appliance for management, you can add the rack to a data center to visualize the data center layout and to monitor device power and cooling data.
@@ -37,7 +37,8 @@ After adding a rack to the appliance for management, you can add the rack to a d
 After the rack is under management, you can configure the power delivery topology with redundant and uninterruptible power supplies to the devices in the rack.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator.
+    Minimum required privileges: Infrastructure administrator or Server administrator.
+    
 
 ## Examples
 

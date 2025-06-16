@@ -199,7 +199,7 @@ Max volume capacity in GB.  `[e.g]`. 20 to specify 20GB.
 ### -Full &lt;SwitchParameter&gt;
 
 ???+ info
-This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
+    This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
 
 
 Include this switch to enable Thick volume provisioning.  Omit to specify Thin storage provisioning.

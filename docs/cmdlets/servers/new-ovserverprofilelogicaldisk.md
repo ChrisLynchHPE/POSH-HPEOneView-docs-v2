@@ -203,7 +203,7 @@ Defines the interface type for drives that will be used to build the logical dri
     *SATASSD
     *Auto
 ???+ info
-Auto is not supported when attempting to create an HPE Synergy D3940 Logical or JBOD disk.  You must specify a disk technology type unless `-DriveSelectionBy` is changed to DriveType and `-AvailableDriveType` is used.  Allowed values are:
+    Auto is not supported when attempting to create an HPE Synergy D3940 Logical or JBOD disk.  You must specify a disk technology type unless `-DriveSelectionBy` is changed to DriveType and `-AvailableDriveType` is used.  Allowed values are:
 
 * SAS
 
@@ -352,7 +352,7 @@ When selected, an additional drive will be reserved (beyond what was specified) 
 One or more drives to allocate. Use Get-OVServerHardwareAvailableController Cmdlet and examine the Drives attribute within the `[HPEOneView.Servers.PhysicalDrive]` object.
 
 ???+ info
-Using this parameter will create a logical drive resource that can only be used with server profile resources.
+    Using this parameter will create a logical drive resource that can only be used with server profile resources.
 
 
 | Aliases | None |

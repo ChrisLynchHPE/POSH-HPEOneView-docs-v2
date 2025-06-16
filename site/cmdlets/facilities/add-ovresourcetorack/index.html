@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12154,14 +12156,14 @@
 <p>The appliance automatically discovers the rack height and rack model for a ProLiant server with Location Discovery Services and updates the physical locations of devices when they are relocated within and between racks for c7000 enclosures.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>When the appliance discovers Intelligent Series Racks, it sets the rack height automatically using the Intelligent Rack Location Discovery Services for c7000 enclosures. For non-intelligent racks or for empty racks, the default rack height is 42U.</p>
+</details>
 <p>After adding a rack to the appliance for management, you can add the rack to a data center to visualize the data center layout and to monitor device power and cooling data.</p>
 <p>After the rack is under management, you can configure the power delivery topology with redundant and uninterruptible power supplies to the devices in the rack.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Edit privileges for the resource.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$Rack</span> <span class="p">=</span> <span class="nb">Get-OVRack</span> <span class="n">-Name</span> <span class="n">MyRack221</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>

@@ -20,7 +20,8 @@ An OS Deployment Plan is a recipe on how to deploy and configure an operating sy
 Use this Cmdlet to return defined OS deployment plan custom attributes from a specified OS deployment plan.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

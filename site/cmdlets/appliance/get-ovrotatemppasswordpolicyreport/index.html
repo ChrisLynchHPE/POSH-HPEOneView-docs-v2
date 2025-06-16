@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12106,14 +12108,14 @@
 <p>If devices have accounts set up with LDAP or Microsoft Active Directory, the password cannot be rotated.</p>
 <p>If a server is engaged in another task, password rotation is skipped for the server, and rotation is done in the next schedule.</p>
 <p>Only non-HPE Synergy Servers are supported.</p>
-<p>Use this Cmdlet to generate a report of the last executed task.  To get all previous and current password rotation task results, use the -GetAllReports switch parameter.</p>
+<p>Use this Cmdlet to generate a report of the last executed task.  To get all previous and current password rotation task results, use the <code>-GetAllReports</code> switch parameter.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges:</p>
 <ul>
 <li>Read-only</li>
 </ul>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVRotateMPPasswordPolicyReport</span>

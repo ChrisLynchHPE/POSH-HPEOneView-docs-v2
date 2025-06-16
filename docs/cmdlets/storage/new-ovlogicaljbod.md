@@ -65,15 +65,16 @@ Considerations when configuring logical JBODs:
 * You can choose the drive enclosures that belong to the same SAS logical interconnect to create the logical JBOD.
 * You can create a logical JBOD using homogenous drives like SAS SSD, SAS HDD, SATA SSD, or SATA HDD. You cannot mix different types of drives in a logical JBOD.
 * You cannot add or remove drives to a logical JBOD after it is created.
-* You can choose to either erase or retain the drive data when you delete the logical JBOD by setting using the -EraseDataOnDelete parameter during the creation of a logical JBOD. You can change the Erase on delete settings later, using the Set-OVLogicalJBOD Cmdlet, only if you set -EraseDataOnDelete to True during creation.
+* You can choose to either erase or retain the drive data when you delete the logical JBOD by setting using the `-EraseDataOnDelete` parameter during the creation of a logical JBOD. You can change the Erase on delete settings later, using the Set-OVLogicalJBOD Cmdlet, only if you set `-EraseDataOnDelete` to True during creation.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator
-
-* A logical interconnect group is created with the interconnect type Synergy 12 GB SAS Connection Module.
-* An enclosure group is created with the above created logical interconnect group set as the Logical interconnect group.
-* A logical enclosure is created. A SAS logical interconnect is created as part of creating the logical enclosure.
-* If scopes have been defined, make sure that sufficient number of drive enclosures are mapped to the user scopes.
+    Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator
+    
+    * A logical interconnect group is created with the interconnect type Synergy 12 GB SAS Connection Module.
+    * An enclosure group is created with the above created logical interconnect group set as the Logical interconnect group.
+    * A logical enclosure is created. A SAS logical interconnect is created as part of creating the logical enclosure.
+    * If scopes have been defined, make sure that sufficient number of drive enclosures are mapped to the user scopes.
+    
 
 ## Examples
 
@@ -176,7 +177,7 @@ When attempting to create a logical JBOD, specify the interface type for drives 
 * Auto
     
 ???+ info
-Auto is not supported when attempting to create an HPE Synergy D3940 Logical or JBOD disk.  You must specify a disk technology type with `-DriveType` or `-AvailableDriveType` is used.
+    Auto is not supported when attempting to create an HPE Synergy D3940 Logical or JBOD disk.  You must specify a disk technology type with `-DriveType` or `-AvailableDriveType` is used.
 
 
 | Aliases | None |

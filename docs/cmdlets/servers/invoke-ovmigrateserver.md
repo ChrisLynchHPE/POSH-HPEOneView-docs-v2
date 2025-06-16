@@ -34,7 +34,8 @@ Please see the HPE OneView online help "Migrating server hardware" help topic fo
 This Cmdlet will initiate supported server migration.  Use the Get-OVMigratableServer Cmdlet to connect to the source appliance and return the list of servers that can be migrated.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator and Server administrator
+    Minimum required privileges: Infrastructure administrator and Server administrator
+    
 
 ## Examples
 

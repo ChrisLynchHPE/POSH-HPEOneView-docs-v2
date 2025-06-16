@@ -25,7 +25,8 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will return members within a specified rack.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
+    
 
 ## Examples
 

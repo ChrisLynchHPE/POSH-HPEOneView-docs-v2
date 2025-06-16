@@ -29,7 +29,7 @@ The recommended types of external web servers to use with the repository follow:
 * Internet Information Services (IIS)
 
 ???+ info
-Only one external repository can be added.
+    Only one external repository can be added.
 
 
 This Cmdlet supports refreshing an existing external repository.  Use this Cmdlet to refresh the details(advertized repo size) and contents of an external repository.

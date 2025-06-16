@@ -46,7 +46,7 @@ The operating threshold is 10┬░C to 35┬░C (50┬░F to 95┬░F). When
 You can see the temperature utilization data for a component within the AmbientTemperature and AmbientTemperatureAverage properties.
 
 ???+ info
- The temperature properties are displayed in degrees Celsius or Fahrenheit, depending upon the locale or regional settings of your PC.
+     The temperature properties are displayed in degrees Celsius or Fahrenheit, depending upon the locale or regional settings of your PC.
 
 
 ## Examples

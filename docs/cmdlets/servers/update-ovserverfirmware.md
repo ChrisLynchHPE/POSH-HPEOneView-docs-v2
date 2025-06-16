@@ -33,7 +33,8 @@ The following installation modes are supported:
 *  FirmwareOnlyOfflineMode or FirmwareOffline - Manages the firmware through HPE OneView. Selecting this option requires the server hardware to be powered down.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator or Server firmware operator
+    Minimum required privileges: Infrastructure administrator or Server administrator or Server firmware operator
+    
 
 ## Examples
 

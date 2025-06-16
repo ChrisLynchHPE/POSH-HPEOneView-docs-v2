@@ -24,7 +24,7 @@ If you configure new logical drives in your server profile or import the existin
 On subsequent server profile apply operations, HPE OneView checks for the existence of the identifier on the physical drives of the assigned server hardware. If the identifier is missing, the apply operation fails in order to ensure that if the server profile is re-assigned to new server hardware and that the physical drives are inserted correctly.
 
 ???+ info
- HPE OneView also uses the logical drive name (label) as a unique identifier.  Do not modify the label of logical drives that are managed by HPE OneView.  Do not create logical drives with non-unique labels.
+     HPE OneView also uses the logical drive name (label) as a unique identifier.  Do not modify the label of logical drives that are managed by HPE OneView.  Do not create logical drives with non-unique labels.
 
 
 RAID levels and number of physical drives
@@ -42,7 +42,7 @@ The HPE OneView Support Matrix provides information on the number of drives supp
 After you create a logical drive and apply it to a server hardware, you can no longer modify those logical drives.
 
 ???+ info
- For controllers that support mixed mode (Gen10 servers), creating a logical drive uses the physical drives that are currently visible to the operating system. To preserve any data, back up the server drives before creating a logical drive.
+     For controllers that support mixed mode (Gen10 servers), creating a logical drive uses the physical drives that are currently visible to the operating system. To preserve any data, back up the server drives before creating a logical drive.
 
 
 Only for Gen11 servers that contain storage controllers, you can configure logical drives that are related to the following Logical Drive Configuration options, using server profiles:

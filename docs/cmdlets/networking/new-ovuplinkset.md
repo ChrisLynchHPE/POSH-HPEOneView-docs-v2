@@ -88,7 +88,8 @@ Uplink Sets can be created for Logical Interconnect Groups or Logical Interconne
 Please know that the UplinkPorts parameter syntax is different between HPE BladeSystem and HPE Synergy Virtual Connect.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Network administrator
+    Minimum required privileges: Infrastructure administrator, Network administrator
+    
 
 ## Examples
 
@@ -438,7 +439,7 @@ When the LacpDistributeUplinkPorts parameter is used, the active and standby upl
 LACP distribute uplink ports is applicable for Ethernet networks. This option is enabled by default for new uplink sets.
 
 ???+ info
-The port distribution depends on the number of ports added from each interconnect module.  Please see the HPE OneView Online Help for more details on uplink port distribution.
+    The port distribution depends on the number of ports added from each interconnect module.  Please see the HPE OneView Online Help for more details on uplink port distribution.
 
 
 | Aliases | None |
@@ -454,7 +455,7 @@ The port distribution depends on the number of ports added from each interconnec
 Use to specify a value of 1 through 16, when the `-LacpFailoverTrigger` parameter is set to 'FailoverActiveMemberThreshold'.
 
 ???+ warning
-Failover from active to standby uplinks will cause a brief interruption in the network and storage connectivity.
+    Failover from active to standby uplinks will cause a brief interruption in the network and storage connectivity.
 
 
 | Aliases | None |
@@ -470,7 +471,7 @@ Failover from active to standby uplinks will cause a brief interruption in the n
 Use to specify a value of 1 through 100 % (percent), when the `-LacpFailoverTrigger` parameter is set to 'FailoverBandwidthThreshold'.
 
 ???+ warning
-Failover from active to standby uplinks will cause a brief interruption in the network and storage connectivity.
+    Failover from active to standby uplinks will cause a brief interruption in the network and storage connectivity.
 
 
 | Aliases | None |

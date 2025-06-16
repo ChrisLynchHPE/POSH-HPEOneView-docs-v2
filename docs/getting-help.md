@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Getting Help
 
 ## Can I get general help?

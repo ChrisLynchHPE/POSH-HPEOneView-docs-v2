@@ -21,7 +21,8 @@ Get-OVInterconnect
 Interconnects enable communication between the server hardware in the enclosure and the data center networks. Interconnects that are managed are put in a Configured state when the Synergy frame is configured by creating a logical enclosure. An unmanaged interconnect remains in the Monitored state when the Synergy frame is configured by creating a logical enclosure.
 Retrieves a list of all Interconnects (Ethernet, FC, Converged Network, and/or SAS) or just specific ones via a query if the name parameter is provided. The output can be sent to a file using the Export parameter.
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 

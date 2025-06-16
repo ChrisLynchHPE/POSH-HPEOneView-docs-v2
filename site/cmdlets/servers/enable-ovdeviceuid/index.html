@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12097,13 +12099,13 @@
 <p>Use this Cmdlet to enable the UID light on a resource.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.</p>
+</details>
 <details class="info" open="open">
 <summary>Info</summary>
+<p>Minimum required privileges: Infrastructure administrator, Server administrator </p>
 </details>
-<p>Minimum required privileges: Infrastructure administrator, Server administrator 
-(for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)</p>
+<p>(for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;MyEncl, Bay 1&quot;</span> <span class="p">|</span> <span class="nb">Enable-OVDeviceUid</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>

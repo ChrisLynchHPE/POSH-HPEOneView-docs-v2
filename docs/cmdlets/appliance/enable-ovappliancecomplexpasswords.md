@@ -26,7 +26,8 @@ Complex passwords must contain the following:
 * No whitespace
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
+    
 
 ## Examples
 
