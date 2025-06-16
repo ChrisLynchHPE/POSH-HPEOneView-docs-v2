@@ -186,29 +186,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 === "HPEOneView.Appliance.Connection"
  
-When a valid connection is established with an appliance, this object is then added to '${Global:ConnectedSessions}' connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
-     | Name                   | Type       | Value                                |
-     |-----------------------------------------------------------------------------
-     | AuthLoginDomain        | String     | Local                                |
-     ------------------------------------------------------------------------------
-     | ConnectionId           | Int        | 1                                    |
-     ------------------------------------------------------------------------------
-     | Name                   | String     | Hostname value                       |
-     ---------------------- -------------------------------------------------------
-     | SessionID              | String     | AUTH string returned from API        |
-     ------------------------------------------------------------------------------
-     | ApplianceType          | String     | Indicate connected appliance type.   |
-     -------------------- ---------------------------------------------------------
-     | UserName               | String     | Username value                       |
-     ------------------------------------------------------------------------------
-     | AuthType               | String     | Credential or Certificate/2FA        |
-     ------------------------------------------------------------------------------
-     | ActivePermissions      | IList      | Collection of Scopes and permissions |
-     ------------------------------------------------------------------------------
-     | ApplianceSecurityRoles | IList      | Collection of roles                  |
-     ------------------------------------------------------------------------------
-     | Default                | Boolean    | Is connection default for library    |
-     ------------------------------------------------------------------------------
+When a valid connection is established with an appliance, this object is then added to `${Global:ConnectedSessions}` connection tracker variable. 
+ The object returned will contain the following public properties: 
+| Name                   | Type       | Value                                |
+ | AuthLoginDomain        | String     | Local                                |
+ | ConnectionId           | Int        | 1                                    |
+ | Name                   | String     | Hostname value                       |
+ | SessionID              | String     | AUTH string returned from API        |
+ | ApplianceType          | String     | Indicate connected appliance type.   |
+ | UserName               | String     | Username value                       |
+ | AuthType               | String     | Credential or Certificate/2FA        |
+ | ActivePermissions      | IList      | Collection of Scopes and permissions |
+ | ApplianceSecurityRoles | IList      | Collection of roles                  |
+ | Default                | Boolean    | Is connection default for library    |
+
  
 
 === "System.Management.Automation.ErrorRecord"

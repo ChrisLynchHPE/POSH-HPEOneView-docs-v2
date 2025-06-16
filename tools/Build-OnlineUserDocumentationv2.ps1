@@ -109,9 +109,19 @@ class Tabs
         [void]$FinalString.Add($_NewTab)
 
         # Find variables in the description and encase with the single tick
-        $Description = $Script:FindVariableRegexPattern.Replace($Description, "'`$0'")
+        $Description = $Script:FindVariableRegexPattern.Replace($Description, "```$0``")
 
         LinkifyString -String $Description -CmdletName $CmdletName
+
+        # Replace the table in the Return text with one that will format correctly in mkdocs
+        if ($CmdletName -eq 'Connect-OVMgmt')
+        {
+
+            $Table = [regex]::Matches($Description, '^\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\n',[System.Text.RegularExpressions.RegexOptions]::Multiline).Value -Replace "^\s+", ""
+
+            $Description = [regex]::Replace($Description, '^\s+(=+)(.*\n)*\s+-*$', $Table, [System.Text.RegularExpressions.RegexOptions]::Multiline)
+
+        }
 
         $_TabText = [Tabs]::TabText -f [System.Environment]::NewLine, $Description
         [void]$FinalString.Add($_TabText)
@@ -275,13 +285,6 @@ function LinkifyString ([String]$String, [String]$CmdletName)
         $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, $ReplaceString)
 
     }
-
-    # if ($FindAboutTopicReferencePattern.Matches($UpdatedString).Success)
-    # {
-
-    #     $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, '[`$0`](/about/$0.md)')
-
-    # }
 
     $Match = $FindCmdletRegexPattern.Match($UpdatedString)
 

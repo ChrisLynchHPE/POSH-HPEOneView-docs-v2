@@ -12508,29 +12508,19 @@
 <div class="tabbed-block"></div>
 </div>
 </div>
-<p>When a valid connection is established with an appliance, this object is then added to '${Global:ConnectedSessions}' connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
-     | Name                   | Type       | Value                                |
-     |-----------------------------------------------------------------------------
-     | AuthLoginDomain        | String     | Local                                |
-     ------------------------------------------------------------------------------
-     | ConnectionId           | Int        | 1                                    |
-     ------------------------------------------------------------------------------
-     | Name                   | String     | Hostname value                       |
-     ---------------------- -------------------------------------------------------
-     | SessionID              | String     | AUTH string returned from API        |
-     ------------------------------------------------------------------------------
-     | ApplianceType          | String     | Indicate connected appliance type.   |
-     -------------------- ---------------------------------------------------------
-     | UserName               | String     | Username value                       |
-     ------------------------------------------------------------------------------
-     | AuthType               | String     | Credential or Certificate/2FA        |
-     ------------------------------------------------------------------------------
-     | ActivePermissions      | IList      | Collection of Scopes and permissions |
-     ------------------------------------------------------------------------------
-     | ApplianceSecurityRoles | IList      | Collection of roles                  |
-     ------------------------------------------------------------------------------
-     | Default                | Boolean    | Is connection default for library    |
-     ------------------------------------------------------------------------------</p>
+<p>When a valid connection is established with an appliance, this object is then added to <code>${Global:ConnectedSessions}</code> connection tracker variable. 
+ The object returned will contain the following public properties: 
+| Name                   | Type       | Value                                |
+ | AuthLoginDomain        | String     | Local                                |
+ | ConnectionId           | Int        | 1                                    |
+ | Name                   | String     | Hostname value                       |
+ | SessionID              | String     | AUTH string returned from API        |
+ | ApplianceType          | String     | Indicate connected appliance type.   |
+ | UserName               | String     | Username value                       |
+ | AuthType               | String     | Credential or Certificate/2FA        |
+ | ActivePermissions      | IList      | Collection of Scopes and permissions |
+ | ApplianceSecurityRoles | IList      | Collection of roles                  |
+ | Default                | Boolean    | Is connection default for library    |</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">System.Management.Automation.ErrorRecord</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block"></div>
