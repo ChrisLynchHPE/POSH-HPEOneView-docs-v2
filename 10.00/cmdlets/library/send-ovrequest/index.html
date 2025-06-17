@@ -12561,37 +12561,36 @@ If not specified, all members of the collection are returned from this function.
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
 <h2 id="return-values">Return Values</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Collections.ArrayList</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Collections.ArrayList</label><label for="__tabbed_1_2">System.Management.Automation.PSCustomObject</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <p>If collection of resources (.i.e. GET /rest/ethernet-networks)</p>
+</div>
+<div class="tabbed-block">
+<p>Single object returned from appliance</p>
+</div>
+</div>
+</div>
+<p>If Async task, a Hashtable is returned with the following contents:</p>
+<p>@{
+     uri = TaskUri;
+     category = "tasks";
+     type = "TaskResourceV2";
+     taskState = "New";
+     resource = @{};
+     }</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">System.Management.Automation.PSCustomObject</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<p>If no resources are found, a PsCustomObject is returned that contains:</p>
 </div>
 </div>
-<p>Single object returned from appliance
-If Async task, a Hashtable is returned with the following contents:
-@{
-             uri = TaskUri;
-             category = "tasks";
-             type = "TaskResourceV2";
-             taskState = "New";
-             resource = @{};
-         }</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">System.Management.Automation.PSCustomObject</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
 </div>
-</div>
-<p>If no resources are found, a PsCustomObject is returned that contains:
-@{
-             statusCode = [int]HTTP Status Code;
-             statusMessage = [string]HTTP Status Message;
-             lastCall = [string]URI;
-         }</p>
+<p>@{
+     statusCode = [int]HTTP Status Code;
+     statusMessage = [string]HTTP Status Message;
+     lastCall = [string]URI;
+     }</p>
 <h2 id="related-links">Related Links</h2>
 
 
