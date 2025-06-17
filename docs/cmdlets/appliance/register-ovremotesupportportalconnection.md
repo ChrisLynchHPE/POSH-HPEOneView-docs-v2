@@ -26,8 +26,7 @@ Use this Cmdlet to register the appliance to the HPESC.  By default, if a previo
     Minimum required privileges:
     
     * Infrastructure Administrator
-    * HPESC credentials with the rights to add the appliance connection to the user specified group.
-    
+    * HPESC credentials with the rights to add the appliance connection to the user specified group.
 
 ## Examples
 
@@ -117,18 +116,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupport.PortalConnectionToken"
- 
-The appliance token used to establish a secure connection with the HPESC, and launch the clients default web browser.
-
- 
+    The appliance token used to establish a secure connection with the HPESC, and launch the clients default web browser.
+    
+    
 
 ## Related Links
 

@@ -33,8 +33,7 @@ Reverting to a snapshot of a volume will cause all data created or changed since
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.
-    
+    Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.
 
 ## Examples
 
@@ -139,21 +138,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]"
- 
-Storage Volume Snapshot resource object.
- 
+    Storage Volume Snapshot resource object.
+    
 
 ## Return Values
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
- 
-Multiple resources
- 
+    Multiple resources
+    
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Create Storage Volume async task.
- 
+    Create Storage Volume async task.
+    
 
 ## Related Links
 

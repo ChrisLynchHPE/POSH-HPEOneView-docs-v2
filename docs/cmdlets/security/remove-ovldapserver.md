@@ -120,16 +120,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
- 
-Authentication Directory object that will have the LDAP Server added to.
- 
+    Authentication Directory object that will have the LDAP Server added to.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
- 
-Updated Authentication Directory.
- 
+    Updated Authentication Directory.
+    
 
 ## Related Links
 

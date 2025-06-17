@@ -35,8 +35,7 @@ This Cmdlet will add supported resources to a specified Scope.  All the resource
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -107,16 +106,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.ScopeCollection"
- 
-Scope resource object from Get-OVScope.
- 
+    Scope resource object from Get-OVScope.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource that updates the Scope and associated resources.
- 
+    Asynchronous task resource that updates the Scope and associated resources.
+    
 
 ## Related Links
 

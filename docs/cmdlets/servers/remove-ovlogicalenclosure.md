@@ -97,21 +97,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]"
- 
-Single Logical Enclosure resource
- 
+    Single Logical Enclosure resource
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Logical Enclosure resources
- 
+    Multiple Logical Enclosure resources
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object
- 
+    Async task Resource object
+    
 
 ## Related Links
 

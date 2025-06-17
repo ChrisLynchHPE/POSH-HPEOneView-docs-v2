@@ -40,8 +40,7 @@ This Cmdlet will help add an existing storage volume that was provisioned on the
 The Storage Volume's WWN or device name will be needed, which can be retrieved from the storage system management console.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Storage administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
 
 ## Examples
 
@@ -179,16 +178,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]"
- 
-Storage Pool resource object
- 
+    Storage Pool resource object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async create task
- 
+    Async create task
+    
 
 ## Related Links
 

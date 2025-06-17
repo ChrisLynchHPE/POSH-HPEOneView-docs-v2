@@ -92,21 +92,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Single Group resource object
- 
+    Single Group resource object
+    
 
 === "System.Collections.ArrayList"
- 
-Collection of Group resource objects
- 
+    Collection of Group resource objects
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-A PSCustomObject is returned indicating successful removal of the resource
- 
+    A PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

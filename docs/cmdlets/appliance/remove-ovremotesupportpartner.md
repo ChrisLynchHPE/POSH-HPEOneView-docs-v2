@@ -60,16 +60,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.RemoteSupport.Partner [System.Management.Automation.PSCustomObject]"
- 
-Remote Suport partner resource from Get-OVRemoteSupportPartner.
- 
+    Remote Suport partner resource from Get-OVRemoteSupportPartner.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Object with status confirmation the resource was deleted.
- 
+    Object with status confirmation the resource was deleted.
+    
 
 ## Related Links
 

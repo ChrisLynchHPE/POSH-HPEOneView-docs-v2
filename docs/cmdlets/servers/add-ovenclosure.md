@@ -77,8 +77,7 @@ This Cmdlet will attempt a connection to the XML Reply interface to examine if a
 If you wish to migrate the enclosure from a Virtual Connect Manager or Virtual Connect Enterprise Manager configuration, please use the Invoke-OVVcmMigration Cmdlet.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -283,16 +282,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]"
- 
-Enclosure Group Resource that will be used to set the Enlosure policy.
- 
+    Enclosure Group Resource that will be used to set the Enlosure policy.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for monitoring the enclosure import process.
- 
+    Async task Resource object for monitoring the enclosure import process.
+    
 
 ## Related Links
 

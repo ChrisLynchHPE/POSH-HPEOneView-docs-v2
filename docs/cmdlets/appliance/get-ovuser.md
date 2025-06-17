@@ -67,27 +67,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Single User resource
- 
+    Single User resource
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple User resourses, or formatted table displaying a report of user accounts
- 
+    Multiple User resourses, or formatted table displaying a report of user accounts
+    
 
 === "User Account Information"
- 
-
- 
+    
+    
 
 ## Related Links
 

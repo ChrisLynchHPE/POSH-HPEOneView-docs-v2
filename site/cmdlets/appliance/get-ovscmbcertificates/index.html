@@ -12359,25 +12359,26 @@ Convert rabbitmq_readonly client certificate to PFX format for .Net consumption.
 <h2 id="input-types">Input Types</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Security.SecureString</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <p>Password for PFX file</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">3 files will be created:</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">3 files will be created:</label><label for="__tabbed_2_2">Pkcs12/PFX certificate file</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <ul>
-<li>{ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority * {ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key * {ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate</li>
+<li>{ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority</li>
+<li>{ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key</li>
+<li>{ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Pkcs12/PFX certificate file</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
 </div>
-</div>
+<div class="tabbed-block">
 <p>If ConvertToPfX is used, the Pkcs12/PFX compliant certificate file is created, {ApplianceConnection_Name}_privateKey.pfx</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 
 

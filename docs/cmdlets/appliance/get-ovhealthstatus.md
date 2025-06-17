@@ -17,8 +17,7 @@ Get-OVHealthStatus
 Display the HPE OneView appliance health status.  This includes CPU, Memory and Disk Space.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -50,17 +49,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.HealthStatus [System.Management.Automation.PSCustomObject]"
- 
-Appliance health report in table format.
- 
+    Appliance health report in table format.
+    
 
 ## Related Links
 

@@ -41,8 +41,7 @@ The Cisco APIC administrator provides the user login information to HPE OneView 
 * Read only  Access level for accessing system configuration with no privileges to modify the system state.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Network administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Network administrator.
 
 ## Examples
 
@@ -200,17 +199,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async Task resource to monitor progress.
- 
+    Async Task resource to monitor progress.
+    
 
 ## Related Links
 

@@ -209,16 +209,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Security.SecureString"
- 
-Directory User Account password
- 
+    Directory User Account password
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Updated LDAP Group object with new role assignment(s)
- 
+    Updated LDAP Group object with new role assignment(s)
+    
 
 ## Related Links
 

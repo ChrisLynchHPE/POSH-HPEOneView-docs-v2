@@ -244,17 +244,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Networking.SnmpTrapDestination [System.Management.Automation.PSCustomObject]"
- 
-SNMP Trap desitnation object for an SNMP Configuration Object
- 
+    SNMP Trap desitnation object for an SNMP Configuration Object
+    
 
 ## Related Links
 

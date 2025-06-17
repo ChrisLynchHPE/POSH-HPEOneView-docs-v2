@@ -27,8 +27,7 @@ As audit log entries are forwarded over UDP, the entries are not encrypted and d
 This Cmdlet will return the current status, remote Syslog destination and port currently configured on the appliance.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator.
-    
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -60,17 +59,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuditLogForwardingConfig"
- 
-The appliance audit log forwarding configuration.
- 
+    The appliance audit log forwarding configuration.
+    
 
 ## Related Links
 

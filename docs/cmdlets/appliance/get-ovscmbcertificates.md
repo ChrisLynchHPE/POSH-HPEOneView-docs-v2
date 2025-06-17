@@ -35,8 +35,7 @@ This Cmdlet will retrieve and store the certificates necessary to register with 
 The generated and/or downloaded SCMB certificate can also be exported to PFX format for secure storage, using the `-ConvertToPFx` parameter.
 
 ???+ info
-    Minimum required privileges: Infrastructure Administrator
-    
+    Minimum required privileges: Infrastructure Administrator
 
 ## Examples
 
@@ -126,21 +125,21 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Security.SecureString"
- 
-Password for PFX file
- 
+    Password for PFX file
+    
 
 ## Return Values
 
 === "3 files will be created:"
- 
- * {ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority * {ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key * {ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate
- 
+    
+    * {ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority
+    * {ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key
+    * {ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate
+    
 
 === "Pkcs12/PFX certificate file"
- 
-If ConvertToPfX is used, the Pkcs12/PFX compliant certificate file is created, {ApplianceConnection_Name}_privateKey.pfx
- 
+    If ConvertToPfX is used, the Pkcs12/PFX compliant certificate file is created, {ApplianceConnection_Name}_privateKey.pfx
+    
 
 ## Related Links
 

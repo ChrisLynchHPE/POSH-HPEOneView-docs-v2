@@ -54,17 +54,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-The current and minimum supported API versions on the appliance
- 
+    The current and minimum supported API versions on the appliance
+    
 
 ## Related Links
 

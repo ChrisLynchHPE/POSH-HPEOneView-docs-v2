@@ -19,8 +19,7 @@ Hewlett Packard Enterprise strongly recommends that you enable strict certificat
 This Cmdlet will disable certificate revocation validation on the specified appliance.  By disabling this setting, the appliance will not validate the certificate has been revoked by an issuing certificate authority.  This setting has no applicability to self-signed certificates.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -79,10 +78,8 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 

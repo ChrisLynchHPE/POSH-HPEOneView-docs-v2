@@ -523,16 +523,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]"
- 
-Storage Volume Template resource.
- 
+    Storage Volume Template resource.
+    
 
 ## Return Values
 
 === "HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]"
- 
-Updated Storage Volume Template object.
- 
+    Updated Storage Volume Template object.
+    
 
 ## Related Links
 

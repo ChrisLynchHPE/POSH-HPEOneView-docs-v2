@@ -268,17 +268,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Object that contains the base64data property, which can then be written to a file or submitted to CA
- 
+    Object that contains the base64data property, which can then be written to a file or submitted to CA
+    
 
 ## Related Links
 

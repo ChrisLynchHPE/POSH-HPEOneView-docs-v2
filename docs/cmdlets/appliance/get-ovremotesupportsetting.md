@@ -34,8 +34,7 @@ Once the appliance is configured, it cannot be unauthorized or disabled.
 Use this Cmdlet to retrieve a supported resources Remote Support settings of an enabled resource (compute or enclosure), defined Parimary and Secondary contact, and authorized reseller or support partners.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -92,21 +91,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-Server hardware resource object.
- 
+    Server hardware resource object.
+    
 
 === "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-Enclosure resource object.
- 
+    Enclosure resource object.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupport.ResourceSetting [System.Management.Automation.PSCustomObject]"
- 
-Remote Support Settings object.
- 
+    Remote Support Settings object.
+    
 
 ## Related Links
 

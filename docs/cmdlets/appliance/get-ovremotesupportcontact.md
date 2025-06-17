@@ -36,8 +36,7 @@ Once the appliance is configured, it cannot be unauthorized or disabled.
 Use this Cmdlet to get the configured Remote Support contacts defined on the appliance.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -89,17 +88,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-The configured Remote Support Contact.
- 
+    The configured Remote Support Contact.
+    
 
 ## Related Links
 

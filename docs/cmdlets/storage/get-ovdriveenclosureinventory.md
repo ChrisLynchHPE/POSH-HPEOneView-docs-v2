@@ -34,8 +34,7 @@ Drive enclosures are hardware devices that contain a set of drive bays. A drive 
 Using this Cmdlet will get the drive inventory from the connected appliance.  Inventory can be filtered on SAS logical interconnects and SAS drive enclosures.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator
-    
+    Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator
 
 ## Examples
 
@@ -166,16 +165,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.DriveEnclosure [System.Management.Automation.PSCustomObject]"
- 
-Drive enclosure resource from Get-OVDriveEnclosure Cmdlet.
- 
+    Drive enclosure resource from Get-OVDriveEnclosure Cmdlet.
+    
 
 ## Return Values
 
 === "HPEOneView.Storage.Drive"
- 
-The drive class object from the API.
- 
+    The drive class object from the API.
+    
 
 ## Related Links
 

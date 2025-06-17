@@ -112,22 +112,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Object"
- 
-Enclosure Report
- 
+    Enclosure Report
+    
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource to monitor
- 
+    Async task resource to monitor
+    
 
 ## Related Links
 

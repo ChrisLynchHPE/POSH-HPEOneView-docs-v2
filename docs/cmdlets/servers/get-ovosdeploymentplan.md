@@ -21,8 +21,7 @@ An OS Deployment Plan is a recipe on how to deploy and configure an operating sy
 Use this Cmdlet to return defined OS Deployment Plans on an HPE Synergy Image Streamer appliance.  The resource object will also provide the custom attributes allowed. Use the Get-OVOSDeploymentPlanAttribute to return the collection object of attributes.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -91,22 +90,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.OSDeploymentPlan"
- 
-An HPE Synergy Image Streamer OS Deployment plan object.
- 
+    An HPE Synergy Image Streamer OS Deployment plan object.
+    
 
 === "System.Collections.ArrayList<HPEOneView.Appliance.OSDeploymentPlan>"
- 
-A collection or HPE Synergy Image Streamer OS Deployment plan objects.
- 
+    A collection or HPE Synergy Image Streamer OS Deployment plan objects.
+    
 
 ## Related Links
 

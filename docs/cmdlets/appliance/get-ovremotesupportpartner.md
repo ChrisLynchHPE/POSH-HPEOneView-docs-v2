@@ -28,8 +28,7 @@ In addition to the above information provided to Authorized Resellers, the Servi
 Use this Cmdlet to Retrieve defined Remote Support partners that are authorized HPE Resellers and/or Support.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -73,17 +72,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupport.Partner [System.Management.Automation.PSCustomObject]"
- 
-Defined HPE authorized reseller and/or support partners.
- 
+    Defined HPE authorized reseller and/or support partners.
+    
 
 ## Related Links
 

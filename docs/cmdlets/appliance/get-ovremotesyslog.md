@@ -17,8 +17,7 @@ Get-OVRemoteSyslog
 The remoteSyslog API provides the ability to configure remote logging on devices managed by OneView. This Cmdlet handles disabling the remote syslog configuration. Only a single destination can be set. When configured, the HPE OneView appliance will deploy the SysLog settings to managed resources automatically.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -67,22 +66,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None. You cannot pipe objects to this Cmdlet."
- 
+None. You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.RemoteSyslog [System.Management.Automation.PSCustomObject]"
- 
-If successful, returns Appliance Syslog settings
- 
+    If successful, returns Appliance Syslog settings
+    
 
 === "System.Collections.ArrayList <HPEOneView.RemoteSyslog>"
- 
-Collection of Appliance Syslog settings
- 
+    Collection of Appliance Syslog settings
+    
 
 ## Related Links
 

@@ -61,8 +61,7 @@ When opting for a higher security mode, use the Show-OVApplianceSecurityModeComp
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -94,17 +93,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.SecurityMode"
- 
-The current appliance security mode.
- 
+    The current appliance security mode.
+    
 
 ## Related Links
 

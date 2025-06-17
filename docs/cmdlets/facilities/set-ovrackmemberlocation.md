@@ -81,16 +81,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Facilities.RackMember"
- 
-DataCenter facility object from Get-OVDataCenter.
- 
+    DataCenter facility object from Get-OVDataCenter.
+    
 
 ## Return Values
 
 === "HPEOneView.Facilities.RackMember"
- 
-Modified rack member object with the updated Rack Unit location.
- 
+    Modified rack member object with the updated Rack Unit location.
+    
 
 ## Related Links
 

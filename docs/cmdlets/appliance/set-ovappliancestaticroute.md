@@ -22,8 +22,7 @@ Set-OVApplianceStaticRoute
 When configuring a second NIC on a virtual machine appliance, static routes can be configured as only a single appliance NIC can be configured with a default gateway.  Both IPv4 and IPv6 static routes are supported.  Use Get-OVApplianceIPAddress to display the configured NIC interfaces, and supply the interface name with the `-Interface` parameter.
 
 ???+ info
-    Minimum required privileges:  Infrastructure administrator
-    
+    Minimum required privileges:  Infrastructure administrator
 
 ## Examples
 
@@ -119,16 +118,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.StaticRoute"
- 
-Configured static route object from Get-OVApplianceStaticRoute.
- 
+    Configured static route object from Get-OVApplianceStaticRoute.
+    
 
 ## Return Values
 
 === "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource to monitor.
- 
+    Async task resource to monitor.
+    
 
 ## Related Links
 

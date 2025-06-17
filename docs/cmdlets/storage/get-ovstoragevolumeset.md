@@ -99,17 +99,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Storage.VolumeSet"
- 
-The available storage system volume set.
- 
+    The available storage system volume set.
+    
 
 ## Related Links
 

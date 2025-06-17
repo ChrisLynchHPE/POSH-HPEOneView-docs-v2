@@ -24,8 +24,7 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will retrieve all or a specific Rack resource object.
 
 ???+ info
-    Minimum required privileges: Read only
-    
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -89,17 +88,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Facilities.Rack"
- 
-A Rack resource object.
- 
+    A Rack resource object.
+    
 
 ## Related Links
 

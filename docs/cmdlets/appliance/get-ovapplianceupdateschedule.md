@@ -51,18 +51,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.ApplianceUpdateSchedule"
- 
-Class object with the appliance update schedule configuration and current status.
-
- 
+    Class object with the appliance update schedule configuration and current status.
+    
+    
 
 ## Related Links
 

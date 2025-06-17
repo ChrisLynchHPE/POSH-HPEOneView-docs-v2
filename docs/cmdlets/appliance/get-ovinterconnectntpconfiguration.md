@@ -19,8 +19,7 @@ When HPE OneView manages interconnect resources, it will automatically by defaul
 ???+ info
     Minimum required privileges:
     
-    * Read-Only
-    
+    * Read-Only
 
 ## Examples
 
@@ -55,17 +54,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.GlobalSetting"
- 
-Object resource with the global setting value
- 
+    Object resource with the global setting value
+    
 
 ## Related Links
 

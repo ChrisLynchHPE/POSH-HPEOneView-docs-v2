@@ -58,18 +58,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.ApplianceStatus"
- 
-Appliance status object, contining appliance memory, CPU, network link details, including any resource error status messages.
-
- 
+    Appliance status object, contining appliance memory, CPU, network link details, including any resource error status messages.
+    
+    
 
 ## Related Links
 

@@ -71,17 +71,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.IO.FileInfo"
- 
-The saved appliance encryption key (AEK).
- 
+    The saved appliance encryption key (AEK).
+    
 
 ## Related Links
 

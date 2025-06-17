@@ -47,8 +47,7 @@ Automated zoning enables HPE OneView to automatically create, edit, and delete z
 This Cmdlet is used to display or list the discovered and available Managed SAN resources in the appliance once a supported SAN manager has been added to the appliance.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -116,22 +115,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]"
- 
-Single Resource
- 
+    Single Resource
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Resources
- 
+    Multiple Resources
+    
 
 ## Related Links
 

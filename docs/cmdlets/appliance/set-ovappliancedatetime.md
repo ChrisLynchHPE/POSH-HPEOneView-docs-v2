@@ -30,8 +30,7 @@ Update the appliance Date and Time configuration, including Locale, NTP Servers,
 Using the `-SyncWithHost` parameter will set the NTPServers property to null, and is only applicable to a virtual machine applinace.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -125,17 +124,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor
- 
+    Asynchronous task resource to monitor
+    
 
 ## Related Links
 

@@ -43,8 +43,7 @@ This Cmdlet will assist with importing a supported Storage System. In order for 
 When adding supported HPE 3PAR storage systems, please make sure "startwsapi" has been executed from the HPE 3PAR CLI, which enables the HPE 3PAR REST API that is required by HPE OneView.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Storage administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
 
 ## Examples
 
@@ -245,17 +244,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Add Storage System Async Task.
- 
+    Add Storage System Async Task.
+    
 
 ## Related Links
 

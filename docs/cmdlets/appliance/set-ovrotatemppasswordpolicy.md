@@ -44,8 +44,7 @@ Use this Cmdlet to enable or disable a password rotation policy.
 ???+ info
     Minimum required privileges:
     
-    * Infrastructure administrator
-    
+    * Infrastructure administrator
 
 ## Examples
 
@@ -149,18 +148,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RotateMPPasswordPolicy"
- 
-The class object containing the password rotation policy configuration.
-
- 
+    The class object containing the password rotation policy configuration.
+    
+    
 
 ## Related Links
 

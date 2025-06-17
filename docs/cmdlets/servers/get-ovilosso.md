@@ -37,7 +37,6 @@ The generated SSO object or URL can be used with other HPE libraries that suppor
 ???+ info
     Minimum required privileges: Read-only. Know that your user account role within OneView will be mapped to a specific iLO role.  Please review the HPE OneView online help for more information, searching for 
 "Mapping of SSO roles".
-
 ## Examples
 
 ###  Example 1 
@@ -145,26 +144,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-Server Hardware resource object.
- 
+    Server Hardware resource object.
+    
 
 === "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
- 
-Server Profile resource object.
- 
+    Server Profile resource object.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-SSO Url Object
- 
+    SSO Url Object
+    
 
 === "System.Array"
- 
-Multiple SSO URL objects.
- 
+    Multiple SSO URL objects.
+    
 
 ## Related Links
 

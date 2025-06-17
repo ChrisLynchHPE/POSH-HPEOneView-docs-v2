@@ -92,33 +92,28 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-A server hardware resource from Get-OVServer.
- 
+    A server hardware resource from Get-OVServer.
+    
 
 === "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
- 
-A server profile from Get-OVServerProfile that is assigned to a physical server resource.  If the profile is not assigned to a server hardware resource, it is skipped.
- 
+    A server profile from Get-OVServerProfile that is assigned to a physical server resource.  If the profile is not assigned to a server hardware resource, it is skipped.
+    
 
 === "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-An enclosure resource from Get-OVEnclosure.
- 
+    An enclosure resource from Get-OVEnclosure.
+    
 
 ## Return Values
 
 === "HPEOneView.ServerUtilization"
- 
-Server utilization object.
-
- 
+    Server utilization object.
+    
+    
 
 === "HPEOneView.EnclosureUtilization"
- 
-Enclosure utilization object.
-
- 
+    Enclosure utilization object.
+    
+    
 
 ## Related Links
 

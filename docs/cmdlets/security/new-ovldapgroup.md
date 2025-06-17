@@ -177,16 +177,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.DirectoryGroup [System.Management.Automation.PSCustomObject]"
- 
-The external authentication directory object from -Get-OVLdapDirectory.
- 
+    The external authentication directory object from `-Get`-OVLdapDirectory.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-New LDAP Group object with role assignment(s)
- 
+    New LDAP Group object with role assignment(s)
+    
 
 ## Related Links
 

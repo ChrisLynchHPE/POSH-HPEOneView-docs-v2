@@ -26,7 +26,6 @@ A UID icon is displayed on the Enclosures screen, the Server Hardware screen, an
 ???+ info
     Minimum required privileges: Infrastructure administrator, Server administrator 
 (for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)
-
 ## Examples
 
 ###  Example 1 
@@ -74,26 +73,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-Server Hardware or Enclosure resource.
- 
+    Server Hardware or Enclosure resource.
+    
 
 === "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-Enclosure resource.
- 
+    Enclosure resource.
+    
 
 === "HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]"
- 
-Interconnect resource.
- 
+    Interconnect resource.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-If successful, returns Appliance Async Task object to monitor.
- 
+    If successful, returns Appliance Async Task object to monitor.
+    
 
 ## Related Links
 

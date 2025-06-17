@@ -26,8 +26,7 @@ Additionally, if you have Gen6 or Gen7 servers being monitored by HPE OneView in
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -71,17 +70,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.SnmpV3User"
- 
-Appliance SNMPv3 user object.
- 
+    Appliance SNMPv3 user object.
+    
 
 ## Related Links
 

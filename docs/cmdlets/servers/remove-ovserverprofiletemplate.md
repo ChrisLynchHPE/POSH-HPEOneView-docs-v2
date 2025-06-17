@@ -106,26 +106,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]"
- 
-Server Profile Template resource object.
- 
+    Server Profile Template resource object.
+    
 
 === "System.String"
- 
-Server Profile Template resource name.
- 
+    Server Profile Template resource name.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-A task resource that can be monitored for status of the profile deletion
- 
+    A task resource that can be monitored for status of the profile deletion
+    
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
- 
-Multiple Async task resources.
- 
+    Multiple Async task resources.
+    
 
 ## Related Links
 

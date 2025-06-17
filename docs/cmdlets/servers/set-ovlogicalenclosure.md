@@ -171,16 +171,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.LogicalEnclosure"
- 
-HPE Syngery Logical Enclosure resource from Get-OVLogicalEnclosure.
- 
+    HPE Syngery Logical Enclosure resource from Get-OVLogicalEnclosure.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor
- 
+    Asynchronous task resource to monitor
+    
 
 ## Related Links
 

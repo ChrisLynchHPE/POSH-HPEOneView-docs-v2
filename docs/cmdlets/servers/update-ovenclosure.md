@@ -202,21 +202,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Single Enclosure resource
- 
+    Single Enclosure resource
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Enclosure resources
- 
+    Multiple Enclosure resources
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for monitoring the enclosure import process
- 
+    Async task Resource object for monitoring the enclosure import process
+    
 
 ## Related Links
 

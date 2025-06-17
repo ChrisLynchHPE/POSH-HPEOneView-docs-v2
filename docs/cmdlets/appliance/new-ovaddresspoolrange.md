@@ -188,16 +188,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
- 
-IPv4 Address Subnet resource object from Get-OVAddressPoolSubnet
- 
+    IPv4 Address Subnet resource object from Get-OVAddressPoolSubnet
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.AddressPoolRange [System.Management.Automation.PSCustomObject]"
- 
-Newly created and assigned address pool range resource object
- 
+    Newly created and assigned address pool range resource object
+    
 
 ## Related Links
 

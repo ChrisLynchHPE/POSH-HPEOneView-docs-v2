@@ -99,8 +99,7 @@ A cluster profile can manage VMware ESXi-based hypervisor clusters by leveraging
 Use this Cmdlet to create a new cluster profile within OneView.  Any new created clusters within OneView cannot be removed from OneView withour destroying the cluster within the cluster manager.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.
-    
+    Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.
 
 ## Examples
 
@@ -596,17 +595,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

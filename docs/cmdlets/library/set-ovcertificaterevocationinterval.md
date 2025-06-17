@@ -26,8 +26,7 @@ If the scheduled run for a specific day is missed due to reasons such as the app
 See the online help Certificate Revocation Lists discussion topic for more information.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 

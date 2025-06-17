@@ -54,8 +54,7 @@ HPE OneView supports SAN managers from different vendors.  Supported SAN Manager
 * Cisco MDS (FC-only)
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Storage administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
 
 ## Examples
 
@@ -320,17 +319,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

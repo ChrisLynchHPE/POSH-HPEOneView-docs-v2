@@ -136,16 +136,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]"
- 
-Logical enclosure resource from Get-OVLogicalEnclosure.
- 
+    Logical enclosure resource from Get-OVLogicalEnclosure.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
- 
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 ## Related Links
 

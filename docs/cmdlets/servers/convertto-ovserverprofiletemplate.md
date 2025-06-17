@@ -28,8 +28,7 @@ If the source Server Profile has the "Import existing logical drives" enabled, t
 If any SAN Storage Volume attachments contain an "Auto" LUN value, it will be set to "Manual", with the LUN ID set to a unique value based on the Array Index value.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -110,21 +109,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
- 
-A Server Profile resource object from Get-OVServerProfile.
- 
+    A Server Profile resource object from Get-OVServerProfile.
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject] objects.
- 
+    Multiple HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject] objects.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject] objects."
- 
-Asynchronous task of the Server Profile Template creation request.
- 
+    Asynchronous task of the Server Profile Template creation request.
+    
 
 ## Related Links
 

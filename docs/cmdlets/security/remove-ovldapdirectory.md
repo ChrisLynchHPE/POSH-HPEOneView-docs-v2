@@ -105,21 +105,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Collections.ArrayList"
- 
-Collection of Directories
- 
+    Collection of Directories
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-Single Directory object
- 
+    Single Directory object
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Resource Removed Status
- 
+    Resource Removed Status
+    
 
 ## Related Links
 

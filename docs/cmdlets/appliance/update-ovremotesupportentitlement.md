@@ -82,21 +82,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-A Gen8 or newer generation server hardware resource object from Get-OVServer.
- 
+    A Gen8 or newer generation server hardware resource object from Get-OVServer.
+    
 
 === "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-A Gen8 or newer generation server hardware resource object from Get-OVServer.
- 
+    A Gen8 or newer generation server hardware resource object from Get-OVServer.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for monitoring.
- 
+    Async task Resource object for monitoring.
+    
 
 ## Related Links
 

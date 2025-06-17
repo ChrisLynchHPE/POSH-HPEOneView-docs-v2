@@ -18,8 +18,7 @@ Remove-OVScope
 This Cmdlet will remove a specific Scope.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -64,16 +63,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.ScopeCollection"
- 
-Scope resource object from Get-OVScope.
- 
+    Scope resource object from Get-OVScope.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Response indicating the resource was deleted successfully.
- 
+    Response indicating the resource was deleted successfully.
+    
 
 ## Related Links
 

@@ -33,8 +33,7 @@ Once the appliance is configured, it cannot be unauthorized or disabled.
 Use this Cmdlet to get the appliance"s current Remote Support configuration. This Cmdlet does not return device collection data or schedules.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -70,17 +69,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupport.Configuration"
- 
-The setting object with updated parameters.
- 
+    The setting object with updated parameters.
+    
 
 ## Related Links
 

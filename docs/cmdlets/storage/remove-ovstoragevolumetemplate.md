@@ -119,26 +119,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Storage Volume Template resource object
- 
+    Storage Volume Template resource object
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Storage Volume Template resources
- 
+    Multiple Storage Volume Template resources
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Removal async task
- 
+    Removal async task
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-When using the -Force parameter, a PSCustomObject is returned indicating successful removal of the resource
- 
+    When using the `-Force` parameter, a PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

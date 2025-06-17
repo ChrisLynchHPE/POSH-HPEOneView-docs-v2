@@ -45,8 +45,7 @@ When scopes are defined and resources assigned to them, you can:
 * Filter email notifications for alerts based on the scope of the associated resources.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -118,17 +117,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.Scope [System.Management.Automation.PSCustomObject]"
- 
-Appliance Scope resource object.
- 
+    Appliance Scope resource object.
+    
 
 ## Related Links
 

@@ -106,21 +106,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
- 
-A PSCustom object representing a server profile template resource retrieved from the HPE OneView appliance
- 
+    A PSCustom object representing a server profile template resource retrieved from the HPE OneView appliance
+    
 
 ## Return Values
 
 === "System.Collections.ArrayList<HPEOneView.Appliance.TaskResource>"
- 
-Collection of task resource objects
- 
+    Collection of task resource objects
+    
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-An HPE OneView task resource object
- 
+    An HPE OneView task resource object
+    
 
 ## Related Links
 

@@ -113,17 +113,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
- 
-Newly created IPv4 Address Subnet
- 
+    Newly created IPv4 Address Subnet
+    
 
 ## Related Links
 

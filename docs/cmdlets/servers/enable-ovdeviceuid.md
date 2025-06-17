@@ -28,7 +28,6 @@ Use this Cmdlet to enable the UID light on a resource.
 ???+ info
     Minimum required privileges: Infrastructure administrator, Server administrator 
 (for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)
-
 ## Examples
 
 ###  Example 1 
@@ -72,21 +71,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject] or HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-Server Hardware or Enclosure resource.
- 
+    Server Hardware or Enclosure resource.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-If successful, returns Appliance Async Task object to monitor.
- 
+    If successful, returns Appliance Async Task object to monitor.
+    
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
- 
-Collection of Appliance Async Task objects to monitor.
- 
+    Collection of Appliance Async Task objects to monitor.
+    
 
 ## Related Links
 

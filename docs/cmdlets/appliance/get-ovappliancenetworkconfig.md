@@ -22,8 +22,7 @@ This Cmdlet will return the appliance network settings configuration parameters 
 
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -107,27 +106,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.ApplianceServerConfiguration [System.Management.Automation.PSCustomObject]"
- 
-A collection object containing the properties and values of the primary network interface of the appliance.
- 
+    A collection object containing the properties and values of the primary network interface of the appliance.
+    
 
 === "HPEOneView.Appliance.ApplianceServerConfiguration.ApplianceNetworks [System.Management.Automation.PSCustomObject]"
- 
-The applianceNetworks property will display the appliance Networking in either a Format-Table (default) or Format-List view.
- 
+    The applianceNetworks property will display the appliance Networking in either a Format-Table (default) or Format-List view.
+    
 
 === "System.IO.FileSystemInfo"
- 
-If exporting the appliance network configuration, the file object created will be returned.
- 
+    If exporting the appliance network configuration, the file object created will be returned.
+    
 
 ## Related Links
 

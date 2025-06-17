@@ -57,8 +57,7 @@ For HPE Superdome Flex Server, server chassis that are in a rack manager are add
 You cannot remove a server that is part of an enclosure or rack manager from the appliance using either Remove-OVServer. You must remove the rack manager instead using Remove-OVRackManager. Removing a rack manager from management removes its partitions and associations.  To remove a HPE BladeSystem or HPE Synergy server, it must be physically removed from the enclosure it is hosted within.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -215,17 +214,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Returns an async task resource to monitor.
- 
+    Returns an async task resource to monitor.
+    
 
 ## Related Links
 

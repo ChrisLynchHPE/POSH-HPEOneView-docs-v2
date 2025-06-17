@@ -269,16 +269,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]"
- 
-SAN Manager resource from Get-OVSanManager
- 
+    SAN Manager resource from Get-OVSanManager
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Update async task
- 
+    Update async task
+    
 
 ## Related Links
 

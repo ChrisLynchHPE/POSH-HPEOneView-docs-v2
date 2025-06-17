@@ -26,8 +26,7 @@ Additionally, if you have Gen6 or Gen7 servers being monitored by HPE OneView in
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -96,16 +95,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.SnmpV3User"
- 
-Appliance SNMPv3 user account from Get-OVSnmpV3User.
- 
+    Appliance SNMPv3 user account from Get-OVSnmpV3User.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Success message of deleted resource.
- 
+    Success message of deleted resource.
+    
 
 ## Related Links
 

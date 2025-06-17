@@ -81,16 +81,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.ScriptBlock"
- 
-ScriptBlock of the command or commands to generate verbose output for.
- 
+    ScriptBlock of the command or commands to generate verbose output for.
+    
 
 ## Return Values
 
 === "System.IO.FileInfo"
- 
-FileInfo object where the "{Date}_HPOV_transcript.log" file is generated.
- 
+    FileInfo object where the "{Date}_HPOV_transcript.log" file is generated.
+    
 
 ## Related Links
 

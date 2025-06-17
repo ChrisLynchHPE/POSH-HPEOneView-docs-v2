@@ -195,22 +195,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "Write-Progress"
- 
-Will display a progress bar indicating the Appliance Update status
- 
+    Will display a progress bar indicating the Appliance Update status
+    
 
 === "System.Collections.ArrayList  (System.Management.Automation.PSCustomObject)"
- 
-When performing stage and install (no switch options provided), the return will include the uploaded patch information from the appliance, and the completed upgrade message
- 
+    When performing stage and install (no switch options provided), the return will include the uploaded patch information from the appliance, and the completed upgrade message
+    
 
 ## Related Links
 

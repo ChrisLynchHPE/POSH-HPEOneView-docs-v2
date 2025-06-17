@@ -73,16 +73,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Facilities.DataCenter"
- 
-Datacenter resource from Get-OVDataCenter.
- 
+    Datacenter resource from Get-OVDataCenter.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Object with status confirmation the resource was deleted.
- 
+    Object with status confirmation the resource was deleted.
+    
 
 ## Related Links
 

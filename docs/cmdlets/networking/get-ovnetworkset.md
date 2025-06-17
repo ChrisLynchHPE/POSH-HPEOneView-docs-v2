@@ -53,8 +53,7 @@ For HPE Synergy:  Regular network sets can contain up to 1,000 networks. Large n
 This Cmdlet is used to retrieve a collection of network set resources which have the specified type and/or name. The default connection information is included in the returned network resources.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -163,22 +162,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Networking.NetworkSet [System.Management.Automation.PSCustomObject]"
- 
-Single Network Set
- 
+    Single Network Set
+    
 
 === "System.Collections.ArrayList <HPEOneView.Networking.NetworkSet>"
- 
-Multiple Network Sets
- 
+    Multiple Network Sets
+    
 
 ## Related Links
 

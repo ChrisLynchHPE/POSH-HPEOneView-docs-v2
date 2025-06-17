@@ -21,8 +21,7 @@ The backup process involves creating a backup file and then downloading that fil
 This Cmdlet will get the automatic backup configuration from the connected appliance(s). Use Set-OVAutomaticBackupConfig to set a new automatic backup policy for the appliance(s).
 
 ???+ info
-    Minimum required privileges: Read only
-    
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -58,22 +57,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.AutomaticBackupConfig [System.Management.Automation.PSCustomObject]"
- 
-Appliance automatic backup configuration object.
- 
+    Appliance automatic backup configuration object.
+    
 
 === "System.Collections.Arraylist <HPEOneView.Appliance.AutomaticBackupConfig>"
- 
-Multiple appliance automatic backup configuration objects.
- 
+    Multiple appliance automatic backup configuration objects.
+    
 
 ## Related Links
 

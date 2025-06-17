@@ -79,24 +79,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupport.PortalConnectionToken"
- 
-If the -GetGeneratedToken switch parameter is used, return the generated token class.
-
- 
+    If the `-GetGeneratedToken` switch parameter is used, return the generated token class.
+    
+    
 
 === "HPEOneView.Appliance.RemoteSupport.PortalConnection"
- 
-The current appliance secure connection status to the HPE Support Center.
-
- 
+    The current appliance secure connection status to the HPE Support Center.
+    
+    
 
 ## Related Links
 

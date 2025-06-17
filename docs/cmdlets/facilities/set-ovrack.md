@@ -35,8 +35,7 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will update existing rack resources with updated properties.  This includes updating the name, part number, serial number, model, supported thermal capacity, rack dimensions including rack units, height, width and depth.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator
 
 ## Examples
 
@@ -192,16 +191,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]"
- 
-Rack resource from Get-OVRack.
- 
+    Rack resource from Get-OVRack.
+    
 
 ## Return Values
 
 === "HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]"
- 
-Updated rack resource.
- 
+    Updated rack resource.
+    
 
 ## Related Links
 

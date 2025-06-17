@@ -32,8 +32,7 @@ When you use a directory service, directory users are granted HPE OneView permis
 This Cmdlet will display the global authentication directory settings configured on the appliance. It will show if local logins are enabled, default authentication directory name, and configured authentication directory names.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -101,17 +100,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuthGlobalDirectoryConfiguration [System.Management.Automation.PSCustomObject]"
- 
-Global Authentication Settings object
- 
+    Global Authentication Settings object
+    
 
 ## Related Links
 

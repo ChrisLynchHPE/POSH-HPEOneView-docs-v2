@@ -154,21 +154,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.String"
- 
-Alert URI
- 
+    Alert URI
+    
 
 === "HPEOneView.Alert [System.Management.Automation.PSCustomObject]"
- 
-Alert resource object (i.e. Get-OVAlert)
- 
+    Alert resource object (i.e. Get-OVAlert)
+    
 
 ## Return Values
 
 === "HPEOneView.Alert [System.Management.Automation.PSCustomObject]"
- 
-The updated alert
- 
+    The updated alert
+    
 
 ## Related Links
 

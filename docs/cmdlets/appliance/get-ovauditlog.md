@@ -79,8 +79,7 @@ The audit log includes entries for all Maintenance console events except for vie
 Use this Cmdlet to retrieve appliance audit log entries.  Audit log entries can be filtered based on number of entries to return, and a date range.
 
 ???+ info
-    Minimum required privileges:  Infrastructure administrator
-    
+    Minimum required privileges:  Infrastructure administrator
 
 ## Examples
 
@@ -194,22 +193,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuditLogEntry [System.Management.Automation.PSCustomObject]"
- 
-Single Appliance Audit Log Entry
- 
+    Single Appliance Audit Log Entry
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple  Appliance Audit Log Entries
- 
+    Multiple  Appliance Audit Log Entries
+    
 
 ## Related Links
 

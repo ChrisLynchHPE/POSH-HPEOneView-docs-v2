@@ -124,16 +124,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.ManagedSan"
- 
-Managed SAN resource from Get-OVManagedSan
- 
+    Managed SAN resource from Get-OVManagedSan
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task
- 
+    Async task
+    
 
 ## Related Links
 

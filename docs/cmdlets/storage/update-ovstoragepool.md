@@ -60,16 +60,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.StoragePool"
- 
-One or more storage pool resources from Get-OVStoragePool.
- 
+    One or more storage pool resources from Get-OVStoragePool.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

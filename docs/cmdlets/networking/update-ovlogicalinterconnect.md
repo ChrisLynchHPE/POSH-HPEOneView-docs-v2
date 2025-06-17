@@ -165,46 +165,34 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
- 
-Single Logical Interconnect resource object
- 
+    Single Logical Interconnect resource object
+    
 
 === "System.Collections.ArrayList <HPEOneView.Networking.LogicalInterconnect>"
- 
-Collection of Logical Interconnect Names, URIs or System.Management.Automation.PSCustomObject
- 
+    Collection of Logical Interconnect Names, URIs or System.Management.Automation.PSCustomObject
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Single async Update Task
- 
+    Single async Update Task
+    
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
- 
-Multiple async Update Tasks
- 
+    Multiple async Update Tasks
+    
 
 === "HPEOneView.Library.CompareObject"
- 
-The Cmdlet will return a compare object with the Parent and Child object and settings that are different.  Otherwise, no object is returned.
-
+    The Cmdlet will return a compare object with the Parent and Child object and settings that are different.  Otherwise, no object is returned.
+    
     Property Name | Description
-    ==========================================================
     InputObject   | Compared Object Property or Setting Value
-    ----------------------------------------------------------
     ParentSetting | Name of Property or Setting
-    ----------------------------------------------------------
     ChildSetting  | Name of Property or Setting
-    ----------------------------------------------------------
     Parent        | Name of Parent Object
-    ----------------------------------------------------------
     Child         | Name of Child Object
-    ----------------------------------------------------------
     Description   | Description Name of difference
-    ----------------------------------------------------------
- 
+    
 
 ## Related Links
 

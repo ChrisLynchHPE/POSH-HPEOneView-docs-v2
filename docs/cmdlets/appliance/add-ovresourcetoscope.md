@@ -61,8 +61,7 @@ or removed from a scope:
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, scope administrator, scope operator
-    
+    Minimum required privileges: Infrastructure administrator, scope administrator, scope operator
 
 ## Examples
 
@@ -133,16 +132,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.ScopeCollection"
- 
-Scope resource object from Get-OVScope.
- 
+    Scope resource object from Get-OVScope.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource that updates the Scope and associated resources.
- 
+    Asynchronous task resource that updates the Scope and associated resources.
+    
 
 ## Related Links
 

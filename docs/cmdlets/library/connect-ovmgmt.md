@@ -42,8 +42,7 @@ Appliance hostname or IP can include an alternate TCP port number.  While the ap
 If the appliance is configured to Common Access Card (CAC) authentication, the `-Certificate` parameter is required.  If the CAC requires a PIN to unlock, the user will be prompted by the credential service to provide that value.  The Cmdlet does not offer the ability to retrieve or store the CAC PIN.
 
 ???+ info
-    Minimum required privileges:  Read-only.
-    
+    Minimum required privileges:  Read-only.
 
 ## Examples
 
@@ -177,35 +176,35 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.Connection"
- 
-When a valid connection is established with an appliance, this object is then added to `${Global:ConnectedSessions}` connection tracker variable. 
- The object returned will contain the following public properties: 
-| Name                   | Type       | Value                                |
- | AuthLoginDomain        | String     | Local                                |
- | ConnectionId           | Int        | 1                                    |
- | Name                   | String     | Hostname value                       |
- | SessionID              | String     | AUTH string returned from API        |
- | ApplianceType          | String     | Indicate connected appliance type.   |
- | UserName               | String     | Username value                       |
- | AuthType               | String     | Credential or Certificate/2FA        |
- | ActivePermissions      | IList      | Collection of Scopes and permissions |
- | ApplianceSecurityRoles | IList      | Collection of roles                  |
- | Default                | Boolean    | Is connection default for library    |
-
- 
+    When a valid connection is established with an appliance, this object is then added to `${Global:ConnectedSessions}` connection tracker variable.
+    
+    
+    The object returned will contain the following public properties:
+    
+    
+    | Name                   | Type       | Value                                |
+    | :--- | :--- | :--- |
+    | ConnectionId           | Int        | 1                                    |
+    | Name                   | String     | Hostname value                       |
+    | SessionID              | String     | AUTH string returned from API        |
+    | ApplianceType          | String     | Indicate connected appliance type.   |
+    | UserName               | String     | Username value                       |
+    | AuthType               | String     | Credential or Certificate/2FA        |
+    | ActivePermissions      | IList      | Collection of Scopes and permissions |
+    | ApplianceSecurityRoles | IList      | Collection of roles                  |
+    | Default                | Boolean    | Is connection default for library    |
+    
+    
 
 === "System.Management.Automation.ErrorRecord"
- 
-On error, appliance response is returned as a terminating error.
- 
+    On error, appliance response is returned as a terminating error.
+    
 
 ## Related Links
 

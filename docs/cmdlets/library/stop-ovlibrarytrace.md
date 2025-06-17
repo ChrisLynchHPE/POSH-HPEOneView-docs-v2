@@ -28,17 +28,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.IO.File"
- 
-{filename}.trace file is generated in the location specified in the Start-OVLibraryTrace Cmdlet
- 
+    {filename}.trace file is generated in the location specified in the Start-OVLibraryTrace Cmdlet
+    
 
 ## Related Links
 

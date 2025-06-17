@@ -28,8 +28,7 @@ Use this Cmdlet to change the Server Hardware Type and/or Enclosure Group set wi
 * Any change in the server hardware type will lead to the associated volume loss.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -157,16 +156,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerProfileTemplate"
- 
-The Server Profile Template resource object to transform.
- 
+    The Server Profile Template resource object to transform.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async Task resource to monitor progress of the Server Profile transformation.
- 
+    Async Task resource to monitor progress of the Server Profile transformation.
+    
 
 ## Related Links
 

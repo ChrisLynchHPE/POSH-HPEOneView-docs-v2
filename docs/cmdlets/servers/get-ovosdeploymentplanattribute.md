@@ -20,8 +20,7 @@ An OS Deployment Plan is a recipe on how to deploy and configure an operating sy
 Use this Cmdlet to return defined OS deployment plan custom attributes from a specified OS deployment plan.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -83,16 +82,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.OSDeploymentPlan [System.Management.Automation.PSCustomObject]"
- 
-The OS Deployment Plan from Get-OVOSDeploymentPlan.
- 
+    The OS Deployment Plan from Get-OVOSDeploymentPlan.
+    
 
 ## Return Values
 
 === "HPEOneView.ServerProfile.OSDeployment.OSDeploymentParameter"
- 
-The object contained the Name of the parameter, and its default Value.
- 
+    The object contained the Name of the parameter, and its default Value.
+    
 
 ## Related Links
 

@@ -60,16 +60,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.Connection"
- 
-HPE OneView Appliance Connection object
- 
+    HPE OneView Appliance Connection object
+    
 
 ## Return Values
 
 === "None."
- 
-
- 
+    
+    
 
 ## Related Links
 

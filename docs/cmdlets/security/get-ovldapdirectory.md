@@ -32,8 +32,7 @@ When you use a directory service, directory users are granted HPE OneView permis
 This Cmdlet will retrieve the configured authentication directory(ies) configured on the appliance.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -106,22 +105,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
- 
-Authentication Directory settings object
- 
+    Authentication Directory settings object
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Authentication Directory settings objects
- 
+    Multiple Authentication Directory settings objects
+    
 
 ## Related Links
 

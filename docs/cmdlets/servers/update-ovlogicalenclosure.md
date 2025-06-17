@@ -172,41 +172,30 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]"
- 
-Single Logical Enclosure resource
- 
+    Single Logical Enclosure resource
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Logical Enclosure resources
- 
+    Multiple Logical Enclosure resources
+    
 
 === "HPEOneView.Library.CompareObject"
- 
-The Cmdlet will return a compare object with the Parent and Child object and settings that are different.  Otherwise, no object is returned.
-
+    The Cmdlet will return a compare object with the Parent and Child object and settings that are different.  Otherwise, no object is returned.
+    
     Property Name | Description
-    ==========================================================
     InputObject   | Compared Object Property or Setting Value
-    ----------------------------------------------------------
     ParentSetting | Name of Property or Setting
-    ----------------------------------------------------------
     ChildSetting  | Name of Property or Setting
-    ----------------------------------------------------------
     Parent        | Name of Parent Object
-    ----------------------------------------------------------
     Child         | Name of Child Object
-    ----------------------------------------------------------
     Description   | Description Name of difference
-    ----------------------------------------------------------
- 
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for monitoring the enclosure import process
- 
+    Async task Resource object for monitoring the enclosure import process
+    
 
 ## Related Links
 

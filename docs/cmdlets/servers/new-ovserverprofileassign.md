@@ -141,16 +141,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Server Profile resource object from Get-OVServerProfile
- 
+    Server Profile resource object from Get-OVServerProfile
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-If successful returns a task resource which may be polled to follow the progress of the profile creation.  Otherwise, a request validation error will be returned
- 
+    If successful returns a task resource which may be polled to follow the progress of the profile creation.  Otherwise, a request validation error will be returned
+    
 
 ## Related Links
 

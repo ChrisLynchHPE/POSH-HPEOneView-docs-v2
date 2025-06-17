@@ -88,8 +88,7 @@ Uplink Sets can be created for Logical Interconnect Groups or Logical Interconne
 Please know that the UplinkPorts parameter syntax is different between HPE BladeSystem and HPE Synergy Virtual Connect.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Network administrator
-    
+    Minimum required privileges: Infrastructure administrator, Network administrator
 
 ## Examples
 
@@ -574,21 +573,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
- 
-Logical Interconnect Resource from Get-OVLogicalInterconnect
- 
+    Logical Interconnect Resource from Get-OVLogicalInterconnect
+    
 
 === "HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]"
- 
-Logical Interconnect Group Resource from Get-OVLogicalInterconnectGroup
- 
+    Logical Interconnect Group Resource from Get-OVLogicalInterconnectGroup
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}"
- 
-Async Task Resource object
- 
+    Async Task Resource object
+    
 
 ## Related Links
 

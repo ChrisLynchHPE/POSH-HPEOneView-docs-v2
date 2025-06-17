@@ -46,8 +46,7 @@ To specify an automatic update schedule, you will need to provide the weekly fre
 The HPE support center user token uniquely identifies your HPESC user profile. The token is required to enable inventory-based firmware downloads and used to verify access to the software and firmware components. You must generate a token on the HPE Support Center Portal (https://support.hpe.com/hpesc/swd/entitlement-token-service/generate) and then use the `-ActivationKey` parameter to complete the configuration on the appliance.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Server administrator, and Network administrator
-    
+    Minimum required privileges: Infrastructure administrator, Server administrator, and Network administrator
 
 ## Examples
 
@@ -195,17 +194,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource to monitor.
- 
+    Async task resource to monitor.
+    
 
 ## Related Links
 

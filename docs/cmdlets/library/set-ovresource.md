@@ -75,16 +75,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Resource Object to modify by either using Send-OVRequest with the resource URI, or the resource GET Cmdlet
- 
+    Resource Object to modify by either using Send-OVRequest with the resource URI, or the resource GET Cmdlet
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-The modified resource or async task depending on the resource being modified
- 
+    The modified resource or async task depending on the resource being modified
+    
 
 ## Related Links
 

@@ -24,8 +24,7 @@ This Cmdlet will help transition the Standby Composer node to the Active Role.  
 HPE OneView services will be stopped on the active appliance and restarted on the standby appliance. Operations in progress might fail and need to be restarted.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Software administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Software administrator.
 
 ## Examples
 
@@ -93,17 +92,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-The Async task resource of the role transition request
- 
+    The Async task resource of the role transition request
+    
 
 ## Related Links
 

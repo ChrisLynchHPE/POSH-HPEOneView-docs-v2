@@ -23,8 +23,7 @@ Enabling Remote Support configures your devices being remotely supported to secu
 This Cmdlet will get the address of the data center where the devices are located for support.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -56,17 +55,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Configured Remote Support default site.
- 
+    Configured Remote Support default site.
+    
 
 ## Related Links
 

@@ -131,21 +131,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-         Provide the Server Resource Object 
- 
+    
+    Provide the Server Resource Object
+    
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async removal task
- 
+    Async removal task
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-When using the -Force parameter, a PSCustomObject is returned indicating successful removal of the resource
- 
+    When using the `-Force` parameter, a PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

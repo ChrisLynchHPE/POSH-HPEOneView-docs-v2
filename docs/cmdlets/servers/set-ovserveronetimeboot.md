@@ -31,8 +31,7 @@ Other one-time boot options are available through the HPE iLO interface; however
 After setting the one-time boot option, when the server hardware is powered off and powered on, HPE iLO attempts to boot the server using the selected boot option. If the selected boot option is not available, HPE iLO attempts to boot the server using the boot order defined in the server profile. After using or attempting to use the one-time boot value, the one-time boot value is reset to No one-time boot and the server boots using the boot order defined in its server profile or through HPE iLO.
 
 ???+ info
-    Minimum required privileges: Server administrator
-    
+    Minimum required privileges: Server administrator
 
 ## Examples
 
@@ -148,21 +147,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-Server hardware resource object from Get-OVServer.
- 
+    Server hardware resource object from Get-OVServer.
+    
 
 === "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
- 
-Server profile resource object from Get-OVServerProfile.
- 
+    Server profile resource object from Get-OVServerProfile.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

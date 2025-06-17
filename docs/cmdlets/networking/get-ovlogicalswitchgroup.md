@@ -65,8 +65,7 @@ Stacking links can be set from the originating peer or from the destination peer
 This Cmdlet retrieves a list of all Logical Switch Groups or just specific ones via a query if the name parameter is provided. The output can be sent to a file using the exportFile parameter.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -172,21 +171,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource after a Logical Switch Group has been created.
- 
+    Async task resource after a Logical Switch Group has been created.
+    
 
 ## Return Values
 
 === "HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]"
- 
-The async task resource object to monitor (if -Async was used) or results.
- 
+    The async task resource object to monitor (if `-Async` was used) or results.
+    
 
 === "System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitchGroup>"
- 
-Collection of Logical Switch Group resources.
- 
+    Collection of Logical Switch Group resources.
+    
 
 ## Related Links
 

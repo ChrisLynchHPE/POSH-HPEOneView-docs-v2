@@ -83,21 +83,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-A server hardware resource from Get-OVServer.
- 
+    A server hardware resource from Get-OVServer.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
- 
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 === "null"
- 
-If the resource is already assigned a valid upgraded license, a null response is returned.
- 
+    If the resource is already assigned a valid upgraded license, a null response is returned.
+    
 
 ## Related Links
 

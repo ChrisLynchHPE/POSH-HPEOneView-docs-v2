@@ -103,16 +103,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Resource to remove label association.
- 
+    Resource to remove label association.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-The created or modified Label resource.
- 
+    The created or modified Label resource.
+    
 
 ## Related Links
 

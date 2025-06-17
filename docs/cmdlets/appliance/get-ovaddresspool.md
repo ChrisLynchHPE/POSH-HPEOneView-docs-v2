@@ -30,7 +30,6 @@ You can specify one, some or all of the Pool types. A Range switch is provided t
 ???+ info
     Minimum required privileges: Network administrator 
 (virtual MAC addresses and virtual WWNs), Infrastructure administrator (all ID types)
-
 ## Examples
 
 ###  Example 1 
@@ -81,22 +80,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]"
- 
-Single address pool and its contents.
- 
+    Single address pool and its contents.
+    
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.AddressPool>"
- 
-Collection of address pools and their contents.
- 
+    Collection of address pools and their contents.
+    
 
 ## Related Links
 

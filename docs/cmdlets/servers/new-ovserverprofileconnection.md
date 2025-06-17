@@ -640,17 +640,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Returns a connection object which may be used during profile creation with the New-OVServerProfile Cmdlet
- 
+    Returns a connection object which may be used during profile creation with the New-OVServerProfile Cmdlet
+    
 
 ## Related Links
 

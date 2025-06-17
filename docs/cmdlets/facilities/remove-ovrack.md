@@ -75,16 +75,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Facilities.Rack"
- 
-Rack resource from Get-OVRack.
- 
+    Rack resource from Get-OVRack.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Object with status confirmation the resource was deleted.
- 
+    Object with status confirmation the resource was deleted.
+    
 
 ## Related Links
 

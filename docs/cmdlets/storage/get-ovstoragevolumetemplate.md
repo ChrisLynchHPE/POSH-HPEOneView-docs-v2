@@ -100,27 +100,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]"
- 
-Single Storage Volume Template
- 
+    Single Storage Volume Template
+    
 
 === "System.COllections.ArrayList <HPEOneView.Storage.VolumeTemplate>"
- 
-Multiple Storage Volume Template
- 
+    Multiple Storage Volume Template
+    
 
 === "The matching Storage Volume Template resource(s)."
- 
-
- 
+    
+    
 
 ## Related Links
 

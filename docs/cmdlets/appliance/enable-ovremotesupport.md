@@ -25,8 +25,7 @@ Enabling Remote Support configures your devices being remotely supported to secu
 This Cmdlet will enable Remote Support for a compute or enclosure resource.  Remote Support must be enabled globally on the appliance in order to use this Cmdlet.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator
-    
+    Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator
 
 ## Examples
 
@@ -92,21 +91,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-A Gen8 or newer generation server hardware resource object from Get-OVServer.
- 
+    A Gen8 or newer generation server hardware resource object from Get-OVServer.
+    
 
 === "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-A Gen8 or newer generation server hardware resource object from Get-OVServer.
- 
+    A Gen8 or newer generation server hardware resource object from Get-OVServer.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for monitoring.
- 
+    Async task Resource object for monitoring.
+    
 
 ## Related Links
 

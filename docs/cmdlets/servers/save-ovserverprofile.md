@@ -75,16 +75,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerProfile"
- 
-A Server Profile resource object from Get-OVServerProfile that was modified and needs to be saved.
- 
+    A Server Profile resource object from Get-OVServerProfile that was modified and needs to be saved.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for monitoring the enclosure import process.
- 
+    Async task Resource object for monitoring the enclosure import process.
+    
 
 ## Related Links
 

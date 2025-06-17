@@ -21,8 +21,7 @@ A cluster in an active state runs a shared workload, like virtual machines withi
 After the maintenance operation on the cluster member completes, you must release it from maintenance mode to resume hosting the shared workload.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Server administrator, Server Profile administrator, Server Profile architect, or Server Profile operator
-    
+    Minimum required privileges: Infrastructure administrator, Server administrator, Server Profile administrator, Server Profile architect, or Server Profile operator
 
 ## Examples
 
@@ -103,16 +102,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Cluster.ClusterNode [System.Management.Automation.PSCustomObject]"
- 
-Cluster node member from Get-OVClusterNode.
- 
+    Cluster node member from Get-OVClusterNode.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

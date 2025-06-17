@@ -68,7 +68,6 @@ Similarly, you can configure the Forward Error Correction (FEC) mode using the A
 
 ???+ info
     Minimum required privileges: Infrastructure administrator or Network administrator
-    
     
 
 ## Examples
@@ -233,16 +232,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
- 
-Logical Interconnect resource object from Get-OVLogicalInterconnect
- 
+    Logical Interconnect resource object from Get-OVLogicalInterconnect
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
- 
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 ## Related Links
 

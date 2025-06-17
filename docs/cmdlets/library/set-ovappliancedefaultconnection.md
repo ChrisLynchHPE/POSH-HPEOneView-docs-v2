@@ -79,16 +79,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.Connection"
- 
-The Appliance Connection object either provided from the Connect-OVMgmt output or `${Global:ConnectedSessions}` variable
- 
+    The Appliance Connection object either provided from the Connect-OVMgmt output or `${Global:ConnectedSessions}` variable
+    
 
 ## Return Values
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.Connection>"
- 
-Updated collection of [HPEOneView.Appliance.Connection] Objects
- 
+    Updated collection of [HPEOneView.Appliance.Connection] Objects
+    
 
 ## Related Links
 

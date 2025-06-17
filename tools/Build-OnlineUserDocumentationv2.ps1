@@ -4,7 +4,7 @@
 Param
 (
 
-    [Parameter (Mandatory = $false, HelpMessage = "Provide the root directory to where the Library source is located.")]
+    [Parameter (Mandatory, HelpMessage = "Provide the full path to the CmdletHelp JSON source to process.")]
     [ValidateNotNullorEmpty()]
     [System.IO.FileInfo]$Path = ((Split-Path $MyInvocation.MyCommand.Path -parent) + '\..\source\HPEOneView.1000_CmdletHelp.json'),
 
@@ -38,7 +38,7 @@ $Script:ParentLinkableAssociatedLinks              = [Ordered]@{
 $H1 = "# "
 $H2 = "## "
 $H3 = "### "
-$Indent = '    '
+$script:Indent = '    '
 
 $StartSyntax = '```powershell'
 $EndSyntax   = '```{0}' -f [System.Environment]::NewLine
@@ -96,39 +96,84 @@ class DisplayHint
 class Tabs
 {
 
-    static [string]$NewTab           = '=== "{0}"' + [System.Environment]::NewLine
-    static [string]$TabText          = '{0}{1}{0}'
-    static [string]$EndTab           = '{0}' -f [System.Environment]::NewLine
+    static [string]$NewTab           = '=== "{0}"' 
+    static [string]$TabText          = '{0}{1}'
 
-    static [string] BuildTabEntry ([string]$Title, [string]$Description, [string]$CmdletName)
+    static [string] BuildTabEntry ([string]$Title, [string[]]$Description, [string]$CmdletName)
     {
 
-        $FinalString = [System.Collections.ArrayList]::new()
+        $TempDescriptionString = [System.Text.StringBuilder]::new()
+        $TempTableString       = [System.Text.StringBuilder]::new()
+        $FinalString           = [System.Text.StringBuilder]::new()
 
         $_NewTab = [Tabs]::NewTab -f $Title
-        [void]$FinalString.Add($_NewTab)
+        [void]$FinalString.AppendLine($_NewTab)
+      
+        # Process each line to provided FindVariableRegexPattern and replace the variables with a single tick
+        ForEach ($line in ($Description -split '\n'))
+        {
 
-        # Find variables in the description and encase with the single tick
-        $Description = $Script:FindVariableRegexPattern.Replace($Description, "```$0``")
+            # It is plain text and not part of a table we are looking for
+            if (-not ($line.ToString().StartsWith("    =") -or $line.ToString().StartsWith("    -") -or $line.ToString().StartsWith("    |") -or $line.ToString().StartsWith("\n")))
+            {
 
-        LinkifyString -String $Description -CmdletName $CmdletName
+                # Find variables in the description and encase with the single tick
+                $_Line = $Script:FindVariableRegexPattern.Replace($line.ToString(), "```$0``")
+
+                $_Line = LinkifyString -String $_Line -CmdletName $CmdletName
+
+                # Add the processed line to the final string
+                [void]$TempDescriptionString.AppendLine($_Line)
+
+            }
+
+            else
+            {
+            
+                [void]$TempTableString.AppendLine($line.Trim())
+            
+            }
+
+        }
 
         # Replace the table in the Return text with one that will format correctly in mkdocs
         if ($CmdletName -eq 'Connect-OVMgmt')
         {
 
-            $Table = [regex]::Matches($Description, '^\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\n',[System.Text.RegularExpressions.RegexOptions]::Multiline).Value -Replace "^\s+", ""
+            # This regular express looks to match a markdown table format of "| some text | some text | some text |"
+            $Table = [regex]::Matches($TempTableString.ToString(), '^\|\s\w+\s+\|\s\w+\s+\|\s[\w\/\.\s]+\|', [System.Text.RegularExpressions.RegexOptions]::Multiline).Value 
 
-            $Description = [regex]::Replace($Description, '^\s+(=+)(.*\n)*\s+-*$', $Table, [System.Text.RegularExpressions.RegexOptions]::Multiline)
+            if ($null -ne $Table)
+            {
+
+                For ($t = 0; $t -le $Table.Count; $t++)
+                {
+
+                    if ($t -eq 1)
+                    {
+                        [void]$TempDescriptionString.AppendLine('| :--- | :--- | :--- |')
+                    }
+                    else
+                    {
+                        [void]$TempDescriptionString.AppendLine($Table[$t])
+                    }
+                }
+
+            }
 
         }
 
-        $_TabText = [Tabs]::TabText -f [System.Environment]::NewLine, $Description
-        [void]$FinalString.Add($_TabText)
+        # Split the description into lines so that it can be processed
+        # Remove all empty space before each line, and then add a 4 space indentation to prefix
+        ForEach ($line in ($TempDescriptionString.ToString() -split '\n'))
+        {
 
-        [void]$FinalString.Add([Tabs]::EndTab)
+            $_Line = [Tabs]::TabText -f $script:Indent, $line.ToString().Trim()
+            [void]$FinalString.AppendLine($_Line)
 
-        return $FinalString.ToArray()
+        }
+
+        return $FinalString.ToString()
 
     }
 
@@ -343,7 +388,7 @@ function LinkifyString ([String]$String, [String]$CmdletName)
 
     }
 
-    return $UpdatedString + [System.Environment]::NewLine
+    return $UpdatedString #+ [System.Environment]::NewLine
 
 }
 
@@ -644,22 +689,25 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
                 ForEach ($Type in $Cmdlet.Contents.InputTypes)
                 {
 
-                    [Tabs]::BuildTabEntry($Type.Value, $Type.Text, $Cmdlet.Name) | ForEach-Object { 
+                    # If the type is None, then skip creating a table view
+                    if (-not $Type.Value.StartsWith('None.'))
+                    {
+
+                        [Tabs]::BuildTabEntry($Type.Value, $Type.Text, $Cmdlet.Name) | ForEach-Object { 
                         
-                        [void]$FinalMarkdownOutput.Add($_) 
-                    
+                            [void]$FinalMarkdownOutput.Add($_) 
+                        
+                        }
+
                     }
 
-                    # $InputTypeHeaderString = '_**{0}**_{1}' -f $Type.Value, [System.Environment]::NewLine
-                    # [void]$FinalMarkdownOutput.Add($InputTypeHeaderString)
-
-                    # if (-not $Type.Value.StartsWith('None.'))
-                    # {
-
-                    #     $InputTypeDescription = LinkifyString -String $Type.Text -CmdletName $Cmdlet.Name
-                    #     [void]$FinalMarkdownOutput.Add($InputTypeDescription)
-
-                    # }
+                    else
+                    {
+             
+                        [void]$FinalMarkdownOutput.Add($Type.Value)
+                        [void]$FinalMarkdownOutput.Add([System.Environment]::NewLine)
+                    
+                    }
 
                 }
 
@@ -667,25 +715,13 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
                 $ReturnValuesSectionHeader = '{0}Return Values{1}' -f $H2, [System.Environment]::NewLine
                 [void]$FinalMarkdownOutput.Add($ReturnValuesSectionHeader)
 
-
-                # {
-                #     "Value": "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]",
-                #     "Text": "Async create task"
-                # }
                 ForEach ($Return in $Cmdlet.Contents.ReturnValues)
                 {
 
-                    [Tabs]::BuildTabEntry($Return.Value, $Return.Text, $Cmdlet.Name) | ForEach-Object { 
-                        
-                        [void]$FinalMarkdownOutput.Add($_) 
-                    
-                    }
-
-                    # $ReturnValueHeaderString = '_**{0}**_{1}' -f $Return.Value, [System.Environment]::NewLine
-                    # [void]$FinalMarkdownOutput.Add($ReturnValueHeaderString)
-
-                    # $ReturnValueDescription = LinkifyString -String $Return.Text -CmdletName $Cmdlet.Name
-                    # [void]$FinalMarkdownOutput.Add($ReturnValueDescription)
+                    # Need to figure out if there are many empty trailing lines in the ReturnValues text, as only a single line is needed
+                    $GeneratedReturnText = [Tabs]::BuildTabEntry($Return.Value, $Return.Text, $Cmdlet.Name)
+                    # $GeneratedReturnText = $GeneratedReturnText -replace '(\n\s*){2,}', [System.Environment]::NewLine
+                    [void]$FinalMarkdownOutput.Add($GeneratedReturnText)                   
 
                 }
 

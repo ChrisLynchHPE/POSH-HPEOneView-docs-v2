@@ -150,16 +150,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
- 
-Authentication Directory retrieved using Get-OVLdapDirectory
- 
+    Authentication Directory retrieved using Get-OVLdapDirectory
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Appliance Authentication Directory setting
- 
+    Appliance Authentication Directory setting
+    
 
 ## Related Links
 

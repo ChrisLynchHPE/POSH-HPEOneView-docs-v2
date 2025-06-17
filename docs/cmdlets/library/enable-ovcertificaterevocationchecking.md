@@ -27,8 +27,7 @@ This Cmdlet will enables certificate revocation validation on the specified appl
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -135,18 +134,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "None"
- 
-Appliance will reboot.
-
- 
+    Appliance will reboot.
+    
+    
 
 ## Related Links
 

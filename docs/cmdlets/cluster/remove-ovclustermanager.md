@@ -101,16 +101,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ClusterProfile.HypervisorManager"
- 
-The hypervisor manager object from Get-OVClusterManager.
- 
+    The hypervisor manager object from Get-OVClusterManager.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

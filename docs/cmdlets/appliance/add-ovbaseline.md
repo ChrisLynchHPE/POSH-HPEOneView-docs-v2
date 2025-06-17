@@ -34,8 +34,7 @@ Please note that any file name that contains the . (period, CHAR46) character wi
 Example: My.Spp.To.Upload.201605.iso will become My_Spp_To_Upload_201605.iso.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Network administrator, or Server administrator
-    
+    Minimum required privileges: Infrastructure administrator, Network administrator, or Server administrator
 
 ## Examples
 
@@ -156,16 +155,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.IO.FileSystemInfo"
- 
-File System object from Get-ChildItem of the baseline ISO image to upload.
- 
+    File System object from Get-ChildItem of the baseline ISO image to upload.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-The progress of uploading the file to the appliance, and in-progress or completion result.
- 
+    The progress of uploading the file to the appliance, and in-progress or completion result.
+    
 
 ## Related Links
 

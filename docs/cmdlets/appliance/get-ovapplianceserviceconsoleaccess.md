@@ -19,8 +19,7 @@ HPE OneView contains a technical feature that you can use to allow an authorized
 This Cmdlet will return the existing configuration state of the appliance service console.
 
 ???+ info
-    Minimum required privileges: Read only
-    
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -52,17 +51,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.ServiceConsoleAccess"
- 
-The current service console configuration status.
- 
+    The current service console configuration status.
+    
 
 ## Related Links
 

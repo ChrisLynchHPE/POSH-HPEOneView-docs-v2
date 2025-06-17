@@ -58,7 +58,6 @@ Use this Cmdlet to retrieve the iLO configuration of the support HPE Synergy Com
 
 ???+ info
     Minimum required privileges: Read-only
-    
     
 
 ## Examples
@@ -94,18 +93,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]"
- 
-The existing iLO configuration of an HPE Synergy Composer.
-
- 
+    The existing iLO configuration of an HPE Synergy Composer.
+    
+    
 
 ## Related Links
 

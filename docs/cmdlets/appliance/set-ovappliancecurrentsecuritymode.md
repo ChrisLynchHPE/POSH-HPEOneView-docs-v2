@@ -60,16 +60,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.SecurityMode"
- 
-The specified appliance security mode from Get-OVApplianceAvailableSecurityMode.
- 
+    The specified appliance security mode from Get-OVApplianceAvailableSecurityMode.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource to monitor.
- 
+    Async task resource to monitor.
+    
 
 ## Related Links
 

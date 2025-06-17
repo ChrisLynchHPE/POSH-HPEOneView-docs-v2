@@ -222,16 +222,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "None"
- 
-
- 
+    
+    
 
 ## Return Values
 
 === "HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]"
- 
-Server Profile template resource
- 
+    Server Profile template resource
+    
 
 ## Related Links
 

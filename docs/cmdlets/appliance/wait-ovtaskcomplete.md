@@ -100,21 +100,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.String"
- 
-Task URI
- 
+    Task URI
+    
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Task resource object
- 
+    Task resource object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-The finished Task object that includes the task result
- 
+    The finished Task object that includes the task result
+    
 
 ## Related Links
 

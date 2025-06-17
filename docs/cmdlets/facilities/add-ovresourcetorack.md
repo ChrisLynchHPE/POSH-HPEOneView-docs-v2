@@ -34,8 +34,7 @@ After adding a rack to the appliance for management, you can add the rack to a d
 After the rack is under management, you can configure the power delivery topology with redundant and uninterruptible power supplies to the devices in the rack.
 
 ???+ info
-    Minimum required privileges: Edit privileges for the resource.
-    
+    Minimum required privileges: Edit privileges for the resource.
 
 ## Examples
 
@@ -130,16 +129,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]"
- 
-Rack resource object from Get-OVRack.
- 
+    Rack resource object from Get-OVRack.
+    
 
 ## Return Values
 
 === "HPEOneView.Facilities.Rack [System.Management.Automation.PSCustomObject]"
- 
-Updated rack object with the newly added resources in the contents property.
- 
+    Updated rack object with the newly added resources in the contents property.
+    
 
 ## Related Links
 

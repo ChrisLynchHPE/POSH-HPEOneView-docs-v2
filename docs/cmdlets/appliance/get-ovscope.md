@@ -116,17 +116,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.ScopeCollection"
- 
-Collection of Appliance Scope resource objects.
- 
+    Collection of Appliance Scope resource objects.
+    
 
 ## Related Links
 

@@ -34,8 +34,7 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will create a new rack resource, which brings it under the management of the appliance, and creates a diagram that depicts the rack and its slots. After you add the rack, you can configure the layout of the devices in it by adding, removing, and repositioning the devices.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator
 
 ## Examples
 
@@ -195,17 +194,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Facilities.Rack"
- 
-Newly created rack.
- 
+    Newly created rack.
+    
 
 ## Related Links
 

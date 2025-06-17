@@ -151,22 +151,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Collections.ArrayList"
- 
-If bandwidth settings are specified, the newly created Network Set resource is returned
- 
+    If bandwidth settings are specified, the newly created Network Set resource is returned
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-If no bandwidth settings specified, an async task object is returned
- 
+    If no bandwidth settings specified, an async task object is returned
+    
 
 ## Related Links
 

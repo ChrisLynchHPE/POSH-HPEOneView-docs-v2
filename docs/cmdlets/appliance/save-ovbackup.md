@@ -102,22 +102,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async Task resource to monitor progress of the backup file saved to the remote location.
- 
+    Async Task resource to monitor progress of the backup file saved to the remote location.
+    
 
 === "System.IO.FileInfo"
- 
-The saved backup file located on the PC.
- 
+    The saved backup file located on the PC.
+    
 
 ## Related Links
 

@@ -112,22 +112,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "The generated backup File if appliance is not setup for remote storage or the Force parameter is used."
- 
-
- 
+    
+    
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task to create the backup file.
- 
+    Async task to create the backup file.
+    
 
 ## Related Links
 

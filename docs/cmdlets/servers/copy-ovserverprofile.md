@@ -22,8 +22,7 @@ You can copy a server profile to server hardware of the same server hardware typ
 This Cmdlet will copy a source Server Profile to a new instance You can assign the copy to an existing Server Device, or specify "unassigned".
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator
 
 ## Examples
 
@@ -120,16 +119,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject"
- 
-Server Profile resource object
- 
+    Server Profile resource object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Profile Create async task
- 
+    Profile Create async task
+    
 
 ## Related Links
 

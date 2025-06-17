@@ -19,8 +19,7 @@ HPE OneView can be used as a proxy to forward device traps from servers, enclosu
 Use this Cmdlet to get the appliance SNMPv3 Engine ID that is automatically generated upon first time boot of the appliance, or configured by an Infrastructure Administrator.
 
 ???+ info
-    Minimum required privileges: Read only
-    
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -52,17 +51,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.SnmpV3EngineId"
- 
-Appliance SNMPv3 Engine ID.
- 
+    Appliance SNMPv3 Engine ID.
+    
 
 ## Related Links
 

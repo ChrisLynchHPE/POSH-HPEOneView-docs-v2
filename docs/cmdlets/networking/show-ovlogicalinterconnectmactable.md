@@ -141,21 +141,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Collections.ArrayList"
- 
-An Array of Logical Interconnect resource URI"s, Names or Objects
- 
+    An Array of Logical Interconnect resource URI"s, Names or Objects
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-Logical Interconnect Resource Object
- 
+    Logical Interconnect Resource Object
+    
 
 ## Return Values
 
 === "System.Collections.ArrayList"
- 
-Collection of MAC Address Table entries
- 
+    Collection of MAC Address Table entries
+    
 
 ## Related Links
 

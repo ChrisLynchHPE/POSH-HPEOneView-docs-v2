@@ -73,8 +73,7 @@ Considerations when configuring logical JBODs:
     * A logical interconnect group is created with the interconnect type Synergy 12 GB SAS Connection Module.
     * An enclosure group is created with the above created logical interconnect group set as the Logical interconnect group.
     * A logical enclosure is created. A SAS logical interconnect is created as part of creating the logical enclosure.
-    * If scopes have been defined, make sure that sufficient number of drive enclosures are mapped to the user scopes.
-    
+    * If scopes have been defined, make sure that sufficient number of drive enclosures are mapped to the user scopes.
 
 ## Examples
 
@@ -291,16 +290,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.AvailableDriveType"
- 
-The available drive type from Get-OVAvailableDriveType
- 
+    The available drive type from Get-OVAvailableDriveType
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

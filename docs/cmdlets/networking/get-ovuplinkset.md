@@ -147,27 +147,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Single Uplink Set
- 
+    Single Uplink Set
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Uplink Sets
- 
+    Multiple Uplink Sets
+    
 
 === "Collection of Uplink Sets"
- 
-
- 
+    
+    
 
 ## Related Links
 

@@ -24,8 +24,7 @@ If the logical drive settings in the server profile indicate that the data in th
 Using this Cmdlet will remove an existing logical JBOD on the connected appliance.  You can delete a logical JBOD only after you unassign it from the server profile. If you have chosen to erase the drive data when you delete a logical JBOD, all the drive data will be erased.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator
-    
+    Minimum required privileges: Infrastructure administrator, server administrator, server profile architect, server profile administrator
 
 ## Examples
 
@@ -140,16 +139,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.LogicalJBOD[]"
- 
-One or more logical JBOD resources from Get-OVLogicalJBOD.
- 
+    One or more logical JBOD resources from Get-OVLogicalJBOD.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Asynchronous task resource to monitor.
- 
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

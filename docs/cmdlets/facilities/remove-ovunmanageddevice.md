@@ -117,16 +117,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.UnmanagedResource [System.Management.Automation.PSCustomObject]"
- 
-Unmanaged Device resource object
- 
+    Unmanaged Device resource object
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-When using the -Force parameter, a PSCustomObject is returned indicating successful removal of the resource
- 
+    When using the `-Force` parameter, a PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

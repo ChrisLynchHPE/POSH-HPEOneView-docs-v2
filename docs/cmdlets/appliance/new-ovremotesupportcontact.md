@@ -163,17 +163,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupport.Contact [System.Management.Automation.PSCustomObject]"
- 
-The created Remote Support Contact.
- 
+    The created Remote Support Contact.
+    
 
 ## Related Links
 

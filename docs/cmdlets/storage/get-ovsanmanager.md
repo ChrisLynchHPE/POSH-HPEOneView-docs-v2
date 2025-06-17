@@ -26,8 +26,7 @@ HPE OneView supports SAN managers from different vendors. See the HPE OneView Su
 This Cmdlet will return the configured SAN Manager(s).
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -88,22 +87,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]"
- 
-Single SAN Manager resource
- 
+    Single SAN Manager resource
+    
 
 === "System.Collections.ArrayList <HPEOneView.Storage.SanManager>"
- 
-Multiple SAN Manager resources
- 
+    Multiple SAN Manager resources
+    
 
 ## Related Links
 

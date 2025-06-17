@@ -24,8 +24,7 @@ Associate an IPv4 or IPv6 subnet with an Ethernet network. If this is an iSCSI n
 Use this Cmdlet to retrieve the configured IPv4 or IPv6 address pool subnets.
 
 ???+ info
-    Minimum required privileges: Network administrator, Infrastructure administrator
-    
+    Minimum required privileges: Network administrator, Infrastructure administrator
 
 ## Examples
 
@@ -77,22 +76,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  This Cmdlet does not support pipeline operations."
- 
+None.  This Cmdlet does not support pipeline operations.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
- 
-Single IPv4 Subnet address pool range.
- 
+    Single IPv4 Subnet address pool range.
+    
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.IPAddressSubnet>"
- 
-Collection of IPv4 Subnet address pool range(s).
- 
+    Collection of IPv4 Subnet address pool range(s).
+    
 
 ## Related Links
 

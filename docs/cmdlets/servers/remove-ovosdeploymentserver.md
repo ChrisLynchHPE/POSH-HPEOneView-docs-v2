@@ -88,16 +88,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.OSDeploymentServer"
- 
-HPE Synergy Image Streamer OS Deployment Server from Get-OVOSDeploymentServer
- 
+    HPE Synergy Image Streamer OS Deployment Server from Get-OVOSDeploymentServer
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Resource removal async task.
- 
+    Resource removal async task.
+    
 
 ## Related Links
 

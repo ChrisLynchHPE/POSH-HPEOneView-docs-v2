@@ -32,8 +32,7 @@ a different server hardware type may change the capabilities available to the se
 * If the server profile is associated with a server profile template, the server profile will become inconsistent with the template.  The server profile should be unassociated with the template before or after the migration.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -149,16 +148,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerProfile"
- 
-The Server Profile resource object to transform.
- 
+    The Server Profile resource object to transform.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async Task resource to monitor progress of the Server Profile transformation.
- 
+    Async Task resource to monitor progress of the Server Profile transformation.
+    
 
 ## Related Links
 

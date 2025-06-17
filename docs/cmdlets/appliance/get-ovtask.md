@@ -165,26 +165,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject ]"
- 
-Resource Object to retrieve task resources of
- 
+    Resource Object to retrieve task resources of
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Single Task resource
- 
+    Single Task resource
+    
 
 === "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
- 
-Multiple Task resources or formatted table list of tasks
- 
+    Multiple Task resources or formatted table list of tasks
+    
 
 === "The matching task resources."
- 
-
- 
+    
+    
 
 ## Related Links
 

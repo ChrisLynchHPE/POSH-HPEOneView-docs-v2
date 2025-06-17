@@ -66,18 +66,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.FirmwareBundleUpdate [System.Management.Automation.PSCustomObject]"
- 
-Object that represents the available update.
-
- 
+    Object that represents the available update.
+    
+    
 
 ## Related Links
 

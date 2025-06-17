@@ -36,8 +36,7 @@ The appliance also monitors iPDU to remain synchronized with changes to hardware
 
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -107,22 +106,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.PowerDeliveryDevice [System.Management.Automation.PSCustomObject]"
- 
-The matching power device resources
- 
+    The matching power device resources
+    
 
 === "System.Collections.ArrayList <HPEOneView.PowerDeliveryDevice>"
- 
-The matching power device resources
- 
+    The matching power device resources
+    
 
 ## Related Links
 

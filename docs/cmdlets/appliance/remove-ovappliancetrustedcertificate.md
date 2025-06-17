@@ -75,16 +75,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.TrustedCertificate"
- 
-A trusted certificate from Get-OVApplianceTrustedCertificate.
- 
+    A trusted certificate from Get-OVApplianceTrustedCertificate.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Status oject of successfull deletion of trusted certificate.
- 
+    Status oject of successfull deletion of trusted certificate.
+    
 
 ## Related Links
 

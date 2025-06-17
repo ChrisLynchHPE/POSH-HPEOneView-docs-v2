@@ -108,26 +108,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Collections.ArrayList"
- 
-Collection of Enclosure Resources
- 
+    Collection of Enclosure Resources
+    
 
 === "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
- 
-Single Enclosure resource object
- 
+    Single Enclosure resource object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Removal async task
- 
+    Removal async task
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-When using the -Force parameter, a PSCustomObject is returned indicating successful removal of the resource
- 
+    When using the `-Force` parameter, a PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

@@ -60,16 +60,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.RemoteSupport.Contact [System.Management.Automation.PSCustomObject]"
- 
-A Remote Support Contact from Get-OVRemoteSupportContact.
- 
+    A Remote Support Contact from Get-OVRemoteSupportContact.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-Resource deleted response.
- 
+    Resource deleted response.
+    
 
 ## Related Links
 

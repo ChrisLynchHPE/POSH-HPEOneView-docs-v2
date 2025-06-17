@@ -19,8 +19,7 @@ New-OVClusterProfileMember
 This is a helper Cmdlet to create a valid resourc object New-OVClusterProfile will then use for the `-Servers` parameter.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.
-    
+    Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.
 
 ## Examples
 
@@ -99,16 +98,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-An available server hardware resource.
- 
+    An available server hardware resource.
+    
 
 ## Return Values
 
 === "HPEOneView.Cluster.AddHostRequest"
- 
-Properly formatted object for New-OVClusterProfile.
- 
+    Properly formatted object for New-OVClusterProfile.
+    
 
 ## Related Links
 

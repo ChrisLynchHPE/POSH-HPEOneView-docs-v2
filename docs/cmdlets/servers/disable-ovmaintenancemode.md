@@ -23,8 +23,7 @@ Enabling server maintenance mode prevents the appliance from sending any email n
 Disabling maintenance mode causes email notifications to return to normal. No attempt is made to send any events that occurred during the maintenance mode. However, if the health of the server is not OK when maintenance mode is disabled, a single event will be sent, alerting that the server is in a non-healthy state.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator, Network administrator
-    
+    Minimum required privileges: Infrastructure administrator, Network administrator
 
 ## Examples
 
@@ -103,21 +102,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
- 
-A server hardware resource from the appliance.
- 
+    A server hardware resource from the appliance.
+    
 
 === "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
- 
-A server profile resource from the appliance.
- 
+    A server profile resource from the appliance.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource object to monitor.
- 
+    Async task resource object to monitor.
+    
 
 ## Related Links
 

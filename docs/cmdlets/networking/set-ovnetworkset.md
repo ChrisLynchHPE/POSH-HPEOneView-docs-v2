@@ -203,16 +203,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Networking.NetworkSet [System.Management.Automation.PSCustomObject]"
- 
-Single Network Set resource
- 
+    Single Network Set resource
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Update Network Set resource task
- 
+    Update Network Set resource task
+    
 
 ## Related Links
 

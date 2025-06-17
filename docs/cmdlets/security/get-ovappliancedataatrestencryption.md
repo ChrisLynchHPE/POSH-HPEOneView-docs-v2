@@ -29,8 +29,7 @@ If the downloaded recovery key and the AEK stored in the Composer NVRAM are both
 Using this Cmdlet will get the data at rest encryption current configuration from supported HPE Synergy Composer appliances.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator.
-    
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -62,17 +61,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-THe data at rest encryption configuration state of the appliance.
- 
+    THe data at rest encryption configuration state of the appliance.
+    
 
 ## Related Links
 

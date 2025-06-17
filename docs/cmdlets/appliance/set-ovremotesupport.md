@@ -198,17 +198,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.RemoteSupportConfig [System.Management.Automation.PSCustomObject]"
- 
-The appliance Remote Support configuration applied.
- 
+    The appliance Remote Support configuration applied.
+    
 
 ## Related Links
 

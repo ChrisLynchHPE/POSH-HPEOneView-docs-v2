@@ -27,8 +27,7 @@ which again may cause loss of data.
 Any associated Enclosure Groups with the Virtual Connect Ethernet Logical Interconnect Group will also be modified.  If this is not intended, you should first remove the Logical Interconnect Group from the Enclosure Group before executing this Cmdlet.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Server administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -125,21 +124,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]"
- 
-HPE Synergy Logical Enclosure to convert.
- 
+    HPE Synergy Logical Enclosure to convert.
+    
 
 ## Return Values
 
 === "System.Management.Automation.PSCustomObject"
- 
-If the Logical Enclosure cannot be removed or re-created, as PSCustomObject with original Server Profile location is provided.  Object properties are Name, ProfileUri, ServerSerialNumber.
- 
+    If the Logical Enclosure cannot be removed or re-created, as PSCustomObject with original Server Profile location is provided.  Object properties are Name, ProfileUri, ServerSerialNumber.
+    
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-The async task for each Server Profile that will be re-assigned for the caller to monitor.
- 
+    The async task for each Server Profile that will be re-assigned for the caller to monitor.
+    
 
 ## Related Links
 

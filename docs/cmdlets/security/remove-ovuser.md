@@ -84,16 +84,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
- 
-HPE OneView User Account object created on an appliance
- 
+    HPE OneView User Account object created on an appliance
+    
 
 ## Return Values
 
 === "System.Collections.Hashtable"
- 
-Success message if user was deleted
- 
+    Success message if user was deleted
+    
 
 ## Related Links
 

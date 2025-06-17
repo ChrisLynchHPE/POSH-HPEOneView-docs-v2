@@ -100,16 +100,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "Various objects are supported."
- 
-
- 
+    
+    
 
 ## Return Values
 
 === "System.String"
- 
-String output of generated code.
- 
+    String output of generated code.
+    
 
 ## Related Links
 

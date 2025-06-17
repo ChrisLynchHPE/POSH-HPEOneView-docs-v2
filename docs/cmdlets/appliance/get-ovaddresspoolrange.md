@@ -38,7 +38,6 @@ You can specify one, some or all of the pool types.
 ???+ info
     Minimum required privileges: Network administrator 
 (virtual MAC addresses and virtual WWNs), Infrastructure administrator (all ID types)
-
 ## Examples
 
 ###  Example 1 
@@ -135,16 +134,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]"
- 
-Address pool resource object.
- 
+    Address pool resource object.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.AddressPoolRange [System.Management.Automation.PSCustomObject]"
- 
-Address pool range object.
- 
+    Address pool range object.
+    
 
 ## Related Links
 

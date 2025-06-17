@@ -25,8 +25,7 @@ The HPE OneView Infrastructure administrator can add an OS deployment server. HP
 This Cmdlet will return the discovered OS deployment servers.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -82,22 +81,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.OSDeploymentServer"
- 
-An HPE Synergy Image Streamer appliance object.
- 
+    An HPE Synergy Image Streamer appliance object.
+    
 
 === "System.Collections.ArrayList<HPEOneView.Appliance.OSDeploymentServer>"
- 
-A collection of HPE Synergy Image Streamer appliance objects.
- 
+    A collection of HPE Synergy Image Streamer appliance objects.
+    
 
 ## Related Links
 

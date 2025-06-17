@@ -135,17 +135,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Networking.SnmpConfiguration [System.Management.Automation.PSCustomObject]"
- 
-SNMP Configuration object for a Logical Interconnect Group or Logical Interconnect resource
- 
+    SNMP Configuration object for a Logical Interconnect Group or Logical Interconnect resource
+    
 
 ## Related Links
 

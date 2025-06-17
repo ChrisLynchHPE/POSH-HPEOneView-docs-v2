@@ -36,8 +36,7 @@ A storage system must first be added to the appliance before a storage pool can 
 Storage pools are scoped resources. You can associate a scope to a pool to restrict who can use the pool.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Storage administrator.
-    
+    Minimum required privileges: Infrastructure administrator or Storage administrator.
 
 ## Examples
 
@@ -105,16 +104,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]"
- 
-Storage System resource object from Get-OVStorageSystem.
- 
+    Storage System resource object from Get-OVStorageSystem.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource.
- 
+    Async task resource.
+    
 
 ## Related Links
 

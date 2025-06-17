@@ -129,21 +129,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.PowerDeliveryDevice [System.Management.Automation.PSCustomObject]"
- 
-Power Device (iPDU) Resource Object
- 
+    Power Device (iPDU) Resource Object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async remove task
- 
+    Async remove task
+    
 
 === "System.Management.Automation.PSCustomObject"
- 
-When using the -Force parameter, a PSCustomObject is returned indicating successful removal of the resource
- 
+    When using the `-Force` parameter, a PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

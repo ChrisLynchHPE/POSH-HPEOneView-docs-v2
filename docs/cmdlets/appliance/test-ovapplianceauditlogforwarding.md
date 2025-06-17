@@ -17,8 +17,7 @@ Test-OVApplianceAuditLogForwarding
 This Cmdlet will generate a syslog message to test connectivity to the appliance configured remote Syslog server.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -50,10 +49,8 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None. You cannot pipe objects to this Cmdlet."
- 
-None. You cannot pipe objects to this Cmdlet
- 
+None. You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 

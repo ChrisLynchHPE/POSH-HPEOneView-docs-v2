@@ -126,21 +126,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.String"
- 
-Directory Server Name or IP Address
- 
+    Directory Server Name or IP Address
+    
 
 === "System.Collections.ArrayList"
- 
-Mutlple Directory Server Name or IP Address System.String values
- 
+    Mutlple Directory Server Name or IP Address System.String values
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuthDirectoryServer [System.Management.Automation.PSCustomObject]"
- 
-New LDAP Server Resource Object to be used with New-OVLdapDirectory Cmdlet
- 
+    New LDAP Server Resource Object to be used with New-OVLdapDirectory Cmdlet
+    
 
 ## Related Links
 

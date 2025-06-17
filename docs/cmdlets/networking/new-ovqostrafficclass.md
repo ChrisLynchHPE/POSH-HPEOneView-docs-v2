@@ -177,17 +177,35 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Networking.QosTrafficClassifier [System.Management.Automation.PSCustomObject]"
- 
-QoS Traffic Classifier Object  @{      qosTrafficClass = [PSCustomObject]@{          maxBandwidth     = 100;         bandwidthShare   = "0";         egressDot1pValue = 0;         realTime         = `$false;`         className        = "Class";         enabled          = `$false;`      };                          qosClassificationMapping = [PSCustomObject]@{                      dot1pClassMapping = @();         dscpClassMapping  = @()                  }  }
- 
+    QoS Traffic Classifier Object
+    
+    @{
+    qosTrafficClass = [PSCustomObject]@{
+    
+    maxBandwidth     = 100;
+    bandwidthShare   = "0";
+    egressDot1pValue = 0;
+    realTime         = `$false;`
+    className        = "Class";
+    enabled          = `$false;`
+    
+    };
+    
+    qosClassificationMapping = [PSCustomObject]@{
+    
+    dot1pClassMapping = @();
+    dscpClassMapping  = @()
+    
+    }
+    
+    }
+    
 
 ## Related Links
 

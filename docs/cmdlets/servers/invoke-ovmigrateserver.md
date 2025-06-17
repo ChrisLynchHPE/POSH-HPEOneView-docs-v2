@@ -34,8 +34,7 @@ Please see the HPE OneView online help "Migrating server hardware" help topic fo
 This Cmdlet will initiate supported server migration.  Use the Get-OVMigratableServer Cmdlet to connect to the source appliance and return the list of servers that can be migrated.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator and Server administrator
-    
+    Minimum required privileges: Infrastructure administrator and Server administrator
 
 ## Examples
 
@@ -124,16 +123,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Servers.MigratableServer"
- 
-Class object of migratable server resources from Get-OVMigratableServer.
- 
+    Class object of migratable server resources from Get-OVMigratableServer.
+    
 
 ## Return Values
 
 === "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource to monitor.
- 
+    Async task resource to monitor.
+    
 
 ## Related Links
 

@@ -53,8 +53,7 @@ An Ethernet and FCoE network must be provisioned to a logical interconnect and b
 This Cmdlet is used to retrieve a collection of network resources which have the specified type and/or name. The default connection information is included in the returned network resources.
 
 ???+ info
-    Minimum required privileges: Read-only
-    
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -279,31 +278,26 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.String"
- 
-Network Resource Name(s)
- 
+    Network Resource Name(s)
+    
 
 ## Return Values
 
 === "HPEOneView.Networking.EthernetNetwork"
- 
-Single Ethernet Network resource
- 
+    Single Ethernet Network resource
+    
 
 === "HPEOneView.Networking.FibreChannelNetwork"
- 
-Single Fibre Channel Network resource
- 
+    Single Fibre Channel Network resource
+    
 
 === "HPEOneView.Networking.FCoENetwork"
- 
-Single FCoE Network resource
- 
+    Single FCoE Network resource
+    
 
 === "System.Collections.ArrayList"
- 
-Multiple Network Object resources
- 
+    Multiple Network Object resources
+    
 
 ## Related Links
 

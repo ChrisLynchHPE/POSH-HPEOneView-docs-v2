@@ -116,16 +116,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Management.Automation.PSCustomObject [HPEOneView.Appliance.ImageStreamerAppliance]"
- 
-HPE Synergy Image Streamer Appliance object from Get-OVImageStreamerAppliance.
- 
+    HPE Synergy Image Streamer Appliance object from Get-OVImageStreamerAppliance.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task Resource object for modifying the Remote Support Collection schedules.
- 
+    Async task Resource object for modifying the Remote Support Collection schedules.
+    
 
 ## Related Links
 

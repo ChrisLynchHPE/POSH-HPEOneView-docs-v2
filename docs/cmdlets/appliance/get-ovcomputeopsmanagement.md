@@ -17,8 +17,7 @@ Get-OVComputeOpsManagement
 HPE GreenLake for Compute Ops Management is a cloud-based as-a-Service application that manages various operations of HPE OneView appliances.  By integrating HPE OneView with HPE GreenLake for Compute Ops Management will unify server inventory and centralize management to a single console.  To enable the cloud management service for HPE OneView, you must onboard the appliance in the Compute Ops Management application in HPE GreenLake by using this Cmdlet to first generate the appliance ID.  Once the Cmdlet completes successfully, use the Get-OVComputeOpsManagement Cmdlet to retreive the appliance ID needed in the HPE GreenLake for Compute Ops Management to generate an activation key.  You can use this same Cmdlet with the `-ActivationKey` parameter, or Set-OVComputeOpsManagement Cmdlet to set the activation key for the appliance.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -53,18 +52,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.CloudSettings"
- 
-Object that represents the current configuration
-
- 
+    Object that represents the current configuration
+    
+    
 
 ## Related Links
 

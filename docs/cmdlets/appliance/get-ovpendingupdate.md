@@ -29,8 +29,7 @@ Before you update the appliance, examine the HPE OneView Release Notes to learn 
 When you install an appliance update, the appliance restarts and goes offline. When the appliance is offline, it does not affect the managed resources. The managed resources continue to operate while the appliance is offline.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator or Software administrator
-    
+    Minimum required privileges: Infrastructure administrator or Software administrator
 
 ## Examples
 
@@ -62,17 +61,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Appliance.Update.Pending [System.Management.Automation.PSCustomObject]"
- 
-Pending appliance update
- 
+    Pending appliance update
+    
 
 ## Related Links
 

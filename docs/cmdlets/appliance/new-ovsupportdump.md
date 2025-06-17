@@ -82,7 +82,6 @@ Items logged in the support dump file are recorded according to UTC time.
     
     NOTE
 :  Only the Infrastructure administrator has the option of not encrypting a support dump file. When a user with a different role creates a support dump file, it is encrypted automatically.
-
 ## Examples
 
 ###  Example 1 
@@ -323,16 +322,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "Accepts pipeline input from Get-OVLogicalEnclosure only."
- 
-
- 
+    
+    
 
 ## Return Values
 
 === "The generated Support Dump File"
- 
-
- 
+    
+    
 
 ## Related Links
 

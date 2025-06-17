@@ -19,8 +19,7 @@ The Composer is an appliance that runs HPE OneView and manages the group of Syne
 This Cmdlet will report the installed and configured Synergy Composer nodes. This includes status, state, model, firmware version, and role.
 
 ???+ info
-    Minimum required privileges: Read only
-    
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -57,17 +56,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this Cmdlet."
- 
+None.  You cannot pipe objects to this Cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.ComposerNode [System.Management.Automation.PSCustomObject]"
- 
-Synergy Compose node.
- 
+    Synergy Compose node.
+    
 
 ## Related Links
 

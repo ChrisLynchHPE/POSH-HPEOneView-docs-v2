@@ -140,21 +140,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "System.Security.SecureString"
- 
-Directory User Account password
- 
+    Directory User Account password
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.AuthDirectoryGroup [System.Management.Automation.PSCustomObject]"
- 
-Authentication Directory Group
- 
+    Authentication Directory Group
+    
 
 === "System.Collections.ArrayList<HPEOneView.Appliance.AuthDirectoryGroup>"
- 
-Array of Authentication Directory Groups found
- 
+    Array of Authentication Directory Groups found
+    
 
 ## Related Links
 

@@ -270,26 +270,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Networking.EthernetNetwork [System.Management.Automation.PSCustomObject]"
- 
-Ethernet Network resource object
- 
+    Ethernet Network resource object
+    
 
 === "HPEOneView.Networking.FCNetwork [System.Management.Automation.PSCustomObject]"
- 
-FC Network resource object
- 
+    FC Network resource object
+    
 
 === "HPEOneView.Networking.FCoENetwork [System.Management.Automation.PSCustomObject]"
- 
-FCoE Network resource object
- 
+    FCoE Network resource object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-The Update Network Resource Task object
- 
+    The Update Network Resource Task object
+    
 
 ## Related Links
 

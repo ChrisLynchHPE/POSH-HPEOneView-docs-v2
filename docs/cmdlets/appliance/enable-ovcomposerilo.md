@@ -78,8 +78,7 @@ Requirements
 
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator
-    
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -319,16 +318,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]"
- 
-The appliance hardware configuration object from Get-OVComposerIloStatus.
- 
+    The appliance hardware configuration object from Get-OVComposerIloStatus.
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Async task resource to monitor.
- 
+    Async task resource to monitor.
+    
 
 ## Related Links
 

@@ -121,7 +121,6 @@ INSTALLATION METHODS
 ???+ info
     Minimum required privileges: Network administrator, Server administrator 
 (for the HPE Synergy 12Gb SAS Connection Module), or Infrastructure administrator.
-
 ## Examples
 
 ###  Example 1 
@@ -381,16 +380,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 ## Input Types
 
 === "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
- 
-Logical Interconnect Resource Object
- 
+    Logical Interconnect Resource Object
+    
 
 ## Return Values
 
 === "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
- 
-Returns an async task resource to monitor.
- 
+    Returns an async task resource to monitor.
+    
 
 ## Related Links
 

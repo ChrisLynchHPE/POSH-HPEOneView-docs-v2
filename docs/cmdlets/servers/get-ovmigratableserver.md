@@ -32,8 +32,7 @@ Please see the HPE OneView online help "Migrating server hardware" help topic fo
 This Cmdlet will connect to the source appliance, in order to retrieve a list of supported and migratable servers.  Use the returned list to then initiate the server migration process with the Invoke-OVMigrateServer Cmdlet.  If there are no available servers to migrate, a non-trappable error is generated, which can be overridden using the `-ErrorAction` common switch parameter.
 
 ???+ info
-    Minimum required privileges: Infrastructure administrator and Server administrator
-    
+    Minimum required privileges: Infrastructure administrator and Server administrator
 
 ## Examples
 
@@ -102,17 +101,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-=== "None.  You cannot pipe objects to this cmdlet."
- 
+None.  You cannot pipe objects to this cmdlet.
 
- 
 
 ## Return Values
 
 === "HPEOneView.Servers.MigratableServer"
- 
-Class object of migratable server resources from Get-OVMigratableServer.
- 
+    Class object of migratable server resources from Get-OVMigratableServer.
+    
 
 ## Related Links
 
