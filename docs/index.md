@@ -293,32 +293,32 @@ Once completed, you can either close out of your PowerShell console, or issue th
 
 To ease the use of the HPE OneView PowerShell library, we have included a number of sample scripts administrators can use to quickly get familiar with the capabilities of the library. The sample scripts are part of the source code and installer. Depending on which installation scope you chose, a Samples directory contains all of the sample scripts. By no means are they exhaustive, but will help you get more familiar with the library.
 
-```pwsh-session
+```pwsh
 [PS] ...\Samples> dir
-    Directory: \HPEOneView.720\Samples
 
+    Directory: C:\Users\user\OneDrive\Documents\Powershell\Modules\POSH-HPEOneView.1000\Samples
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-la---          10/24/2022  2:37 PM           4166 AddServers_Monitored_Sample.ps1
-la---          10/24/2022  2:37 PM           5059 AddStorageSystem_Sample.ps1
-la---          10/24/2022  2:38 PM           3734 Alerts_Sample.ps1
-la---          10/24/2022  2:38 PM           2951 Appliance_Backup_Sample.ps1
-la---          10/24/2022  2:38 PM          18388 ApplianceConfig_Sample.ps1
-la---          10/24/2022  2:34 PM          13380 ComposerApplianceConfig_Sample.ps1
-la---            2/2/2022  9:11 AM          10035 Configure_IIS_WebDav_ExternalRepo_Sample.ps1
-la---          10/24/2022  2:38 PM           8787 ConfigureRemoteSupport_Sample.ps1
-la---          10/24/2022  2:38 PM           3632 CreateEnclosureGroup_Sample.ps1
-la---          10/24/2022  2:38 PM           3510 DefineLogicalInterconnectGroup_AA_VC_Sample.ps1
-la---          10/24/2022  2:38 PM           3404 DefineLogicalInterconnectGroup_Sample.ps1
-la---          10/24/2022  2:38 PM           3371 DefineNetworks_AA_VC_Sample.ps1
-la---          10/24/2022  2:38 PM           3639 DefineNetworks_Sample.ps1
-la---          10/24/2022  2:38 PM           7010 Server_Multiconnection_AA_VC_Sample.ps1
-la---           4/27/2022  2:23 PM           7344 Server_Multiconnection_Sample.ps1
-la---           4/27/2022  2:23 PM           7770 Server_Multiconnection_SAN_Storage_Sample.ps1
-la---          10/24/2022  2:38 PM           5697 Server_Profile_Template_Multiconnection_Sample.ps1
-la---           8/23/2022  7:27 PM           4395 Server_Profile_Template_Rack_Server_Sample.ps1
-la---           4/27/2022  2:23 PM           8014 Wipe_Appliance.ps1
+la---            6/5/2025 12:19 PM           4166 AddServers_Monitored_Sample.ps1
+la---            6/5/2025 12:19 PM           5059 AddStorageSystem_Sample.ps1
+la---            6/5/2025 12:19 PM           3734 Alerts_Sample.ps1
+la---            9/9/2024  7:39 PM           2951 Appliance_Backup_Sample.ps1
+la---            6/5/2025 12:19 PM          18388 ApplianceConfig_Sample.ps1
+la---            6/5/2025 12:19 PM          13380 ComposerApplianceConfig_Sample.ps1
+la---            6/5/2025 12:19 PM          10035 Configure_IIS_WebDav_ExternalRepo_Sample.ps1
+la---            6/5/2025 12:19 PM           8787 ConfigureRemoteSupport_Sample.ps1
+la---            6/5/2025 12:19 PM           3632 CreateEnclosureGroup_Sample.ps1
+la---            6/5/2025 12:19 PM           3510 DefineLogicalInterconnectGroup_AA_VC_Sample.ps1
+la---            6/5/2025 12:19 PM           3404 DefineLogicalInterconnectGroup_Sample.ps1
+la---            6/5/2025 12:19 PM           3371 DefineNetworks_AA_VC_Sample.ps1
+la---            6/5/2025 12:19 PM           3639 DefineNetworks_Sample.ps1
+la---            6/5/2025 12:19 PM           7010 Server_Multiconnection_AA_VC_Sample.ps1
+la---            6/5/2025 12:19 PM           7344 Server_Multiconnection_Sample.ps1
+la---            6/5/2025 12:19 PM           7770 Server_Multiconnection_SAN_Storage_Sample.ps1
+la---            6/5/2025 12:19 PM           5697 Server_Profile_Template_Multiconnection_Sample.ps1
+la---            6/5/2025 12:19 PM           4395 Server_Profile_Template_Rack_Server_Sample.ps1
+la---            6/5/2025 12:19 PM           8014 Wipe_Appliance.ps1
 ```
 
 ### Generating sample code
