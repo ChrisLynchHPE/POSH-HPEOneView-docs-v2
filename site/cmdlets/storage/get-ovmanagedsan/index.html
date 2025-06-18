@@ -12124,12 +12124,12 @@
 
 <h1 id="get-ovmanagedsan">Get-OVManagedSan</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVManagedSan</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Label</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVManagedSan</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Label</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>SANs are Fibre Channel (FC) or Fibre Channel over Ethernet (FCoE) storage area networks that connect servers to storage systems. The possible states for SANs are:</p>
 <ul>
@@ -12161,16 +12161,16 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVManagedSan</span>
-
-<span class="n">Name</span>     <span class="n">State</span> <span class="n">Status</span> <span class="n">Network</span>              <span class="n">Zoned</span> <span class="n">Automated</span> <span class="n">Zoning</span>
-<span class="p">----</span>     <span class="p">-----</span> <span class="p">------</span> <span class="p">-------</span>              <span class="p">-----</span> <span class="p">----------------</span>
-<span class="n">Fabric</span> <span class="n">A</span> <span class="n">Ready</span> <span class="n">OK</span>     <span class="n">BNA</span> <span class="n">Managed</span> <span class="n">Fabric</span> <span class="n">A</span> <span class="n">Zoned</span>             <span class="n">True</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVManagedSan</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Name</span>     <span class="n">State</span> <span class="n">Status</span> <span class="n">Network</span>              <span class="n">Zoned</span> <span class="n">Automated</span> <span class="n">Zoning</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">----</span>     <span class="p">-----</span> <span class="p">------</span> <span class="p">-------</span>              <span class="p">-----</span> <span class="p">----------------</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">Fabric</span> <span class="n">A</span> <span class="n">Ready</span> <span class="n">OK</span>     <span class="n">BNA</span> <span class="n">Managed</span> <span class="n">Fabric</span> <span class="n">A</span> <span class="n">Zoned</span>             <span class="n">True</span>
+</span></code></pre></div>
 <p>Return all managed SAN resources.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVManagedSan</span> <span class="n">-Name</span> <span class="s2">&quot;Fabric A&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVManagedSan</span> <span class="n">-Name</span> <span class="s2">&quot;Fabric A&quot;</span>
+</span></code></pre></div>
 <p>Show the "Fabric A" Managed SAN resource object.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

@@ -12682,78 +12682,78 @@
 
 <h1 id="new-ovclusterprofile">New-OVClusterProfile</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVClusterProfile</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterManager</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">ClusterManager</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterManagerLocation</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ServerProfileTemplate</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterPassword</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ClusterPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Servers</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">AddHostRequest</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-UseIPAddressAsHostName</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LeaveHostsInMaintenanceMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-StorageVolume</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-StorageVolumeFileSystem</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVClusterProfile</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterManager</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">ClusterManager</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterManagerLocation</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ServerProfileTemplate</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterPassword</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-UnmanageVSwitch</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ClusterPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Servers</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">AddHostRequest</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-HAEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-DRSEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-MultiNicVMotionEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVClusterProfile</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterManager</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">ClusterManager</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterManagerLocation</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ServerProfileTemplate</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ClusterPassword</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ClusterPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Servers</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">AddHostRequest</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-OverrideManagementAddressAssignmet</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-SubnetMask</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Gateway</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-PrimaryDNS</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-SecondaryDNS</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-TertiaryDNS</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Domain</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-UseIPAddressAsHostName</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LeaveHostsInMaintenanceMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-StorageVolume</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-StorageVolumeFileSystem</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-OverrideNetworkingConfig</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ConfigurePortGroups</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-VSwitchNameOverride</span> <span class="p">&lt;</span><span class="n">hashtable</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-PortGroupNameOverride</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Hashtable</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-OverrideClusterManagerConfig</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-VirtualSwitchType</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-DistributedSwitchUsage</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-DistributedSwitchVersion</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-HAEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-DRSEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-MultiNicVMotionEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVClusterProfile</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ClusterManager</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">ClusterManager</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ClusterManagerLocation</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ServerProfileTemplate</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ClusterPassword</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-ClusterPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-Servers</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">AddHostRequest</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-UseIPAddressAsHostName</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[</span><span class="n">-LeaveHostsInMaintenanceMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">[</span><span class="n">-StorageVolume</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="p">[</span><span class="n">-StorageVolumeFileSystem</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVClusterProfile</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-ClusterManager</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">ClusterManager</span><span class="p">&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[</span><span class="n">-ClusterManagerLocation</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">[</span><span class="n">-ServerProfileTemplate</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">[</span><span class="n">-ClusterPassword</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">[</span><span class="n">-UnmanageVSwitch</span><span class="p">]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">[</span><span class="n">-ClusterPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="p">[</span><span class="n">-Servers</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">AddHostRequest</span><span class="p">[]&gt;]</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">[</span><span class="n">-HAEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">[</span><span class="n">-DRSEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">[</span><span class="n">-MultiNicVMotionEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">New-OVClusterProfile</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="p">[</span><span class="n">-ClusterManager</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">ClusterManager</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">[</span><span class="n">-ClusterManagerLocation</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="p">[</span><span class="n">-ServerProfileTemplate</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">[</span><span class="n">-ClusterPassword</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">[</span><span class="n">-ClusterPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">[</span><span class="n">-Servers</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">AddHostRequest</span><span class="p">[]&gt;]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="p">[</span><span class="n">-OverrideManagementAddressAssignmet</span><span class="p">]</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="p">[</span><span class="n">-SubnetMask</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">[</span><span class="n">-Gateway</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="p">[</span><span class="n">-PrimaryDNS</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;]</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="p">[</span><span class="n">-SecondaryDNS</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;]</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="p">[</span><span class="n">-TertiaryDNS</span> <span class="p">&lt;</span><span class="n">IPAddress</span><span class="p">&gt;]</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="p">[</span><span class="n">-Domain</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="p">[</span><span class="n">-UseIPAddressAsHostName</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    <span class="p">[</span><span class="n">-LeaveHostsInMaintenanceMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>    <span class="p">[</span><span class="n">-StorageVolume</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="p">[</span><span class="n">-StorageVolumeFileSystem</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="p">[</span><span class="n">-OverrideNetworkingConfig</span><span class="p">]</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="p">[</span><span class="n">-ConfigurePortGroups</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="p">[</span><span class="n">-VSwitchNameOverride</span> <span class="p">&lt;</span><span class="n">hashtable</span><span class="p">&gt;]</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="p">[</span><span class="n">-PortGroupNameOverride</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Hashtable</span><span class="p">&gt;</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="p">[</span><span class="n">-OverrideClusterManagerConfig</span><span class="p">]</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    <span class="p">[</span><span class="n">-VirtualSwitchType</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    <span class="p">[</span><span class="n">-DistributedSwitchUsage</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    <span class="p">[</span><span class="n">-DistributedSwitchVersion</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="p">[</span><span class="n">-HAEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="p">[</span><span class="n">-DRSEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>    <span class="p">[</span><span class="n">-MultiNicVMotionEnabled</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A cluster profile enables you to deploy and manage a cluster of servers (nodes) managed by HPE OneView and orchestrates consistent configuration on cluster of server nodes to share the same workload.  A cluster profile and the associated server profile template are used to define a consistent configuration from server nodes to members in the cluster. The associated server profiles define physical server configurations for server nodes in the cluster, which are derived from parent cluster profile and its associated server profile template. </p>
 <details class="info" open="open">
@@ -12769,55 +12769,55 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="c"># Get the specific Cluster Manager</span>
-<span class="nv">$ClusterManager</span> <span class="p">=</span> <span class="nb">Get-OVHypervisorManager</span> <span class="n">-Name</span> <span class="n">ClusterManager1</span>
-
-<span class="c"># Display the allowed locations to place the cluster</span>
-<span class="nv">$ClusterManager</span><span class="p">.</span><span class="n">Locations</span>
-
-<span class="n">DC1</span>
-<span class="n">DC2</span>
-<span class="n">DC3</span>
-<span class="n">DC3</span><span class="p">\</span><span class="n">Folder1</span>
-
-<span class="nv">$ClusterPassword</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="s2">&quot;Cluster password&quot;</span> <span class="n">-AsSecureString</span>
-
-<span class="c"># Get the server profile template the cluster will be created and derived from</span>
-<span class="nv">$ServerProfileTemplate</span> <span class="p">=</span> <span class="nb">Get-OVServerProfileTemplate</span> <span class="n">-Name</span> <span class="s2">&quot;Hypervisor Cluster Prod&quot;</span>
-
-<span class="c"># Get a list of servers based on the SPT, that are available to deploy to</span>
-<span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-NoProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-Count</span> <span class="n">4</span>
-
-<span class="c"># Create the new cluster profile</span>
-<span class="nb">New-OVClusterProfile</span> <span class="n">-Name</span> <span class="n">ProdCluster1</span> <span class="n">-ClusterPrefix</span> <span class="n">ProdClusterNode</span><span class="p">-</span> <span class="n">-ClusterManager</span> <span class="nv">$ClusterManager</span> <span class="n">-ClusterManagerLocation</span> <span class="s2">&quot;DC2&quot;</span> <span class="n">-ServerProfileTemplate</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-ClusterPassword</span> <span class="nv">$ClusterPassword</span> <span class="n">-Servers</span> <span class="nv">$Servers</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c"># Get the specific Cluster Manager</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">$ClusterManager</span> <span class="p">=</span> <span class="nb">Get-OVHypervisorManager</span> <span class="n">-Name</span> <span class="n">ClusterManager1</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c"># Display the allowed locations to place the cluster</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nv">$ClusterManager</span><span class="p">.</span><span class="n">Locations</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">DC1</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">DC2</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">DC3</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">DC3</span><span class="p">\</span><span class="n">Folder1</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="nv">$ClusterPassword</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="s2">&quot;Cluster password&quot;</span> <span class="n">-AsSecureString</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c"># Get the server profile template the cluster will be created and derived from</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nv">$ServerProfileTemplate</span> <span class="p">=</span> <span class="nb">Get-OVServerProfileTemplate</span> <span class="n">-Name</span> <span class="s2">&quot;Hypervisor Cluster Prod&quot;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c"># Get a list of servers based on the SPT, that are available to deploy to</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-NoProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-Count</span> <span class="n">4</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="c"># Create the new cluster profile</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="nb">New-OVClusterProfile</span> <span class="n">-Name</span> <span class="n">ProdCluster1</span> <span class="n">-ClusterPrefix</span> <span class="n">ProdClusterNode</span><span class="p">-</span> <span class="n">-ClusterManager</span> <span class="nv">$ClusterManager</span> <span class="n">-ClusterManagerLocation</span> <span class="s2">&quot;DC2&quot;</span> <span class="n">-ServerProfileTemplate</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-ClusterPassword</span> <span class="nv">$ClusterPassword</span> <span class="n">-Servers</span> <span class="nv">$Servers</span>
+</span></code></pre></div>
 <p>Create a new cluster profile.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="c"># Get the specific Cluster Manager</span>
-<span class="nv">$ClusterManager</span> <span class="p">=</span> <span class="nb">Get-OVHypervisorManager</span> <span class="n">-Name</span> <span class="n">ClusterManager1</span>
-
-<span class="c"># Display the allowed distributed switch versions supported by the cluster manager</span>
-<span class="nv">$ClusterManager</span><span class="p">.</span><span class="n">AvailableDvsVersions</span>
-
-<span class="n">4</span><span class="p">.</span><span class="n">0</span>
-<span class="n">4</span><span class="p">.</span><span class="n">10</span>
-<span class="n">5</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span>
-<span class="n">5</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">0</span>
-<span class="n">5</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">0</span>
-<span class="n">6</span><span class="p">.</span><span class="n">0</span>
-<span class="n">6</span><span class="p">.</span><span class="n">7</span>
-
-<span class="nv">$ClusterPassword</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="s2">&quot;Cluster password&quot;</span> <span class="n">-AsSecureString</span>
-
-<span class="c"># Get the server profile template the cluster will be created and derived from</span>
-<span class="nv">$ServerProfileTemplate</span> <span class="p">=</span> <span class="nb">Get-OVServerProfileTemplate</span> <span class="n">-Name</span> <span class="s2">&quot;Hypervisor Cluster Prod&quot;</span>
-
-<span class="c"># Get a list of servers based on the SPT, that are available to deploy to</span>
-<span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-NoProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-Count</span> <span class="n">4</span>
-
-<span class="c"># Create new cluster profile overriding the cluster manager settings</span>
-<span class="nb">New-OVClusterProfile</span> <span class="n">-Name</span> <span class="n">ProdCluster1</span> <span class="n">-ClusterPrefix</span> <span class="n">ProdClusterNode</span><span class="p">-</span> <span class="n">-ClusterManager</span> <span class="nv">$ClusterManager</span> <span class="n">-ClusterManagerLocation</span> <span class="s2">&quot;DC2&quot;</span> <span class="n">-ServerProfileTemplate</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-ClusterPassword</span> <span class="nv">$ClusterPassword</span> <span class="n">-Servers</span> <span class="nv">$Servers</span> <span class="n">-OverrideClusterManagerConfig</span> <span class="n">-VirtualSwitchType</span> <span class="n">Distributed</span> <span class="n">-DistributedSwitchUsage</span> <span class="n">AllNetworks</span> <span class="n">-DistributedSwitchVersion</span> <span class="n">6</span><span class="p">.</span><span class="n">0</span> <span class="n">-HAEnabled</span> <span class="nv">$true</span> <span class="n">-DRSEnabled</span> <span class="nv">$false</span> 
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c"># Get the specific Cluster Manager</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$ClusterManager</span> <span class="p">=</span> <span class="nb">Get-OVHypervisorManager</span> <span class="n">-Name</span> <span class="n">ClusterManager1</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c"># Display the allowed distributed switch versions supported by the cluster manager</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nv">$ClusterManager</span><span class="p">.</span><span class="n">AvailableDvsVersions</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">4</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">4</span><span class="p">.</span><span class="n">10</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">5</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">5</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">5</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">6</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">6</span><span class="p">.</span><span class="n">7</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nv">$ClusterPassword</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="s2">&quot;Cluster password&quot;</span> <span class="n">-AsSecureString</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c"># Get the server profile template the cluster will be created and derived from</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="nv">$ServerProfileTemplate</span> <span class="p">=</span> <span class="nb">Get-OVServerProfileTemplate</span> <span class="n">-Name</span> <span class="s2">&quot;Hypervisor Cluster Prod&quot;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c"># Get a list of servers based on the SPT, that are available to deploy to</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-NoProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-Count</span> <span class="n">4</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="c"># Create new cluster profile overriding the cluster manager settings</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="nb">New-OVClusterProfile</span> <span class="n">-Name</span> <span class="n">ProdCluster1</span> <span class="n">-ClusterPrefix</span> <span class="n">ProdClusterNode</span><span class="p">-</span> <span class="n">-ClusterManager</span> <span class="nv">$ClusterManager</span> <span class="n">-ClusterManagerLocation</span> <span class="s2">&quot;DC2&quot;</span> <span class="n">-ServerProfileTemplate</span> <span class="nv">$ServerProfileTemplate</span> <span class="n">-ClusterPassword</span> <span class="nv">$ClusterPassword</span> <span class="n">-Servers</span> <span class="nv">$Servers</span> <span class="n">-OverrideClusterManagerConfig</span> <span class="n">-VirtualSwitchType</span> <span class="n">Distributed</span> <span class="n">-DistributedSwitchUsage</span> <span class="n">AllNetworks</span> <span class="n">-DistributedSwitchVersion</span> <span class="n">6</span><span class="p">.</span><span class="n">0</span> <span class="n">-HAEnabled</span> <span class="nv">$true</span> <span class="n">-DRSEnabled</span> <span class="nv">$false</span> 
+</span></code></pre></div>
 <p>Create a new cluster profile, overriding clsuter manager settings.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>
@@ -13630,8 +13630,8 @@
 </table>
 <h3 id="-portgroupnameoverride-hashtable">-PortGroupNameOverride &lt;Hashtable&gt;</h3>
 <p>Use to specify what the PortGroup name override should be.  By default, PortGroup names will be automatically assigned based on the network name, removing unique character strings.  Specify an Array of Hashtable with the following format:</p>
-<pre><code>@{ "NetworkName" = "OverrideName" }
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code>@{ &quot;NetworkName&quot; = &quot;OverrideName&quot; }
+</code></pre></div>
 <p>Where "NetworkName" is the name of the Ethernet Network assigned to the connection.</p>
 <table>
 <thead>
@@ -13861,8 +13861,8 @@
 </table>
 <h3 id="-vswitchnameoverride-hashtable">-VSwitchNameOverride &lt;hashtable&gt;</h3>
 <p>Use to specify what the vSwitch name override should be.  By default, vSwitch names will be automatically assigned based on the network name, removing unique character strings.  Specify an Array of Hashtable with the following format:</p>
-<pre><code>@{ "NetworkName" = "OverrideName" }
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code>@{ &quot;NetworkName&quot; = &quot;OverrideName&quot; }
+</code></pre></div>
 <p>Where "NetworkName" is the name of the Ethernet Network assigned to the connection.</p>
 <table>
 <thead>

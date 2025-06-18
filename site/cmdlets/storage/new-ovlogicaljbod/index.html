@@ -12322,42 +12322,42 @@
 
 <h1 id="new-ovlogicaljbod">New-OVLogicalJBOD</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLogicalJBOD</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-DriveType</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-NumberofDrives</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-MinDriveSize</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-MaxDriveSize</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-EraseDataOnDelete</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLogicalJBOD</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Drives</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">Drive</span><span class="p">[]&gt;</span>
-    <span class="p">[</span><span class="n">-EraseDataOnDelete</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLogicalJBOD</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-AvailableDriveType</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">AvailableDriveType</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-NumberofDrives</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-EraseDataOnDelete</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLogicalJBOD</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVLogicalJBOD</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-DriveType</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-NumberofDrives</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-MinDriveSize</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-MaxDriveSize</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-EraseDataOnDelete</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVLogicalJBOD</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[</span><span class="n">-Drives</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">Drive</span><span class="p">[]&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">[</span><span class="n">-EraseDataOnDelete</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">New-OVLogicalJBOD</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">[</span><span class="n">-AvailableDriveType</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">AvailableDriveType</span><span class="p">&gt;]</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">[</span><span class="n">-NumberofDrives</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">[</span><span class="n">-EraseDataOnDelete</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">New-OVLogicalJBOD</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A logical JBOD is a group of physical drives that are dynamically defined as virtual drives. Logical JBOD uses the drives from the drive enclosures that are installed in the device bays of the enclosure and are associated with a SAS logical interconnect. You can assign or unassign a logical JBOD to a server hardware through the server profile.</p>
 <p>If the logical drive settings in the server profile indicate that the data in the logical JBOD is to be retained when you delete the server profile, then the data is retained and you can assign this logical JBOD to a different server profile.</p>
@@ -12383,38 +12383,38 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD1&quot;</span> <span class="p">`</span>
-                                          <span class="n">-InputObject</span> <span class="p">(</span><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;LE1-SAS Synergy LIG-1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">`</span>
-                                          <span class="n">-DriveType</span> <span class="s2">&quot;SAS&quot;</span> <span class="p">`</span>
-                                          <span class="n">-MinDriveSize</span> <span class="n">600</span> <span class="p">`</span>
-                                          <span class="n">-NumberOfDrives</span> <span class="n">5</span> <span class="p">`</span>
-                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD1&quot;</span> <span class="p">`</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                                          <span class="n">-InputObject</span> <span class="p">(</span><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;LE1-SAS Synergy LIG-1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">`</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>                                          <span class="n">-DriveType</span> <span class="s2">&quot;SAS&quot;</span> <span class="p">`</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>                                          <span class="n">-MinDriveSize</span> <span class="n">600</span> <span class="p">`</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>                                          <span class="n">-NumberOfDrives</span> <span class="n">5</span> <span class="p">`</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Create a new logical JBOD specifying a SAS logical interconnect, requesting a specific drive media type, minimum size and number of drives.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD1&quot;</span> <span class="p">`</span>
-                                          <span class="n">-InputObject</span> <span class="p">(</span><span class="nb">Get-OVDriveEnclosure</span> <span class="n">-Name</span> <span class="s2">&quot;Frame1, bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">`</span>
-                                          <span class="n">-DriveType</span> <span class="s2">&quot;SAS&quot;</span> <span class="p">`</span>
-                                          <span class="n">-MinDriveSize</span> <span class="n">600</span> <span class="p">`</span>
-                                          <span class="n">-NumberOfDrives</span> <span class="n">5</span> <span class="p">`</span>
-                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD1&quot;</span> <span class="p">`</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>                                          <span class="n">-InputObject</span> <span class="p">(</span><span class="nb">Get-OVDriveEnclosure</span> <span class="n">-Name</span> <span class="s2">&quot;Frame1, bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">`</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>                                          <span class="n">-DriveType</span> <span class="s2">&quot;SAS&quot;</span> <span class="p">`</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>                                          <span class="n">-MinDriveSize</span> <span class="n">600</span> <span class="p">`</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>                                          <span class="n">-NumberOfDrives</span> <span class="n">5</span> <span class="p">`</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Create a new logical JBOD specifying a SAS drive enclosure, requesting a specific drive media type, minimum size and number of drives.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Drives</span> <span class="p">=</span> <span class="nb">Get-OVDriveEnclosureInventory</span> <span class="n">-Available</span> <span class="p">`</span>
-                                          <span class="n">-SasLogicalInterconnect</span> <span class="p">(</span><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;LE1-SAS Synergy LIG-1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">|</span> <span class="p">?</span> <span class="n">Capacity</span> <span class="o">-eq</span> <span class="n">1200</span>
-<span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD2&quot;</span> <span class="p">`</span>
-                                          <span class="n">-Drives</span> <span class="nv">$Drives</span> <span class="p">`</span>
-                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">$Drives</span> <span class="p">=</span> <span class="nb">Get-OVDriveEnclosureInventory</span> <span class="n">-Available</span> <span class="p">`</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>                                          <span class="n">-SasLogicalInterconnect</span> <span class="p">(</span><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;LE1-SAS Synergy LIG-1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">|</span> <span class="p">?</span> <span class="n">Capacity</span> <span class="o">-eq</span> <span class="n">1200</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD2&quot;</span> <span class="p">`</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>                                          <span class="n">-Drives</span> <span class="nv">$Drives</span> <span class="p">`</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Create a new logical JBOD with specific drive bays from a SAS logical interconnect.</p>
 <h3 id="example-4">Example 4</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Drives</span> <span class="p">=</span> <span class="nb">Get-OVDriveEnclosureInventory</span> <span class="n">-Available</span> <span class="p">`</span>
-                                          <span class="n">-DriveEnclosure</span> <span class="p">(</span><span class="nb">Get-OVDriveEnclosure</span> <span class="n">-Name</span> <span class="s2">&quot;Frame1, bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">|</span> <span class="p">?</span> <span class="n">Capacity</span> <span class="o">-eq</span> <span class="n">1200</span>
-<span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD2&quot;</span> <span class="p">`</span>
-                                          <span class="n">-Drives</span> <span class="nv">$Drives</span> <span class="p">`</span>
-                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$Drives</span> <span class="p">=</span> <span class="nb">Get-OVDriveEnclosureInventory</span> <span class="n">-Available</span> <span class="p">`</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>                                          <span class="n">-DriveEnclosure</span> <span class="p">(</span><span class="nb">Get-OVDriveEnclosure</span> <span class="n">-Name</span> <span class="s2">&quot;Frame1, bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">)</span> <span class="p">|</span> <span class="p">?</span> <span class="n">Capacity</span> <span class="o">-eq</span> <span class="n">1200</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">$CreatedLogicalJbod</span> <span class="p">=</span> <span class="nb">New-OVLogicalJbod</span> <span class="n">-Name</span> <span class="s2">&quot;MyLogicalJBOD2&quot;</span> <span class="p">`</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>                                          <span class="n">-Drives</span> <span class="nv">$Drives</span> <span class="p">`</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>                                          <span class="n">-EraseDataOnDelete</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Create a new logical JBOD with specific drive bays from a specific drive enclosure.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

@@ -12142,25 +12142,25 @@
 
 <h1 id="set-ovremotesupportdatacollectionschedule">Set-OVRemoteSupportDataCollectionSchedule</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVRemoteSupportDataCollectionSchedule</span>
-    <span class="p">[</span><span class="n">-DateTime</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">DateTime</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Type</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Set-OVRemoteSupportDataCollectionSchedule</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-DateTime</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">DateTime</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Type</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Use this Cmdlet to set a new schedule to collect Remote Support logs.  There are two defined schedules: Active Health scheduled on a weekly basis, and Server Basic Configuration scheduled on a monthly basis.  Either scheduled collection task can be modified, to set the Day of Week, Day of Month, Hour and Minute.
 When supplying a DateTime value, the Day will be converted to the Day of Month, and Day of the Week respectively.  For instance, if "Oct 30, 2016 13:00" is provided, Day of Month will be every "30th" day, and Day of Week will be every "Sunday" (which Oct 30th 2016 is a Sunday).
 To schedule different Day of the Month and Day of the Week, use the -Type paramter to specify AHS or Basic.  The -DateTime paramter value will only be applied to that schedule. </p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVRemoteSupportDataCollectionSchedule</span> <span class="n">-DateTime</span> <span class="s2">&quot;11/01/2016 20:00&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Set-OVRemoteSupportDataCollectionSchedule</span> <span class="n">-DateTime</span> <span class="s2">&quot;11/01/2016 20:00&quot;</span>
+</span></code></pre></div>
 <p>Set a new Remote Support schedule for November 11, 2016, which is a Monday, at 20:00 (8:00pm).</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVRemoteSupportDataCollectionSchedule</span> <span class="n">-Type</span> <span class="n">AHS</span> <span class="n">-DateTime</span> <span class="s2">&quot;11/01/2016 20:00&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Set-OVRemoteSupportDataCollectionSchedule</span> <span class="n">-Type</span> <span class="n">AHS</span> <span class="n">-DateTime</span> <span class="s2">&quot;11/01/2016 20:00&quot;</span>
+</span></code></pre></div>
 <p>Set a new schedule to collect AHS logs every Monday of every week, at 20:00 (8:00pm).</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-type-string">-Type &lt;String&gt;</h3>

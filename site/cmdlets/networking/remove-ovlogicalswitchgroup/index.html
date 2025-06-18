@@ -12142,22 +12142,22 @@
 
 <h1 id="remove-ovlogicalswitchgroup">Remove-OVLogicalSwitchGroup</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVLogicalSwitchGroup</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVLogicalSwitchGroup</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet will remove the configured Logical Switch Group from the requested appliance(s).  You cannot delete a logical switch group while it is being used by one or more logical switches. To delete the logical switch group, first delete the logical switches using the logical switch group. Minimum required privileges: Infrastructure administrator or Network administrator </p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLogicalSwitchGroup</span> <span class="p">|</span> <span class="nb">Remove-OVLogicalSwitchGroup</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVLogicalSwitchGroup</span> <span class="p">|</span> <span class="nb">Remove-OVLogicalSwitchGroup</span>
+</span></code></pre></div>
 <p>Remove all logical switch group resources found on the default appliance connection.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLogicalSwitchGroup</span> <span class="n">-Name</span> <span class="s2">&quot;My Logical Switch Group Policy 1&quot;</span> <span class="p">|</span> <span class="nb">Remove-OVLogicalSwitchGroup</span> <span class="n">-confirm</span><span class="p">:</span><span class="nv">$false</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVLogicalSwitchGroup</span> <span class="n">-Name</span> <span class="s2">&quot;My Logical Switch Group Policy 1&quot;</span> <span class="p">|</span> <span class="nb">Remove-OVLogicalSwitchGroup</span> <span class="n">-confirm</span><span class="p">:</span><span class="nv">$false</span>
+</span></code></pre></div>
 <p>Remove the "My Logical SwitchGroup Policy 1" resource.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

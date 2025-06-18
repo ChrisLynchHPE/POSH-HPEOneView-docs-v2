@@ -12448,45 +12448,45 @@
 
 <h1 id="new-ovdatacenter">New-OVDataCenter</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVDataCenter</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Width</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Depth</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Millimeters</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ElectricalDerating</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ElectricalDeratingType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-DefaultVoltage</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Currency</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-PowerCosts</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-CoolingCapacity</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-CoolingMultiplier</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVDataCenter</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Width</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Depth</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Millimeters</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ElectricalDerating</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ElectricalDeratingType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-DefaultVoltage</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Currency</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-PowerCosts</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-CoolingCapacity</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-CoolingMultiplier</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-PrimaryContact</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-SecondaryContact</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Address1</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Address2</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-City</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-State</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-PostCode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Country</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-TimeZone</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVDataCenter</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Width</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Depth</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Millimeters</span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ElectricalDerating</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-ElectricalDeratingType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-DefaultVoltage</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-Currency</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-PowerCosts</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[</span><span class="n">-CoolingCapacity</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">[</span><span class="n">-CoolingMultiplier</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVDataCenter</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-Width</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[</span><span class="n">-Depth</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">[</span><span class="n">-Millimeters</span><span class="p">]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">[</span><span class="n">-ElectricalDerating</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">[</span><span class="n">-ElectricalDeratingType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">[</span><span class="n">-DefaultVoltage</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">[</span><span class="n">-Currency</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="p">[</span><span class="n">-PowerCosts</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">[</span><span class="n">-CoolingCapacity</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">[</span><span class="n">-CoolingMultiplier</span> <span class="p">&lt;</span><span class="n">Float</span><span class="p">&gt;]</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">[</span><span class="n">-PrimaryContact</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="p">[</span><span class="n">-SecondaryContact</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="p">[</span><span class="n">-Address1</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="p">[</span><span class="n">-Address2</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="p">[</span><span class="n">-City</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="p">[</span><span class="n">-State</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="p">[</span><span class="n">-PostCode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="p">[</span><span class="n">-Country</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="p">[</span><span class="n">-TimeZone</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A data center represents a physically contiguous area in which racks containing IT equipment are located.
 For example, you have IT equipment in two rooms or on separate floors. You could create a data center for each of these areas.
@@ -12495,44 +12495,44 @@ When you initialize the appliance for the first time, it creates a data center n
 <p>This Cmdlet will create a new datacenter.  You will need to specify the Name and dimensions.  Optionally, you can override the default Electrical Derating, default voltage, local currency (which will aid in power calculation costs) and power cooling capacity.  Remote Support settings can only be set when Remote Support has been enabled and configured on the appliance.  If omitting Remote Support location settings, then the datacenter will default to the default location set.  </p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$DataCenter1Name</span> <span class="p">=</span> <span class="s2">&quot;LA DC 12&quot;</span>
-
-<span class="nv">$DataCenter1Width</span> <span class="p">=</span> <span class="n">30</span>
-
-<span class="nv">$DataCenter1Depth</span> <span class="p">=</span> <span class="n">30</span>
-
-<span class="nv">$DataCenter1Voltage</span> <span class="p">=</span> <span class="n">220</span>
-
-<span class="nv">$DataCenter1PowerCosts</span> <span class="p">=</span> <span class="n">0</span><span class="p">.</span><span class="n">07</span>
-
-<span class="nv">$DataCenter1CoolingCapacity</span> <span class="p">=</span> <span class="n">250</span>
-
-<span class="nb">New-OVDataCenter</span> <span class="n">-Name</span> <span class="nv">$DataCenter1Name</span> <span class="n">-Width</span> <span class="nv">$DataCenter1Width</span> <span class="n">-Depth</span> <span class="nv">$DataCenter1Depth</span> <span class="n">-DefaultVoltage</span> <span class="nv">$DataCenter1Voltage</span> <span class="n">-PowerCosts</span> <span class="nv">$DataCenter1PowerCosts</span> <span class="n">-CoolingCapacity</span> <span class="nv">$DataCenter1CoolingCapacity</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$DataCenter1Name</span> <span class="p">=</span> <span class="s2">&quot;LA DC 12&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nv">$DataCenter1Width</span> <span class="p">=</span> <span class="n">30</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nv">$DataCenter1Depth</span> <span class="p">=</span> <span class="n">30</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nv">$DataCenter1Voltage</span> <span class="p">=</span> <span class="n">220</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nv">$DataCenter1PowerCosts</span> <span class="p">=</span> <span class="n">0</span><span class="p">.</span><span class="n">07</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nv">$DataCenter1CoolingCapacity</span> <span class="p">=</span> <span class="n">250</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="nb">New-OVDataCenter</span> <span class="n">-Name</span> <span class="nv">$DataCenter1Name</span> <span class="n">-Width</span> <span class="nv">$DataCenter1Width</span> <span class="n">-Depth</span> <span class="nv">$DataCenter1Depth</span> <span class="n">-DefaultVoltage</span> <span class="nv">$DataCenter1Voltage</span> <span class="n">-PowerCosts</span> <span class="nv">$DataCenter1PowerCosts</span> <span class="n">-CoolingCapacity</span> <span class="nv">$DataCenter1CoolingCapacity</span>
+</span></code></pre></div>
 <p>Create new "LA DC 12" datacenter.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$NewDCParams</span> <span class="p">=</span> <span class="p">@{</span>
-
-<span class="n">Name</span>             <span class="p">=</span> <span class="s2">&quot;Houston DC1&quot;</span><span class="p">;</span>
-    <span class="n">Width</span>            <span class="p">=</span> <span class="n">10668</span><span class="p">;</span>
-    <span class="n">Depth</span>            <span class="p">=</span> <span class="n">13716</span><span class="p">;</span>
-    <span class="n">Millimeters</span>      <span class="p">=</span> <span class="nv">$True</span><span class="p">;</span>
-    <span class="n">DefaultVoltage</span>   <span class="p">=</span> <span class="n">240e</span><span class="p">;</span>
-    <span class="n">PowerCosts</span>       <span class="p">=</span> <span class="n">0</span><span class="p">.</span><span class="n">10</span><span class="p">;</span>
-    <span class="n">CoolingCapacity</span>  <span class="p">=</span> <span class="n">350</span><span class="p">;</span>
-    <span class="n">Address1</span>         <span class="p">=</span> <span class="s2">&quot;123 Main Place&quot;</span><span class="p">;</span>
-    <span class="n">Address2</span>         <span class="p">=</span> <span class="s2">&quot;Suite 400&quot;</span><span class="p">;</span>
-    <span class="n">City</span>             <span class="p">=</span> <span class="s2">&quot;Houston;</span>
-<span class="s2">    State            = &quot;</span><span class="n">TX</span><span class="s2">&quot;;</span>
-<span class="s2">    Country          = &quot;</span><span class="n">US</span><span class="s2">&quot;;</span>
-<span class="s2">    PostCode         = &quot;</span><span class="n">77002</span><span class="s2">&quot;;</span>
-<span class="s2">    TimeZone         = &quot;</span><span class="n">US</span><span class="p">/</span><span class="n">Central</span><span class="s2">&quot;;</span>
-<span class="s2">    PrimaryContact   = (Get-OVRemoteSupportContact -Name &quot;</span><span class="n">Joe</span> <span class="n">Ellis</span><span class="s2">&quot; -EA Stop)</span>
-<span class="s2">    SecondaryContact = (Get-OVRemoteSupportContact -Name &quot;</span><span class="n">Brandon</span> <span class="n">Pear</span><span class="s2">&quot; -EA Stop)</span>
-
-<span class="s2">}</span>
-<span class="s2">New-OVDataCenter @NewDC2Params</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$NewDCParams</span> <span class="p">=</span> <span class="p">@{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">Name</span>             <span class="p">=</span> <span class="s2">&quot;Houston DC1&quot;</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">Width</span>            <span class="p">=</span> <span class="n">10668</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">Depth</span>            <span class="p">=</span> <span class="n">13716</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">Millimeters</span>      <span class="p">=</span> <span class="nv">$True</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">DefaultVoltage</span>   <span class="p">=</span> <span class="n">240e</span><span class="p">;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">PowerCosts</span>       <span class="p">=</span> <span class="n">0</span><span class="p">.</span><span class="n">10</span><span class="p">;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">CoolingCapacity</span>  <span class="p">=</span> <span class="n">350</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">Address1</span>         <span class="p">=</span> <span class="s2">&quot;123 Main Place&quot;</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">Address2</span>         <span class="p">=</span> <span class="s2">&quot;Suite 400&quot;</span><span class="p">;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">City</span>             <span class="p">=</span> <span class="s2">&quot;Houston;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="s2">    State            = &quot;</span><span class="n">TX</span><span class="s2">&quot;;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="s2">    Country          = &quot;</span><span class="n">US</span><span class="s2">&quot;;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="s2">    PostCode         = &quot;</span><span class="n">77002</span><span class="s2">&quot;;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="s2">    TimeZone         = &quot;</span><span class="n">US</span><span class="p">/</span><span class="n">Central</span><span class="s2">&quot;;</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="s2">    PrimaryContact   = (Get-OVRemoteSupportContact -Name &quot;</span><span class="n">Joe</span> <span class="n">Ellis</span><span class="s2">&quot; -EA Stop)</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="s2">    SecondaryContact = (Get-OVRemoteSupportContact -Name &quot;</span><span class="n">Brandon</span> <span class="n">Pear</span><span class="s2">&quot; -EA Stop)</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="s2">}</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="s2">New-OVDataCenter @NewDC2Params</span>
+</span></code></pre></div>
 <p>Create a new datacenter with Remote Support settings.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

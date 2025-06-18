@@ -12106,18 +12106,18 @@
 
 <h1 id="disable-ovappliancestrictsecurityciphersuite">Disable-OVApplianceStrictSecurityCipherSuite</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Disable-OVApplianceStrictSecurityCipherSuite</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Disable-OVApplianceStrictSecurityCipherSuite</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A cipher suite is a set of algorithms that help secure a network connection that uses TLS for communication. The set of algorithms that cipher suites usually contain include: a key exchange algorithm, a bulk encryption algorithm, and a Message Authentication Code (MAC) algorithm.  See the "Algorithms, cipher suites, and protocols for securing the appliance" topic in the Online Help for details on the appliance cipher suites. </p>
 <p>When using this Cmdlet, strong GCM cipher suites are no longer enforced for client connections to the appliance and revert back to default appliance cipher suites.  For more information on what available cipher suites would be in use, please see the "Algorithms, cipher suites, and protocols for securing the appliance" topic in the Online Help for further details.</p>
 <p>IMPORTANT: Changing this setting will cause the appliance to reboot. Further, OneView will NOT be able to manage servers or enclosures with the setting enabled if they are not at a minimum version of iLO or Onboard Administrator firmware. Refer to the following advisory for required minimum firmware versions and configuration settings before enabling this security setting: https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-a00117772en_us</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Disable-OVApplianceStrictSecurityCipherSuite</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Disable-OVApplianceStrictSecurityCipherSuite</span>
+</span></code></pre></div>
 <p>Disable strict use of GCM ciphers.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

@@ -12088,17 +12088,17 @@
 
 <h1 id="remove-ovremotesupportcontact">Remove-OVRemoteSupportContact</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVRemoteSupportContact</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVRemoteSupportContact</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Use this Cmdlet to remove an existing Remote Support Contact.  The Default contact cannot be removed, and at least 1 contact must be configured before attempting to register the appliance with HPE support using the Set-OVRemoteSupport Cmdlet. </p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVRemoteSupportContact</span> <span class="n">-Firstname</span> <span class="n">Rebert</span> <span class="n">-Lastname</span> <span class="n">Jones</span> <span class="n">-Email</span> <span class="n">robert</span><span class="p">.</span><span class="n">jones</span><span class="nv">@domain</span><span class="p">.</span><span class="n">local</span> <span class="n">-PrimaryPhone</span> <span class="n">123</span><span class="p">-</span><span class="n">111</span><span class="p">-</span><span class="n">2222</span> <span class="n">-AlternatePhone</span> <span class="n">111</span><span class="p">-</span><span class="n">333</span><span class="p">-</span><span class="n">4444</span> <span class="n">-Language</span> <span class="n">en</span> <span class="n">-Default</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVRemoteSupportContact</span> <span class="n">-Firstname</span> <span class="n">Rebert</span> <span class="n">-Lastname</span> <span class="n">Jones</span> <span class="n">-Email</span> <span class="n">robert</span><span class="p">.</span><span class="n">jones</span><span class="nv">@domain</span><span class="p">.</span><span class="n">local</span> <span class="n">-PrimaryPhone</span> <span class="n">123</span><span class="p">-</span><span class="n">111</span><span class="p">-</span><span class="n">2222</span> <span class="n">-AlternatePhone</span> <span class="n">111</span><span class="p">-</span><span class="n">333</span><span class="p">-</span><span class="n">4444</span> <span class="n">-Language</span> <span class="n">en</span> <span class="n">-Default</span>
+</span></code></pre></div>
 <p>Configure a new user who is the default contact.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

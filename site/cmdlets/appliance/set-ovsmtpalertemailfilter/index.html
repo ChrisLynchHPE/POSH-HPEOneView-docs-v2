@@ -12304,21 +12304,21 @@
 
 <h1 id="set-ovsmtpalertemailfilter">Set-OVSmtpAlertEmailFilter</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVSmtpAlertEmailFilter</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Disable</span> <span class="p">&lt;</span><span class="n">bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Filter</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Emails</span> <span class="p">&lt;</span><span class="n">Net</span><span class="p">.</span><span class="n">Mail</span><span class="p">.</span><span class="n">MailAddress</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-EnableSenderEmailAddress</span> <span class="p">&lt;</span><span class="n">bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-SenderEmail</span> <span class="p">&lt;</span><span class="n">mailaddress</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-SenderEmailPassword</span> <span class="p">&lt;</span><span class="n">securestring</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">ScopeCollection</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-ScopeMatchPreference</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Set-OVSmtpAlertEmailFilter</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Disable</span> <span class="p">&lt;</span><span class="n">bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Filter</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-Emails</span> <span class="p">&lt;</span><span class="n">Net</span><span class="p">.</span><span class="n">Mail</span><span class="p">.</span><span class="n">MailAddress</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-EnableSenderEmailAddress</span> <span class="p">&lt;</span><span class="n">bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-SenderEmail</span> <span class="p">&lt;</span><span class="n">mailaddress</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-SenderEmailPassword</span> <span class="p">&lt;</span><span class="n">securestring</span><span class="p">&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">ScopeCollection</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[</span><span class="n">-ScopeMatchPreference</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Email alerting feature notifies specified recipients when a certain alert occurs.  When this feature is configured and enabled, the appliance performs these steps in addition to posting the alert:</p>
 <ul>
@@ -12335,16 +12335,16 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVSmtpAlertEmailFilter</span> <span class="n">-Name</span> <span class="s2">&quot;Monitor CPU Error and Warning conditions&quot;</span> <span class="n">-query</span> <span class="s2">&quot;CPU status:warning or status:critical&quot;</span> <span class="n">-emails</span> <span class="n">admin1</span><span class="nv">@domain</span><span class="p">.</span><span class="n">com</span><span class="p">,</span><span class="n">admin2</span><span class="nv">@domain</span><span class="p">.</span><span class="n">com</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Add-OVSmtpAlertEmailFilter</span> <span class="n">-Name</span> <span class="s2">&quot;Monitor CPU Error and Warning conditions&quot;</span> <span class="n">-query</span> <span class="s2">&quot;CPU status:warning or status:critical&quot;</span> <span class="n">-emails</span> <span class="n">admin1</span><span class="nv">@domain</span><span class="p">.</span><span class="n">com</span><span class="p">,</span><span class="n">admin2</span><span class="nv">@domain</span><span class="p">.</span><span class="n">com</span>
+</span></code></pre></div>
 <p>Set SMTP Alert to notify when system CPU status is either "warning" or "critical", and email 2 addresses.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVSmtpAlertEmailFilter</span> <span class="n">-Name</span> <span class="s2">&quot;My Test Filter 3&quot;</span> <span class="n">-Filter</span> <span class="s2">&quot;status:critical&quot;</span> <span class="n">-Emails</span> <span class="s2">&quot;user1@domain.com&quot;</span><span class="p">,</span><span class="s2">&quot;user2@domain.com&quot;</span> <span class="n">-Scope</span> <span class="s2">&quot;My new Scope&quot;</span><span class="p">,</span><span class="s2">&quot;My new Scope2&quot;</span> <span class="n">-Async</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Add-OVSmtpAlertEmailFilter</span> <span class="n">-Name</span> <span class="s2">&quot;My Test Filter 3&quot;</span> <span class="n">-Filter</span> <span class="s2">&quot;status:critical&quot;</span> <span class="n">-Emails</span> <span class="s2">&quot;user1@domain.com&quot;</span><span class="p">,</span><span class="s2">&quot;user2@domain.com&quot;</span> <span class="n">-Scope</span> <span class="s2">&quot;My new Scope&quot;</span><span class="p">,</span><span class="s2">&quot;My new Scope2&quot;</span> <span class="n">-Async</span>
+</span></code></pre></div>
 <p>Create a new email critical alert for the two scope names, and return the Async Task object without waiting.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVSmtpAlertEmailFilter</span> <span class="n">-RemoteSupportFilter</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Add-OVSmtpAlertEmailFilter</span> <span class="n">-RemoteSupportFilter</span>
+</span></code></pre></div>
 <p>Create OneView Remote Support filter on the appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

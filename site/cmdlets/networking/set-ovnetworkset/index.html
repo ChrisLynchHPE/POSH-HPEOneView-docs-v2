@@ -12286,19 +12286,19 @@
 
 <h1 id="set-ovnetworkset">Set-OVNetworkSet</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVNetworkSet</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Networks</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-AddNetwork</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-RemoveNetwork</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-UntaggedNetwork</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-TypicalBandwidth</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-MaximumBandwidth</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Large</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Set-OVNetworkSet</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Networks</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-AddNetwork</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-RemoveNetwork</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-UntaggedNetwork</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-TypicalBandwidth</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-MaximumBandwidth</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[</span><span class="n">-Large</span><span class="p">]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A network set is a group of Ethernet L2/L3 networks assigned to one or more connections, giving each single connection access to multiple networks. A network set is a shared resource available to all logical interconnects. It is directly associated with a connection template governing the bandwidth permitted to connections that use the network set.</p>
 <p>Within a network set, all network frames are exchanged over the connection with their 802.1Q VLAN ID in place (in other words, network traffic is tagged with its VLAN ID). However, there is one exception to this rule: one network within the network set can be designated as the 'UntaggedNetwork', or Native VLAN. The 802.1Q VLAN ID is removed from 'UntaggedNetwork' traffic egressing the interconnect downlink (in other words, 'UntaggedNetwork' traffic is untagged). This allows a single connection to support multiple tagged networks plus a single untagged network over the same downlink.</p>
@@ -12307,25 +12307,25 @@
 <p>Minimum required permissions: Infrastructure administrator, Network administrator</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$netset</span> <span class="p">=</span> <span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="s2">&quot;Set-1&quot;</span>
-<span class="nv">$netset</span><span class="p">.</span><span class="n">maximumBandwidth</span> <span class="p">=</span> <span class="n">5000</span>
-<span class="nv">$netset</span><span class="p">.</span><span class="n">typicalBandwidth</span> <span class="p">=</span> <span class="n">3000</span>
-<span class="nb">Set-OVNetworkSet</span> <span class="nv">$netset</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$netset</span> <span class="p">=</span> <span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="s2">&quot;Set-1&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$netset</span><span class="p">.</span><span class="n">maximumBandwidth</span> <span class="p">=</span> <span class="n">5000</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nv">$netset</span><span class="p">.</span><span class="n">typicalBandwidth</span> <span class="p">=</span> <span class="n">3000</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">Set-OVNetworkSet</span> <span class="nv">$netset</span>
+</span></code></pre></div>
 <p>Modify "Set-1" to be maximum bandwidth of 5000.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="n">NetSet</span><span class="p">-</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Set-OVNetworkSet</span> <span class="n">-name</span> <span class="n">NewNetSet</span><span class="p">-</span><span class="n">1</span> <span class="n">-networks</span> <span class="p">@(</span><span class="n">bluenet</span><span class="p">,</span><span class="n">rednet</span><span class="p">,</span><span class="n">greennet</span><span class="p">)</span> <span class="n">-untagged</span> <span class="n">bluenet</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="n">NetSet</span><span class="p">-</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Set-OVNetworkSet</span> <span class="n">-name</span> <span class="n">NewNetSet</span><span class="p">-</span><span class="n">1</span> <span class="n">-networks</span> <span class="p">@(</span><span class="n">bluenet</span><span class="p">,</span><span class="n">rednet</span><span class="p">,</span><span class="n">greennet</span><span class="p">)</span> <span class="n">-untagged</span> <span class="n">bluenet</span>
+</span></code></pre></div>
 <p>Update "NetSet-1" with a new name, adjust the networks, and set "bluenet" as the Untagged Network.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$NetworkToAdd</span> <span class="p">=</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Name</span> <span class="s2">&quot;Prod 442 VLAN&quot;</span>
-<span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="n">NetSet</span><span class="p">-</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Set-OVNetworkSet</span> <span class="n">-AddNetwork</span> <span class="nv">$NetworkToAdd</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$NetworkToAdd</span> <span class="p">=</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Name</span> <span class="s2">&quot;Prod 442 VLAN&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="n">NetSet</span><span class="p">-</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Set-OVNetworkSet</span> <span class="n">-AddNetwork</span> <span class="nv">$NetworkToAdd</span>
+</span></code></pre></div>
 <p>Add the specified network to the existing network set.</p>
 <h3 id="example-4">Example 4</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$NetworksToRemove</span> <span class="p">=</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Name</span> <span class="s2">&quot;Dev 45*&quot;</span>
-<span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="n">NetSet</span><span class="p">-</span><span class="n">2</span> <span class="p">|</span> <span class="nb">Set-OVNetworkSet</span> <span class="n">-RemoveNetwork</span> <span class="nv">$NetworksToRemove</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$NetworksToRemove</span> <span class="p">=</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Name</span> <span class="s2">&quot;Dev 45*&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">Get-OVNetworkSet</span> <span class="n">-Name</span> <span class="n">NetSet</span><span class="p">-</span><span class="n">2</span> <span class="p">|</span> <span class="nb">Set-OVNetworkSet</span> <span class="n">-RemoveNetwork</span> <span class="nv">$NetworksToRemove</span>
+</span></code></pre></div>
 <p>Remove the specified networks from the existing network set.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

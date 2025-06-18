@@ -12106,11 +12106,11 @@
 
 <h1 id="get-ovremotesupportsetting">Get-OVRemoteSupportSetting</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVRemoteSupportSetting</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVRemoteSupportSetting</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Register with Hewlett Packard Enterprise to allow automatic case creation for hardware failures on servers and enclosures and to enable Proactive Care. Once enabled, all eligible devices added in the future will be automatically enabled for remote support.</p>
 <p>Eligible devices are Gen8 and newer blades and enclosures. </p>
@@ -12129,16 +12129,16 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVEnclosure</span> <span class="n">-Name</span> <span class="n">Encl1</span> <span class="p">|</span> <span class="nb">Get-OVRemoteSupportSetting</span>
-
-<span class="n">Appliance</span>              <span class="n">ResourceName</span> <span class="n">SalesChannelPartner</span>        <span class="n">SupportChannelPartner</span>      <span class="n">PrimaryContact</span> <span class="n">SecondaryContact</span>
-<span class="p">---------</span>              <span class="p">------------</span> <span class="p">-------------------</span>        <span class="p">---------------------</span>      <span class="p">--------------</span> <span class="p">----------------</span>
-<span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Encl1</span>        <span class="n">Hewlett</span> <span class="n">Packard</span> <span class="n">Enterprise</span> <span class="n">Hewlett</span> <span class="n">Packard</span> <span class="n">Enterprise</span> <span class="n">Mark</span> <span class="n">Jones</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVEnclosure</span> <span class="n">-Name</span> <span class="n">Encl1</span> <span class="p">|</span> <span class="nb">Get-OVRemoteSupportSetting</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Appliance</span>              <span class="n">ResourceName</span> <span class="n">SalesChannelPartner</span>        <span class="n">SupportChannelPartner</span>      <span class="n">PrimaryContact</span> <span class="n">SecondaryContact</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">---------</span>              <span class="p">------------</span> <span class="p">-------------------</span>        <span class="p">---------------------</span>      <span class="p">--------------</span> <span class="p">----------------</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Encl1</span>        <span class="n">Hewlett</span> <span class="n">Packard</span> <span class="n">Enterprise</span> <span class="n">Hewlett</span> <span class="n">Packard</span> <span class="n">Enterprise</span> <span class="n">Mark</span> <span class="n">Jones</span>
+</span></code></pre></div>
 <p>Get the configured Remote Support collection settings for "Encl1" Enclosure resource.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="n">PROD</span><span class="p">*</span> <span class="p">|</span> <span class="nb">Get-OVRemoteSupportSetting</span> <span class="p">|</span> <span class="p">?</span> <span class="n">supportEnabled</span> <span class="o">-eq</span> <span class="nv">$false</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="n">PROD</span><span class="p">*</span> <span class="p">|</span> <span class="nb">Get-OVRemoteSupportSetting</span> <span class="p">|</span> <span class="p">?</span> <span class="n">supportEnabled</span> <span class="o">-eq</span> <span class="nv">$false</span>
+</span></code></pre></div>
 <p>Return all PROD servers, and return only those where remote support is not enabled.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

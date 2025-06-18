@@ -293,7 +293,7 @@ Once completed, you can either close out of your PowerShell console, or issue th
 
 To ease the use of the HPE OneView PowerShell library, we have included a number of sample scripts administrators can use to quickly get familiar with the capabilities of the library. The sample scripts are part of the source code and installer. Depending on which installation scope you chose, a Samples directory contains all of the sample scripts. By no means are they exhaustive, but will help you get more familiar with the library.
 
-```text
+```pwsh-session
 [PS] ...\Samples> dir
     Directory: \HPEOneView.720\Samples
 
@@ -329,7 +329,7 @@ Here is an example of generating PowerShell script code from an HPE Synergy serv
 
 ![Server profile resource created by the HPE OneView graphical user interface \(GUI\).](images/8392c5dd-5303-4c61-82f3-f788c40dab26.png)
 
-```text
+```powershell
 # Get the profile and generate PowerShell script code
 Get-OVServerProfile -Name prf1 | ConvertTo-OVPowerShellScript
 

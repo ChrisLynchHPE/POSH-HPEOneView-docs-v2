@@ -12178,13 +12178,13 @@
 
 <h1 id="remove-ovlogicaljbod">Remove-OVLogicalJBOD</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVLogicalJBOD</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">LogicalJBOD</span><span class="p">[]&gt;</span>
-    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVLogicalJBOD</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">LogicalJBOD</span><span class="p">[]&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A logical JBOD is a group of physical drives that are dynamically defined as virtual drives. Logical JBOD uses the drives from the drive enclosures that are installed in the device bays of the enclosure and are associated with a SAS logical interconnect. You can assign or unassign a logical JBOD to a server hardware through the server profile.</p>
 <p>If the logical drive settings in the server profile indicate that the data in the logical JBOD is to be retained when you delete the server profile, then the data is retained and you can assign this logical JBOD to a different server profile.</p>
@@ -12195,26 +12195,26 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$LogicalJBOD</span> <span class="p">=</span> <span class="nb">Get-OVLogicalJBOD</span> <span class="n">-Name</span> <span class="n">MyLJbod1</span>
-<span class="nb">Remove-OVLogicalJBOD</span> <span class="n">-InputObject</span> <span class="nv">$LogicalJBOD</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$LogicalJBOD</span> <span class="p">=</span> <span class="nb">Get-OVLogicalJBOD</span> <span class="n">-Name</span> <span class="n">MyLJbod1</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Remove-OVLogicalJBOD</span> <span class="n">-InputObject</span> <span class="nv">$LogicalJBOD</span>
+</span></code></pre></div>
 <p>Remove the specified logical JBOD.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="c"># Get the logical JBOD we intend to remove</span>
-<span class="nv">$LogicalJBOD</span> <span class="p">=</span> <span class="nb">Get-OVLogicalJBOD</span> <span class="n">-Name</span> <span class="n">MyLJbod1</span>
-
-<span class="c"># Get the associated server profile associated with the logical JBOD</span>
-<span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="nv">$LogicalJBOD</span><span class="p">.</span><span class="n">UsedBy</span>
-
-<span class="c"># Remove the logical JBOD from the profile</span>
-<span class="nv">$ServerProfile</span><span class="p">.</span><span class="n">localStorage</span><span class="p">.</span><span class="n">sasLogicalJBODs</span> <span class="p">=</span> <span class="nv">$ServerProfile</span><span class="p">.</span><span class="n">localStorage</span><span class="p">.</span><span class="n">sasLogicalJBODs</span> <span class="p">|</span> <span class="p">?</span> <span class="n">sasLogicalJBODUri</span> <span class="o">-ne</span> <span class="nv">$ljbods</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">uri</span>
-
-<span class="c"># Save the server profile</span>
-<span class="nb">Save-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span>
-
-<span class="c"># Remove the logical JBOD resource</span>
-<span class="nb">Remove-OVLogicalJBOD</span> <span class="n">-InputObject</span> <span class="nv">$LogicalJBOD</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Get the logical JBOD we intend to remove</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$LogicalJBOD</span> <span class="p">=</span> <span class="nb">Get-OVLogicalJBOD</span> <span class="n">-Name</span> <span class="n">MyLJbod1</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c"># Get the associated server profile associated with the logical JBOD</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="nv">$LogicalJBOD</span><span class="p">.</span><span class="n">UsedBy</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c"># Remove the logical JBOD from the profile</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nv">$ServerProfile</span><span class="p">.</span><span class="n">localStorage</span><span class="p">.</span><span class="n">sasLogicalJBODs</span> <span class="p">=</span> <span class="nv">$ServerProfile</span><span class="p">.</span><span class="n">localStorage</span><span class="p">.</span><span class="n">sasLogicalJBODs</span> <span class="p">|</span> <span class="p">?</span> <span class="n">sasLogicalJBODUri</span> <span class="o">-ne</span> <span class="nv">$ljbods</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">uri</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c"># Save the server profile</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nb">Save-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c"># Remove the logical JBOD resource</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nb">Remove-OVLogicalJBOD</span> <span class="n">-InputObject</span> <span class="nv">$LogicalJBOD</span>
+</span></code></pre></div>
 <p>Remove the specified logical JBOD when it is associated with a server profile resource.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

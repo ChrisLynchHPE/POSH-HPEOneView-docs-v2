@@ -12106,38 +12106,38 @@
 
 <h1 id="push-ovappliancepermission">Push-OVAppliancePermission</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Push-OVAppliancePermission</span>
-    <span class="p">[</span><span class="n">-SetActivePermissions</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Push-OVAppliancePermission</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-SetActivePermissions</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Upon successful login, the caller can change their active permissions, and operate in a less priviledge mode at anytime.  The Push-OVAppliancePermission Cmdlet will accept a single or collection of [HPEOneView.Appliance.ConnectionPermission] objects.  A new SessionID token will be stored within the ApplianceConnection, and the ConnectionPermissions within the ActivePermissions property that were not provided will have their State set to "false".</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span>
-
-<span class="n">RoleName</span>              <span class="n">ScopeName</span>     <span class="n">Active</span>
-<span class="p">--------</span>              <span class="p">---------</span>     <span class="p">------</span>
-<span class="n">Network</span> <span class="n">administrator</span> <span class="n">Site</span> <span class="n">A</span> <span class="n">Admins</span> <span class="n">True</span>
-<span class="n">Server</span> <span class="n">administrator</span>  <span class="n">AllResources</span>  <span class="n">True</span>
-
-<span class="nv">$NewPermissions</span> <span class="p">=</span> <span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span> <span class="p">|</span> <span class="p">?</span> <span class="n">RoleName</span> <span class="o">-match</span> <span class="s2">&quot;Network&quot;</span>
-<span class="nb">Push-OVAppliancePermission</span> <span class="n">-SetActivePermissions</span> <span class="nv">$NewPermissions</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">RoleName</span>              <span class="n">ScopeName</span>     <span class="n">Active</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">--------</span>              <span class="p">---------</span>     <span class="p">------</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">Network</span> <span class="n">administrator</span> <span class="n">Site</span> <span class="n">A</span> <span class="n">Admins</span> <span class="n">True</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">Server</span> <span class="n">administrator</span>  <span class="n">AllResources</span>  <span class="n">True</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nv">$NewPermissions</span> <span class="p">=</span> <span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span> <span class="p">|</span> <span class="p">?</span> <span class="n">RoleName</span> <span class="o">-match</span> <span class="s2">&quot;Network&quot;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">Push-OVAppliancePermission</span> <span class="n">-SetActivePermissions</span> <span class="nv">$NewPermissions</span>
+</span></code></pre></div>
 <p>Change active permissions by filtering for a specific Role.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span>
-
-<span class="n">RoleName</span>              <span class="n">ScopeName</span>     <span class="n">Active</span>
-<span class="p">--------</span>              <span class="p">---------</span>     <span class="p">------</span>
-<span class="n">Network</span> <span class="n">administrator</span> <span class="n">Site</span> <span class="n">A</span> <span class="n">Admins</span> <span class="n">True</span>
-<span class="n">Server</span> <span class="n">administrator</span>  <span class="n">AllResources</span>  <span class="n">True</span>
-<span class="n">Server</span> <span class="n">administrator</span>  <span class="n">AllResources</span>  <span class="n">True</span>
-
-<span class="nv">$NewPermissions</span> <span class="p">=</span> <span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span> <span class="p">|</span> <span class="p">?</span> <span class="n">ScopeName</span> <span class="o">-match</span> <span class="s2">&quot;Site A Admins&quot;</span>
-<span class="nb">Push-OVAppliancePermission</span> <span class="n">-SetActivePermissions</span> <span class="nv">$NewPermissions</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">RoleName</span>              <span class="n">ScopeName</span>     <span class="n">Active</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">--------</span>              <span class="p">---------</span>     <span class="p">------</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">Network</span> <span class="n">administrator</span> <span class="n">Site</span> <span class="n">A</span> <span class="n">Admins</span> <span class="n">True</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">Server</span> <span class="n">administrator</span>  <span class="n">AllResources</span>  <span class="n">True</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">Server</span> <span class="n">administrator</span>  <span class="n">AllResources</span>  <span class="n">True</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nv">$NewPermissions</span> <span class="p">=</span> <span class="nv">$ConnectedSessions</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">ActivePermissions</span> <span class="p">|</span> <span class="p">?</span> <span class="n">ScopeName</span> <span class="o">-match</span> <span class="s2">&quot;Site A Admins&quot;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">Push-OVAppliancePermission</span> <span class="n">-SetActivePermissions</span> <span class="nv">$NewPermissions</span>
+</span></code></pre></div>
 <p>Change active permissions by filtering for a specific Scope.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-setactivepermissions-object">-SetActivePermissions &lt;Object&gt;</h3>

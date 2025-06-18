@@ -12106,20 +12106,20 @@
 
 <h1 id="get-ovcommandtrace">Get-OVCommandTrace</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVCommandTrace</span>
-    <span class="p">[</span><span class="n">-ScriptBlock</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">ScriptBlock</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Passthru</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVCommandTrace</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ScriptBlock</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">ScriptBlock</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Passthru</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet will assist the user in setting up the PowerShell environment to generate and capture Verbose output from OV Library Cmdlets.  Once this Cmdlet has been executed, the prior OV Cmdlets can be executed, without the need of using the <code>-Cerbose</code> switch.</p>
 <p>Cmdlet output will be captured using the built-in Microsoft PowerShell Start-Transcript provider.  A transcript trace file will be saved in either the current working directory, or specified using the <code>-Location</code> parameter.</p>
 <p>Please know that this Cmdlet is currently not supported in the Windows PowerShell ISE, unless using PowerShell v5 or newer.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVCommandTrace</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Name</span> <span class="n">MyNet</span> <span class="p">}</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVCommandTrace</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Name</span> <span class="n">MyNet</span> <span class="p">}</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span>
+</span></code></pre></div>
 <p>Start a new library trace, which will create a file in the <code>C:\Temp</code> directory.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-scriptblock-scriptblock">-ScriptBlock &lt;ScriptBlock&gt;</h3>
@@ -12156,8 +12156,8 @@
 </table>
 <h3 id="-location-string">-Location &lt;String&gt;</h3>
 <p>Specify the directory where the output file will be created.  A file with the following format will be created:</p>
-<pre><code>"{Date}_HPOV_transcript.log", where date is derived from `Get-Date `-UFormat` %y%m%d%H%M`
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code>&quot;{Date}_HPOV_transcript.log&quot;, where date is derived from `Get-Date `-UFormat` %y%m%d%H%M`
+</code></pre></div>
 <p>Default Value: (PWD).Path</p>
 <table>
 <thead>

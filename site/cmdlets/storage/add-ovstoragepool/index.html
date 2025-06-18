@@ -12124,12 +12124,12 @@
 
 <h1 id="add-ovstoragepool">Add-OVStoragePool</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVStoragePool</span>
-    <span class="p">[</span><span class="n">-StorageSystem</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Pool</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">[]&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Add-OVStoragePool</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-StorageSystem</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Pool</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">[]&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <details class="info" open="open">
 <summary>Info</summary>
@@ -12151,13 +12151,13 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="n">HP3PAR_1</span> <span class="n">-Pool</span> <span class="n">HP_CPG1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Add-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="n">HP3PAR_1</span> <span class="n">-Pool</span> <span class="n">HP_CPG1</span>
+</span></code></pre></div>
 <p>Add the "HP_CPG1" Storage Pool that is managed in the HP3PAR_1 Storage System.  PoolName parameter data type will be converted from <code>[System.String]</code> to <code>[System.Collections.ArrayList]</code> .</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$myPools</span> <span class="p">=</span> <span class="s2">&quot;cpg1&quot;</span><span class="p">,</span><span class="s2">&quot;cpg2&quot;</span>
-<span class="nb">Add-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="p">(</span><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">HP3PAR_1</span><span class="p">)</span> <span class="n">-Pool</span> <span class="nv">$myPools</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$myPools</span> <span class="p">=</span> <span class="s2">&quot;cpg1&quot;</span><span class="p">,</span><span class="s2">&quot;cpg2&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">Add-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="p">(</span><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">HP3PAR_1</span><span class="p">)</span> <span class="n">-Pool</span> <span class="nv">$myPools</span>
+</span></code></pre></div>
 <p>Add the "HP_CPG1" Storage Pool that is managed in the HP3PAR_1 Storage System.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-storagesystem-object">-StorageSystem &lt;Object&gt;</h3>

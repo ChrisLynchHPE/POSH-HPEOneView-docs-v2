@@ -12160,20 +12160,20 @@
 
 <h1 id="get-ovscmbcertificates">Get-OVScmbCertificates</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVScmbCertificates</span>
-    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-InstallApplianceRootCA</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVScmbCertificates</span>
-    <span class="p">[</span><span class="n">-Password</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ConvertToPFx</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-InstallApplianceRootCA</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVScmbCertificates</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-InstallApplianceRootCA</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVScmbCertificates</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-Password</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[</span><span class="n">-ConvertToPFx</span><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">[</span><span class="n">-InstallApplianceRootCA</span><span class="p">]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>HPE OneView uses a state change message bus (SCMB) for internal components to notify each other of resource state changes.  External users can connect and consume these same messages for monitoring purposes.  The HPE OneView SCMB is built upon the RabbitMQ provider.  </p>
 <p>In order to connect to  connect to the HPE OneView SCMB, a proper message queue client is needed, in which it must support certificate authentication.  The HPE OneView SCMB does not support standard username and password authentication.</p>
@@ -12185,12 +12185,12 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVScmbCertificates</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVScmbCertificates</span>
+</span></code></pre></div>
 <p>Get the HPE OneView appliance SCMB SSL certificates, and save them in the current directory.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Read-hHst</span> <span class="s2">&quot;Password&quot;</span> <span class="n">-AsSecureString</span> <span class="p">|</span> <span class="nb">Get-OVScmbCertificates</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">scmbcerts</span> <span class="n">-ConvertToPFx</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Read-hHst</span> <span class="s2">&quot;Password&quot;</span> <span class="n">-AsSecureString</span> <span class="p">|</span> <span class="nb">Get-OVScmbCertificates</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">scmbcerts</span> <span class="n">-ConvertToPFx</span>
+</span></code></pre></div>
 <p>Prompt for secure password input and pipe the value to convert the <code>[cert.pem]</code> to PFX format. </p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-location-string">-Location &lt;String&gt;</h3>

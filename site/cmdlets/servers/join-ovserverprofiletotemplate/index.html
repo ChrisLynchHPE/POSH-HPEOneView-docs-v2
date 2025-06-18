@@ -12160,23 +12160,23 @@
 
 <h1 id="join-ovserverprofiletotemplate">Join-OVServerProfileToTemplate</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Join-OVServerProfileToTemplate</span>
-    <span class="p">[</span><span class="n">-Template</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ServerProfile</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Join-OVServerProfileToTemplate</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Template</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ServerProfile</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Binds a server profile resource to the provided server profile template</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Join-OVServerProfileToTemplate</span> <span class="n">-template</span> <span class="s2">&quot;MyTemplate&quot;</span> <span class="n">-profile</span> <span class="s2">&quot;MyProfile&quot;</span> <span class="n">-appliance</span> <span class="n">HPEOneView</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Join-OVServerProfileToTemplate</span> <span class="n">-template</span> <span class="s2">&quot;MyTemplate&quot;</span> <span class="n">-profile</span> <span class="s2">&quot;MyProfile&quot;</span> <span class="n">-appliance</span> <span class="n">HPEOneView</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span>
+</span></code></pre></div>
 <p>Attaches the server profile template named MyTemplate to the server profile name MyProfile on the OneView appliance <code>[HPEOneView.contoso.com]</code></p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$p</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;myProfile&quot;</span>
-<span class="nb">Get-OVServerProfileTemplate</span> <span class="s2">&quot;myTemplate&quot;</span> <span class="p">|</span> <span class="nb">Join-OVServerProfileToTemplate</span> <span class="n">-profile</span> <span class="nv">$p</span> <span class="n">-appliance</span> <span class="n">HPEOneView</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$p</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;myProfile&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">Get-OVServerProfileTemplate</span> <span class="s2">&quot;myTemplate&quot;</span> <span class="p">|</span> <span class="nb">Join-OVServerProfileToTemplate</span> <span class="n">-profile</span> <span class="nv">$p</span> <span class="n">-appliance</span> <span class="n">HPEOneView</span><span class="p">.</span><span class="n">contoso</span><span class="p">.</span><span class="n">com</span>
+</span></code></pre></div>
 <p>Attaches the server profile template named MyTemplate to the server profile name MyProfile on the OneView appliance <code>[HPEOneView.contoso.com]</code></p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-template-object">-Template &lt;Object&gt;</h3>

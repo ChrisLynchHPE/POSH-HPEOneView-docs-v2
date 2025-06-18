@@ -12142,29 +12142,29 @@
 
 <h1 id="remove-ovresource">Remove-OVResource</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVResource</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVResource</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Removes a resource identified by either the resource uri or a resource object.  Remove-OVResource can be called with either -nameOrUri or -resource.  </p>
-<pre><code>*** This Cmdlet will not prompt for delete confirmation. Please use with caution. ***
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code>*** This Cmdlet will not prompt for delete confirmation. Please use with caution. ***
+</code></pre></div>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVResource</span> <span class="n">-Resource</span> <span class="s2">&quot;/rest/resource/1234-5678-9123&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Remove-OVResource</span> <span class="n">-Resource</span> <span class="s2">&quot;/rest/resource/1234-5678-9123&quot;</span>
+</span></code></pre></div>
 <p>Removes the resource specified by the URI.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVResource</span> <span class="n">-nameOrUri</span> <span class="s2">&quot;ServerProfile-A&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Remove-OVResource</span> <span class="n">-nameOrUri</span> <span class="s2">&quot;ServerProfile-A&quot;</span>
+</span></code></pre></div>
 <p>Removes the resource named "ServerProfile-A".  If multiple resources exist with the name "ServerProfile-A", an error is returned.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$MyResourceObject</span> <span class="p">=</span> <span class="nb">send-OVrequest</span> <span class="s2">&quot;/rest/resource/1234-5678-9123&quot;</span>
-<span class="nb">Remove-OVResource</span> <span class="n">-Resource</span> <span class="nv">$MyResourceObject</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$MyResourceObject</span> <span class="p">=</span> <span class="nb">send-OVrequest</span> <span class="s2">&quot;/rest/resource/1234-5678-9123&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">Remove-OVResource</span> <span class="n">-Resource</span> <span class="nv">$MyResourceObject</span>
+</span></code></pre></div>
 <p>Removes the resource $MyReSourceObject.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

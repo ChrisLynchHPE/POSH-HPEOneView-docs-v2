@@ -12142,16 +12142,16 @@
 
 <h1 id="get-ovldapgroup">Get-OVLdapGroup</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLdapGroup</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLdapGroup</span>
-    <span class="p">[</span><span class="n">-Export</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVLdapGroup</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVLdapGroup</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-Export</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>You can configure HPE OneView to use an external enterprise directory service for user authentication. HPE OneView supports the following enterprise directory services:</p>
 <ul>
@@ -12166,25 +12166,25 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLdapGroup</span>
-
-<span class="n">Name</span>                              <span class="n">Directory</span>                               <span class="n">Roles</span>
-<span class="p">----</span>                              <span class="p">---------</span>                               <span class="p">-----</span>
-<span class="n">My</span> <span class="n">Directory</span> <span class="n">Group1</span>               <span class="n">domain1</span>                                 <span class="p">{</span><span class="n">Storage</span> <span class="n">administrator</span><span class="p">}</span>
-<span class="n">My</span> <span class="n">Directory</span> <span class="n">Group2</span>               <span class="n">domain1</span>                                 <span class="p">{</span><span class="n">Network</span> <span class="n">administrator</span><span class="p">}</span> 
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVLdapGroup</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">Name</span>                              <span class="n">Directory</span>                               <span class="n">Roles</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">----</span>                              <span class="p">---------</span>                               <span class="p">-----</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">My</span> <span class="n">Directory</span> <span class="n">Group1</span>               <span class="n">domain1</span>                                 <span class="p">{</span><span class="n">Storage</span> <span class="n">administrator</span><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">My</span> <span class="n">Directory</span> <span class="n">Group2</span>               <span class="n">domain1</span>                                 <span class="p">{</span><span class="n">Network</span> <span class="n">administrator</span><span class="p">}</span> 
+</span></code></pre></div>
 <p>Get list of configured Directory Groups.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLdapGroup</span> <span class="n">-Name</span> <span class="s2">&quot;My Directory Group1&quot;</span>
-
-<span class="n">Name</span>                              <span class="n">Directory</span>                               <span class="n">Roles</span>
-<span class="p">----</span>                              <span class="p">---------</span>                               <span class="p">-----</span>
-<span class="n">My</span> <span class="n">Directory</span> <span class="n">Group1</span>               <span class="n">domain1</span>                                 <span class="p">{</span><span class="n">Storage</span> <span class="n">administrator</span><span class="p">}</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVLdapGroup</span> <span class="n">-Name</span> <span class="s2">&quot;My Directory Group1&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">Name</span>                              <span class="n">Directory</span>                               <span class="n">Roles</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">----</span>                              <span class="p">---------</span>                               <span class="p">-----</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">My</span> <span class="n">Directory</span> <span class="n">Group1</span>               <span class="n">domain1</span>                                 <span class="p">{</span><span class="n">Storage</span> <span class="n">administrator</span><span class="p">}</span>
+</span></code></pre></div>
 <p>Display "My Directroy Group1" and the assigned roles.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLdapGroup</span> <span class="n">-export</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">directorygroups</span><span class="p">.</span><span class="n">json</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-OVLdapGroup</span> <span class="n">-export</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">directorygroups</span><span class="p">.</span><span class="n">json</span>
+</span></code></pre></div>
 <p>Export configured Directory Groups to c:\dir\directorygroups.json</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

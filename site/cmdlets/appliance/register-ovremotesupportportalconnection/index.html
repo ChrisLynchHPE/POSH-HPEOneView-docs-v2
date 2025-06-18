@@ -12160,12 +12160,12 @@
 
 <h1 id="register-ovremotesupportportalconnection">Register-OVRemoteSupportPortalConnection</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Register-OVRemoteSupportPortalConnection</span>
-    <span class="p">[</span><span class="n">-LaunchBrowser</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-GenerateNewCode</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Register-OVRemoteSupportPortalConnection</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-LaunchBrowser</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-GenerateNewCode</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>The Hewlett Packard Enterprise Support Center (HPESC) integration enables you to securely register the HPE OneView Remote Support client with your HPESC group. It can be a private or shared group. Registering remote support with HPESC improves case visibility for the cases originating from the client. After registration, all the group members can view the cases originating from the client.</p>
 <p>This feature provides an improvement over the existing contact-based access. It does not require explicit contact matching and allows you to share case content with all the HPESC group members.</p>
@@ -12180,12 +12180,12 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Register-OVRemoteSupportPortalConnection</span> <span class="n">-LaunchBrowser</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Register-OVRemoteSupportPortalConnection</span> <span class="n">-LaunchBrowser</span>
+</span></code></pre></div>
 <p>Generate a token.  Return an existing token if it was created already by another user.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Register-OVRemoteSupportPortalConnection</span> <span class="n">-GenerateNewCode</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Register-OVRemoteSupportPortalConnection</span> <span class="n">-GenerateNewCode</span>
+</span></code></pre></div>
 <p>Generate a new token.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

@@ -12070,10 +12070,10 @@
 
 <h1 id="get-ovcomposernode">Get-OVComposerNode</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVComposerNode</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVComposerNode</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>The Composer is an appliance that runs HPE OneView and manages the group of Synergy frames cabled together. You select the initial, active Composer during hardware setup by connecting the Synergy monitor port to a frame link module in the same bay number as the Composer you want to configure. A second Composer is automatically selected to create a high-availability (HA) cluster for managing the Synergy frame in a standby role. If the active Composer fails, the standby Composer automatically becomes the active Composer.</p>
 <p>This Cmdlet will report the installed and configured Synergy Composer nodes. This includes status, state, model, firmware version, and role.</p>
@@ -12083,13 +12083,13 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVComposerNode</span>
-
-<span class="n">Appliance</span>                              <span class="n">Name</span>                       <span class="n">State</span> <span class="n">Status</span> <span class="n">Model</span>            <span class="n">Version</span>         <span class="n">Role</span>
-<span class="p">---------</span>                              <span class="p">----</span>                       <span class="p">-----</span> <span class="p">------</span> <span class="p">-----</span>            <span class="p">-------</span>         <span class="p">----</span>
-<span class="n">zpo-s18r18s3-ov</span><span class="p">.</span><span class="n">vse</span><span class="p">.</span><span class="n">rdlabs</span><span class="p">.</span><span class="n">hpecorp</span><span class="p">.</span><span class="n">net</span> <span class="n">CN75160607</span> <span class="n">appliance</span> <span class="n">bay</span> <span class="n">1</span> <span class="n">OK</span>    <span class="n">OK</span>     <span class="n">Synergy</span> <span class="n">Composer</span> <span class="n">3</span><span class="p">.</span><span class="n">00</span><span class="p">.</span><span class="n">00</span><span class="p">-</span><span class="n">0251673</span> <span class="n">Active</span>
-<span class="n">zpo-s18r18s3-ov</span><span class="p">.</span><span class="n">vse</span><span class="p">.</span><span class="n">rdlabs</span><span class="p">.</span><span class="n">hpecorp</span><span class="p">.</span><span class="n">net</span> <span class="n">CN75140CPW</span> <span class="n">appliance</span> <span class="n">bay</span> <span class="n">1</span> <span class="n">OK</span>    <span class="n">OK</span>     <span class="n">Synergy</span> <span class="n">Composer</span> <span class="n">3</span><span class="p">.</span><span class="n">00</span><span class="p">.</span><span class="n">00</span><span class="p">-</span><span class="n">0251673</span> <span class="n">Standby</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVComposerNode</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Appliance</span>                              <span class="n">Name</span>                       <span class="n">State</span> <span class="n">Status</span> <span class="n">Model</span>            <span class="n">Version</span>         <span class="n">Role</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">---------</span>                              <span class="p">----</span>                       <span class="p">-----</span> <span class="p">------</span> <span class="p">-----</span>            <span class="p">-------</span>         <span class="p">----</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">zpo-s18r18s3-ov</span><span class="p">.</span><span class="n">vse</span><span class="p">.</span><span class="n">rdlabs</span><span class="p">.</span><span class="n">hpecorp</span><span class="p">.</span><span class="n">net</span> <span class="n">CN75160607</span> <span class="n">appliance</span> <span class="n">bay</span> <span class="n">1</span> <span class="n">OK</span>    <span class="n">OK</span>     <span class="n">Synergy</span> <span class="n">Composer</span> <span class="n">3</span><span class="p">.</span><span class="n">00</span><span class="p">.</span><span class="n">00</span><span class="p">-</span><span class="n">0251673</span> <span class="n">Active</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">zpo-s18r18s3-ov</span><span class="p">.</span><span class="n">vse</span><span class="p">.</span><span class="n">rdlabs</span><span class="p">.</span><span class="n">hpecorp</span><span class="p">.</span><span class="n">net</span> <span class="n">CN75140CPW</span> <span class="n">appliance</span> <span class="n">bay</span> <span class="n">1</span> <span class="n">OK</span>    <span class="n">OK</span>     <span class="n">Synergy</span> <span class="n">Composer</span> <span class="n">3</span><span class="p">.</span><span class="n">00</span><span class="p">.</span><span class="n">00</span><span class="p">-</span><span class="n">0251673</span> <span class="n">Standby</span>
+</span></code></pre></div>
 <p>Return all Synergy Composer nodes</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

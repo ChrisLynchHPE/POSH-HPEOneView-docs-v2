@@ -12178,15 +12178,15 @@
 
 <h1 id="convertto-ovstoragevolume">ConvertTo-OVStorageVolume</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">ConvertTo-OVStorageVolume</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-SharingMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">ConvertTo-OVStorageVolume</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-SharingMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A snapshot is a virtual copy of an existing volume at a point in time. You can use a snapshot as a backup of a volume, and then use the snapshot to revert a volume to the backup, or to create new volumes from the snapshot.
 A snapshot is a static copy of a volume at the point the snapshot is created. Snapshots are not updated to reflect changes in the volume since the snapshot was taken.</p>
@@ -12203,14 +12203,14 @@ A snapshot is a static copy of a volume at the point the snapshot is created. Sn
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Volume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">PrivVolume1</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Last</span> <span class="n">1</span>
-<span class="nb">ConvertTo-OVStorageVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Copy of PrivVolume1&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Volume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">PrivVolume1</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Last</span> <span class="n">1</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">ConvertTo-OVStorageVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Copy of PrivVolume1&quot;</span>
+</span></code></pre></div>
 <p>Get the most recent snapshot of PrivVolume1 and convert it to a volume.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Snapshots</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="s2">&quot;Volume 1&quot;</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span>
-<span class="nv">$Snapshots</span> <span class="p">|</span> <span class="p">?</span> <span class="p">{</span> <span class="p">((</span><span class="nb">Get-Date</span> <span class="nv">$_</span><span class="p">.</span><span class="n">created</span> <span class="n">-Format</span> <span class="n">d</span><span class="p">)</span> <span class="o">-eq</span> <span class="p">(</span><span class="nb">Get-Date</span> <span class="n">02</span><span class="p">/</span><span class="n">23</span><span class="p">/</span><span class="n">2016</span> <span class="n">-format</span> <span class="n">d</span><span class="p">)}</span> <span class="p">|</span> <span class="nb">ConvertTo-OVStorageVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Copy of Volume 1&quot;</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$Snapshots</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="s2">&quot;Volume 1&quot;</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$Snapshots</span> <span class="p">|</span> <span class="p">?</span> <span class="p">{</span> <span class="p">((</span><span class="nb">Get-Date</span> <span class="nv">$_</span><span class="p">.</span><span class="n">created</span> <span class="n">-Format</span> <span class="n">d</span><span class="p">)</span> <span class="o">-eq</span> <span class="p">(</span><span class="nb">Get-Date</span> <span class="n">02</span><span class="p">/</span><span class="n">23</span><span class="p">/</span><span class="n">2016</span> <span class="n">-format</span> <span class="n">d</span><span class="p">)}</span> <span class="p">|</span> <span class="nb">ConvertTo-OVStorageVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Copy of Volume 1&quot;</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Get all of the available storage volume snapshots for "Volume 1", then convert the snapshot created on the specified date to a storage volume resource.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

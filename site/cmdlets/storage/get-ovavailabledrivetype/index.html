@@ -12124,11 +12124,11 @@
 
 <h1 id="get-ovavailabledrivetype">Get-OVAvailableDriveType</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVAvailableDriveType</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVAvailableDriveType</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This helper Cmdlet will return a collection of available disk drives from a specified SAS Logical Interconnect or Drive Enclosure. The returned value will contain available quantity of drives based on interface, media type and capacity, organized by SAS Logical Interconnect.  The object can then be used to define the drive selection criteria for New-OVServerProfileLogicalDisk using the <code>-AvailableDriveType</code> parameter.</p>
 <details class="info" open="open">
@@ -12137,16 +12137,16 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="p">|</span> <span class="nb">Get-OVAvailableDriveType</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="p">|</span> <span class="nb">Get-OVAvailableDriveType</span>
+</span></code></pre></div>
 <p>Return all available disk drives from all SAS Logical Interconnects.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;LE1-Default SAS Synergy LIG-3&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVAvailableDriveType</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVSasLogicalInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;LE1-Default SAS Synergy LIG-3&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVAvailableDriveType</span>
+</span></code></pre></div>
 <p>Return all available disk drives from the specific SAS Logical Interconnect.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVDriveEnclosure</span> <span class="n">-Name</span> <span class="s2">&quot;EnclosureName, Bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVAvailableDriveType</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVDriveEnclosure</span> <span class="n">-Name</span> <span class="s2">&quot;EnclosureName, Bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVAvailableDriveType</span>
+</span></code></pre></div>
 <p>Return all available disk drives from the specific D3940 Drive Enclosure.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

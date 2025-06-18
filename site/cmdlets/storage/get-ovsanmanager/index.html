@@ -12106,11 +12106,11 @@
 
 <h1 id="get-ovsanmanager">Get-OVSanManager</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSanManager</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVSanManager</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>SAN managers are a resource in HPE OneView that represent a connection to an external entity through which SANs are discovered and managed. The external entity can be vendor-specific management software or a physical switch.</p>
 <p>SANs are created outside of HPE OneView in the SAN manager vendor?s management interface. Once created, SANs can be discovered and managed in HPE OneView using the SAN Manager resource.</p>
@@ -12123,13 +12123,13 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSanManager</span>
-
-<span class="n">Name</span>            <span class="n">Status</span> <span class="n">State</span>   <span class="nb">Type </span>                   <span class="n">Version</span>  <span class="n">Managed</span> <span class="n">SANs</span>
-<span class="p">----</span>            <span class="p">------</span> <span class="p">-----</span>   <span class="p">----</span>                    <span class="p">-------</span>  <span class="p">------------</span>
-<span class="n">bna1</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">OK</span>     <span class="n">Managed</span> <span class="n">Brocade</span> <span class="n">Network</span> <span class="n">Advisor</span> <span class="n">12</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">5</span> <span class="p">{</span><span class="n">Fabric_A</span><span class="p">,</span> <span class="n">Fabric_B</span><span class="p">}</span>
-<span class="n">bna2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">OK</span>     <span class="n">Managed</span> <span class="n">Brocade</span> <span class="n">Network</span> <span class="n">Advisor</span> <span class="n">12</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">5</span> <span class="p">{</span><span class="n">Fabric_C</span><span class="p">,</span> <span class="n">Fabric_D</span><span class="p">}</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVSanManager</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Name</span>            <span class="n">Status</span> <span class="n">State</span>   <span class="nb">Type </span>                   <span class="n">Version</span>  <span class="n">Managed</span> <span class="n">SANs</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">----</span>            <span class="p">------</span> <span class="p">-----</span>   <span class="p">----</span>                    <span class="p">-------</span>  <span class="p">------------</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">bna1</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">OK</span>     <span class="n">Managed</span> <span class="n">Brocade</span> <span class="n">Network</span> <span class="n">Advisor</span> <span class="n">12</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">5</span> <span class="p">{</span><span class="n">Fabric_A</span><span class="p">,</span> <span class="n">Fabric_B</span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">bna2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">OK</span>     <span class="n">Managed</span> <span class="n">Brocade</span> <span class="n">Network</span> <span class="n">Advisor</span> <span class="n">12</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">5</span> <span class="p">{</span><span class="n">Fabric_C</span><span class="p">,</span> <span class="n">Fabric_D</span><span class="p">}</span>
+</span></code></pre></div>
 <p>Display all SAN Managers.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>
