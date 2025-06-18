@@ -3,7 +3,7 @@ site_author: ChrisLynchHPE
 repo_name: chrislynchhpe/POSH-HPEOneView-docs-v2
 repo_url: https://github.com/chrislynchhpe/POSH-HPEOneView-docs-v2
 site_url: https://chrislynchhpe.github.io/
-edit_uri: edit/master/docs
+edit_uri: edit/main/docs
 
 copyright: >
   Copyright &copy; 2013-2025 Hewlett Packard Enterprise Development LP
