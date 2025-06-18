@@ -12903,92 +12903,92 @@
 <p>Once completed, you can either close out of your PowerShell console, or issue the <a href="cmdlets/library/disconnect-ovmgmt/"><code>Disconnect-OVMgmt</code></a> CMDLET to terminate your session, and return you back to your PowerShell consoles prior state.</p>
 <h3 id="sample-scripts">Sample Scripts</h3>
 <p>To ease the use of the HPE OneView PowerShell library, we have included a number of sample scripts administrators can use to quickly get familiar with the capabilities of the library. The sample scripts are part of the source code and installer. Depending on which installation scope you chose, a Samples directory contains all of the sample scripts. By no means are they exhaustive, but will help you get more familiar with the library.</p>
-<div class="highlight"><pre><span></span><code>[PS] ...\Samples&gt; dir
-    Directory: \HPEOneView.720\Samples
+<div class="highlight"><pre><span></span><code><span class="go">[PS] ...\Samples&gt; dir</span>
+<span class="go">    Directory: \HPEOneView.720\Samples</span>
 
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-la---          10/24/2022  2:37 PM           4166 AddServers_Monitored_Sample.ps1
-la---          10/24/2022  2:37 PM           5059 AddStorageSystem_Sample.ps1
-la---          10/24/2022  2:38 PM           3734 Alerts_Sample.ps1
-la---          10/24/2022  2:38 PM           2951 Appliance_Backup_Sample.ps1
-la---          10/24/2022  2:38 PM          18388 ApplianceConfig_Sample.ps1
-la---          10/24/2022  2:34 PM          13380 ComposerApplianceConfig_Sample.ps1
-la---            2/2/2022  9:11 AM          10035 Configure_IIS_WebDav_ExternalRepo_Sample.ps1
-la---          10/24/2022  2:38 PM           8787 ConfigureRemoteSupport_Sample.ps1
-la---          10/24/2022  2:38 PM           3632 CreateEnclosureGroup_Sample.ps1
-la---          10/24/2022  2:38 PM           3510 DefineLogicalInterconnectGroup_AA_VC_Sample.ps1
-la---          10/24/2022  2:38 PM           3404 DefineLogicalInterconnectGroup_Sample.ps1
-la---          10/24/2022  2:38 PM           3371 DefineNetworks_AA_VC_Sample.ps1
-la---          10/24/2022  2:38 PM           3639 DefineNetworks_Sample.ps1
-la---          10/24/2022  2:38 PM           7010 Server_Multiconnection_AA_VC_Sample.ps1
-la---           4/27/2022  2:23 PM           7344 Server_Multiconnection_Sample.ps1
-la---           4/27/2022  2:23 PM           7770 Server_Multiconnection_SAN_Storage_Sample.ps1
-la---          10/24/2022  2:38 PM           5697 Server_Profile_Template_Multiconnection_Sample.ps1
-la---           8/23/2022  7:27 PM           4395 Server_Profile_Template_Rack_Server_Sample.ps1
-la---           4/27/2022  2:23 PM           8014 Wipe_Appliance.ps1
+<span class="go">Mode                 LastWriteTime         Length Name</span>
+<span class="go">----                 -------------         ------ ----</span>
+<span class="go">la---          10/24/2022  2:37 PM           4166 AddServers_Monitored_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:37 PM           5059 AddStorageSystem_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           3734 Alerts_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           2951 Appliance_Backup_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM          18388 ApplianceConfig_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:34 PM          13380 ComposerApplianceConfig_Sample.ps1</span>
+<span class="go">la---            2/2/2022  9:11 AM          10035 Configure_IIS_WebDav_ExternalRepo_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           8787 ConfigureRemoteSupport_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           3632 CreateEnclosureGroup_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           3510 DefineLogicalInterconnectGroup_AA_VC_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           3404 DefineLogicalInterconnectGroup_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           3371 DefineNetworks_AA_VC_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           3639 DefineNetworks_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           7010 Server_Multiconnection_AA_VC_Sample.ps1</span>
+<span class="go">la---           4/27/2022  2:23 PM           7344 Server_Multiconnection_Sample.ps1</span>
+<span class="go">la---           4/27/2022  2:23 PM           7770 Server_Multiconnection_SAN_Storage_Sample.ps1</span>
+<span class="go">la---          10/24/2022  2:38 PM           5697 Server_Profile_Template_Multiconnection_Sample.ps1</span>
+<span class="go">la---           8/23/2022  7:27 PM           4395 Server_Profile_Template_Rack_Server_Sample.ps1</span>
+<span class="go">la---           4/27/2022  2:23 PM           8014 Wipe_Appliance.ps1</span>
 </code></pre></div>
 <h3 id="generating-sample-code">Generating sample code</h3>
 <p>Introduced in the HPE OneView 4.10 library, the <a href="cmdlets/library/convertto-ovpowershellscript/"><code>ConvertTo-OVPowerShellScript</code></a> Cmdlet will take supported resources that were created either with the UI or other REST API client or HPE OneView SDK's, and generate PowrShell script code.</p>
 <p>Here is an example of generating PowerShell script code from an HPE Synergy server profile created in the UI:</p>
 <p><img alt="Server profile resource created by the HPE OneView graphical user interface (GUI)." src="images/8392c5dd-5303-4c61-82f3-f788c40dab26.png" /></p>
-<div class="highlight"><pre><span></span><code># Get the profile and generate PowerShell script code
-Get-OVServerProfile -Name prf1 | ConvertTo-OVPowerShellScript
+<div class="highlight"><pre><span></span><code><span class="c"># Get the profile and generate PowerShell script code</span>
+<span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="n">prf1</span> <span class="p">|</span> <span class="nb">ConvertTo-OVPowerShellScript</span>
 
-# -------------- Attributes for ServerProfile &quot;prf1&quot;
-$name                       = &quot;prf1&quot;
-$description                = &quot;prf1&quot;
-$server                     = Get-OVServer -Name &quot;Encl-1, bay 11&quot;
-$affinity                   = &quot;Bay&quot;
-# -------------- Attributes for connection &quot;1&quot;
-$connID                     = 1
-$connType                   = &quot;Ethernet&quot;
-$netName                    = &quot;Mgmt&quot;
-$ThisNetwork                = Get-OVNetwork -Type Ethernet -Name $netName
-$portID                     = &quot;Mezz 3:1-a&quot;
-$requestedMbps              = 2500
-$Conn1                      = New-OVServerProfileConnection -ConnectionID $connID -ConnectionType $connType -Network $ThisNetwork -PortId $portID -RequestedBW $requestedMbps
-# -------------- Attributes for connection &quot;2&quot;
-$connID                     = 2
-$connType                   = &quot;Ethernet&quot;
-$netName                    = &quot;Mgmt&quot;
-$ThisNetwork                = Get-OVNetwork -Type Ethernet -Name $netName
-$portID                     = &quot;Mezz 3:2-a&quot;
-$requestedMbps              = 2500
-$Conn2                      = New-OVServerProfileConnection -ConnectionID $connID -ConnectionType $connType -Network $ThisNetwork -PortId $portID -RequestedBW $requestedMbps
-$connections                = $Conn1, $Conn2
-# -------------- Attributes for logical disk &quot;Boot(RAID1)&quot;
-$ldName                     = &quot;Boot&quot;
-$raidLevel                  = &quot;RAID1&quot;
-$numPhysDrives              = 2
-$driveTech                  = &quot;Auto&quot;
-$LogicalDisk1               = New-OVServerProfileLogicalDisk -Name $ldName -Raid $raidLevel -NumberofDrives $numPhysDrives -DriveType $driveTech -Bootable $True
-# -------------- Attributes for controller &quot;Embedded&quot; (Mixed)
-$deviceSlot                 = &quot;Embedded&quot;
-$controllerMode             = &quot;Mixed&quot;
-$LogicalDisks               = $LogicalDisk1
-$writeCache                 = &quot;Enabled&quot;
-$controller1                = New-OVServerProfileLogicalDiskController -ControllerID $deviceSlot -Mode $controllerMode -WriteCache $writeCache -LogicalDisk $LogicalDisks
-$controllers                = $controller1
-# -------------- Attributes for BIOS Boot Mode settings
-$manageboot                 = $True
-$biosBootMode               = &quot;UEFIOptimized&quot;
-# -------------- Attributes for BIOS order settings
-$bootOrder                  = &quot;HardDisk&quot;
-# -------------- Attributes for BIOS settings
-$biosSettings               = @(
-        @{id = &#39;WorkloadProfile&#39;; value = &#39;GeneralThroughputCompute&#39;},
-        @{id = &#39;PowerRegulator&#39;; value = &#39;StaticHighPerf&#39;},
-        @{id = &#39;EnergyPerfBias&#39;; value = &#39;MaxPerf&#39;},
-        @{id = &#39;CollabPowerControl&#39;; value = &#39;Disabled&#39;},
-        @{id = &#39;NumaGroupSizeOpt&#39;; value = &#39;Clustered&#39;},
-        @{id = &#39;SubNumaClustering&#39;; value = &#39;Enabled&#39;},
-        @{id = &#39;EnergyEfficientTurbo&#39;; value = &#39;Disabled&#39;},
-        @{id = &#39;IntelUpiPowerManagement&#39;; value = &#39;Disabled&#39;}
-)
-# -------------- Attributes for advanced settings
-New-OVServerProfile -Name $name -Description $description -AssignmentType Server -Server $server -Affinity $affinity -Connections $connections -LocalStorage -StorageController $controllers -ManageBoot:$manageboot -BootMode $biosBootMode -BootOrder $bootOrder -Bios -BiosSettings $biosSettings -HideUnusedFlexNics $true
+<span class="c"># -------------- Attributes for ServerProfile &quot;prf1&quot;</span>
+<span class="nv">$name</span>                       <span class="p">=</span> <span class="s2">&quot;prf1&quot;</span>
+<span class="nv">$description</span>                <span class="p">=</span> <span class="s2">&quot;prf1&quot;</span>
+<span class="nv">$server</span>                     <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl-1, bay 11&quot;</span>
+<span class="nv">$affinity</span>                   <span class="p">=</span> <span class="s2">&quot;Bay&quot;</span>
+<span class="c"># -------------- Attributes for connection &quot;1&quot;</span>
+<span class="nv">$connID</span>                     <span class="p">=</span> <span class="n">1</span>
+<span class="nv">$connType</span>                   <span class="p">=</span> <span class="s2">&quot;Ethernet&quot;</span>
+<span class="nv">$netName</span>                    <span class="p">=</span> <span class="s2">&quot;Mgmt&quot;</span>
+<span class="nv">$ThisNetwork</span>                <span class="p">=</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Type</span> <span class="n">Ethernet</span> <span class="n">-Name</span> <span class="nv">$netName</span>
+<span class="nv">$portID</span>                     <span class="p">=</span> <span class="s2">&quot;Mezz 3:1-a&quot;</span>
+<span class="nv">$requestedMbps</span>              <span class="p">=</span> <span class="n">2500</span>
+<span class="nv">$Conn1</span>                      <span class="p">=</span> <span class="nb">New-OVServerProfileConnection</span> <span class="n">-ConnectionID</span> <span class="nv">$connID</span> <span class="n">-ConnectionType</span> <span class="nv">$connType</span> <span class="n">-Network</span> <span class="nv">$ThisNetwork</span> <span class="n">-PortId</span> <span class="nv">$portID</span> <span class="n">-RequestedBW</span> <span class="nv">$requestedMbps</span>
+<span class="c"># -------------- Attributes for connection &quot;2&quot;</span>
+<span class="nv">$connID</span>                     <span class="p">=</span> <span class="n">2</span>
+<span class="nv">$connType</span>                   <span class="p">=</span> <span class="s2">&quot;Ethernet&quot;</span>
+<span class="nv">$netName</span>                    <span class="p">=</span> <span class="s2">&quot;Mgmt&quot;</span>
+<span class="nv">$ThisNetwork</span>                <span class="p">=</span> <span class="nb">Get-OVNetwork</span> <span class="n">-Type</span> <span class="n">Ethernet</span> <span class="n">-Name</span> <span class="nv">$netName</span>
+<span class="nv">$portID</span>                     <span class="p">=</span> <span class="s2">&quot;Mezz 3:2-a&quot;</span>
+<span class="nv">$requestedMbps</span>              <span class="p">=</span> <span class="n">2500</span>
+<span class="nv">$Conn2</span>                      <span class="p">=</span> <span class="nb">New-OVServerProfileConnection</span> <span class="n">-ConnectionID</span> <span class="nv">$connID</span> <span class="n">-ConnectionType</span> <span class="nv">$connType</span> <span class="n">-Network</span> <span class="nv">$ThisNetwork</span> <span class="n">-PortId</span> <span class="nv">$portID</span> <span class="n">-RequestedBW</span> <span class="nv">$requestedMbps</span>
+<span class="nv">$connections</span>                <span class="p">=</span> <span class="nv">$Conn1</span><span class="p">,</span> <span class="nv">$Conn2</span>
+<span class="c"># -------------- Attributes for logical disk &quot;Boot(RAID1)&quot;</span>
+<span class="nv">$ldName</span>                     <span class="p">=</span> <span class="s2">&quot;Boot&quot;</span>
+<span class="nv">$raidLevel</span>                  <span class="p">=</span> <span class="s2">&quot;RAID1&quot;</span>
+<span class="nv">$numPhysDrives</span>              <span class="p">=</span> <span class="n">2</span>
+<span class="nv">$driveTech</span>                  <span class="p">=</span> <span class="s2">&quot;Auto&quot;</span>
+<span class="nv">$LogicalDisk1</span>               <span class="p">=</span> <span class="nb">New-OVServerProfileLogicalDisk</span> <span class="n">-Name</span> <span class="nv">$ldName</span> <span class="n">-Raid</span> <span class="nv">$raidLevel</span> <span class="n">-NumberofDrives</span> <span class="nv">$numPhysDrives</span> <span class="n">-DriveType</span> <span class="nv">$driveTech</span> <span class="n">-Bootable</span> <span class="nv">$True</span>
+<span class="c"># -------------- Attributes for controller &quot;Embedded&quot; (Mixed)</span>
+<span class="nv">$deviceSlot</span>                 <span class="p">=</span> <span class="s2">&quot;Embedded&quot;</span>
+<span class="nv">$controllerMode</span>             <span class="p">=</span> <span class="s2">&quot;Mixed&quot;</span>
+<span class="nv">$LogicalDisks</span>               <span class="p">=</span> <span class="nv">$LogicalDisk1</span>
+<span class="nv">$writeCache</span>                 <span class="p">=</span> <span class="s2">&quot;Enabled&quot;</span>
+<span class="nv">$controller1</span>                <span class="p">=</span> <span class="nb">New-OVServerProfileLogicalDiskController</span> <span class="n">-ControllerID</span> <span class="nv">$deviceSlot</span> <span class="n">-Mode</span> <span class="nv">$controllerMode</span> <span class="n">-WriteCache</span> <span class="nv">$writeCache</span> <span class="n">-LogicalDisk</span> <span class="nv">$LogicalDisks</span>
+<span class="nv">$controllers</span>                <span class="p">=</span> <span class="nv">$controller1</span>
+<span class="c"># -------------- Attributes for BIOS Boot Mode settings</span>
+<span class="nv">$manageboot</span>                 <span class="p">=</span> <span class="nv">$True</span>
+<span class="nv">$biosBootMode</span>               <span class="p">=</span> <span class="s2">&quot;UEFIOptimized&quot;</span>
+<span class="c"># -------------- Attributes for BIOS order settings</span>
+<span class="nv">$bootOrder</span>                  <span class="p">=</span> <span class="s2">&quot;HardDisk&quot;</span>
+<span class="c"># -------------- Attributes for BIOS settings</span>
+<span class="nv">$biosSettings</span>               <span class="p">=</span> <span class="p">@(</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;WorkloadProfile&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;GeneralThroughputCompute&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;PowerRegulator&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;StaticHighPerf&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;EnergyPerfBias&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;MaxPerf&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;CollabPowerControl&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;Disabled&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;NumaGroupSizeOpt&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;Clustered&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;SubNumaClustering&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;Enabled&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;EnergyEfficientTurbo&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;Disabled&#39;</span><span class="p">},</span>
+        <span class="p">@{</span><span class="n">id</span> <span class="p">=</span> <span class="s1">&#39;IntelUpiPowerManagement&#39;</span><span class="p">;</span> <span class="n">value</span> <span class="p">=</span> <span class="s1">&#39;Disabled&#39;</span><span class="p">}</span>
+<span class="p">)</span>
+<span class="c"># -------------- Attributes for advanced settings</span>
+<span class="nb">New-OVServerProfile</span> <span class="n">-Name</span> <span class="nv">$name</span> <span class="n">-Description</span> <span class="nv">$description</span> <span class="n">-AssignmentType</span> <span class="n">Server</span> <span class="n">-Server</span> <span class="nv">$server</span> <span class="n">-Affinity</span> <span class="nv">$affinity</span> <span class="n">-Connections</span> <span class="nv">$connections</span> <span class="n">-LocalStorage</span> <span class="n">-StorageController</span> <span class="nv">$controllers</span> <span class="n">-ManageBoot</span><span class="p">:</span><span class="nv">$manageboot</span> <span class="n">-BootMode</span> <span class="nv">$biosBootMode</span> <span class="n">-BootOrder</span> <span class="nv">$bootOrder</span> <span class="n">-Bios</span> <span class="n">-BiosSettings</span> <span class="nv">$biosSettings</span> <span class="n">-HideUnusedFlexNics</span> <span class="nv">$true</span>
 </code></pre></div>
 <h4 id="hpe-oneview-automation-sample-repository">HPE OneView automation sample repository</h4>
 <p>We have created a home for contributors to provide sample scripts or automation toolkits that use various HPE OneView ecosystem providers. You can find those samples on the <a href="https://github.com/hewlettPackard/oneview-samples">HPE OneView Samples GitHub project repository</a>.</p>
