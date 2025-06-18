@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12176,11 +12178,11 @@
 <p>HPE OneView uses a state change message bus (SCMB) for internal components to notify each other of resource state changes.  External users can connect and consume these same messages for monitoring purposes.  The HPE OneView SCMB is built upon the RabbitMQ provider.  </p>
 <p>In order to connect to  connect to the HPE OneView SCMB, a proper message queue client is needed, in which it must support certificate authentication.  The HPE OneView SCMB does not support standard username and password authentication.</p>
 <p>This Cmdlet will retrieve and store the certificates necessary to register with the State Change Message Bus.  If the SCMB certificate has not been created, a new one will be generated.  The generated certificate is mapped to a private, internal user account with Read-Only permissions.  In order to write changes, a REST API bind-back is necessary.</p>
-<p>The generated and/or downloaded SCMB certificate can also be exported to PFX format for secure storage, using the -ConvertToPFx parameter.</p>
+<p>The generated and/or downloaded SCMB certificate can also be exported to PFX format for secure storage, using the <code>-ConvertToPFx</code> parameter.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure Administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVScmbCertificates</span>
@@ -12355,15 +12357,28 @@ Convert rabbitmq_readonly client certificate to PFX format for .Net consumption.
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>System.Security.SecureString</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Security.SecureString</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Password for PFX file</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>3 files will be created:</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">3 files will be created:</label><label for="__tabbed_2_2">Pkcs12/PFX certificate file</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
-<li>{ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority * {ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key * {ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate</li>
+<li>{ApplianceConnection_Name}_ca.cer - Appliance internal Root Certificate Authority</li>
+<li>{ApplianceConnection_Name}_cert.cer - Appliance managed rabbitmq_readonly user Public Key</li>
+<li>{ApplianceConnection_Name}_privateKey.key - Appliance managed rabbitmq_readonly user Client Certificate</li>
 </ul>
-<p><em><strong>Pkcs12/PFX certificate file</strong></em></p>
+</div>
+<div class="tabbed-block">
 <p>If ConvertToPfX is used, the Pkcs12/PFX compliant certificate file is created, {ApplianceConnection_Name}_privateKey.pfx</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 
 

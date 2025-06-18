@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12140,8 +12142,8 @@
 <p>When a fabric manager is non compliant with APIC network policies, a software remediation enables a fabric manager to synchronize with network policies. A compliance report is generated immediately after adding a fabric manager and is updated again after remediation. The compliance report details actions that you can perform to remediate inconsistencies. There are indicators for compliant, noncompliant, and compliance-check progress for each resource. Every tenant has a list of consistent and inconsistent reports based on the compliance records generated for a tenant. An inconsistency appears in the form of an alert, which contains an action choice: auto-remediate or manual. If you choose to auto-remediate, an automatic update of the selected HPE OneView resource will initiate.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Read-only</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVFabricManager</span>
@@ -12285,10 +12287,15 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this Cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Networking.FabricManager</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Networking.FabricManager</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Configured fabric manager resource object.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../add-ovfabricmanager/">Add-OVFabricManager</a></li>

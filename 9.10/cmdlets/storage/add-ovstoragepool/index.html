@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12131,22 +12133,22 @@
 <h2 id="description">Description</h2>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>This Cmdlet has been replaced by Set-OVStoragePool.  This Cmdlet only exists for backwards compatibility.</p>
+</details>
 <p>A storage pool is an aggregation of physical storage resources (disks) in a storage system. Storage systems contain information about the storage ports through which they can be accessed. You can provision logical storage spaces, known as volumes, from storage pools.</p>
 <p>You can select one or more storage pools for management when adding a storage system to the appliance. Storage pools are created on a storage system using the management software for that system.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>For HPE Nimble storage, you can define folders within pools in the Nimble administrative user interface.</p>
+</details>
 <p>You cannot create or delete storage pools from the appliance. Storage pools are automatically discovered during the storage system add or refresh. After you elect to manage storage pools, you can provision volumes on them.</p>
 <p>All storage pools that are usable in HPE OneView are visible on the Storage Pools screen. Pools refreshed into HPE OneView are initially designated as discovered, and must be explicitly set to managed by editing the pool in HPE OneView using the Edit action on the storage pool screen.</p>
 <p>A storage system must first be added to the appliance before a storage pool can be managed.</p>
 <p>Storage pools are scoped resources. You can associate a scope to a pool to restrict who can use the pool.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Storage administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Add-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="n">HP3PAR_1</span> <span class="n">-Pool</span> <span class="n">HP_CPG1</span>
@@ -12258,11 +12260,21 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Storage System resource object from Get-OVStorageSystem.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Async task resource.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovstoragepool/">Get-OVStoragePool</a></li>

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12150,15 +12152,15 @@
 <p>A cluster profile enables you to deploy and manage a cluster of servers (nodes) managed by HPE OneView and orchestrates consistent configuration on cluster of server nodes to share the same workload.  A cluster profile and the associated server profile template are used to define a consistent configuration from server nodes to members in the cluster. The associated server profiles define physical server configurations for server nodes in the cluster, which are derived from parent cluster profile and its associated server profile template.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>The server profile template must have a configured connection to the hypervisor management network for the template to be valid for use by a hypervisor cluster profile.</p>
+</details>
 <p>The cluster profile helps you manage life cycle operations, such as growing or shrinking the cluster, modifying configurations based on needs, consistency checks, and nondisruptive firmware updates on the member nodes. For example, you can grow or shrink a cluster by adding or removing members from the cluster profile. Any change in the configuration of the cluster profile will be reported as an inconsistency. When inconsistencies are remediated, the changed configurations can be applied on cluster and member nodes.</p>
 <p>A cluster profile can manage VMware ESXi-based hypervisor clusters by leveraging VMware vCenter server. A hypervisor cluster must be managed by one instance of HPE OneView to avoid inconsistencies.</p>
 <p>Use this Cmdlet to remove a cluster profile within OneView.  Removing a cluster within OneView will also destroy the cluster within the cluster manager.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator, Server administrator, Server profile architect, or Server profile administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVClusterProfile</span> <span class="n">-Name</span> <span class="n">ProdCluster1</span> <span class="p">|</span> <span class="nb">Remove-OVClusterProfile</span>
@@ -12328,11 +12330,21 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.Cluster.ClusterProfile [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Cluster.ClusterProfile [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Cluster profile resource from Get-OVClusterProfile.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Asynchronous task resource to monitor.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovclusterprofile/">Get-OVClusterProfile</a></li>

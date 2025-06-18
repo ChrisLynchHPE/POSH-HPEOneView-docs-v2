@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12198,8 +12200,8 @@
 <p>Additionally, if you have Gen6 or Gen7 servers being monitored by HPE OneView in your environment, you can configure the read community string that HPE OneView uses for monitoring these servers with SNMPv1. </p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">New-OVApplianceTrapDestination</span> <span class="n">-Destination</span> <span class="nv">$SnmpV1TrapDestinationAddress</span> <span class="n">-Type</span> <span class="n">SNMPv1</span> <span class="n">-Port</span> <span class="nv">$SnmpV1TrapDestinationPort</span> <span class="n">-CommunityString</span> <span class="nv">$SnmpV1Community</span>
@@ -12411,12 +12413,18 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this Cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.SnmpV1TrapDestination</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Appliance.SnmpV1TrapDestination</label><label for="__tabbed_1_2">HPEOneView.Appliance.SnmpV3TrapDestination</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>The configured SNMPv1 Trap Destination on the appliance.</p>
-<p><em><strong>HPEOneView.Appliance.SnmpV3TrapDestination</strong></em></p>
+</div>
+<div class="tabbed-block">
 <p>The configured SNMPv3 Trap Destination on the appliance.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovappliancetrapdestination/">Get-OVApplianceTrapDestination</a></li>

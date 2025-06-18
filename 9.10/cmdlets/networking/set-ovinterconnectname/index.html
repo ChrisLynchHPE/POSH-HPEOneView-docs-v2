@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12190,11 +12192,11 @@
 <li>For HPE Virtual Connect SE 100Gb F32 Module for HPE Synergy interconnect, if the host name is changed, the Dynamic DNS (DDNS) in the logical interconnect must be enabled to update the DNS server.</li>
 <li>An interconnect reboot does not change the host name on the DNS server.</li>
 </ul>
-<p>To reset the host name to factory default, use the -ResetNameToFactoryDefault parameter. If an interconnect is removed from the bay location, the custom host name resets to factory set host name.</p>
+<p>To reset the host name to factory default, use the <code>-ResetNameToFactoryDefault</code> parameter. If an interconnect is removed from the bay location, the custom host name resets to factory set host name.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges:  Infrastructure administrator, Network administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;Enclosure1, interconnect 3&quot;</span> <span class="p">|</span> <span class="nb">Set-OVInterconnectName</span> <span class="n">-Name</span> <span class="n">enc1-fm3-dc1</span>
@@ -12401,11 +12403,21 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>HPE Synergy FlexFabric Ethernet module from Get-OVInterconnect.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Async task resource to monitor.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovinterconnect/">Get-OVInterconnect</a></li>

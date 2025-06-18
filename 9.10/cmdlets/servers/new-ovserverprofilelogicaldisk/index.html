@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12705,8 +12707,8 @@
 </ul>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Auto is not supported when attempting to create an HPE Synergy D3940 Logical or JBOD disk.  You must specify a disk technology type unless <code>-DriveSelectionBy</code> is changed to DriveType and <code>-AvailableDriveType</code> is used.  Allowed values are:</p>
+</details>
 <ul>
 <li>
 <p>SAS</p>
@@ -13079,8 +13081,8 @@
 <p>One or more drives to allocate. Use Get-OVServerHardwareAvailableController Cmdlet and examine the Drives attribute within the <code>[HPEOneView.Servers.PhysicalDrive]</code> object.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Using this parameter will create a logical drive resource that can only be used with server profile resources.</p>
+</details>
 <table>
 <thead>
 <tr>
@@ -13253,13 +13255,24 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.Storage.AvailableDriveType</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Storage.AvailableDriveType</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>An available disk drive type from Get-OVAvailableDriveType Cmdlet.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>System.Management.Automation.PSCustomObject</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">System.Management.Automation.PSCustomObject</label><label for="__tabbed_2_2">System.Collections.ArrayList<System.Management.Automation.PSCustomObject></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Logical Disk configuration object</p>
-<p><em><strong>System.Collections.ArrayList<System.Management.Automation.PSCustomObject></strong></em></p>
+</div>
+<div class="tabbed-block">
 <p>Collection of Logical Disk configuration objects</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovserverhardwareavailablecontroller/">Get-OVServerHardwareAvailableController</a></li>

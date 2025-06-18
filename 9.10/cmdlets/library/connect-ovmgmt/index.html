@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12234,13 +12236,13 @@
     <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
-<p>This Cmdlet establishes a connection to the specified HPE OneView or HPE Synergy Composer appliance.  When the connection is successful, the user establishes a session for use with subsequent Cmdlet requests.  The effective user permissions are established on the first connection.  Please refer to about_appliance_connection_permissions and about_appliance_connections for more information about initiating multiple appliance connections.</p>
+<p>This Cmdlet establishes a connection to the specified HPE OneView or HPE Synergy Composer appliance.  When the connection is successful, the user establishes a session for use with subsequent Cmdlet requests.  The effective user permissions are established on the first connection.  Please refer to <a href="../../../about/about_appliance_connection_permissions/">about_appliance_connection_permissions</a> and <a href="../../../about/about_appliance_connection_permissions/">about_appliance_connection_permissions</a> for more information about initiating multiple appliance connections.</p>
 <p>Appliance hostname or IP can include an alternate TCP port number.  While the appliance does not allow the default TCP port 443 to be changed, the appliance could reside behind a firewall, which is redirecting an alternate TCP port number.</p>
-<p>If the appliance is configured to Common Access Card (CAC) authentication, the -Certificate parameter is required.  If the CAC requires a PIN to unlock, the user will be prompted by the credential service to provide that value.  The Cmdlet does not offer the ability to retrieve or store the CAC PIN.</p>
+<p>If the appliance is configured to Common Access Card (CAC) authentication, the <code>-Certificate</code> parameter is required.  If the CAC requires a PIN to unlock, the user will be prompted by the credential service to provide that value.  The Cmdlet does not offer the ability to retrieve or store the CAC PIN.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges:  Read-only.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Connect-OVMgmt</span> <span class="n">-appliance</span> <span class="n">myappliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
@@ -12327,8 +12329,8 @@
 <h3 id="-username-string">-UserName &lt;String&gt;</h3>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>This parameter is now obsolete.  Please transition to using the <code>-Credential</code> parameter.</p>
+</details>
 <p>User name to authenticate.</p>
 <table>
 <thead>
@@ -12363,8 +12365,8 @@
 <h3 id="-password-object">-Password &lt;Object&gt;</h3>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>This parameter is now obsolete.  Please transition to using the <code>-Credential</code> parameter.</p>
+</details>
 <p>Password to log into the appliance.  Can be either <code>[System.String]</code> or SecureString value.</p>
 <table>
 <thead>
@@ -12495,39 +12497,80 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this Cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.Connection</strong></em></p>
-<p>When a valid connection is established with an appliance, this object is then added to ${Global:ConnectedSessions} connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
-     | Name                   | Type       | Value                                |
-     |-----------------------------------------------------------------------------
-     | AuthLoginDomain        | String     | Local                                |
-     ------------------------------------------------------------------------------
-     | ConnectionId           | Int        | 1                                    |
-     ------------------------------------------------------------------------------
-     | Name                   | String     | Hostname value                       |
-     ---------------------- -------------------------------------------------------
-     | SessionID              | String     | AUTH string returned from API        |
-     ------------------------------------------------------------------------------
-     | ApplianceType          | String     | Indicate connected appliance type.   |
-     -------------------- ---------------------------------------------------------
-     | UserName               | String     | Username value                       |
-     ------------------------------------------------------------------------------
-     | AuthType               | String     | Credential or Certificate/2FA        |
-     ------------------------------------------------------------------------------
-     | ActivePermissions      | IList      | Collection of Scopes and permissions |
-     ------------------------------------------------------------------------------
-     | ApplianceSecurityRoles | IList      | Collection of roles                  |
-     ------------------------------------------------------------------------------
-     | Default                | Boolean    | Is connection default for library    |
-     ------------------------------------------------------------------------------</p>
-<p><em><strong>System.Management.Automation.ErrorRecord</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Appliance.Connection</label><label for="__tabbed_1_2">System.Management.Automation.ErrorRecord</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>When a valid connection is established with an appliance, this object is then added to <code>${Global:ConnectedSessions}</code> connection tracker variable.</p>
+<p>The object returned will contain the following public properties:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ConnectionId</td>
+<td style="text-align: left;">Int</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Hostname value</td>
+</tr>
+<tr>
+<td style="text-align: left;">SessionID</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">AUTH string returned from API</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplianceType</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Indicate connected appliance type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserName</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Username value</td>
+</tr>
+<tr>
+<td style="text-align: left;">AuthType</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Credential or Certificate/2FA</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActivePermissions</td>
+<td style="text-align: left;">IList</td>
+<td style="text-align: left;">Collection of Scopes and permissions</td>
+</tr>
+<tr>
+<td style="text-align: left;">ApplianceSecurityRoles</td>
+<td style="text-align: left;">IList</td>
+<td style="text-align: left;">Collection of roles</td>
+</tr>
+<tr>
+<td style="text-align: left;">Default</td>
+<td style="text-align: left;">Boolean</td>
+<td style="text-align: left;">Is connection default for library</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
 <p>On error, appliance response is returned as a terminating error.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../disconnect-ovmgmt/">Disconnect-OVMgmt</a></li>
-<li><a href="https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connection_permissions">about_Appliance_Connection_Permissions</a></li>
-<li><a href="https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections">[${Global:ConnectedSessions}]</a></li>
+<li><a href="../../../about/about_appliance_connection_permissions/">about_Appliance_Connection_Permissions</a></li>
+<li><a href="../../../about/about_appliance_connections/">[${Global:ConnectedSessions}]</a></li>
 </ul>
 
 

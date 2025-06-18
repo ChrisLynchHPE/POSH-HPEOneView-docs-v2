@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12429,8 +12431,8 @@
 <p>Use the <code>-Advanced</code> parameter to customize the selection of support dump logs while creating the support dump. Customizing the selection of support dump logs reduces the size of the collection and as a result enables faster creation and download of the collection.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Hewlett Packard Enterprise recommends that you customize the selection of the support dump logs with the help of an authorized technical support representative.</p>
+</details>
 <p>Some error messages recommend that you create a support dump of the HPE Synergy Composer and send it to authorized technical support for analysis. The support dump process performs the following functions:</p>
 <ul>
 <li>Deletes any previous support dump file</li>
@@ -12455,10 +12457,10 @@
 <p>Items logged in the support dump file are recorded according to UTC time.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Network administrator, Server administrator, Infrastructure administrator, Backup administrator, Read only</p>
-<p>NOTE
-:  Only the Infrastructure administrator has the option of not encrypting a support dump file. When a user with a different role creates a support dump file, it is encrypted automatically.</p>
+<p>NOTE</p>
+</details>
+<p>:  Only the Infrastructure administrator has the option of not encrypting a support dump file. When a user with a different role creates a support dump file, it is encrypted automatically.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">New-OVSupportDump</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span> <span class="n">-Type</span> <span class="n">Appliance</span>
@@ -12998,9 +13000,17 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>Accepts pipeline input from Get-OVLogicalEnclosure only.</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Accepts pipeline input from Get-OVLogicalEnclosure only.</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>The generated Support Dump File</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">The generated Support Dump File</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 
 

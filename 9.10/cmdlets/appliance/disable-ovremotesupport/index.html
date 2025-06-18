@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12135,8 +12137,8 @@
 <p>This Cmdlet will disable Remote Support for a compute or enclosure resource.  If Remote Support has been disabled globally on the appliance, this Cmdlet is unnecessary.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="n">Prod</span><span class="p">*</span> <span class="p">|</span> <span class="nb">Disable-OVRemoteSupport</span>
@@ -12247,13 +12249,24 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]</label><label for="__tabbed_1_2">HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>A Gen8 or newer generation server hardware resource object from Get-OVServer.</p>
-<p><em><strong>HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]</strong></em></p>
+</div>
+<div class="tabbed-block">
 <p>An enclosure from Get-OVEnclosure.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Async task Resource object for monitoring.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../enable-ovremotesupport/">Enable-OVRemoteSupport</a></li>

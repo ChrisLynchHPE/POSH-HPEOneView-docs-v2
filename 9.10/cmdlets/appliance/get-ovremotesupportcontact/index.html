@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12114,8 +12116,8 @@
 <p>Eligible devices are Gen8 and newer blades and enclosures. </p>
 <details class="warning" open="open">
 <summary>Warning</summary>
-</details>
 <p>Servers must be at iLO 2.1 firmware level or above to be enabled for remote support</p>
+</details>
 <p>Hewlett Packard Enterprise will contact you to ship a replacement part or send an engineer for devices that are under warranty or support contract.  Hewlett Packard Enterprise uses contact information when a support case is created.</p>
 <p>You can add, remove, and specify primary and secondary contacts. Primary and secondary contacts are applied to the devices by default.</p>
 <p>Remote support enables Proactive Care services including Proactive Scan reports and Firmware/Software Analysis reports with recommendations that are based on collected configuration data.</p>
@@ -12124,8 +12126,8 @@
 <p>Use this Cmdlet to get the configured Remote Support contacts defined on the appliance.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Read-only</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVRemoteSupportContact</span>
@@ -12203,10 +12205,15 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this Cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>System.Management.Automation.PSCustomObject</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Management.Automation.PSCustomObject</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>The configured Remote Support Contact.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../disable-ovremotesupport/">Disable-OVRemoteSupport</a></li>
