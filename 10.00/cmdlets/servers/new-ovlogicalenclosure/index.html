@@ -12376,26 +12376,26 @@
 
 <h1 id="new-ovlogicalenclosure">New-OVLogicalEnclosure</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLogicalEnclosure</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Enclosure</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-EnclosureGroup</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-FirmwareBaseline</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ForceFirmwareBaseline</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Boolean</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">ScopeCollection</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVLogicalEnclosure</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Enclosure</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-EnclosureGroup</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-FirmwareBaseline</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ForceFirmwareBaseline</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Boolean</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">ScopeCollection</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A logical enclosure represents a logical view of a single enclosure with an enclosure group serving as a template. If the intended configuration in the logical enclosure does not match the actual configuration on the enclosures, the logical enclosure becomes inconsistent. Use the Logical Enclosures screen to manage firmware, configuration scripts, create a support dump, and to apply updates made from the Enclosure Groups screen to the enclosures in the logical enclosure.</p>
 <p>A logical enclosure is automatically created when a c7000 enclosure is added.</p>
 <p>Use this Cmdlet to define a new Logical Enclosure that will include multiple Synergy Frames that share the same Virtual Connect Fabric Domain.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$EG</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Synergy EG 1&quot;</span>
-<span class="nb">Get-OVEnclosure</span> <span class="n">-Name</span> <span class="n">0000A66101</span> <span class="p">|</span> <span class="nb">New-OVLogicalEnclosure</span> <span class="s2">&quot;My Synergy LE 1&quot;</span> <span class="n">-EnclosureGroup</span> <span class="nv">$EG</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$EG</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Synergy EG 1&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Get-OVEnclosure</span> <span class="n">-Name</span> <span class="n">0000A66101</span> <span class="p">|</span> <span class="nb">New-OVLogicalEnclosure</span> <span class="s2">&quot;My Synergy LE 1&quot;</span> <span class="n">-EnclosureGroup</span> <span class="nv">$EG</span>
+</span></code></pre></div>
 <p>Create a new Logical Enclosure, "My Synergy LE 1", using the specified Enclosure Group and a specific Synergy Frame.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

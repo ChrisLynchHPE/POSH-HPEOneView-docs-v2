@@ -12124,16 +12124,16 @@
 
 <h1 id="new-ovlicense">New-OVLicense</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLicense</span>
-    <span class="p">[</span><span class="n">-LicenseKey</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVLicense</span>
-    <span class="p">[</span><span class="o">-File</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVLicense</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-LicenseKey</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVLicense</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="o">-File</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>The following types of licenses are available for managing or monitoring hardware in HPE OneView.</p>
 <p>Managed hardware licenses</p>
@@ -12164,13 +12164,13 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$license</span> <span class="p">=</span> <span class="s2">&quot;FC9E D9MA H9PA GTVZ C7B5 HWWB Y9JL KHPL B89H MZVU DXAU 9CSM GHTG L762 2F25 HJF9 KJVT D5TM EFVW TZNJ FGTM NQ6G 2P2J 9G82 ZJKZ EWLR VW8A Y5A4 N2SK H1MQ XJJL LUQH ZUWD 9ATC NJ79 CEJC 5S86 FC4X EKSZ X4CP XZLU FSXS FKS6 KKCE 4NMU FPN5 N82E Z2RX 3QTM EFQC 29JK 29MC &quot;</span><span class="n">ORDER_101613</span> <span class="n">E1Y94A</span> <span class="n">HP_OV_3yr_24x7_Supp_Phys_1_Svr_Lic</span> <span class="n">EONEJTCDT4FJ</span><span class="s2">&quot;_35HZP-CYMTH-W414S-2DGKZ-S6MPH&quot;</span>
-<span class="nb">New-OVlicense</span> <span class="n">-LicenseKey</span> <span class="nv">$license</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$license</span> <span class="p">=</span> <span class="s2">&quot;FC9E D9MA H9PA GTVZ C7B5 HWWB Y9JL KHPL B89H MZVU DXAU 9CSM GHTG L762 2F25 HJF9 KJVT D5TM EFVW TZNJ FGTM NQ6G 2P2J 9G82 ZJKZ EWLR VW8A Y5A4 N2SK H1MQ XJJL LUQH ZUWD 9ATC NJ79 CEJC 5S86 FC4X EKSZ X4CP XZLU FSXS FKS6 KKCE 4NMU FPN5 N82E Z2RX 3QTM EFQC 29JK 29MC &quot;</span><span class="n">ORDER_101613</span> <span class="n">E1Y94A</span> <span class="n">HP_OV_3yr_24x7_Supp_Phys_1_Svr_Lic</span> <span class="n">EONEJTCDT4FJ</span><span class="s2">&quot;_35HZP-CYMTH-W414S-2DGKZ-S6MPH&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">New-OVlicense</span> <span class="n">-LicenseKey</span> <span class="nv">$license</span>
+</span></code></pre></div>
 <p>Install license on the appliance connection.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVlicense</span> <span class="o">-File</span> <span class="n">c</span><span class="p">:\</span><span class="n">licenses</span><span class="p">.</span><span class="n">txt</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">New-OVlicense</span> <span class="o">-File</span> <span class="n">c</span><span class="p">:\</span><span class="n">licenses</span><span class="p">.</span><span class="n">txt</span>
+</span></code></pre></div>
 <p>Install licenses read from a file by Get-Content.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-licensekey-string">-LicenseKey &lt;String&gt;</h3>

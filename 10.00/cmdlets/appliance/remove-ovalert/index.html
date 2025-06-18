@@ -12106,19 +12106,19 @@
 
 <h1 id="remove-ovalert">Remove-OVAlert</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVAlert</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVAlert</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet allows the administrator to remove one or more alerts.  Alerts can be in one of two administratively controlled states: Active or Cleared.    Only alerts that are no longer active (in a Cleared state) can be removed.</p>
 <p>In order for an administrator to remove an Alert, the administrator must be assigned to the respective resource role (Network, Server, Storage, or Infrastructure.)</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVAlert</span> <span class="n">-State</span> <span class="n">Cleared</span> <span class="p">|</span> <span class="nb">Remove-OVAlert</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVAlert</span> <span class="n">-State</span> <span class="n">Cleared</span> <span class="p">|</span> <span class="nb">Remove-OVAlert</span>
+</span></code></pre></div>
 <p>Remove all cleared alerts on the appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

@@ -12178,13 +12178,13 @@
 
 <h1 id="copy-ovserverprofile">Copy-OVServerProfile</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Copy-OVServerProfile</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-DestinationName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Assign</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Copy-OVServerProfile</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-DestinationName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Assign</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>You can copy a server profile to server hardware of the same server hardware type and in the same enclosure group (for servers). If you are deploying multiple servers of the same type into the same enclosure, you can create a server profile template to streamline server provisioning.</p>
 <p>This Cmdlet will copy a source Server Profile to a new instance You can assign the copy to an existing Server Device, or specify "unassigned".</p>
@@ -12194,23 +12194,23 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile 1&quot;</span> <span class="p">|</span> <span class="nb">Copy-OVServerProfile</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile 1&quot;</span> <span class="p">|</span> <span class="nb">Copy-OVServerProfile</span>
+</span></code></pre></div>
 <p>Copy "Profile 1" to a new Server Profile that is unassigned and named "Copy of Profile 1".</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Copy-OVServerProfile</span> <span class="n">-InputObject</span> <span class="p">(</span><span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile 1&quot;</span><span class="p">)</span> <span class="n">-DestinationName</span> <span class="s2">&quot;Profile 2&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Copy-OVServerProfile</span> <span class="n">-InputObject</span> <span class="p">(</span><span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile 1&quot;</span><span class="p">)</span> <span class="n">-DestinationName</span> <span class="s2">&quot;Profile 2&quot;</span>
+</span></code></pre></div>
 <p>Copy "Profile 1" to a new Server Profile that is unassigned and named "Profile 2".</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile 1&quot;</span>
-<span class="nv">$Server</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, Bay 9&quot;</span>
-<span class="nb">Copy-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-DestinationName</span> <span class="s2">&quot;Profile 2&quot;</span> <span class="n">-assign</span> <span class="nv">$Server</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile 1&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">$Server</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, Bay 9&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">Copy-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-DestinationName</span> <span class="s2">&quot;Profile 2&quot;</span> <span class="n">-assign</span> <span class="nv">$Server</span>
+</span></code></pre></div>
 <p>Copy "Profile 1" to a new Server Profile that is assigned to "Encl1, Bay 9" named "Profile 2".</p>
 <h3 id="example-4">Example 4</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile Template&quot;</span>
-<span class="n">11</span><span class="p">.</span><span class="n">16</span> <span class="p">|</span> <span class="p">%</span> <span class="p">{</span> <span class="nb">Copy-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-DestinationName</span> <span class="s2">&quot;Profile $_&quot;</span> <span class="n">-Assign</span> <span class="s2">&quot;Encl1, bay $_&quot;</span> <span class="p">}</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Profile Template&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">11</span><span class="p">.</span><span class="n">16</span> <span class="p">|</span> <span class="p">%</span> <span class="p">{</span> <span class="nb">Copy-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-DestinationName</span> <span class="s2">&quot;Profile $_&quot;</span> <span class="n">-Assign</span> <span class="s2">&quot;Encl1, bay $_&quot;</span> <span class="p">}</span>
+</span></code></pre></div>
 <p>Copy 5 Server Profiles from "Profile Template" that will be assigned to bays 11 - 16 of Encl1.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

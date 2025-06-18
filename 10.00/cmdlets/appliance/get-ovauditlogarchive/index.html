@@ -12088,11 +12088,11 @@
 
 <h1 id="get-ovauditlogarchive">Get-OVAuditLogArchive</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVAuditLogArchive</span>
-    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">DirectoryInfo</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVAuditLogArchive</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">DirectoryInfo</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>The audit log contains a record of actions performed on the appliance, which you can use for individual accountability. Because the logs are rolled over periodically to prevent them from getting too large, Hewlett Packard Enterprise recommends downloading the audit logs to monitor the actions being performed. You can also download the audit logs periodically to maintain a long-term audit history.</p>
 <p>Each user has a unique logging ID per session, enabling you to follow a user?s trail in the audit log. Some actions are performed by the appliance and might not have a logging ID.</p>
@@ -12157,8 +12157,8 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVAuditLogArchive</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVAuditLogArchive</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span>
+</span></code></pre></div>
 <p>Save the Appliance audit log archive to C:\Temp</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-location-systemiodirectoryinfo">-Location &lt;System.IO.DirectoryInfo&gt;</h3>

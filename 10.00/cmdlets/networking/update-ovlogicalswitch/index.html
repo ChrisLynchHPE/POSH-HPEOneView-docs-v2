@@ -12142,22 +12142,22 @@
 
 <h1 id="update-ovlogicalswitch">Update-OVLogicalSwitch</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Update-OVLogicalSwitch</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Update-OVLogicalSwitch</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A logical switch is based on a logical switch group configuration. If the logical switch transitions to an "Inconsistent with group state", due to changes in either the logical switch or the logical switch group, this Cmdlet will update (or refresh) the logical switch configuration based on the logical switch group and return to a consistent state. Minimum required privileges: Infrastructure administrator or Network administrator </p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLogicalSwitch</span> <span class="p">|</span> <span class="nb">Update-OVLogicalSwitch</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVLogicalSwitch</span> <span class="p">|</span> <span class="nb">Update-OVLogicalSwitch</span>
+</span></code></pre></div>
 <p>Update all logical switch resources found on the default appliance connection.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVLogicalSwitch</span> <span class="n">-Name</span> <span class="s2">&quot;My Logical Switch 1&quot;</span> <span class="p">|</span> <span class="nb">Update-OVLogicalSwitch</span> <span class="n">-confirm</span><span class="p">:</span><span class="nv">$false</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVLogicalSwitch</span> <span class="n">-Name</span> <span class="s2">&quot;My Logical Switch 1&quot;</span> <span class="p">|</span> <span class="nb">Update-OVLogicalSwitch</span> <span class="n">-confirm</span><span class="p">:</span><span class="nv">$false</span>
+</span></code></pre></div>
 <p>Update the "My Logical Switch 1" resource.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

@@ -12160,23 +12160,23 @@
 
 <h1 id="remove-ovstoragevolumesnapshot">Remove-OVStorageVolumeSnapshot</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVStorageVolumeSnapshot</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVStorageVolumeSnapshot</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet will remove a storage volume snapshot from a storage volume resource object.  Removal of a snapshot is a destructive operation of the snapshot only.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Snapshots</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Volume 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span>
-<span class="nv">$Snapshots</span> <span class="p">|</span> <span class="p">?</span> <span class="p">{</span> <span class="p">((</span><span class="nb">get-date</span><span class="p">)</span> <span class="p">-</span> <span class="p">(</span><span class="nb">Get-Date</span> <span class="nv">$_</span><span class="p">.</span><span class="n">created</span><span class="p">)).</span><span class="n">days</span> <span class="o">-ge</span> <span class="n">5</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Remove-OVStorageVolumeSnapshot</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Snapshots</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Volume 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$Snapshots</span> <span class="p">|</span> <span class="p">?</span> <span class="p">{</span> <span class="p">((</span><span class="nb">get-date</span><span class="p">)</span> <span class="p">-</span> <span class="p">(</span><span class="nb">Get-Date</span> <span class="nv">$_</span><span class="p">.</span><span class="n">created</span><span class="p">)).</span><span class="n">days</span> <span class="o">-ge</span> <span class="n">5</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Remove-OVStorageVolumeSnapshot</span>
+</span></code></pre></div>
 <p>Get all of the available storage volume snapshots for "Volume 1", then remove any snapshots as old or older than 5 days.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStorageVolume</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span> <span class="p">|</span> <span class="nb">Remove-OVStorageVolumeSnapshot</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVStorageVolume</span> <span class="p">|</span> <span class="nb">Get-OVStorageVolumeSnapshot</span> <span class="p">|</span> <span class="nb">Remove-OVStorageVolumeSnapshot</span>
+</span></code></pre></div>
 <p>Remove all Storage Volume Snapshots managed by HPE OneView.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

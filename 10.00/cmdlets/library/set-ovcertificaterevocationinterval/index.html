@@ -12124,11 +12124,11 @@
 
 <h1 id="set-ovcertificaterevocationinterval">Set-OVCertificateRevocationInterval</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVCertificateRevocationInterval</span>
-    <span class="p">[</span><span class="n">-AutoCRLDownloadInterval</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">int</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Set-OVCertificateRevocationInterval</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-AutoCRLDownloadInterval</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">int</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Certificate Revocation List (CRL) associated with a CA certificate typically gets expired on a weekly or monthly interval. When you receive the CRL expiration alert, manually upload the new CRL to HPE OneView. You can configure HPE OneView 5.2 and later versions and automatically download CRLs. When the Automatic CRL downloading setting is enabled, a scheduled automatic CRL downloader on the appliance checks the validity of all the CRLs that are available in the appliance, and updates the CRLs that have expired or are about to expire. The downloader also downloads new CRLs during this process if the CRLs were not previously downloaded. The scheduled time for running the job is set to 12AM UTC. The appliance checks for CRLs every day that are about to expire. If any of the CRLs are about to expire in three days, the appliance downloads the latest available CRL. This prevents the expiration of CRLs on the appliance. You can configure the schedule for downloading the latest available CRLs using a global setting variable global.daysBeforeToTriggerCRLDownload using the REST API /rest/certificates/validator-configuration. If there is a failure during the CRL download, the appliance retries the operation three times before raising an alert.</p>
 <details class="info" open="open">
@@ -12143,8 +12143,8 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVCertificateRevocationInterval</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Set-OVCertificateRevocationInterval</span>
+</span></code></pre></div>
 <p>Default example</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

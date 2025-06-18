@@ -12214,27 +12214,27 @@
 
 <h1 id="new-ovunmanageddevice">New-OVUnmanagedDevice</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVUnmanagedDevice</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Model</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-MaxPower</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Height</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-MacAddress</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-IPv4Address</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-IPv6Address</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVUnmanagedDevice</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Model</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-MaxPower</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Height</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-MacAddress</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-IPv4Address</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-IPv6Address</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>HPE OneView provides administrators with the capability to define unmanaged devices to them place within Racks, in order to provide a more realistic and complete data center layout.  Creating a device does not provide the ability to manage it from HPE OneView.  The administrator will need to specify static characteristics of the device being added.  The unmanaged device can then be assigned into the appropriate rack manually.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVUnmanagedDevice</span> <span class="n">-name</span> <span class="s2">&quot;Unmanaged-SRVR1&quot;</span> <span class="n">-model</span> <span class="s2">&quot;ProLiant DL380 G6&quot;</span> <span class="n">-height</span> <span class="n">2</span> <span class="n">-maxpower</span> <span class="n">750</span> <span class="n">-IPv4Address</span> <span class="n">10</span><span class="p">.</span><span class="n">154</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">10</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVUnmanagedDevice</span> <span class="n">-name</span> <span class="s2">&quot;Unmanaged-SRVR1&quot;</span> <span class="n">-model</span> <span class="s2">&quot;ProLiant DL380 G6&quot;</span> <span class="n">-height</span> <span class="n">2</span> <span class="n">-maxpower</span> <span class="n">750</span> <span class="n">-IPv4Address</span> <span class="n">10</span><span class="p">.</span><span class="n">154</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">10</span>
+</span></code></pre></div>
 <p>Create a new unmanaged server device.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVUnmanagedDevice</span> <span class="n">-name</span> <span class="s2">&quot;HPN5900CP1&quot;</span> <span class="n">-model</span> <span class="s2">&quot;HPN 5900CP&quot;</span> <span class="n">-height</span> <span class="n">1</span> <span class="n">-maxpower</span> <span class="n">260</span> <span class="n">-IPv4Address</span> <span class="n">172</span><span class="p">.</span><span class="n">18</span><span class="p">.</span><span class="n">254</span><span class="p">.</span><span class="n">99</span> <span class="s2">&quot;MyAppliance.domain.com&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">New-OVUnmanagedDevice</span> <span class="n">-name</span> <span class="s2">&quot;HPN5900CP1&quot;</span> <span class="n">-model</span> <span class="s2">&quot;HPN 5900CP&quot;</span> <span class="n">-height</span> <span class="n">1</span> <span class="n">-maxpower</span> <span class="n">260</span> <span class="n">-IPv4Address</span> <span class="n">172</span><span class="p">.</span><span class="n">18</span><span class="p">.</span><span class="n">254</span><span class="p">.</span><span class="n">99</span> <span class="s2">&quot;MyAppliance.domain.com&quot;</span>
+</span></code></pre></div>
 <p>Create a new unmanaged switch device.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

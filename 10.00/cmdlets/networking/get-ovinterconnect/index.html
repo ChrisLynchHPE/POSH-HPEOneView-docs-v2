@@ -12178,14 +12178,14 @@
 
 <h1 id="get-ovinterconnect">Get-OVInterconnect</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVInterconnect</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Label</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Export</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVInterconnect</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Label</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-Export</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Interconnects enable communication between the server hardware in the enclosure and the data center networks. Interconnects that are managed are put in a Configured state when the Synergy frame is configured by creating a logical enclosure. An unmanaged interconnect remains in the Monitored state when the Synergy frame is configured by creating a logical enclosure.
 Retrieves a list of all Interconnects (Ethernet, FC, Converged Network, and/or SAS) or just specific ones via a query if the name parameter is provided. The output can be sent to a file using the Export parameter.</p>
@@ -12195,16 +12195,16 @@ Retrieves a list of all Interconnects (Ethernet, FC, Converged Network, and/or S
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVInterconnect</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVInterconnect</span>
+</span></code></pre></div>
 <p>Returns all Interconnects managed by all connected appliances to standard output.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, Interconnect 1&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVInterconnect</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, Interconnect 1&quot;</span>
+</span></code></pre></div>
 <p>Returns just the Encl1, Interconnect 1 Interconnect object to standard output.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVInterconnect</span> <span class="n">-exportFile</span> <span class="s2">&quot;c:\myApplianceConfig\ICs.json&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVInterconnect</span> <span class="n">-exportFile</span> <span class="s2">&quot;c:\myApplianceConfig\ICs.json&quot;</span>
+</span></code></pre></div>
 <p>Returns the Get-OVInterconnect query results to the file c:\myApplianceConfig\ICs.json</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

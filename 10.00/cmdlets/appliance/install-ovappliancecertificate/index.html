@@ -12160,30 +12160,30 @@
 
 <h1 id="install-ovappliancecertificate">Install-OVApplianceCertificate</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Install-OVApplianceCertificate</span>
-    <span class="p">[</span><span class="n">-Path</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">FileInfo</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Passphrase</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Install-OVApplianceCertificate</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Path</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">FileInfo</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Passphrase</span> <span class="p">&lt;</span><span class="n">SecureString</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>After using New-OVApplianceCSR to generate a Certificate Signing Request (CSR), this Cmdlet will install the CA signed and approved SSL private key to the appliance.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Task</span> <span class="p">=</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">hpov</span><span class="p">.</span><span class="n">cer</span> <span class="p">|</span> <span class="nb">Install-OVApplianceCertificate</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Task</span> <span class="p">=</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">hpov</span><span class="p">.</span><span class="n">cer</span> <span class="p">|</span> <span class="nb">Install-OVApplianceCertificate</span>
+</span></code></pre></div>
 <p>Read the signed appliance web certificate key and install it on the appliance, and wait for the task to complete.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$cert</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">hpov</span><span class="p">.</span><span class="n">cer</span> 
-<span class="nv">$TaskToMonitor</span> <span class="p">=</span> <span class="nb">Install-OVApplianceCertificate</span> <span class="n">-Path</span> <span class="nv">$Cert</span> <span class="n">-Async</span>
-<span class="n">C</span><span class="p">:\&gt;</span> <span class="nv">$TaskToMonitor</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$cert</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">hpov</span><span class="p">.</span><span class="n">cer</span> 
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$TaskToMonitor</span> <span class="p">=</span> <span class="nb">Install-OVApplianceCertificate</span> <span class="n">-Path</span> <span class="nv">$Cert</span> <span class="n">-Async</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">C</span><span class="p">:\&gt;</span> <span class="nv">$TaskToMonitor</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Read the signed appliance web certificate and install it on the appliance, and wait for the task to complete.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$cert</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">hpov</span><span class="p">.</span><span class="n">pfx</span> 
-<span class="nb">Install-OVApplianceCertificate</span> <span class="n">-Path</span> <span class="nv">$Cert</span> <span class="n">-Passphrase</span> <span class="p">(</span><span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="n">Passphrase</span> <span class="n">-AsSecureString</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$cert</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span><span class="n">dir</span><span class="p">\</span><span class="n">hpov</span><span class="p">.</span><span class="n">pfx</span> 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">Install-OVApplianceCertificate</span> <span class="n">-Path</span> <span class="nv">$Cert</span> <span class="n">-Passphrase</span> <span class="p">(</span><span class="nb">Read-Host</span> <span class="n">-Prompt</span> <span class="n">Passphrase</span> <span class="n">-AsSecureString</span><span class="p">)</span>
+</span></code></pre></div>
 <p>Specify a PKCS#12 file with a passphrase.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-path-systemiofileinfo">-Path &lt;System.IO.FileInfo&gt;</h3>

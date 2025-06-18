@@ -12196,14 +12196,14 @@
 
 <h1 id="convert-ovserverprofile">Convert-OVServerProfile</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Convert-OVServerProfile</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ServerHardwareType</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-EnclosureGroup</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Convert-OVServerProfile</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ServerHardwareType</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-EnclosureGroup</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Use this Cmdlet to change the Server Hardware Type and/or Enclosure Group set within the Server Profile.  Changing to
 a different server hardware type may change the capabilities available to the server profile. Changing the enclosure group may change the connections which are available for the profile.</p>
@@ -12224,23 +12224,23 @@ a different server hardware type may change the capabilities available to the se
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Server 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nv">$NewServerHardwareType</span> <span class="p">=</span> <span class="nb">Get-OVServerHardwareType</span> <span class="n">-Name</span> <span class="s2">&quot;BL460 Gen9 3&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nb">Convert-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-ServerHardwareType</span> <span class="nv">$NewServerHardwareType</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Server 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$NewServerHardwareType</span> <span class="p">=</span> <span class="nb">Get-OVServerHardwareType</span> <span class="n">-Name</span> <span class="s2">&quot;BL460 Gen9 3&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">Convert-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-ServerHardwareType</span> <span class="nv">$NewServerHardwareType</span>
+</span></code></pre></div>
 <p>Transform the specified server profile object to a different server hardware type resource.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Server 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nv">$NewEnclosureGroup</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-Name</span> <span class="s2">&quot;Dev EG 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nb">Convert-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-EnclosureGroup</span> <span class="nv">$NewEnclosureGroup</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Server 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$NewEnclosureGroup</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-Name</span> <span class="s2">&quot;Dev EG 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">Convert-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-EnclosureGroup</span> <span class="nv">$NewEnclosureGroup</span>
+</span></code></pre></div>
 <p>Transform the specified server profile object to a different enclosure group resource.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Server 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nv">$NewEnclosureGroup</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-Name</span> <span class="s2">&quot;Dev EG 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nv">$NewServerHardwareType</span> <span class="p">=</span> <span class="nb">Get-OVServerHardwareType</span> <span class="n">-Name</span> <span class="s2">&quot;BL460 Gen9 3&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nb">Convert-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-EnclosureGroup</span> <span class="nv">$NewEnclosureGroup</span> <span class="n">-ServerHardwareType</span> <span class="nv">$NewServerHardwareType</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;Prod Server 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">$NewEnclosureGroup</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-Name</span> <span class="s2">&quot;Dev EG 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nv">$NewServerHardwareType</span> <span class="p">=</span> <span class="nb">Get-OVServerHardwareType</span> <span class="n">-Name</span> <span class="s2">&quot;BL460 Gen9 3&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nb">Convert-OVServerProfile</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span> <span class="n">-EnclosureGroup</span> <span class="nv">$NewEnclosureGroup</span> <span class="n">-ServerHardwareType</span> <span class="nv">$NewServerHardwareType</span>
+</span></code></pre></div>
 <p>Transform the specified server profile object to a different enclosure group and server hardware type resource.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-array">-ApplianceConnection &lt;Array&gt;</h3>

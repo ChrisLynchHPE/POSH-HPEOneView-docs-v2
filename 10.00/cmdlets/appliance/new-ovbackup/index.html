@@ -12160,14 +12160,14 @@
 
 <h1 id="new-ovbackup">New-OVBackup</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVBackup</span>
-    <span class="p">[</span><span class="n">-Passphrase</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVBackup</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Passphrase</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>HPE OneView provides the ability to save your configuration settings and management data to a backup file and enables you to use that backup to restore a corrupted appliance in the event of a catastrophic failure.</p>
 <p>The backup process involves creating a backup file and then downloading that file so that you can store it to a safe and secure (off-appliance) location for future use. You can schedule automatic backup operations and designate a remote location for the backup file.</p>
@@ -12175,12 +12175,12 @@
 <p>If an automatic backup policy is configured on the appliance, the Cmdlet is instruct the appliance to offload the newly created backup to the remote location.  If you wish to download the backup, use the -Location and -Force parameters, which will initiate a download to the value provided.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVBackup</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVBackup</span>
+</span></code></pre></div>
 <p>This command will generate a new backup, and if a remote location is configured, will initiate the file transfer.  If not configured, then the Cmdlet will download the file to the current working directory.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVBackup</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span> <span class="n">-Force</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">New-OVBackup</span> <span class="n">-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span> <span class="n">-Force</span>
+</span></code></pre></div>
 <p>This command will save the Appliance backup file to C:\Temp</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-location-string">-Location &lt;String&gt;</h3>

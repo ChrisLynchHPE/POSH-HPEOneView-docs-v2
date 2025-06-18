@@ -12142,30 +12142,30 @@
 
 <h1 id="get-ovswitchtype">Get-OVSwitchType</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSwitchType</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSwitchType</span>
-    <span class="p">[</span><span class="n">-PartNumber</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVSwitchType</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVSwitchType</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-PartNumber</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Retrieves a list of all supported Switch Types or just specific ones via a query if the name or partnumber parameters are provided.  </p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSwitchType</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVSwitchType</span>
+</span></code></pre></div>
 <p>Returns all Switch Types available from all connected appliances to standard output.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSwitchType</span> <span class="n">-Name</span> <span class="s2">&quot;Cisco Nexus 55xx&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVSwitchType</span> <span class="n">-Name</span> <span class="s2">&quot;Cisco Nexus 55xx&quot;</span>
+</span></code></pre></div>
 <p>Returns just the "Cisco Nexus 55xx" Switch Type object to standard output.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVSwitchType</span> <span class="n">-Partnumber</span> <span class="s2">&quot;DCS-7060X-SERIES&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-OVSwitchType</span> <span class="n">-Partnumber</span> <span class="s2">&quot;DCS-7060X-SERIES&quot;</span>
+</span></code></pre></div>
 <p>Returns just the partnumber "DCS-7060X-SERIES" Switch Type object to standard output.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

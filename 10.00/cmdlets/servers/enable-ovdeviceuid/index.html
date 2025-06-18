@@ -12088,11 +12088,11 @@
 
 <h1 id="enable-ovdeviceuid">Enable-OVDeviceUid</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Enable-OVDeviceUid</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Enable-OVDeviceUid</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Authorized users can control the unit identification (UID) light on an HPE Synergy frame and its servers, interconnects, and frame link modules through the UI. Illuminating the UID light on the front of a device helps an on-site technician to locate the hardware in the data center.</p>
 <p>A UID icon is displayed on the Enclosures screen, the Server Hardware screen, and the Interconnects screen. On the Enclosures screen, the enclosure overview displays the UID icon on its frame link modules, servers, and interconnects.</p>
@@ -12108,8 +12108,8 @@
 <p>(for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;MyEncl, Bay 1&quot;</span> <span class="p">|</span> <span class="nb">Enable-OVDeviceUid</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;MyEncl, Bay 1&quot;</span> <span class="p">|</span> <span class="nb">Enable-OVDeviceUid</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Enable the UID for "MyEncl, Bay 1" server.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

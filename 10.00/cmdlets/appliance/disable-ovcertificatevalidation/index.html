@@ -12106,10 +12106,10 @@
 
 <h1 id="disable-ovcertificatevalidation">Disable-OVCertificateValidation</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Disable-OVCertificateValidation</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Disable-OVCertificateValidation</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>HPE OneView performs certificate validation for all Transport Layer Security (TLS) communications between the appliance and external servers or devices. These checks guarantee confidentiality, integrity, and authentication with the remote end-point.</p>
 <p>In production environments, Hewlett Packard Enterprise strongly recommends that certificate validation be enabled. In
@@ -12122,9 +12122,9 @@ disabled.</p>
 </details>
 <p>imported into the HPE OneView trust store and alerts are generated for issues such as expired certificates. These automatically added certificates are either a device"s self signed certificate or the leaf certificate for a certificate authority (CA) signed certificate. Using CA-signed certificates can simplify the device trust process.</p>
 <p>Certificate checking is enabled by default, but some of the stricter validation checks are relaxed to maintain communications with all devices, even those with certificate issues. The relaxed checking includes:</p>
-<pre><code>* Not performing expiration checks for self signed certificates
+<div class="language-text highlight"><pre><span></span><code>* Not performing expiration checks for self signed certificates
 * For certificate authority (CA) signed certificates, relaxed certificate revocation list (CRL) checking.
-</code></pre>
+</code></pre></div>
 <p>The relaxed checking gives the administrator time to address any expired certificates, to upload trusted CA root and intermediate certificates, and upload the appropriate CRLs.</p>
 <p>Hewlett Packard Enterprise strongly recommends that you enable strict certificate validation checks after completing an update as appropriate for your enterprise security policies. See Manage Certificates for additional information on certificate management.</p>
 <p>HPE OneView supports devices using self signed certificates and devices using formal CA-signed certificates. CA-signed certificates offer benefits such as revocation checking and overall simplified management.</p>
@@ -12143,8 +12143,8 @@ disabled.</p>
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Disable-OVCertificateValidation</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Disable-OVCertificateValidation</span>
+</span></code></pre></div>
 <p>Disable certificate validation on the appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-array">-ApplianceConnection &lt;Array&gt;</h3>

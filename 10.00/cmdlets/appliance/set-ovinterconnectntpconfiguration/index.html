@@ -12106,16 +12106,16 @@
 
 <h1 id="set-ovinterconnectntpconfiguration">Set-OVInterconnectNTPConfiguration</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVInterconnectNTPConfiguration</span>
-    <span class="p">[</span><span class="n">-SyncWithAppliance</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVInterconnectNTPConfiguration</span>
-    <span class="p">[</span><span class="n">-SyncWithNTP</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Set-OVInterconnectNTPConfiguration</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-SyncWithAppliance</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Set-OVInterconnectNTPConfiguration</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-SyncWithNTP</span><span class="p">]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>When HPE OneView manages or monitors server or compute resources, it will automatically by default set the management processor NTP settings to the appliance's IP Address.  Using this Cmdlet, you can get the current time synchronize policy of the managed and monitored server hardware on the appliance.  When the global policy is set to sync with external NTP servers, a property is added to the returned object called NTPServers.  The array contains the appliance configured NTP server(s).</p>
 <details class="info" open="open">
@@ -12127,8 +12127,8 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-OVInterconnectNTPConfiguration</span> <span class="n">-SyncWithAppliance</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Set-OVInterconnectNTPConfiguration</span> <span class="n">-SyncWithAppliance</span>
+</span></code></pre></div>
 <p>Change the interconnect policy to time sync with the appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

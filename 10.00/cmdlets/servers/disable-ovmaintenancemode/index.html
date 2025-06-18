@@ -12142,12 +12142,12 @@
 
 <h1 id="disable-ovmaintenancemode">Disable-OVMaintenanceMode</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Disable-OVMaintenanceMode</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Disable-OVMaintenanceMode</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Performing routine maintenance operations on servers causes many events to be generated on the associated server hardware resource and server profile. If notification features are enabled, the events cause many email notifications. While the maintenance activity is in progress, you might not want to receive all the notifications.</p>
 <p>Enabling server maintenance mode prevents the appliance from sending any email notifications that are related to the server hardware and its associated profile. While the notifications are blocked, maintenance mode does not affect normal server or profile operations, and all events generated on the server are seen on the HPE OneView appliance UI.</p>
@@ -12158,18 +12158,18 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Server</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, bay 1&quot;</span>
-<span class="nb">Disable-OVMaintenanceMode</span> <span class="n">-InputObject</span> <span class="nv">$Server</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Server</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, bay 1&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Disable-OVMaintenanceMode</span> <span class="n">-InputObject</span> <span class="nv">$Server</span>
+</span></code></pre></div>
 <p>Disable the maintenance mode state of the specific server resource.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;My Profile 1&quot;</span>
-<span class="nb">Disable-OVMaintenanceMode</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$ServerProfile</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;My Profile 1&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">Disable-OVMaintenanceMode</span> <span class="n">-InputObject</span> <span class="nv">$ServerProfile</span>
+</span></code></pre></div>
 <p>Disable the maintenance mode state of the specific server resource that is associated with the server profile.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServer</span> <span class="n">-MaintenanceMode</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Disable-OVMaintenanceMode</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVServer</span> <span class="n">-MaintenanceMode</span> <span class="nv">$True</span> <span class="p">|</span> <span class="nb">Disable-OVMaintenanceMode</span>
+</span></code></pre></div>
 <p>Get all of the server resources that are in maintenance mode, and disable it.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

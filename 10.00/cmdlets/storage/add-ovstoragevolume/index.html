@@ -12232,17 +12232,17 @@
 
 <h1 id="add-ovstoragevolume">Add-OVStorageVolume</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVStorageVolume</span>
-    <span class="p">[</span><span class="n">-StorageSystem</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-StorageDeviceName</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-VolumeName</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Shared</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">ScopeCollection</span><span class="p">[]&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Add-OVStorageVolume</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-StorageSystem</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-StorageDeviceName</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-VolumeName</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-Description</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-Shared</span><span class="p">]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">ScopeCollection</span><span class="p">[]&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A volume represents a logical disk provisioned from a storage pool on a storage system.</p>
 <p>A volume can be used by a single server (private) or can be used by multiple servers (shared).</p>
@@ -12262,16 +12262,16 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageSystem</span> <span class="p">(</span><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span><span class="p">)</span> <span class="n">-StorageDeviceName</span> <span class="n">MyStorageVol1</span> <span class="n">-VolumeName</span> <span class="n">MyStorageVol1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageSystem</span> <span class="p">(</span><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span><span class="p">)</span> <span class="n">-StorageDeviceName</span> <span class="n">MyStorageVol1</span> <span class="n">-VolumeName</span> <span class="n">MyStorageVol1</span>
+</span></code></pre></div>
 <p>Import the volume "MyStorageVol1" from the "3ParSys1" Storage System.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span> <span class="p">|</span> <span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageDeviceName</span> <span class="n">MyStorageVol1</span> <span class="n">-VolumeName</span> <span class="n">MyStorageVol1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span> <span class="p">|</span> <span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageDeviceName</span> <span class="n">MyStorageVol1</span> <span class="n">-VolumeName</span> <span class="n">MyStorageVol1</span>
+</span></code></pre></div>
 <p>Import the volume "MyStorageVol1" from the "3ParSys1" Storage System using the pipeline.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span> <span class="p">|</span> <span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageDeviceName</span> <span class="n">ClusterSharedVol1</span> <span class="n">-VolumeName</span> <span class="n">ClusterSharedVol1</span> <span class="n">-Shared</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVStorageSystem</span> <span class="n">-Name</span> <span class="n">3ParSys1</span> <span class="p">|</span> <span class="nb">Add-OVStorageVolume</span> <span class="n">-StorageDeviceName</span> <span class="n">ClusterSharedVol1</span> <span class="n">-VolumeName</span> <span class="n">ClusterSharedVol1</span> <span class="n">-Shared</span>
+</span></code></pre></div>
 <p>Import a volume using the storage device name "ClusterSharedVol1" on the "3ParSys1" Storage System.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-storagesystem-object">-StorageSystem &lt;Object&gt;</h3>

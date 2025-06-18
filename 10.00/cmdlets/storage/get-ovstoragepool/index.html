@@ -12268,69 +12268,69 @@
 
 <h1 id="get-ovstoragepool">Get-OVStoragePool</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStoragePool</span>
-    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-StorageSystem</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Label</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Managed</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Unmanaged</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVStoragePool</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-StorageSystem</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Label</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Scope</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-Managed</span><span class="p">]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-Unmanaged</span><span class="p">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Obtain a collection of storage pools (i.e. CPG"s) from discovered and managed storage systems.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStoragePool</span>
-<span class="n">Status</span> <span class="n">Name</span>     <span class="n">Storage</span> <span class="n">System</span>    <span class="n">Storage</span> <span class="n">Domain</span> <span class="n">Drive</span> <span class="nb">Type </span><span class="n">RAID</span>  <span class="n">Total</span>          <span class="n">Allocated</span>   <span class="n">Free</span>           
-<span class="p">------</span> <span class="p">----</span>     <span class="p">--------------</span>    <span class="p">--------------</span> <span class="p">----------</span> <span class="p">----</span>  <span class="p">--------</span>       <span class="p">-----------</span> <span class="p">-------</span>        
-<span class="n">OK</span>     <span class="n">FC_NO_DN</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">5706</span> <span class="n">NoDomain</span>       <span class="nb">FC </span>        <span class="n">RAID5</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00GB</span> <span class="n">22</span><span class="p">.</span><span class="n">13GB</span>     <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88GB</span> 
-<span class="n">OK</span>     <span class="n">FC_NO_DN</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">2870</span> <span class="n">NoDomain</span>       <span class="nb">FC </span>        <span class="n">RAID5</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00GB</span> <span class="n">22</span><span class="p">.</span><span class="n">13GB</span>     <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88GB</span> 
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVStoragePool</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Status</span> <span class="n">Name</span>     <span class="n">Storage</span> <span class="n">System</span>    <span class="n">Storage</span> <span class="n">Domain</span> <span class="n">Drive</span> <span class="nb">Type </span><span class="n">RAID</span>  <span class="n">Total</span>          <span class="n">Allocated</span>   <span class="n">Free</span>           
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">------</span> <span class="p">----</span>     <span class="p">--------------</span>    <span class="p">--------------</span> <span class="p">----------</span> <span class="p">----</span>  <span class="p">--------</span>       <span class="p">-----------</span> <span class="p">-------</span>        
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">OK</span>     <span class="n">FC_NO_DN</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">5706</span> <span class="n">NoDomain</span>       <span class="nb">FC </span>        <span class="n">RAID5</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00GB</span> <span class="n">22</span><span class="p">.</span><span class="n">13GB</span>     <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88GB</span> 
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">OK</span>     <span class="n">FC_NO_DN</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">2870</span> <span class="n">NoDomain</span>       <span class="nb">FC </span>        <span class="n">RAID5</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00GB</span> <span class="n">22</span><span class="p">.</span><span class="n">13GB</span>     <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88GB</span> 
+</span></code></pre></div>
 <p>Get all available storage pools.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStoragePool</span> <span class="p">|</span> <span class="nb">format-list</span>
-<span class="n">Name</span>             <span class="p">:</span> <span class="n">FC_NO_DN</span>
-<span class="n">Status</span>           <span class="p">:</span> <span class="n">OK</span>
-<span class="n">Storage</span> <span class="n">System</span>   <span class="p">:</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">5706</span>
-<span class="n">Domain</span>           <span class="p">:</span> <span class="n">NoDomain</span>
-<span class="n">Drive</span> <span class="nb">Type </span>      <span class="p">:</span> <span class="nb">FC</span>
-<span class="n">RAID</span>             <span class="p">:</span> <span class="n">RAID5</span>
-<span class="n">Total</span>            <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00</span> <span class="n">GB</span>
-<span class="n">Allocated</span>        <span class="p">:</span> <span class="n">22</span><span class="p">.</span><span class="n">13</span> <span class="n">GB</span>
-<span class="n">Free</span>             <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88</span> <span class="n">GB</span>
-<span class="n">Volumes</span>          <span class="p">:</span> <span class="n">0</span>
-<span class="n">Volume</span> <span class="n">Templates</span> <span class="p">:</span> <span class="n">0</span>
-
-<span class="n">Name</span>             <span class="p">:</span> <span class="n">FC_NO_DN</span>
-<span class="n">Status</span>           <span class="p">:</span> <span class="n">OK</span>
-<span class="n">Storage</span> <span class="n">System</span>   <span class="p">:</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">2870</span> 
-<span class="n">Domain</span>           <span class="p">:</span> <span class="n">NoDomain</span>
-<span class="n">Drive</span> <span class="nb">Type </span>      <span class="p">:</span> <span class="nb">FC</span>
-<span class="n">RAID</span>             <span class="p">:</span> <span class="n">RAID5</span>
-<span class="n">Total</span>            <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00</span> <span class="n">GB</span>
-<span class="n">Allocated</span>        <span class="p">:</span> <span class="n">22</span><span class="p">.</span><span class="n">13</span> <span class="n">GB</span>
-<span class="n">Free</span>             <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88</span> <span class="n">GB</span>
-<span class="n">Volumes</span>          <span class="p">:</span> <span class="n">0</span>
-<span class="n">Volume</span> <span class="n">Templates</span> <span class="p">:</span> <span class="n">0</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVStoragePool</span> <span class="p">|</span> <span class="nb">format-list</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Name</span>             <span class="p">:</span> <span class="n">FC_NO_DN</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">Status</span>           <span class="p">:</span> <span class="n">OK</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">Storage</span> <span class="n">System</span>   <span class="p">:</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">5706</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">Domain</span>           <span class="p">:</span> <span class="n">NoDomain</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">Drive</span> <span class="nb">Type </span>      <span class="p">:</span> <span class="nb">FC</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">RAID</span>             <span class="p">:</span> <span class="n">RAID5</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">Total</span>            <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00</span> <span class="n">GB</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">Allocated</span>        <span class="p">:</span> <span class="n">22</span><span class="p">.</span><span class="n">13</span> <span class="n">GB</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">Free</span>             <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88</span> <span class="n">GB</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">Volumes</span>          <span class="p">:</span> <span class="n">0</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">Volume</span> <span class="n">Templates</span> <span class="p">:</span> <span class="n">0</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">Name</span>             <span class="p">:</span> <span class="n">FC_NO_DN</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">Status</span>           <span class="p">:</span> <span class="n">OK</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="n">Storage</span> <span class="n">System</span>   <span class="p">:</span> <span class="n">ThreePAR7200</span><span class="p">-</span><span class="n">2870</span> 
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="n">Domain</span>           <span class="p">:</span> <span class="n">NoDomain</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="n">Drive</span> <span class="nb">Type </span>      <span class="p">:</span> <span class="nb">FC</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="n">RAID</span>             <span class="p">:</span> <span class="n">RAID5</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">Total</span>            <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">576</span><span class="p">.</span><span class="n">00</span> <span class="n">GB</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="n">Allocated</span>        <span class="p">:</span> <span class="n">22</span><span class="p">.</span><span class="n">13</span> <span class="n">GB</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="n">Free</span>             <span class="p">:</span> <span class="n">1</span><span class="p">,</span><span class="n">048</span><span class="p">,</span><span class="n">553</span><span class="p">.</span><span class="n">88</span> <span class="n">GB</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="n">Volumes</span>          <span class="p">:</span> <span class="n">0</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="n">Volume</span> <span class="n">Templates</span> <span class="p">:</span> <span class="n">0</span>
+</span></code></pre></div>
 <p>Get all available storage pools, display using Format-List to see extended information.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$myPool</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span> <span class="n">-name</span> <span class="s2">&quot;HP_CPG1&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$myPool</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span> <span class="n">-name</span> <span class="s2">&quot;HP_CPG1&quot;</span>
+</span></code></pre></div>
 <p>Return the storage pool resource(s) with the name "HP_CPG1"</p>
 <h3 id="example-4">Example 4</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$myPools</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$myPools</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span>
+</span></code></pre></div>
 <p>Return all the storage pool resources</p>
 <h3 id="example-5">Example 5</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="s2">&quot;HP_3PAR_1&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Get-OVStoragePool</span> <span class="n">-StorageSystem</span> <span class="s2">&quot;HP_3PAR_1&quot;</span>
+</span></code></pre></div>
 <p>Returns all managed storage pool resources on the storage system "HP_3PAR_1"</p>
 <h3 id="example-6">Example 6</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVStoragePool</span> <span class="n">-poolName</span> <span class="s2">&quot;HP_CPG1&quot;</span> <span class="n">-systemName</span> <span class="s2">&quot;HP_3PAR_1&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">Get-OVStoragePool</span> <span class="n">-poolName</span> <span class="s2">&quot;HP_CPG1&quot;</span> <span class="n">-systemName</span> <span class="s2">&quot;HP_3PAR_1&quot;</span>
+</span></code></pre></div>
 <p>Returns the storage pool resource "HP_CPG1" on the storage system "HP_3PAR_1"</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-name-string">-Name &lt;String&gt;</h3>

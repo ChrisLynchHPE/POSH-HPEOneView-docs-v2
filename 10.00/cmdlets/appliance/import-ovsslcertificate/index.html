@@ -12088,24 +12088,24 @@
 
 <h1 id="import-ovsslcertificate">Import-OVSslCertificate</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Import-OVSslCertificate</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Import-OVSslCertificate</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>By default, the HPE OneView appliance creates a self signed SSL Certificate for its WebUI.  There might be a desire to trust the certificate, in case the SHA-1 hash becomes invalid (either due to a certificate change or man-in-the-middle attack) and the caller would like to be notified.  This Cmdlet will assist in retrieving and storing the appliance self-generated SSL Certificate into the current users Trusted Root Certification Authorities store.</p>
 <p>Please note that the Subject Alternate Name (SAN) must match that of the Appliance hostname you use to connect to your appliance.  If it does not, an SSL conenction failure will occur.  When creating a CSR on the appliance, make sure to include the additional FQDN and IP address(es) in the Alternative Name field.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Connection</span> <span class="p">=</span> <span class="nb">Connect-OVMgmt</span> <span class="n">Myappliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Administrator</span> <span class="n">MyP</span><span class="nv">@ssword</span>
-<span class="nb">Import-OVSslCertificate</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Connection</span> <span class="p">=</span> <span class="nb">Connect-OVMgmt</span> <span class="n">Myappliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Administrator</span> <span class="n">MyP</span><span class="nv">@ssword</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Import-OVSslCertificate</span>
+</span></code></pre></div>
 <p>Import the SSL certificate from the specific appliance.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Connect-OVMgmt</span> <span class="n">Myappliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Administrator</span> <span class="n">MyP</span><span class="nv">@ssword</span>
-<span class="nb">Connect-OVMgmt</span> <span class="n">Myappliance2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Administrator</span> <span class="n">MyP</span><span class="nv">@ssword</span>
-<span class="nv">$ConnectedSessions</span> <span class="p">|</span> <span class="nb">Import-OVSslCertificate</span> 
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Connect-OVMgmt</span> <span class="n">Myappliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Administrator</span> <span class="n">MyP</span><span class="nv">@ssword</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">Connect-OVMgmt</span> <span class="n">Myappliance2</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span> <span class="n">Administrator</span> <span class="n">MyP</span><span class="nv">@ssword</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nv">$ConnectedSessions</span> <span class="p">|</span> <span class="nb">Import-OVSslCertificate</span> 
+</span></code></pre></div>
 <p>Import the SSL Certificate from all connected sessions.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-array">-ApplianceConnection &lt;Array&gt;</h3>

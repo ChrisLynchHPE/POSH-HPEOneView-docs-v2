@@ -12106,25 +12106,25 @@
 
 <h1 id="disconnect-ovmgmt">Disconnect-OVMgmt</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Disconnect-OVMgmt</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Disconnect-OVMgmt</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet will logoff the current user, which terminates the user session, on the specified HPE OneView appliance.  When logging off of an appliance, and multiple connections have been established, the next appliance connection within ${Global:ApplianceConnections} is made the default connection.  To change the default connection to a different appliance, use Set-OVApplianceDefaultConnection.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Connection1</span> <span class="p">=</span> <span class="nb">Connect-OVMgmt</span> <span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
-<span class="nb">Disconnect-OVMgmt</span> <span class="n">-Hostname</span> <span class="nv">$Connection1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Connection1</span> <span class="p">=</span> <span class="nb">Connect-OVMgmt</span> <span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Disconnect-OVMgmt</span> <span class="n">-Hostname</span> <span class="nv">$Connection1</span>
+</span></code></pre></div>
 <p>Disconnect from the specific appliance session.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Disconnect-OVMgmt</span> <span class="n">-Hostname</span> <span class="n">1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Disconnect-OVMgmt</span> <span class="n">-Hostname</span> <span class="n">1</span>
+</span></code></pre></div>
 <p>Disconnect ConnectionID 1 appliance session.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$ConnectedSessions</span> <span class="p">|</span> <span class="nb">Disconnect-OVMgmt</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$ConnectedSessions</span> <span class="p">|</span> <span class="nb">Disconnect-OVMgmt</span>
+</span></code></pre></div>
 <p>Disconnect all appliance sessions.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

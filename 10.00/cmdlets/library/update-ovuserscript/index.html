@@ -12106,22 +12106,22 @@
 
 <h1 id="update-ovuserscript">Update-OVUserScript</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Update-OVUserScript</span>
-    <span class="p">[</span><span class="n">-Path</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">FileInfo</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="o">-Replace</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Update-OVUserScript</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Path</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">FileInfo</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="o">-Replace</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>The HPE OneVIew 5.30 PowerShell library has gone through a major change, in that all Cmdlet and the C# base class name have changed.  PowerShell Cmdlet nouns used the HPOV vendor prefix.  This is now OV.  The C# based class namespace was HPOneView, and is now HPEOneView.</p>
 <p>This script will process a user created script to find references to the original Cmdlet and Class names, and update them acordingly.  By default, this Cmdlet will only output to the console the changes it would make.  Use the -Replace parameter to commit those changes to the orignal file.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Update-OVUserScript</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">MyScript</span><span class="p">.</span><span class="n">ps1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Update-OVUserScript</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">MyScript</span><span class="p">.</span><span class="n">ps1</span>
+</span></code></pre></div>
 <p>Process the <code>[MyScript.ps]</code>1 script present in the working directory.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-ChildItem</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">MyDir</span> <span class="n">-Include</span> <span class="p">*.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Update-OVUserScript</span> <span class="o">-Replace</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-ChildItem</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">MyDir</span> <span class="n">-Include</span> <span class="p">*.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Update-OVUserScript</span> <span class="o">-Replace</span>
+</span></code></pre></div>
 <p>Process scripts (.ps1) found in the specified directory, and save them.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-path-fileinfo">-Path &lt;FileInfo&gt;</h3>

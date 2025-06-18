@@ -12106,12 +12106,12 @@
 
 <h1 id="show-ovappliancesecuritymodecompatibilityreport">Show-OVApplianceSecurityModeCompatibilityReport</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Show-OVApplianceSecurityModeCompatibilityReport</span>
-    <span class="p">[</span><span class="n">-TargetSecurityMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">SecurityMode</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-UpdateReport</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Show-OVApplianceSecurityModeCompatibilityReport</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-TargetSecurityMode</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">SecurityMode</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-UpdateReport</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>When you are considering switching the cryptography mode for your appliance, Hewlett Packard Enterprise recommends that you run the compatibility report to check for compatibility issues for a chosen cryptography mode. Compatibility reports contain information about the behavior of devices and external servers managed or configured by HPE OneView. The report lists the various resources (storage devices, network devices, servers, enclosures) managed by HPE OneView that are not compatible with the chosen cryptography mode. You can use the compatibility reports to:</p>
 <ul>
@@ -12129,9 +12129,9 @@
 </ul>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$TargetSecurityMode</span> <span class="p">=</span> <span class="nb">Get-OVApplianceAvailableSecurityMode</span> <span class="n">-ModeName</span> <span class="n">CNSA</span>
-<span class="nb">Show-OVApplianceSecurityModeCompatibilityReport</span> <span class="n">-TargetSecurityMode</span> <span class="nv">$TargetSecurityMode</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$TargetSecurityMode</span> <span class="p">=</span> <span class="nb">Get-OVApplianceAvailableSecurityMode</span> <span class="n">-ModeName</span> <span class="n">CNSA</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Show-OVApplianceSecurityModeCompatibilityReport</span> <span class="n">-TargetSecurityMode</span> <span class="nv">$TargetSecurityMode</span>
+</span></code></pre></div>
 <p>Generate a compatibility report for changing the appliance mode to CNSA.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-array">-ApplianceConnection &lt;Array&gt;</h3>

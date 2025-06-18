@@ -12106,11 +12106,11 @@
 
 <h1 id="remove-ovappliancestaticroute">Remove-OVApplianceStaticRoute</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVApplianceStaticRoute</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">StaticRoute</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVApplianceStaticRoute</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Appliance</span><span class="p">.</span><span class="n">StaticRoute</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>When configuring a second NIC on a virtual machine appliance, static routes can be configured as only a single appliance NIC can be configured with a default gateway.  Both IPv4 and IPv6 static routes are supported.  Use this Cmdlet to remove a static route configured on an appliance.</p>
 <details class="info" open="open">
@@ -12119,12 +12119,12 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVApplianceStaticRoute</span> <span class="n">-Destination</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">44</span><span class="p">.</span><span class="n">0</span><span class="p">/</span><span class="n">24</span> <span class="p">|</span> <span class="nb">Remove-OVApplianceStaticRoute</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVApplianceStaticRoute</span> <span class="n">-Destination</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">44</span><span class="p">.</span><span class="n">0</span><span class="p">/</span><span class="n">24</span> <span class="p">|</span> <span class="nb">Remove-OVApplianceStaticRoute</span>
+</span></code></pre></div>
 <p>Remove the specific static route from an appliance.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVApplianceStaticRoute</span> <span class="n">-Interface</span> <span class="n">SecondNIC</span> <span class="p">|</span> <span class="nb">Remove-OVApplianceStaticRoute</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVApplianceStaticRoute</span> <span class="n">-Interface</span> <span class="n">SecondNIC</span> <span class="p">|</span> <span class="nb">Remove-OVApplianceStaticRoute</span>
+</span></code></pre></div>
 <p>Remove all configured static routes configured for the the specific interface from an appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

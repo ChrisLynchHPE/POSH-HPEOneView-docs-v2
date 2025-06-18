@@ -12142,27 +12142,27 @@
 
 <h1 id="wait-ovtaskcomplete">Wait-OVTaskComplete</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Wait-OVTaskComplete</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Timeout</span> <span class="p">&lt;</span><span class="n">TimeSpan</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceWillReboot</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Wait-OVTaskComplete</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Timeout</span> <span class="p">&lt;</span><span class="n">TimeSpan</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-ApplianceWillReboot</span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>HPE OneView utilizes a task subsystem for operations that will take longer than 200ms, and will execute them Asyncrounously.  An async task resource object is created and returned to the caller once the request has passed validation.</p>
 <p>This blocking Cmdlet assists a caller with monitoring a specific task resource, and will wait for the given task to "complete" (get to a terminal state, including error) or timeout.  The Cmdlet accepts either the task URI or resource object via pipeline.  </p>
 <p>Once the task is no longer in a running state, the cmlet will return the task resource object.  The caller should examine the taskState property/key for the final task status.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Wait-OVTaskComplete</span> <span class="n">-InputObject</span> <span class="nv">$task</span> <span class="n">-timeout</span> <span class="p">(</span><span class="nb">New-TimeSpan</span> <span class="n">-minute</span> <span class="n">10</span><span class="p">)</span>
-<span class="n">Waiting</span> <span class="k">for</span> <span class="n">task</span> <span class="n">to</span> <span class="n">complete</span><span class="p">..</span><span class="n">Task</span> <span class="n">completed</span> <span class="n">successfully</span><span class="p">!</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Wait-OVTaskComplete</span> <span class="n">-InputObject</span> <span class="nv">$task</span> <span class="n">-timeout</span> <span class="p">(</span><span class="nb">New-TimeSpan</span> <span class="n">-minute</span> <span class="n">10</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Waiting</span> <span class="k">for</span> <span class="n">task</span> <span class="n">to</span> <span class="n">complete</span><span class="p">..</span><span class="n">Task</span> <span class="n">completed</span> <span class="n">successfully</span><span class="p">!</span>
+</span></code></pre></div>
 <p>Wait for task to complete, modifying the default timeout to 10 minutes.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$svr</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;ServerA&quot;</span>
-<span class="nv">$taskResults</span> <span class="p">=</span> <span class="nb">New-OVServerProfile</span> <span class="n">-name</span> <span class="s2">&quot;Profile 1&quot;</span> <span class="n">-server</span> <span class="nv">$svr</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$svr</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;ServerA&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$taskResults</span> <span class="p">=</span> <span class="nb">New-OVServerProfile</span> <span class="n">-name</span> <span class="s2">&quot;Profile 1&quot;</span> <span class="n">-server</span> <span class="nv">$svr</span> <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Retrieve the server details for ServerA, create a Server Profile and pass via pipeline the task resource object.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

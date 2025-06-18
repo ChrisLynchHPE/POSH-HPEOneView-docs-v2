@@ -12178,28 +12178,28 @@
 
 <h1 id="new-ovilodirectorygroup">New-OVIloDirectoryGroup</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVIloDirectoryGroup</span>
-    <span class="p">[</span><span class="n">-GroupDN</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-GroupSID</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-AdministerUserAccounts</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-RemoteConsole</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-VirtualMedia</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-VirtualPowerAndReset</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ConfigureIloSettings</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVIloDirectoryGroup</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-GroupDN</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-GroupSID</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-AdministerUserAccounts</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-RemoteConsole</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-VirtualMedia</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-VirtualPowerAndReset</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-ConfigureIloSettings</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>iLO settings enable you to configure and manage the settings in HPE OneView instead of logging into the iLO to apply the needed settings. These settings are included when you move the profile to another server hardware instance. Use a server profile template if you want to maintain consistent management for a specific iLO setting across multiple iLO.</p>
 <p>This Cmdlet will create and grant access to specific directory groups for the iLO on the server hardware that is associated with a server profile. When managed from HPE OneView, all the directory groups on the iLO are replaced when configuring the directory groups specified in the server profile.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Group1</span> <span class="p">=</span> <span class="nb">New-OVIloDirectoryGroup</span> <span class="n">-GroupDN</span> <span class="s2">&quot;dn=ilogroup1, ou=ou1, dc=domain, dc=com&quot;</span> <span class="p">`</span>
-                                  <span class="n">-GroupSID</span> <span class="s2">&quot;sid12345&quot;</span> <span class="p">`</span>
-                                  <span class="n">-AdministerUserAccounts</span> <span class="p">`</span>
-                                  <span class="n">-RemoteConsole</span> <span class="p">`</span>
-                                  <span class="n">-VirtualMedia</span> <span class="p">`</span>
-                                  <span class="n">-ConfigureIloSettings</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$Group1</span> <span class="p">=</span> <span class="nb">New-OVIloDirectoryGroup</span> <span class="n">-GroupDN</span> <span class="s2">&quot;dn=ilogroup1, ou=ou1, dc=domain, dc=com&quot;</span> <span class="p">`</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                                  <span class="n">-GroupSID</span> <span class="s2">&quot;sid12345&quot;</span> <span class="p">`</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                                  <span class="n">-AdministerUserAccounts</span> <span class="p">`</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                                  <span class="n">-RemoteConsole</span> <span class="p">`</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>                                  <span class="n">-VirtualMedia</span> <span class="p">`</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>                                  <span class="n">-ConfigureIloSettings</span>
+</span></code></pre></div>
 <p>Create a directory group, with the specific privileges.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-administeruseraccounts-bool">-AdministerUserAccounts &lt;Bool&gt;</h3>

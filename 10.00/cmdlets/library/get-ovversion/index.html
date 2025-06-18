@@ -12142,45 +12142,45 @@
 
 <h1 id="get-ovversion">Get-OVVersion</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVVersion</span>
-    <span class="p">[</span><span class="n">-ApplianceVer</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-CheckOnline</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVVersion</span>
-    <span class="p">[</span><span class="n">-CheckOnline</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVVersion</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-ApplianceVer</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-CheckOnline</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVVersion</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-CheckOnline</span><span class="p">]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Display either the HPE OneView PowerShell library or appliance version.  Displaying the Appliance version will provide the Major, Minor, full version, and X-API Version information.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVVersion</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVVersion</span>
+</span></code></pre></div>
 <p>Get the HPE OneView PowerShell library version</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVVersion</span> <span class="n">-ApplianceVer</span>
-<span class="n">PowerShell</span> <span class="n">Library</span> <span class="n">Version</span> <span class="p">:</span> <span class="n">1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">208</span><span class="p">.</span><span class="n">0</span>
-<span class="n">Library</span> <span class="n">Path</span>               <span class="p">:</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">user</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">WindowsPowerShell</span><span class="p">\</span><span class="n">Modules</span><span class="p">\</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">120</span>
-<span class="n">Appliance</span> <span class="n">Major</span> <span class="n">Version</span>    <span class="p">:</span> <span class="n">1</span>
-<span class="n">Appliance</span> <span class="n">Minor</span> <span class="n">Version</span>    <span class="p">:</span> <span class="n">20</span>
-<span class="n">Appliance</span> <span class="n">Version</span> <span class="n">Info</span>     <span class="p">:</span> <span class="n">1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">05</span><span class="p">-</span><span class="n">0201918</span>
-<span class="n">Appliance</span> <span class="n">X-API</span> <span class="n">Version</span>    <span class="p">:</span> <span class="n">120</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVVersion</span> <span class="n">-ApplianceVer</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">PowerShell</span> <span class="n">Library</span> <span class="n">Version</span> <span class="p">:</span> <span class="n">1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">208</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">Library</span> <span class="n">Path</span>               <span class="p">:</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">user</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">WindowsPowerShell</span><span class="p">\</span><span class="n">Modules</span><span class="p">\</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">120</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">Appliance</span> <span class="n">Major</span> <span class="n">Version</span>    <span class="p">:</span> <span class="n">1</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">Appliance</span> <span class="n">Minor</span> <span class="n">Version</span>    <span class="p">:</span> <span class="n">20</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">Appliance</span> <span class="n">Version</span> <span class="n">Info</span>     <span class="p">:</span> <span class="n">1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">05</span><span class="p">-</span><span class="n">0201918</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">Appliance</span> <span class="n">X-API</span> <span class="n">Version</span>    <span class="p">:</span> <span class="n">120</span>
+</span></code></pre></div>
 <p>Get the HPE OneView PowerShell library, Appliance and X-API version information</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVVersion</span> <span class="n">-CheckOnline</span>
-<span class="n">PowerShell</span> <span class="n">Library</span> <span class="n">Version</span> <span class="p">:</span> <span class="n">1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">166</span><span class="p">.</span><span class="n">0</span>
-<span class="n">Library</span> <span class="n">Path</span>               <span class="p">:</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">user</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">WindowsPowerShell</span><span class="p">\</span><span class="n">Modules</span><span class="p">\</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">120</span>
-
-
-<span class="n">Please</span> <span class="n">Confirm</span>
-<span class="n">You</span> <span class="n">currently</span> <span class="n">have</span> <span class="n">v1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">166</span><span class="p">.</span><span class="n">0</span> <span class="n">installed</span><span class="p">.</span>  <span class="n">The</span> <span class="n">HPE</span> <span class="n">OneView</span> <span class="n">PowerShell</span> <span class="n">Library</span> <span class="n">v1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">208</span><span class="p">.</span><span class="n">0</span> <span class="n">was</span> <span class="n">found</span> <span class="n">that</span> <span class="n">is</span> <span class="n">newer</span><span class="p">.</span>  <span class="k">Do</span>
-<span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">download</span> <span class="n">the</span> <span class="n">current</span> <span class="n">version</span> <span class="n">of</span> <span class="n">the</span> <span class="n">HPE</span> <span class="n">OneView</span> <span class="n">POSH</span> <span class="n">Library</span> <span class="p">(</span><span class="n">will</span> <span class="n">open</span> <span class="n">your</span> <span class="n">web</span> <span class="n">browser</span> <span class="k">for</span> <span class="n">you</span> <span class="n">to</span>
-<span class="n">download</span><span class="p">)?</span>
-<span class="no">[Y] Yes  [N]</span> <span class="n">No</span>  <span class="p">[?]</span> <span class="n">Help</span> <span class="p">(</span><span class="k">default</span> <span class="n">is</span> <span class="s2">&quot;Y&quot;</span><span class="p">):</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-OVVersion</span> <span class="n">-CheckOnline</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">PowerShell</span> <span class="n">Library</span> <span class="n">Version</span> <span class="p">:</span> <span class="n">1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">166</span><span class="p">.</span><span class="n">0</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">Library</span> <span class="n">Path</span>               <span class="p">:</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">user</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">WindowsPowerShell</span><span class="p">\</span><span class="n">Modules</span><span class="p">\</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">120</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">Please</span> <span class="n">Confirm</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">You</span> <span class="n">currently</span> <span class="n">have</span> <span class="n">v1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">166</span><span class="p">.</span><span class="n">0</span> <span class="n">installed</span><span class="p">.</span>  <span class="n">The</span> <span class="n">HPE</span> <span class="n">OneView</span> <span class="n">PowerShell</span> <span class="n">Library</span> <span class="n">v1</span><span class="p">.</span><span class="n">20</span><span class="p">.</span><span class="n">208</span><span class="p">.</span><span class="n">0</span> <span class="n">was</span> <span class="n">found</span> <span class="n">that</span> <span class="n">is</span> <span class="n">newer</span><span class="p">.</span>  <span class="k">Do</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">download</span> <span class="n">the</span> <span class="n">current</span> <span class="n">version</span> <span class="n">of</span> <span class="n">the</span> <span class="n">HPE</span> <span class="n">OneView</span> <span class="n">POSH</span> <span class="n">Library</span> <span class="p">(</span><span class="n">will</span> <span class="n">open</span> <span class="n">your</span> <span class="n">web</span> <span class="n">browser</span> <span class="k">for</span> <span class="n">you</span> <span class="n">to</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">download</span><span class="p">)?</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="no">[Y] Yes  [N]</span> <span class="n">No</span>  <span class="p">[?]</span> <span class="n">Help</span> <span class="p">(</span><span class="k">default</span> <span class="n">is</span> <span class="s2">&quot;Y&quot;</span><span class="p">):</span>
+</span></code></pre></div>
 <p>Display the installed library version, and check for availability of an updated version online. If an updated version is found, the Cmdlet will prompt if the user would like to download it now. If so, browser window will be opened to current version to download.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-appliancever-switchparameter">-ApplianceVer &lt;SwitchParameter&gt;</h3>

@@ -12250,39 +12250,39 @@
 
 <h1 id="get-ovservicealert">Get-OVServiceAlert</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServiceAlert</span>
-    <span class="p">[</span><span class="n">-InputObject</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-State</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Count</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-TimeSpan</span> <span class="p">&lt;</span><span class="n">TimeSpan</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Start</span> <span class="p">&lt;</span><span class="n">DateTime</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-End</span> <span class="p">&lt;</span><span class="n">DateTime</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-OVServiceAlert</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-State</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Count</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-TimeSpan</span> <span class="p">&lt;</span><span class="n">TimeSpan</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-Start</span> <span class="p">&lt;</span><span class="n">DateTime</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-End</span> <span class="p">&lt;</span><span class="n">DateTime</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>HPE OneView automatically checks if your hardware has a valid entitlement to Hewlett Packard Enterprise support. A valid entitlement is a Hewlett Packard Enterprise warranty or an active contract. If a valid entitlement to support is found, HPE OneView Remote Support opens a support case for a hardware failure. This Cmdlet allows administrators to display and/or export service events logged by the HPE OneView appliance.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServiceAlert</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVServiceAlert</span>
+</span></code></pre></div>
 <p>Get all Service Alerts from the connected appliance.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServiceAlert</span> <span class="n">-Count</span> <span class="n">10</span> 
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-OVServiceAlert</span> <span class="n">-Count</span> <span class="n">10</span> 
+</span></code></pre></div>
 <p>Get the first 10 Service Alerts from the connected appliance.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$TimeSpan</span> <span class="p">=</span> <span class="nb">New-TimeSpan</span> <span class="n">-Days</span> <span class="n">30</span>
-<span class="nb">Get-OVServiceAlert</span> <span class="n">-Count</span> <span class="n">10</span> <span class="n">-TimeSpan</span> <span class="nv">$TimeSpan</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$TimeSpan</span> <span class="p">=</span> <span class="nb">New-TimeSpan</span> <span class="n">-Days</span> <span class="n">30</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">Get-OVServiceAlert</span> <span class="n">-Count</span> <span class="n">10</span> <span class="n">-TimeSpan</span> <span class="nv">$TimeSpan</span>
+</span></code></pre></div>
 <p>Get the first 10 Service Alerts within the last 30 days from the connected appliance.</p>
 <h3 id="example-4">Example 4</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServiceAlert</span> <span class="n">-Start</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-05&quot;</span><span class="p">)</span> <span class="n">-End</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-30&quot;</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-OVServiceAlert</span> <span class="n">-Start</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-05&quot;</span><span class="p">)</span> <span class="n">-End</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-30&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <p>Get the Service Alerts within the specified date range from the connected appliance.</p>
 <h3 id="example-5">Example 5</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, Bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVServiceAlert</span> <span class="n">-Start</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-05&quot;</span><span class="p">)</span> <span class="n">-End</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-30&quot;</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Get-OVServer</span> <span class="n">-Name</span> <span class="s2">&quot;Encl1, Bay 1&quot;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span> <span class="p">|</span> <span class="nb">Get-OVServiceAlert</span> <span class="n">-Start</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-05&quot;</span><span class="p">)</span> <span class="n">-End</span> <span class="p">(</span><span class="no">[DateTime]</span><span class="s2">&quot;2018-01-30&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <p>Get the Service Alerts within the specified date range for the specified server hardware resource from the connected appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-array">-ApplianceConnection &lt;Array&gt;</h3>

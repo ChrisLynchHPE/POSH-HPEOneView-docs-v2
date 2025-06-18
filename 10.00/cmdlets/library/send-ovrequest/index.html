@@ -12232,31 +12232,31 @@
 
 <h1 id="send-ovrequest">Send-OVRequest</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Send-OVRequest</span>
-    <span class="p">[</span><span class="n">-Uri</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Method</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Body</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Start</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Count</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-AddHeader</span> <span class="p">&lt;</span><span class="n">Hashtable</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-OverrideContentType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-OverrideTimeout</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Hostname</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Send-OVRequest</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Uri</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Method</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Body</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Start</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-Count</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-AddHeader</span> <span class="p">&lt;</span><span class="n">Hashtable</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-OverrideContentType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-OverrideTimeout</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-Hostname</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Receives the request input, properly constructs and formats the request header and body and sends the request to the management appliance.  This is the main Cmdlet that interacts with the appliance.</p>
 <p>The message body can contain valid JSON data, with the correct URI and accepted HTTP method accepted by the target resource manager.  Please see the online appliance Resource Model for more information (https://[appliance_IP]/help/cic/en/content/images/api/.)</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Send-OVRequest</span> <span class="s2">&quot;/rest/enclosures&quot;</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Send-OVRequest</span> <span class="s2">&quot;/rest/enclosures&quot;</span>
+</span></code></pre></div>
 <p>Returns all the enclosure objects managed by the appliance.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$e</span> <span class="p">=</span> <span class="nb">Send-OVRequest</span> <span class="s2">&quot;/rest/enclosures/SGH2X6J1&quot;</span> <span class="n">-Appliance</span> <span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
-<span class="nv">$e</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s2">&quot;New Name&quot;</span>
-<span class="nb">Send-OVRequest</span> <span class="nv">$e</span><span class="p">.</span><span class="n">uri</span> <span class="s2">&quot;PUT&quot;</span> <span class="nv">$e</span> <span class="n">-Appliance</span> <span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$e</span> <span class="p">=</span> <span class="nb">Send-OVRequest</span> <span class="s2">&quot;/rest/enclosures/SGH2X6J1&quot;</span> <span class="n">-Appliance</span> <span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$e</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s2">&quot;New Name&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">Send-OVRequest</span> <span class="nv">$e</span><span class="p">.</span><span class="n">uri</span> <span class="s2">&quot;PUT&quot;</span> <span class="nv">$e</span> <span class="n">-Appliance</span> <span class="n">MyAppliance</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span>
+</span></code></pre></div>
 <p>Updates the name of the enclosure object specified by the uri and Appliance Connection name.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-uri-string">-Uri &lt;String&gt;</h3>

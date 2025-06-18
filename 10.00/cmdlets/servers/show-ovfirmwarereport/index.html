@@ -12178,28 +12178,28 @@
 
 <h1 id="show-ovfirmwarereport">Show-OVFirmwareReport</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Show-OVFirmwareReport</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Baseline</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-InstallationPolicy</span> <span class="p">&lt;</span><span class="n">string</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Export</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Show-OVFirmwareReport</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Baseline</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-InstallationPolicy</span> <span class="p">&lt;</span><span class="n">string</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-Location</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-Export</span><span class="p">]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet will generate a CSV-compliance firmware report for various resources.  Enclosure Groups, Enclosures, Server Hardware and Interconnects are all suported resources.  If an Enclosure Group is provided, all associated Logical Enclosures and Enclosures are examined, with their embedded resources like fabric modules, enclosure managers (Synergy FLM and BladeSystem Onboard Administrator), and server hardware.  If a baseline is associated with an Enclosure Group, or server profile, it is used to compare what is expected, versus what the actual installed component is.  The baseline can be overridden by specifying a different baseline resource object from Get-OVBaseline.</p>
 <p>The genrated report can be exported.</p>
 <p>Minimum required permissions: Infrastructure administrator, Server administrator, Network administrator</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVEnclosureGroup</span> <span class="s2">&quot;Production EG&quot;</span> <span class="p">|</span> <span class="nb">Show-OVFirmwareReport</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-OVEnclosureGroup</span> <span class="s2">&quot;Production EG&quot;</span> <span class="p">|</span> <span class="nb">Show-OVFirmwareReport</span>
+</span></code></pre></div>
 <p>Display a firmware report of all associated enclosures to "Production EG" Enclosure Group currently managed by the appliance.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Baseline</span> <span class="p">=</span> <span class="nb">Get-OVBaseline</span> <span class="n">-SppName</span> <span class="s2">&quot;Production EG&quot;</span>
-<span class="nb">Get-OVEnclosureGroup</span> <span class="s2">&quot;Production EG&quot;</span> <span class="p">|</span> <span class="nb">Show-OVFirmwareReport</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$Baseline</span> <span class="p">=</span> <span class="nb">Get-OVBaseline</span> <span class="n">-SppName</span> <span class="s2">&quot;Production EG&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">Get-OVEnclosureGroup</span> <span class="s2">&quot;Production EG&quot;</span> <span class="p">|</span> <span class="nb">Show-OVFirmwareReport</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span>
+</span></code></pre></div>
 <p>Display a firmware report of the "Production EG" resource, and components (servers, interconnects and Onboard Administrators) currently managed by the appliance, and compare to the provided Baseline.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>

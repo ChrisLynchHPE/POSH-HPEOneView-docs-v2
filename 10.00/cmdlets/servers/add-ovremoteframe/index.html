@@ -12106,12 +12106,12 @@
 
 <h1 id="add-ovremoteframe">Add-OVRemoteFrame</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVRemoteFrame</span>
-    <span class="p">[</span><span class="n">-Hostname</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Add-OVRemoteFrame</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Hostname</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A Synergy frame is automatically added during hardware setup. If the Synergy frame is connected to a group of linked Synergy frames, each Synergy frame in the group is discovered as part of hardware setup.  Additional Synergy frames added after initial hardware setup are discovered automatically when a cable is connected from the LINK port on the frame link module of an already discovered frame to the LINK port on the frame link module of another frame with factory settings.</p>
 <p>Remote frame link topologies, which include remote HPE Synergy Frames, do not include Synergy Composers. Management LAN connectivity enables remote frame link topologies to be managed by the Synergy Composers in the primary frame link topology. You can use the Add remote enclosures option to bring remote frame link topologies under management. The remote frame link topology must be in the same VLAN as the primary frame link topology, due to IPv6 Link Local restrictions.  You can use this Cmdlet to add remote enclosures to manage enclosures for which LINK cabling is not directly connected to the primary frame link topology. This allows HPE OneView to manage enclosures that are spread across racks and rows in the datacenter.</p>
@@ -12121,8 +12121,8 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-OVRemoteFrame</span> <span class="n">-Hostname</span> <span class="n">fe80</span><span class="p">::</span><span class="n">c8f</span><span class="p">:</span><span class="n">fbcb</span><span class="p">:</span><span class="n">aa8a</span><span class="p">:</span><span class="n">97c8</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Add-OVRemoteFrame</span> <span class="n">-Hostname</span> <span class="n">fe80</span><span class="p">::</span><span class="n">c8f</span><span class="p">:</span><span class="n">fbcb</span><span class="p">:</span><span class="n">aa8a</span><span class="p">:</span><span class="n">97c8</span>
+</span></code></pre></div>
 <p>Add the specified remote HPE Synergy Frame.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-hostname-string">-Hostname &lt;String&gt;</h3>

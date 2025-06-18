@@ -12736,103 +12736,103 @@
 
 <h1 id="new-ovserverprofileattachvolume">New-OVServerProfileAttachVolume</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVServerProfileAttachVolume</span>
-    <span class="p">[</span><span class="n">-Volume</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LunIdType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-BootVolume</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-TargetPortAssignment</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-TargetAddresses</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVServerProfileAttachVolume</span>
-    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ServerProfile</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-PassThru</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-VolumeTemplate</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-StoragePool</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-SnapshotStoragePool</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-StorageSystem</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Capacity</span> <span class="p">&lt;</span><span class="n">Int64</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ProvisioningType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Full</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Permanent</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-PerformancePolicy</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">PerformancePolicy</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-EnableEncryption</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-CachePinning</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-VolumeSet</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">VolumeSet</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-EnableIOPSLimit</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-IOPSLimit</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-EnableDataTransferLimit</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-DataTransferLimit</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-Folder</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">NimbleFolder</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LunIdType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LunID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-HostOStype</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-BootVolume</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-TargetPortAssignment</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-TargetAddresses</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">New-OVServerProfileAttachVolume</span>
-    <span class="p">[</span><span class="n">-ServerProfile</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Volume</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-PassThru</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LunIdType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-LunID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-HostOStype</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-BootVolume</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-TargetPortAssignment</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-TargetAddresses</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">New-OVServerProfileAttachVolume</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-Volume</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-LunIdType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-BootVolume</span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-TargetPortAssignment</span><span class="p">]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-TargetAddresses</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-OVServerProfileAttachVolume</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">[</span><span class="n">-Name</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">[</span><span class="n">-ServerProfile</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">[</span><span class="n">-PassThru</span><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">[</span><span class="n">-VolumeTemplate</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">[</span><span class="n">-StoragePool</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">[</span><span class="n">-SnapshotStoragePool</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">[</span><span class="n">-StorageSystem</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="p">[</span><span class="n">-Capacity</span> <span class="p">&lt;</span><span class="n">Int64</span><span class="p">&gt;]</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">[</span><span class="n">-ProvisioningType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">[</span><span class="n">-Full</span><span class="p">]</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">[</span><span class="n">-Permanent</span><span class="p">]</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="p">[</span><span class="n">-PerformancePolicy</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">PerformancePolicy</span><span class="p">&gt;]</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="p">[</span><span class="n">-EnableEncryption</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="p">[</span><span class="n">-CachePinning</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="p">[</span><span class="n">-VolumeSet</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">VolumeSet</span><span class="p">&gt;]</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="p">[</span><span class="n">-EnableIOPSLimit</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="p">[</span><span class="n">-IOPSLimit</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="p">[</span><span class="n">-EnableDataTransferLimit</span> <span class="p">&lt;</span><span class="n">Bool</span><span class="p">&gt;]</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="p">[</span><span class="n">-DataTransferLimit</span> <span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;]</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="p">[</span><span class="n">-Folder</span> <span class="p">&lt;</span><span class="n">HPEOneView</span><span class="p">.</span><span class="n">Storage</span><span class="p">.</span><span class="n">NimbleFolder</span><span class="p">&gt;]</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="p">[</span><span class="n">-LunIdType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="p">[</span><span class="n">-LunID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="p">[</span><span class="n">-HostOStype</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>    <span class="p">[</span><span class="n">-BootVolume</span><span class="p">]</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="p">[</span><span class="n">-TargetPortAssignment</span><span class="p">]</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>    <span class="p">[</span><span class="n">-TargetAddresses</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">New-OVServerProfileAttachVolume</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="p">[</span><span class="n">-ServerProfile</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="p">[</span><span class="n">-Volume</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">[</span><span class="n">-PassThru</span><span class="p">]</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="p">[</span><span class="n">-VolumeID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">[</span><span class="n">-LunIdType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">[</span><span class="n">-LunID</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">[</span><span class="n">-HostOStype</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">[</span><span class="n">-BootVolume</span><span class="p">]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="p">[</span><span class="n">-TargetPortAssignment</span><span class="p">]</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="p">[</span><span class="n">-TargetAddresses</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;]</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>This Cmdlet will assist with creating a Storage Volume object to then attach to a new Server Profile being created (New-OVServerProfile), and attach either an existing Storage Volume (Get-OVStorageVolume) or new Ephemeral Volume to an existing Server Profile (Get-OVServerProfile).  If attempting to attach to an existing Server Profile, the HostOSType parameter is required, and will enable SAN Management within the Server Profile, if the Server Hardware resource supports the feature.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$attachVolume</span> <span class="p">=</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span> <span class="n">-volume</span> <span class="n">Volume1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$attachVolume</span> <span class="p">=</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span> <span class="n">-volume</span> <span class="n">Volume1</span>
+</span></code></pre></div>
 <p>Create a Volume Attach object that maps to the "Volume1" storage volume with an Auto assigned Host LUN ID.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$attachVolume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">Volume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$attachVolume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">Volume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span>
+</span></code></pre></div>
 <p>Get the "Volume1" Storage Volume via the Get-OVStorageVolume Cmdlet, and pipe the resource object to the Get-OVServerProfileAttachVolume Cmdlet.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$attachVolume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">Volume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span> <span class="n">-lunidtype</span> <span class="n">manual</span> <span class="n">-lunid</span> <span class="n">1</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$attachVolume</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">Volume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span> <span class="n">-lunidtype</span> <span class="n">manual</span> <span class="n">-lunid</span> <span class="n">1</span>
+</span></code></pre></div>
 <p>Get the "Volume1" Storage Volume via the Get-OVStorageVolume Cmdlet, and pipe the resource object to the Get-OVServerProfileAttachVolume Cmdlet, providing a manual Host LUN ID.</p>
 <h3 id="example-4">Example 4</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$volume1</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">Volume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span>
-<span class="nv">$volume2</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">SharedVolume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">2</span>
-<span class="nv">$attachVolumes</span> <span class="p">=</span> <span class="p">@(</span><span class="nv">$volume1</span><span class="p">,</span><span class="nv">$volume2</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">$volume1</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">-Name</span> <span class="n">Volume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">1</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">$volume2</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolume</span> <span class="n">SharedVolume1</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-volumeid</span> <span class="n">2</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nv">$attachVolumes</span> <span class="p">=</span> <span class="p">@(</span><span class="nv">$volume1</span><span class="p">,</span><span class="nv">$volume2</span><span class="p">)</span>
+</span></code></pre></div>
 <p>Get the "Volume1" and "SharedVolume1" Storage Volumes via the Get-OVStorageVolume Cmdlet, and pipe the resource objects to the Get-OVServerProfileAttachVolume Cmdlet, saving to $attachVolumes array.</p>
 <h3 id="example-5">Example 5</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$storagepool</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span> <span class="n">R1_FC</span>
-<span class="nv">$sp</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;chef-web01&quot;</span>
-<span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-ServerProfile</span> <span class="nv">$sp</span> <span class="n">-Name</span> <span class="s2">&quot;Chef Web01 Vol 2&quot;</span> <span class="n">-StoragePool</span> <span class="nv">$storagepool</span>  <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$storagepool</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span> <span class="n">R1_FC</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$sp</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;chef-web01&quot;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-ServerProfile</span> <span class="nv">$sp</span> <span class="n">-Name</span> <span class="s2">&quot;Chef Web01 Vol 2&quot;</span> <span class="n">-StoragePool</span> <span class="nv">$storagepool</span>  <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Attach a new 10Gb Ephemeral Volume to an existing Server Profile.</p>
 <h3 id="example-6">Example 6</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$sp</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;chef-web01&quot;</span>
-<span class="nb">Get-OVStorageVolume</span> <span class="s2">&quot;My New Volume 3&quot;</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-ServerProfile</span> <span class="nv">$sp</span>  <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">$sp</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;chef-web01&quot;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">Get-OVStorageVolume</span> <span class="s2">&quot;My New Volume 3&quot;</span> <span class="p">|</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-ServerProfile</span> <span class="nv">$sp</span>  <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Attach an existing Storage Volume to a Server Profile.</p>
 <h3 id="example-7">Example 7</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$storagepool</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span> <span class="n">R1_FC</span>
-<span class="nv">$sp</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;My Server Profile&quot;</span>
-<span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-Name</span> <span class="s2">&quot;My Server Profile Boot Vol&quot;</span> <span class="n">-ServerProfile</span> <span class="nv">$sp</span> <span class="n">-StoragePool</span> <span class="nv">$storagepool</span> <span class="n">-Bootable</span>  <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">$storagepool</span> <span class="p">=</span> <span class="nb">Get-OVStoragePool</span> <span class="n">R1_FC</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">$sp</span> <span class="p">=</span> <span class="nb">Get-OVServerProfile</span> <span class="n">-Name</span> <span class="s2">&quot;My Server Profile&quot;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-Name</span> <span class="s2">&quot;My Server Profile Boot Vol&quot;</span> <span class="n">-ServerProfile</span> <span class="nv">$sp</span> <span class="n">-StoragePool</span> <span class="nv">$storagepool</span> <span class="n">-Bootable</span>  <span class="p">|</span> <span class="nb">Wait-OVTaskComplete</span>
+</span></code></pre></div>
 <p>Add a bootable volume to an existing Server Profile.</p>
 <h3 id="example-8">Example 8</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$SVT</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolumeTemplate</span> <span class="n">-Name</span> <span class="n">StoreServe4-TPDD-SVT</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
-<span class="nv">$StorageVolumeObject</span> <span class="p">=</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Template 3 Private Vol 1&quot;</span> <span class="n">-VolumeTemplate</span> <span class="nv">$SVT</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$SVT</span> <span class="p">=</span> <span class="nb">Get-OVStorageVolumeTemplate</span> <span class="n">-Name</span> <span class="n">StoreServe4-TPDD-SVT</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">$StorageVolumeObject</span> <span class="p">=</span> <span class="nb">New-OVServerProfileAttachVolume</span> <span class="n">-Name</span> <span class="s2">&quot;Template 3 Private Vol 1&quot;</span> <span class="n">-VolumeTemplate</span> <span class="nv">$SVT</span>
+</span></code></pre></div>
 <p>Create a new ephemeral storage volume attachment, using a storage volume template.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-serverprofile-object">-ServerProfile &lt;Object&gt;</h3>
@@ -13738,8 +13738,8 @@
 <h3 id="-folder-hpeoneviewstoragenimblefolder">-Folder &lt;HPEOneView.Storage.NimbleFolder&gt;</h3>
 <p>Specify the Nimble folder where the volume should be created.  To get availabe folder objects, use the Get-OVStoragePool Cmdlet.  Folders are defined as a device specific attribute. </p>
 <p>Example:</p>
-<pre><code> (`Get-OVStoragePool` `-name` default).DeviceSpecificAttributes.Folders
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code> (`Get-OVStoragePool` `-name` default).DeviceSpecificAttributes.Folders
+</code></pre></div>
 <p>ID                                         Name
 --                                         ----
 2f1ca8a5d76e271722000000000000000000000001 POSH</p>
@@ -13808,8 +13808,8 @@
 <h3 id="-performancepolicy-hpeoneviewstorageperformancepolicy">-PerformancePolicy &lt;HPEOneView.Storage.PerformancePolicy&gt;</h3>
 <p>A Nimble Performance Policy is associated with a storage system.  Using the Show-OVStorageSystemPerformancePolicy, choose an available performance policy.</p>
 <p>Example:</p>
-<pre><code>Get-OVStorageSystem `-Name` MyNimbleSys | Show-OVStorageSystemPerformancePolicy
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code>Get-OVStorageSystem `-Name` MyNimbleSys | Show-OVStorageSystemPerformancePolicy
+</code></pre></div>
 <table>
 <thead>
 <tr>

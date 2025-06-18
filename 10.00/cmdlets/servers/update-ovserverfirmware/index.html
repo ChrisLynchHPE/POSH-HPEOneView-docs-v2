@@ -12250,18 +12250,18 @@
 
 <h1 id="update-ovserverfirmware">Update-OVServerFirmware</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Update-OVServerFirmware</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Baseline</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-PatchLevel</span> <span class="p">&lt;</span><span class="n">System</span><span class="p">.</span><span class="n">Version</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-FirmwareInstallationPolicy</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-FirmwareInstallMode</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-    <span class="p">[</span><span class="n">-ReinstallFirmware</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-PreviewOnly</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Update-OVServerFirmware</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-Baseline</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-PatchLevel</span> <span class="p">&lt;</span><span class="n">System</span><span class="p">.</span><span class="n">Version</span><span class="p">&gt;]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[</span><span class="n">-FirmwareInstallationPolicy</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">[</span><span class="n">-FirmwareInstallMode</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">[</span><span class="n">-ReinstallFirmware</span><span class="p">]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">[</span><span class="n">-PreviewOnly</span><span class="p">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">[</span><span class="n">-Async</span><span class="p">]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>A firmware bundle is a comprehensive collection of firmware and system software components that enable you to update the firmware of the devices managed by the appliance. The firmware bundle includes drivers, agents, utilities, and firmware packages.  Deploying a firmware bundle (SPP) to a server hardware resource is only supported with Gen10 or newer server platforms, excluding HPE Synergy and Superdome Flex partitions.</p>
 <p>Supported servers must not have an assigned server profile, and only supports Gen10 and newer volume servers (not HPE Synergy).  Installing a supported firmware bundle requires either an HPE iLO Advanced, HPE OneView Advanced or HPE OneView Advanced without iLO Advanced license.</p>
@@ -12277,32 +12277,32 @@
 </details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Update-OVServerFirmware</span> <span class="n">-InputObject</span> <span class="nv">$Server</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span> <span class="n">-PreviewOnly</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Update-OVServerFirmware</span> <span class="n">-InputObject</span> <span class="nv">$Server</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span> <span class="n">-PreviewOnly</span>
+</span></code></pre></div>
 <p>Generate a report of installed components to the server and available firmware within the specified baseline.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="p">|</span> <span class="p">?</span> <span class="n">generation</span> <span class="o">-eq</span> <span class="s2">&quot;Gen10&quot;</span>
-<span class="nv">$Baseline</span> <span class="p">=</span> <span class="nb">Get-OVBaseline</span> <span class="n">-Name</span> <span class="s2">&quot;Custom Baseline 2022 11 4&quot;</span>
-<span class="nb">Update-OVServerFirmware</span> <span class="n">-InputObject</span> <span class="nv">$Servers</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="p">|</span> <span class="p">?</span> <span class="n">generation</span> <span class="o">-eq</span> <span class="s2">&quot;Gen10&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$Baseline</span> <span class="p">=</span> <span class="nb">Get-OVBaseline</span> <span class="n">-Name</span> <span class="s2">&quot;Custom Baseline 2022 11 4&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">Update-OVServerFirmware</span> <span class="n">-InputObject</span> <span class="nv">$Servers</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span>
+</span></code></pre></div>
 <p>Get a collection of Gen10 servers and install the specific baseline.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="c"># Get the latest firmware bundles from HPE</span>
-<span class="nv">$FirmwareBundleUpdates</span> <span class="p">=</span> <span class="nb">Get-OVFirmwareBundleUpdate</span> <span class="n">-GetLatestUpdates</span>
-
-<span class="c"># Get all of the HPE ProLiant DL380 Gen11 servers from inventory</span>
-<span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Query</span> <span class="s2">&quot;shortModel:&#39;DL380 Gen11&#39;&quot;</span>
-
-<span class="c"># Use the most current</span>
-<span class="nv">$Baseline</span> <span class="p">=</span> <span class="nv">$FirmwareBundleUpdates</span> <span class="p">|</span> <span class="p">?</span> <span class="n">bundleGeneration</span> <span class="o">-contains</span> <span class="s2">&quot;Gen11&quot;</span> <span class="p">|</span> <span class="nb">Sort </span><span class="n">-Property</span> <span class="n">version</span> <span class="n">-Descending</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-First</span> <span class="n">1</span>
-
-<span class="c"># If there is a patch available, use the most recent version</span>
-<span class="k">if</span> <span class="p">(</span><span class="nv">$Baseline</span><span class="p">.</span><span class="n">Supplements</span><span class="p">.</span><span class="n">Count</span> <span class="o">-gt</span> <span class="n">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nv">$Servers</span> <span class="p">|</span> <span class="nb">Update-OVServerFirmware</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span> <span class="n">-PatchLevel</span> <span class="p">(</span><span class="nv">$Baseline</span><span class="p">.</span><span class="n">Supplements</span> <span class="p">|</span> <span class="nb">Sort </span><span class="n">-Descending</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-First</span> <span class="n">1</span><span class="p">)</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nv">$Servers</span> <span class="p">|</span> <span class="nb">Update-OVServerFirmware</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span>
-<span class="p">}</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c"># Get the latest firmware bundles from HPE</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">$FirmwareBundleUpdates</span> <span class="p">=</span> <span class="nb">Get-OVFirmwareBundleUpdate</span> <span class="n">-GetLatestUpdates</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c"># Get all of the HPE ProLiant DL380 Gen11 servers from inventory</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nv">$Servers</span> <span class="p">=</span> <span class="nb">Get-OVServer</span> <span class="n">-Query</span> <span class="s2">&quot;shortModel:&#39;DL380 Gen11&#39;&quot;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c"># Use the most current</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nv">$Baseline</span> <span class="p">=</span> <span class="nv">$FirmwareBundleUpdates</span> <span class="p">|</span> <span class="p">?</span> <span class="n">bundleGeneration</span> <span class="o">-contains</span> <span class="s2">&quot;Gen11&quot;</span> <span class="p">|</span> <span class="nb">Sort </span><span class="n">-Property</span> <span class="n">version</span> <span class="n">-Descending</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-First</span> <span class="n">1</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c"># If there is a patch available, use the most recent version</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$Baseline</span><span class="p">.</span><span class="n">Supplements</span><span class="p">.</span><span class="n">Count</span> <span class="o">-gt</span> <span class="n">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="nv">$Servers</span> <span class="p">|</span> <span class="nb">Update-OVServerFirmware</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span> <span class="n">-PatchLevel</span> <span class="p">(</span><span class="nv">$Baseline</span><span class="p">.</span><span class="n">Supplements</span> <span class="p">|</span> <span class="nb">Sort </span><span class="n">-Descending</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-First</span> <span class="n">1</span><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="nv">$Servers</span> <span class="p">|</span> <span class="nb">Update-OVServerFirmware</span> <span class="n">-Baseline</span> <span class="nv">$Baseline</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Get the most current firmware bundle available for Gen11, and use the most current patch level if available.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-applianceconnection-object">-ApplianceConnection &lt;Object&gt;</h3>

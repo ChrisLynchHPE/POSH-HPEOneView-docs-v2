@@ -12178,28 +12178,28 @@
 
 <h1 id="remove-ovenclosuregroup">Remove-OVEnclosureGroup</h1>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-OVEnclosureGroup</span>
-    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
-    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
-    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Remove-OVEnclosureGroup</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">[</span><span class="n">-InputObject</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Object</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">[</span><span class="n">-ApplianceConnection</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">Array</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">[</span><span class="n">-Force</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
+</span></code></pre></div>
 <h2 id="description">Description</h2>
 <p>Deletes an enclosure group from the appliance.
 An enclosure group cannot be deleted if any enclosures are currently part of that enclosure group.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$resp</span> <span class="p">=</span> <span class="nb">Remove-OVEnclosureGroup</span> <span class="n">-enclosureGroup</span> <span class="s2">&quot;My-EG&quot;</span> <span class="n">-force</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$resp</span> <span class="p">=</span> <span class="nb">Remove-OVEnclosureGroup</span> <span class="n">-enclosureGroup</span> <span class="s2">&quot;My-EG&quot;</span> <span class="n">-force</span>
+</span></code></pre></div>
 <p>Force-remove the enclosure group specifed by name.</p>
 <h3 id="example-2">Example 2</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$eg</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-name</span> <span class="s2">&quot;My-EG&quot;</span>
-<span class="nb">Remove-OVEnclosureGroup</span> <span class="nv">$enclosureGroup</span> <span class="n">-confirm</span><span class="p">:</span><span class="nv">$false</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$eg</span> <span class="p">=</span> <span class="nb">Get-OVEnclosureGroup</span> <span class="n">-name</span> <span class="s2">&quot;My-EG&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">Remove-OVEnclosureGroup</span> <span class="nv">$enclosureGroup</span> <span class="n">-confirm</span><span class="p">:</span><span class="nv">$false</span>
+</span></code></pre></div>
 <p>Remove the enclosure group specifed by $eg. Disable confirmation prompt.</p>
 <h3 id="example-3">Example 3</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-OVEnclosureGroup</span> <span class="p">|</span> <span class="nb">Remove-OVEnclosureGroup</span>
-</code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-OVEnclosureGroup</span> <span class="p">|</span> <span class="nb">Remove-OVEnclosureGroup</span>
+</span></code></pre></div>
 <p>Search for all enclosure groups and remove them from appliance.</p>
 <h2 id="parameters">Parameters</h2>
 <h3 id="-inputobject-object">-InputObject &lt;Object&gt;</h3>
