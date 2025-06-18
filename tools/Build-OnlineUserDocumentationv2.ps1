@@ -451,7 +451,9 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
 
         }
 
-        $script:LibraryJsonContents = [System.IO.File]::ReadAllLines($File) | ConvertFrom-Json
+        $JsonFullPath = Resolve-Path $File
+
+        $script:LibraryJsonContents = [System.IO.File]::ReadAllLines($JsonFullPath) | ConvertFrom-Json
         $Version                    = '{0}.{1:00}' -f ([Version]$LibraryJsonContents.Version).Major, ([Version]$LibraryJsonContents.Version).Minor
 
         $c                   = 0

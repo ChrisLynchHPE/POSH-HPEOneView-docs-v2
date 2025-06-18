@@ -193,7 +193,7 @@ The patch or supplement to the Update Bundle.  Within the Update Bundle contains
 
 ### -PreviewOnly &lt;SwitchParameter&gt;
 
-
+Will generate a compliance review object that contains which components are not compliant with the parent template policy.
 
 | Aliases | None |
 | :--- | :--- |
