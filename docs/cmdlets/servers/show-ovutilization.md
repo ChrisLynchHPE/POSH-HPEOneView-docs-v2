@@ -46,7 +46,7 @@ The operating threshold is 10┬░C to 35┬░C (50┬░F to 95┬░F). When
 You can see the temperature utilization data for a component within the AmbientTemperature and AmbientTemperatureAverage properties.
 
 ???+ info
- The temperature properties are displayed in degrees Celsius or Fahrenheit, depending upon the locale or regional settings of your PC.
+     The temperature properties are displayed in degrees Celsius or Fahrenheit, depending upon the locale or regional settings of your PC.
 
 
 ## Examples
@@ -91,29 +91,29 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+    A server hardware resource from Get-OVServer.
+    
 
-A server hardware resource from Get-OVServer.
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+    A server profile from Get-OVServerProfile that is assigned to a physical server resource.  If the profile is not assigned to a server hardware resource, it is skipped.
+    
 
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
-A server profile from Get-OVServerProfile that is assigned to a physical server resource.  If the profile is not assigned to a server hardware resource, it is skipped.
-
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-An enclosure resource from Get-OVEnclosure.
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    An enclosure resource from Get-OVEnclosure.
+    
 
 ## Return Values
 
-_**HPEOneView.ServerUtilization**_
+=== "HPEOneView.ServerUtilization"
+    Server utilization object.
+    
+    
 
-Server utilization object.
-
-
-_**HPEOneView.EnclosureUtilization**_
-
-Enclosure utilization object.
-
+=== "HPEOneView.EnclosureUtilization"
+    Enclosure utilization object.
+    
+    
 
 ## Related Links
 

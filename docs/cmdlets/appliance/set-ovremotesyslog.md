@@ -100,17 +100,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None. You cannot pipe objects to this Cmdlet.**_
+None. You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    If successful, returns Appliance Async Task object to monitor
+    
 
-If successful, returns Appliance Async Task object to monitor
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Collection of Appliance Async Task objects to monitor
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Collection of Appliance Async Task objects to monitor
+    
 
 ## Related Links
 

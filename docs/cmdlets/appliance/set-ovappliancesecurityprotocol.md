@@ -23,11 +23,11 @@ Use this Cmdlet to change the enabled security protocol(s) on the appliance. The
 * Disabling all the protocols is not allowed.
 
 ???+ warning
-Changing active security protocol(s) will require an immediate appliance reboot.
+    Changing active security protocol(s) will require an immediate appliance reboot.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -83,13 +83,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.SecurityProtocol**_
-
-After appliance reboots, the updated security protocol configuration is returned.
+=== "HPEOneView.Appliance.SecurityProtocol"
+    After appliance reboots, the updated security protocol configuration is returned.
+    
 
 ## Related Links
 

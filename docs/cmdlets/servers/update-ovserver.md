@@ -132,23 +132,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
+=== "System.String"
+    Server Hardware Name
+    
 
-Server Hardware Name
+=== "System.Management.Automation.PSCustomObject"
+    Server Hardware Resource
+    
 
-_**System.Management.Automation.PSCustomObject**_
-
-Server Hardware Resource
-
-_**System.Management.Automation.PSCustomObject**_
-
-Server Profile Resource
+=== "System.Management.Automation.PSCustomObject"
+    Server Profile Resource
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task that tracks the server refresh request
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task that tracks the server refresh request
+    
 
 ## Related Links
 

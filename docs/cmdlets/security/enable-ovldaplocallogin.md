@@ -24,7 +24,7 @@ When you use a directory service, directory users are granted HPE OneView permis
 If you want to authenticate all logins to the appliance through a directory service, you must disable local logins. Also, if a directory is inaccessible in some special cases, you can enable the emergency local login. To enable emergency local login, you must disable local logins.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -80,13 +80,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Appliance Authentication Directory setting.
+=== "System.Management.Automation.PSCustomObject"
+    Appliance Authentication Directory setting.
+    
 
 ## Related Links
 

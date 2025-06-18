@@ -336,15 +336,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]**_
-
-Single Logical Interconnect Group resource object
+=== "HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]"
+    Single Logical Interconnect Group resource object
+    
 
 ## Return Values
 
-_**HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
-The newly created enclosure group resource
+=== "HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+    The newly created enclosure group resource
+    
 
 ## Related Links
 

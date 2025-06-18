@@ -195,15 +195,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Facilities.DataCenter**_
-
-DataCenter facility object from Get-OVDataCenter.
+=== "HPEOneView.Facilities.DataCenter"
+    DataCenter facility object from Get-OVDataCenter.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.AyncTask**_
-
-Modified datacenter Remote Support location Asynchronous task.
+=== "HPEOneView.Appliance.AyncTask"
+    Modified datacenter Remote Support location Asynchronous task.
+    
 
 ## Related Links
 

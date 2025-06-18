@@ -134,15 +134,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.System.Pool [System.Management.Automation.PSCustomObject]**_
-
-Single Storage Pool resource, typically retrieved with Get-OVStoragePool
+=== "HPEOneView.Storage.System.Pool [System.Management.Automation.PSCustomObject]"
+    Single Storage Pool resource, typically retrieved with Get-OVStoragePool
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Removal task
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Removal task
+    
 
 ## Related Links
 

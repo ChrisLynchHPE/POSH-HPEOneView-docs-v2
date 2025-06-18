@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12116,8 +12118,8 @@
 <p>On subsequent server profile apply operations, HPE OneView checks for the existence of the identifier on the physical drives of the assigned server hardware. If the identifier is missing, the apply operation fails in order to ensure that if the server profile is re-assigned to new server hardware and that the physical drives are inserted correctly.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>HPE OneView also uses the logical drive name (label) as a unique identifier.  Do not modify the label of logical drives that are managed by HPE OneView.  Do not create logical drives with non-unique labels.</p>
+</details>
 <p>RAID levels and number of physical drives</p>
 <p>The HPE OneView Support Matrix provides information on the number of drives supported by specific server hardware.</p>
 <ul>
@@ -12132,8 +12134,8 @@
 <p>After you create a logical drive and apply it to a server hardware, you can no longer modify those logical drives.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>For controllers that support mixed mode (Gen10 servers), creating a logical drive uses the physical drives that are currently visible to the operating system. To preserve any data, back up the server drives before creating a logical drive.</p>
+</details>
 <p>Only for Gen11 servers that contain storage controllers, you can configure logical drives that are related to the following Logical Drive Configuration options, using server profiles:</p>
 <ul>
 <li>IOPerformanceMode</li>
@@ -12290,12 +12292,22 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Server hardware resource from Get-OVServer.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Servers.StorageController</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Servers.StorageController</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Storage controller object that provide specific information about available controllers available from a server resources inventory.  Will include Controller Mode capabilities, and drives attached to each controller.  The "Default" Type can be used to identify what controller families and base capabilities supplied by either SmartRAID (SR) or MegaRAID (MR) controller models.</p>
 <p>If the server generation is Gen10 or newer and no controllers in specific DeviceSlot have been identified, ensure the server has powered on at least once and successfully completed POST.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../new-ovserverprofilelogicaldisk/">New-OVServerProfileLogicalDisk</a></li>

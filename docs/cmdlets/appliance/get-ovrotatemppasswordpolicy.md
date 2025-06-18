@@ -33,9 +33,9 @@ Only non-HPE Synergy Servers are supported.
 Use this Cmdlet to get the current password rotation policy configuration.
 
 ???+ info
-Minimum required privileges:
-
-* Read-only
+    Minimum required privileges:
+    
+    * Read-only
 
 ## Examples
 
@@ -70,14 +70,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+None.  You cannot pipe objects to this cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.RotateMPPasswordPolicy**_
-
-Appliance RotateMPPasswordPolicy class.  This defines the device embedded management process (e.g. iLO) privileged account password rotation policy and how it is configured on the appliance.
-
+=== "HPEOneView.Appliance.RotateMPPasswordPolicy"
+    Appliance RotateMPPasswordPolicy class.  This defines the device embedded management process (e.g. iLO) privileged account password rotation policy and how it is configured on the appliance.
+    
+    
 
 ## Related Links
 

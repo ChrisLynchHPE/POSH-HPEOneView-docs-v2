@@ -22,7 +22,7 @@ Reset-OVInterconnectNetOpPassword
 This Cmdlet will reset the HPE Synergy Virtual Connect NetOp account password to the specified value.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Network administrator
+    Minimum required privileges: Infrastructure administrator, Network administrator
 
 ## Examples
 
@@ -92,15 +92,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]**_
-
-Interconnect resource from Get-OVInterconnect.
+=== "HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]"
+    Interconnect resource from Get-OVInterconnect.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task that tracks the operation.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task that tracks the operation.
+    
 
 ## Related Links
 

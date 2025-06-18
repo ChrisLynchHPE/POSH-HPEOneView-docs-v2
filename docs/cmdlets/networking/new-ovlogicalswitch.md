@@ -115,7 +115,7 @@ Logical switch configuration guidelines
 * HPE OneView can detect configuration changes that occur on the switches specified in the logical switch when it no longer matches the configuration that HPE OneView provisions. Warning alerts are generated. Administrators can correct the configuration manually or reapply the configuration on the associated logical interconnects to recover.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Network administrator
+    Minimum required privileges: Infrastructure administrator or Network administrator
 
 ## Examples
 
@@ -387,19 +387,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]**_
-
-Logical Switch Group resource.
+=== "HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]"
+    Logical Switch Group resource.
+    
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]"
+    Single Logical Switch resource.
+    
 
-Single Logical Switch resource.
-
-_**System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitch>**_
-
-Collection of Logical Switch resources.
+=== "System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitch>"
+    Collection of Logical Switch resources.
+    
 
 ## Related Links
 

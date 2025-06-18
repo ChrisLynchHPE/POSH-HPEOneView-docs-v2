@@ -27,7 +27,7 @@ Set-OVEnclosureGroup
 An enclosure group is a logical resource that defines a standard configuration for member logical enclosures. Use this Cmdlet to update the configuration policy for a specific enclosure group resource.
 
 ???+ info
-Minimum required privileges: Server administrator or Infrastructure administrator
+    Minimum required privileges: Server administrator or Infrastructure administrator
 
 ## Examples
 
@@ -272,15 +272,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
-Enclosure group resource from Get-OVEnclosureGroup.
+=== "HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+    Enclosure group resource from Get-OVEnclosureGroup.
+    
 
 ## Return Values
 
-_**HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
-The updated enclosure group resource.
+=== "HPEOneView.Servers.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+    The updated enclosure group resource.
+    
 
 ## Related Links
 

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -13154,8 +13156,8 @@
 <p>$Bays = @{ Frame1 = @{Bay3 = "SEVC40f8"; Bay6 = "SE20ILM"}; Frame2 = @{Bay3 = "SE20ILM"; Bay6 = "SEVC40f8"} }</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>When configuring Synergy SAS Connection Module, no other device bays can be specified, and only a Single Frame can be configured.</p>
+</details>
 <table>
 <thead>
 <tr>
@@ -14095,10 +14097,9 @@ Default value: 5</p>
 <p>Enables or disables the Cut-Through switching mode. When enabled, the switch starts forwarding the frame as soon as the switch has read the destination details in the packet header. When enabled, Pause flood protection is disabled.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>This option is available for HPE Virtual Connect SE 100Gb F32 Module for HPE Synergy.</p>
-<pre><code>Default value:  Disabled
-</code></pre>
+<p>Default value:  Disabled</p>
+</details>
 <table>
 <thead>
 <tr>
@@ -14435,11 +14436,21 @@ Default value: 5</p>
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>System.Collections.Hashtable</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Collections.Hashtable</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Hashtable containing Interconnect Bay layout and associated interconnect module</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Logical Interconnect Group creation async task</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovlogicalinterconnectgroup/">Get-OVLogicalInterconnectGroup</a></li>

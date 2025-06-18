@@ -196,23 +196,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.System**_
-
-Managed Storage System from Get-OVStorageSystem.
+=== "HPEOneView.Storage.System"
+    Managed Storage System from Get-OVStorageSystem.
+    
 
 ## Return Values
 
-_**HPEOneView.Storage.Pool [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Storage.Pool [System.Management.Automation.PSCustomObject]"
+    Single Storage Pool resource
+    
 
-Single Storage Pool resource
+=== "System.Collections.ArrayList"
+    Multiple Storage Pool resources
+    
 
-_**System.Collections.ArrayList**_
-
-Multiple Storage Pool resources
-
-_**The matching storage pool resources.**_
-
-
+=== "The matching storage pool resources."
+    
+    
 
 ## Related Links
 

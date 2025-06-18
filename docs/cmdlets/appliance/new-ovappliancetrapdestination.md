@@ -35,7 +35,7 @@ Appliance SNMP settings allow you to add destinations to which the traps need to
 Additionally, if you have Gen6 or Gen7 servers being monitored by HPE OneView in your environment, you can configure the read community string that HPE OneView uses for monitoring these servers with SNMPv1. 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -140,17 +140,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.SnmpV1TrapDestination**_
+=== "HPEOneView.Appliance.SnmpV1TrapDestination"
+    The configured SNMPv1 Trap Destination on the appliance.
+    
 
-The configured SNMPv1 Trap Destination on the appliance.
-
-_**HPEOneView.Appliance.SnmpV3TrapDestination**_
-
-The configured SNMPv3 Trap Destination on the appliance.
+=== "HPEOneView.Appliance.SnmpV3TrapDestination"
+    The configured SNMPv3 Trap Destination on the appliance.
+    
 
 ## Related Links
 

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12264,7 +12266,10 @@
 <p>Enabling two-factor authentication allows you to use smart cards ï¿½ for example, Common Access Cards (CAC), or Personal Identity Verification (PIV) cards ï¿½ to authenticate within HPE OneView. The client certificate embedded in the smart card is presented to HPE OneView by the library. The client certificate must be signed by a root or intermediate Certificate Authority (CA) that has been previously imported into the HPE OneView appliance. The appliance authenticates the client certificate to validate that the user name specified in the certificate is that of a valid user recognized by the directory server configuration in HPE OneView.</p>
 <p>When two-factor authentication is enabled, HPE OneView uses a Microsoft Active Directory service account set up and owned by the user to access an Active Directory entry for the user, rather than using an account associated with the user name received during first time login.</p>
 <p>Use this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.</p>
-<p>Required: Infrastructure administrator</p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-OVApplianceTwoFactorAuthentication</span> <span class="n">-ValidationOids</span> <span class="p">@(@{</span><span class="s2">&quot;1.3.6.1.4.1.311.20.2.2&quot;</span> <span class="p">=</span> <span class="s2">&quot;Smart Card Logon&quot;</span><span class="p">;</span> <span class="s2">&quot;1.3.6.1.5.5.7.3.2&quot;</span> <span class="p">=</span> <span class="s2">&quot;Client Authentication&quot;</span><span class="p">})</span>
@@ -12544,8 +12549,8 @@
 <p>Use a comma-separated list to include multiple values in the entry field, allowing HPE OneView to search multiple Subject Alternative Name attributes for a valid user name.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). See subject entry in the "Certificate owner" field for details.</p>
+</details>
 <p>Subject Alternative Name multiple attribute entry example
 <code>[OtherName.UPN]</code>=(.<em>),OtherName.RFC822Name=(.</em>),RFC822Name=(.<em>),DirName=(.</em>)</p>
 <table>
@@ -12591,8 +12596,8 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
 <p>Use a comma separated list to include multiple values in the entry field, allowing HPE OneView to search multiple Subject attributes for a valid user name. </p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). </p>
+</details>
 <p>Subject multiple attribute entry example
 * CN=(.<em>),E=(.</em>),UID=(.<em>),DN=(.</em>) </p>
 <p>Variations for the CN attribute: examples
@@ -12601,8 +12606,8 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
     To match user names containing only numbers CN=(^[0-9]+$) </p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>This is applicable when there are multiple CN attributes configured in a certificate and the user wants to specify a specific attribute rather than the first available in the CN attribute. It is recommended to use patterns that begin with "^" and ends with "$" so that the system can perform an exact match. </p>
+</details>
 <table>
 <thead>
 <tr>
@@ -12638,8 +12643,8 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
 <p>By default, one combination is configured, containing the OID combination Smart Card Logon (1.3.6.1.4.1.311.20.2.2), Client Authentication (1.3.6.1.5.5.7.3.2). This combination requires the certificate on the smart card to be configured to allow the certificate to be used for smart card logon and for client authentication. It should work for most installations. You can edit this field to opt for a different combination of OIDs, or to add additional OIDs. A maximum of ten OIDs can be configured in a single string.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>If you specify multiple OID combinations and one is a super-set of another, configure the more restrictive combination first.</p>
+</details>
 <table>
 <thead>
 <tr>
@@ -12704,10 +12709,15 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this Cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>System.Management.Automation.PSCustomObject</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">System.Management.Automation.PSCustomObject</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Appliance global security settings.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../disable-ovappliancetwofactorauthentication/">Disable-OVApplianceTwoFactorAuthentication</a></li>

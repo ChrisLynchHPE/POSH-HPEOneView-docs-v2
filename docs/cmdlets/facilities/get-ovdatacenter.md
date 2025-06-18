@@ -20,7 +20,7 @@ A data center represents a physically contiguous area in which racks containing 
 This Cmdlet will retrieve all or a specific DataCenter resource object. If Remote Support has been enabled on the appliance, the DataCenter object will contain a RemoteSupportLocation property that contains the site location (if different from the Default DataCenter), and both the Primary and Secondary contacts.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -80,13 +80,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Facilities.DataCenter**_
-
-A DataCenter resource object.
+=== "HPEOneView.Facilities.DataCenter"
+    A DataCenter resource object.
+    
 
 ## Related Links
 

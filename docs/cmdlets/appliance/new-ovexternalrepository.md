@@ -45,7 +45,7 @@ The recommended types of external web servers to use with the repository follow:
 * Internet Information Services (IIS)
 
 ???+ info
-Only one external repository can be added.
+    Only one external repository can be added.
 
 
 ## Examples
@@ -215,17 +215,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    The async task for the caller to monitor.
+    
 
-The async task for the caller to monitor.
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Multiple async task resource objects.
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Multiple async task resource objects.
+    
 
 ## Related Links
 

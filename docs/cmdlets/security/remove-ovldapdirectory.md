@@ -104,19 +104,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Collections.ArrayList**_
+=== "System.Collections.ArrayList"
+    Collection of Directories
+    
 
-Collection of Directories
-
-_**System.Management.Automation.PSCustomObject**_
-
-Single Directory object
+=== "System.Management.Automation.PSCustomObject"
+    Single Directory object
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Resource Removed Status
+=== "System.Management.Automation.PSCustomObject"
+    Resource Removed Status
+    
 
 ## Related Links
 

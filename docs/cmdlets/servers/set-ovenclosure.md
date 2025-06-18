@@ -93,19 +93,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-Single Syngery Enclosure resource
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    Single Syngery Enclosure resource
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Single async task resource for resource name update
+    
 
-Single async task resource for resource name update
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Collection of async tasks
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Collection of async tasks
+    
 
 ## Related Links
 

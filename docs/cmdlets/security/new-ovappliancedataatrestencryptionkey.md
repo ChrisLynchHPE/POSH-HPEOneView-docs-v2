@@ -79,13 +79,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.IO.FileInfo**_
-
-The newly created file if the `-Location` paramter is provided.
+=== "System.IO.FileInfo"
+    The newly created file if the `-Location` paramter is provided.
+    
 
 ## Related Links
 

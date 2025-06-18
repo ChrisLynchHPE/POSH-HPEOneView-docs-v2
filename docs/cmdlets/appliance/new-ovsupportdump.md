@@ -52,7 +52,7 @@ You can choose not to encrypt the support dump file if you are an Infrastructure
 Use the `-Advanced` parameter to customize the selection of support dump logs while creating the support dump. Customizing the selection of support dump logs reduces the size of the collection and as a result enables faster creation and download of the collection.
 
 ???+ info
- Hewlett Packard Enterprise recommends that you customize the selection of the support dump logs with the help of an authorized technical support representative.
+     Hewlett Packard Enterprise recommends that you customize the selection of the support dump logs with the help of an authorized technical support representative.
 
 
 Some error messages recommend that you create a support dump of the HPE Synergy Composer and send it to authorized technical support for analysis. The support dump process performs the following functions:
@@ -78,9 +78,9 @@ The support dump file contains the following:
 Items logged in the support dump file are recorded according to UTC time.
 
 ???+ info
-Minimum required privileges: Network administrator, Server administrator, Infrastructure administrator, Backup administrator, Read only
-
-NOTE
+    Minimum required privileges: Network administrator, Server administrator, Infrastructure administrator, Backup administrator, Read only
+    
+    NOTE
 :  Only the Infrastructure administrator has the option of not encrypting a support dump file. When a user with a different role creates a support dump file, it is encrypted automatically.
 ## Examples
 
@@ -321,15 +321,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**Accepts pipeline input from Get-OVLogicalEnclosure only.**_
-
-
+=== "Accepts pipeline input from Get-OVLogicalEnclosure only."
+    
+    
 
 ## Return Values
 
-_**The generated Support Dump File**_
-
-
+=== "The generated Support Dump File"
+    
+    
 
 ## Related Links
 

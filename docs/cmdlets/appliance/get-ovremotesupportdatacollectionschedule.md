@@ -38,7 +38,7 @@ For more details on the data items transmitted, see the security white paper in 
 Use this Cmdlet to retrieve configured schedules to collect Remote Support logs.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -85,13 +85,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemtoeSupport.Schedule [System.Management.Automation.PSCustomObject]**_
-
-The configured Remote Support data collection schedule.
+=== "HPEOneView.Appliance.RemtoeSupport.Schedule [System.Management.Automation.PSCustomObject]"
+    The configured Remote Support data collection schedule.
+    
 
 ## Related Links
 

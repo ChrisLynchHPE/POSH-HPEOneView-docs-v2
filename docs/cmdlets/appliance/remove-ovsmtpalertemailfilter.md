@@ -28,7 +28,7 @@ The appliance provides for as many as 100 recipient and filter combinations, and
 This Cmdlet will remove configured email alert filters from the appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -72,16 +72,16 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.AlertEmailFilter [System.Management.Automation.PSCustomObject]**_
-
-The configured email alert filter on the appliance.
-
+=== "HPEOneView.Appliance.AlertEmailFilter [System.Management.Automation.PSCustomObject]"
+    The configured email alert filter on the appliance.
+    
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}**_
-
-Returns an async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}"
+    Returns an async task resource to monitor.
+    
 
 ## Related Links
 

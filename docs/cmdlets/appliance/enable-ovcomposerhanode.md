@@ -18,13 +18,13 @@ Enable-OVComposerHANode
 This Cmdlet will help transition the Standby Composer node to the Active Role.  Use this Cmdlet in order to perform maintenance on the Active node, or to remove the Active node from the Synergy management ring.  The standby appliance must be accessible to and fully synchronized with the active appliance.
 
 ???+ info
-The appliance is unavailable during the role exchange and unable to respond to requests while services are reassigned.
+    The appliance is unavailable during the role exchange and unable to respond to requests while services are reassigned.
 
 
 HPE OneView services will be stopped on the active appliance and restarted on the standby appliance. Operations in progress might fail and need to be restarted.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Software administrator.
+    Minimum required privileges: Infrastructure administrator or Software administrator.
 
 ## Examples
 
@@ -92,13 +92,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-The Async task resource of the role transition request
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    The Async task resource of the role transition request
+    
 
 ## Related Links
 

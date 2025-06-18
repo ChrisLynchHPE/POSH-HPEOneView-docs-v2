@@ -20,7 +20,7 @@ Start-OVEnclosureAppliance
 This Cmdlet will assist server administrators in powering on appliance devices within HPE Synergy frames. Additional power operations for Frame devices are provided by Reset-OVEnclosureDevice.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator
+    Minimum required privileges: Infrastructure administrator, Server administrator
 
 ## Examples
 
@@ -90,15 +90,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-Enclosure resource from Get-OVEnclosure.
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    Enclosure resource from Get-OVEnclosure.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource to monitor.
+    
 
 ## Related Links
 

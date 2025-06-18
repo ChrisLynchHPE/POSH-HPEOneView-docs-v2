@@ -19,7 +19,7 @@ Register with Hewlett Packard Enterprise to allow automatic case creation for ha
 Eligible devices are Gen8 and newer blades and enclosures. 
 
 ???+ warning
-Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
+    Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
 
 
 Hewlett Packard Enterprise will contact you to ship a replacement part or send an engineer for devices that are under warranty or support contract.
@@ -33,7 +33,7 @@ Once the appliance is configured, it cannot be unauthorized or disabled.
 Use this Cmdlet to get the appliance"s current Remote Support configuration. This Cmdlet does not return device collection data or schedules.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -69,13 +69,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupport.Configuration**_
-
-The setting object with updated parameters.
+=== "HPEOneView.Appliance.RemoteSupport.Configuration"
+    The setting object with updated parameters.
+    
 
 ## Related Links
 

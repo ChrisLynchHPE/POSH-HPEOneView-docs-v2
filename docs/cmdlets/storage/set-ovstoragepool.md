@@ -37,7 +37,7 @@ For HPE OneView running embedded on a HPE Synergy 12000 Frame, the default range
 The size of the pool cannot exceed 128 VLANs.
 
 ???+ info
-Minimum required privileges:  Infrastructure administrator, Network administrator
+    Minimum required privileges:  Infrastructure administrator, Network administrator
 
 ## Examples
 
@@ -101,15 +101,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.StoragePool**_
-
-Storage pool resource(s) from Get-OVStoragePool.
+=== "HPEOneView.Storage.StoragePool"
+    Storage pool resource(s) from Get-OVStoragePool.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 ## Related Links
 

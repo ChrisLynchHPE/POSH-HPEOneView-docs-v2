@@ -135,17 +135,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Collections.ArrayList <HPEOneView.Storage.Volume>**_
+=== "System.Collections.ArrayList <HPEOneView.Storage.Volume>"
+    Multiple storage volume resources
+    
 
-Multiple storage volume resources
-
-_**HPEOneView.Storage.Volume [System.Management.Automation.PSCustomObject]**_
-
-Formatted table view of storage volume resources
+=== "HPEOneView.Storage.Volume [System.Management.Automation.PSCustomObject]"
+    Formatted table view of storage volume resources
+    
 
 ## Related Links
 

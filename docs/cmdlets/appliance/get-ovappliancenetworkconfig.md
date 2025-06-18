@@ -18,11 +18,11 @@ Get-OVApplianceNetworkConfig
 This Cmdlet will return the appliance network settings configuration parameters of the primary network interface on the appliance, which can be captured into a customer object for further operation, or captured to a text file in JSON format.
 
 ???+ info
-Any time the IP address or hostname of the appliance changes, any CA-signed appliance certificate associated with the appliance is erased, and a new self signed appliance certificate is generated. In this case, you must generate a new Certificate Signing Request (CSR), have it signed by a CA, and import it into the appliance.
+    Any time the IP address or hostname of the appliance changes, any CA-signed appliance certificate associated with the appliance is erased, and a new self signed appliance certificate is generated. In this case, you must generate a new Certificate Signing Request (CSR), have it signed by a CA, and import it into the appliance.
 
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -106,21 +106,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.ApplianceServerConfiguration [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.ApplianceServerConfiguration [System.Management.Automation.PSCustomObject]"
+    A collection object containing the properties and values of the primary network interface of the appliance.
+    
 
-A collection object containing the properties and values of the primary network interface of the appliance.
+=== "HPEOneView.Appliance.ApplianceServerConfiguration.ApplianceNetworks [System.Management.Automation.PSCustomObject]"
+    The applianceNetworks property will display the appliance Networking in either a Format-Table (default) or Format-List view.
+    
 
-_**HPEOneView.Appliance.ApplianceServerConfiguration.ApplianceNetworks [System.Management.Automation.PSCustomObject]**_
-
-The applianceNetworks property will display the appliance Networking in either a Format-Table (default) or Format-List view.
-
-_**System.IO.FileSystemInfo**_
-
-If exporting the appliance network configuration, the file object created will be returned.
+=== "System.IO.FileSystemInfo"
+    If exporting the appliance network configuration, the file object created will be returned.
+    
 
 ## Related Links
 

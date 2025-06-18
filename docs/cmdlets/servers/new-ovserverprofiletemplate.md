@@ -1024,7 +1024,7 @@ You can choose one of the following two policy options:
 * NotEqualToBaseline - Updates or downgrades components whose installed version does not match the firmware baseline version. The components with a version lower than the firmware baseline version are upgraded, and the components with a version higher than the firmware baseline version are downgraded to match the baseline.
 
 ???+ info
-For Gen9 and earlier servers, if the selected firmware baseline is older than the firmware currently installed, select the Force installation option to downgrade the firmware version.
+    For Gen9 and earlier servers, if the selected firmware baseline is older than the firmware currently installed, select the Force installation option to downgrade the firmware version.
 
 
 | Aliases | None |
@@ -1053,19 +1053,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
-The full path to the Server Profile JSON export file
+=== "System.String"
+    The full path to the Server Profile JSON export file
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    If successful returns a task resource which may be polled to follow the progress of the profile creation.  Otherwise, a request validation error will be returned
+    
 
-If successful returns a task resource which may be polled to follow the progress of the profile creation.  Otherwise, a request validation error will be returned
-
-_**HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]**_
-
-When using the `-PassThru` parameter, the created server profile template object is returned.
+=== "HPEOneView.ServerProfileTemplate [System.Management.Automation.PSCustomObject]"
+    When using the `-PassThru` parameter, the created server profile template object is returned.
+    
 
 ## Related Links
 

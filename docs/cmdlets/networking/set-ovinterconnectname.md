@@ -43,10 +43,10 @@ Changing the host name of an interconnect has several impacts on the Domain Name
 *  For HPE Virtual Connect SE 100Gb F32 Module for HPE Synergy interconnect, if the host name is changed, the Dynamic DNS (DDNS) in the logical interconnect must be enabled to update the DNS server.
 *  An interconnect reboot does not change the host name on the DNS server.
 
-To reset the host name to factory default, use the -ResetNameToFactoryDefault parameter. If an interconnect is removed from the bay location, the custom host name resets to factory set host name.
+To reset the host name to factory default, use the `-ResetNameToFactoryDefault` parameter. If an interconnect is removed from the bay location, the custom host name resets to factory set host name.
 
 ???+ info
-Minimum required privileges:  Infrastructure administrator, Network administrator
+    Minimum required privileges:  Infrastructure administrator, Network administrator
 
 ## Examples
 
@@ -146,15 +146,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]**_
-
-HPE Synergy FlexFabric Ethernet module from Get-OVInterconnect.
+=== "HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]"
+    HPE Synergy FlexFabric Ethernet module from Get-OVInterconnect.
+    
 
 ## Return Values
 
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource to monitor.
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource to monitor.
+    
 
 ## Related Links
 

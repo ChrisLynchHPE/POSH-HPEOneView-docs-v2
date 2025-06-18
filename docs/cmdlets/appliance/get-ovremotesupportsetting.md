@@ -20,7 +20,7 @@ Register with Hewlett Packard Enterprise to allow automatic case creation for ha
 Eligible devices are Gen8 and newer blades and enclosures. 
 
 ???+ warning
-Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
+    Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
 
 
 Hewlett Packard Enterprise will contact you to ship a replacement part or send an engineer for devices that are under warranty or support contract.
@@ -34,7 +34,7 @@ Once the appliance is configured, it cannot be unauthorized or disabled.
 Use this Cmdlet to retrieve a supported resources Remote Support settings of an enabled resource (compute or enclosure), defined Parimary and Secondary contact, and authorized reseller or support partners.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -90,19 +90,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+    Server hardware resource object.
+    
 
-Server hardware resource object.
-
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-Enclosure resource object.
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    Enclosure resource object.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupport.ResourceSetting [System.Management.Automation.PSCustomObject]**_
-
-Remote Support Settings object.
+=== "HPEOneView.Appliance.RemoteSupport.ResourceSetting [System.Management.Automation.PSCustomObject]"
+    Remote Support Settings object.
+    
 
 ## Related Links
 

@@ -34,7 +34,7 @@ Restoring from a backup is a disruptive action:
   address and identifier ranges.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Software administrator
+    Minimum required privileges: Infrastructure administrator, Software administrator
 
 ## Examples
 
@@ -134,13 +134,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-The restore process object.  This is not an Async Task
+=== "System.Management.Automation.PSCustomObject"
+    The restore process object.  This is not an Async Task
+    
 
 ## Related Links
 

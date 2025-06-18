@@ -19,7 +19,7 @@ The appliance has a EULA (End-User License agreement) that you must accept befor
 This Cmdlet supports an unauthenticated request. If attempting to get the EULA status of an appliance not yet configured, provide the IP Address or FQDN of the appliance. A temporary ApplianceConnection will be created then removed in the ${Global:ConnectedSessions} tracker.
 
 ???+ info
-Minimum required privileges: None
+    Minimum required privileges: None
 
 ## Examples
 
@@ -68,13 +68,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.EulaStatus**_
-
-Object that returns the Appliance Name and if the EULA has been accepted with a boolean "Accepted" property.
+=== "HPEOneView.Appliance.EulaStatus"
+    Object that returns the Appliance Name and if the EULA has been accepted with a boolean "Accepted" property.
+    
 
 ## Related Links
 

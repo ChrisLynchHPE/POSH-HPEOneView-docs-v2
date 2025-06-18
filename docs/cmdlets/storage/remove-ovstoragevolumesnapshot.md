@@ -107,19 +107,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]**_
-
-Storage Volume Snapshot resource
+=== "HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]"
+    Storage Volume Snapshot resource
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async create task resource
+    
 
-Async create task resource
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Multiple task resources
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Multiple task resources
+    
 
 ## Related Links
 

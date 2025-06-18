@@ -138,15 +138,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.EnclosureGroup or HPEOneView.Enclosure or HPEOneView.ServerHardware or HPEOneView.Networking.Interconnect**_
-
-HPE OneView Managed Resource object
+=== "HPEOneView.EnclosureGroup or HPEOneView.Enclosure or HPEOneView.ServerHardware or HPEOneView.Networking.Interconnect"
+    HPE OneView Managed Resource object
+    
 
 ## Return Values
 
-_**System.Object**_
-
-Firmware report
+=== "System.Object"
+    Firmware report
+    
 
 ## Related Links
 

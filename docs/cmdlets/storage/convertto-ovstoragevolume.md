@@ -29,11 +29,11 @@ Reverting a volume to a snapshot will revert to the data the volume contained wh
 Reverting to a snapshot of a volume will cause all data created or changed since the snapshot was taken to be lost. Backup your data to prevent data loss.
 
 ???+ info
- You cannot create a volume from an HPE Nimble storage system snapshot from HPE OneView.
+     You cannot create a volume from an HPE Nimble storage system snapshot from HPE OneView.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.
+    Minimum required privileges: Infrastructure administrator, Server administrator, or Storage administrator.
 
 ## Examples
 
@@ -137,19 +137,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]**_
-
-Storage Volume Snapshot resource object.
+=== "HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]"
+    Storage Volume Snapshot resource object.
+    
 
 ## Return Values
 
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Multiple resources
+    
 
-Multiple resources
-
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Create Storage Volume async task.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Create Storage Volume async task.
+    
 
 ## Related Links
 

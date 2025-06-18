@@ -28,7 +28,7 @@ The appliance provides for as many as 100 recipient and filter combinations, and
 This Cmdlet will help get the configured email alert filter(s) configured on the appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -80,14 +80,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+None.  You cannot pipe objects to this cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.AlertEmailFilter [System.Management.Automation.PSCustomObject]**_
-
-The configured email alert filter on the appliance.
-
+=== "HPEOneView.Appliance.AlertEmailFilter [System.Management.Automation.PSCustomObject]"
+    The configured email alert filter on the appliance.
+    
+    
 
 ## Related Links
 

@@ -67,15 +67,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
-Potential managed/unmanaged device Power Delivery Device connection object
+=== "System.Management.Automation.PSCustomObject"
+    Potential managed/unmanaged device Power Delivery Device connection object
+    
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
-Collection of matching potential power device connection objects
+=== "System.Collections.ArrayList"
+    Collection of matching potential power device connection objects
+    
 
 ## Related Links
 

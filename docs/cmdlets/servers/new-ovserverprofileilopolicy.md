@@ -602,14 +602,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+None.  You cannot pipe objects to this cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-An iLO settings complient object for server profile resources.
-
+=== "System.Management.Automation.PSCustomObject"
+    An iLO settings complient object for server profile resources.
+    
+    
 
 ## Related Links
 

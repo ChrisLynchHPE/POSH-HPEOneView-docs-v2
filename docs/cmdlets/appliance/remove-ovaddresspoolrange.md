@@ -91,15 +91,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.AddressPoolRange [System.Management.Automation.PSCustomObject]**_
-
-address pool range from Get-OVAddressPoolRange
+=== "HPEOneView.Appliance.AddressPoolRange [System.Management.Automation.PSCustomObject]"
+    address pool range from Get-OVAddressPoolRange
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Result of resource removal
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Result of resource removal
+    
 
 ## Related Links
 

@@ -22,7 +22,7 @@ In production environments, Hewlett Packard Enterprise strongly recommends that 
 If certificate validation is disabled, any sensitive data such as credentials are transmitted insecurely. Make sure to use only local user accounts and not enterprise directory-based accounts to avoid transmitting enterprise login credentials over the network when certificate validation is disabled.
 
 ???+ info
-When upgrading from earlier releases, the certificates in use by the currently monitored or managed devices are imported into the HPE OneView trust store and alerts are generated for issues such as expired certificates. These automatically added certificates are either a device"s self signed certificate or the leaf certificate for a certificate authority (CA) signed certificate. Using CA-signed certificates can simplify the device trust process.
+    When upgrading from earlier releases, the certificates in use by the currently monitored or managed devices are imported into the HPE OneView trust store and alerts are generated for issues such as expired certificates. These automatically added certificates are either a device"s self signed certificate or the leaf certificate for a certificate authority (CA) signed certificate. Using CA-signed certificates can simplify the device trust process.
 
 
 Certificate checking is enabled by default, but some of the stricter validation checks are relaxed to maintain communications with all devices, even those with certificate issues. The relaxed checking includes: 
@@ -39,11 +39,11 @@ HPE OneView supports devices using self signed certificates and devices using fo
 HPE OneView enables users to import a CA CRL file and to perform the appropriate revocation checking on existing certificates in the trust store and for certificates received during communication with a managed device or external server.
 
 ???+ warning
-Modifying the appliance setting will require the appliance to be rebooted.
+    Modifying the appliance setting will require the appliance to be rebooted.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -111,13 +111,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Appliance global security settings.
+=== "System.Management.Automation.PSCustomObject"
+    Appliance global security settings.
+    
 
 ## Related Links
 

@@ -25,7 +25,7 @@ Restrictions:
 *  HPE Virtual Connect 16Gb 24-Port Fibre Channel Module firmware must be 4.00 or later
 
 ???+ info
-Minimum required privileges: Network administrator
+    Minimum required privileges: Network administrator
 
 ## Examples
 
@@ -69,15 +69,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]**_
-
-Logical Interconnect resource object from Get-OVLogicalInterconnect
+=== "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
+    Logical Interconnect resource object from Get-OVLogicalInterconnect
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 ## Related Links
 

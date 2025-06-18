@@ -35,14 +35,14 @@ Connect-OVMgmt
 
 ## Description
 
-This Cmdlet establishes a connection to the specified HPE OneView or HPE Synergy Composer appliance.  When the connection is successful, the user establishes a session for use with subsequent Cmdlet requests.  The effective user permissions are established on the first connection.  Please refer to about_appliance_connection_permissions and about_appliance_connections for more information about initiating multiple appliance connections.
+This Cmdlet establishes a connection to the specified HPE OneView or HPE Synergy Composer appliance.  When the connection is successful, the user establishes a session for use with subsequent Cmdlet requests.  The effective user permissions are established on the first connection.  Please refer to [about_appliance_connection_permissions](../../about/about_appliance_connection_permissions.md) and [about_appliance_connection_permissions](../../about/about_appliance_connection_permissions.md) for more information about initiating multiple appliance connections.
 
 Appliance hostname or IP can include an alternate TCP port number.  While the appliance does not allow the default TCP port 443 to be changed, the appliance could reside behind a firewall, which is redirecting an alternate TCP port number.
 
-If the appliance is configured to Common Access Card (CAC) authentication, the -Certificate parameter is required.  If the CAC requires a PIN to unlock, the user will be prompted by the credential service to provide that value.  The Cmdlet does not offer the ability to retrieve or store the CAC PIN.
+If the appliance is configured to Common Access Card (CAC) authentication, the `-Certificate` parameter is required.  If the CAC requires a PIN to unlock, the user will be prompted by the credential service to provide that value.  The Cmdlet does not offer the ability to retrieve or store the CAC PIN.
 
 ???+ info
-Minimum required privileges:  Read-only.
+    Minimum required privileges:  Read-only.
 
 ## Examples
 
@@ -105,7 +105,7 @@ Default is determined by connecting to the requested appliance and retrieving th
 ### -UserName &lt;String&gt;
 
 ???+ warning
-This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
+    This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
 
 
 User name to authenticate.
@@ -121,7 +121,7 @@ User name to authenticate.
 ### -Password &lt;Object&gt;
 
 ???+ warning
-This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
+    This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
 
 
 Password to log into the appliance.  Can be either `[System.String]` or SecureString value.
@@ -176,42 +176,38 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.Connection**_
+=== "HPEOneView.Appliance.Connection"
+    When a valid connection is established with an appliance, this object is then added to `${Global:ConnectedSessions}` connection tracker variable.
+    
+    
+    The object returned will contain the following public properties:
+    
+    
+    | Name                   | Type       | Value                                |
+    | :--- | :--- | :--- |
+    | ConnectionId           | Int        | 1                                    |
+    | Name                   | String     | Hostname value                       |
+    | SessionID              | String     | AUTH string returned from API        |
+    | ApplianceType          | String     | Indicate connected appliance type.   |
+    | UserName               | String     | Username value                       |
+    | AuthType               | String     | Credential or Certificate/2FA        |
+    | ActivePermissions      | IList      | Collection of Scopes and permissions |
+    | ApplianceSecurityRoles | IList      | Collection of roles                  |
+    | Default                | Boolean    | Is connection default for library    |
+    
+    
 
-When a valid connection is established with an appliance, this object is then added to ${Global:ConnectedSessions} connection tracker variable.  The object returned will contain the following public properties:      ==============================================================================
-     | Name                   | Type       | Value                                |
-     |-----------------------------------------------------------------------------
-     | AuthLoginDomain        | String     | Local                                |
-     ------------------------------------------------------------------------------
-     | ConnectionId           | Int        | 1                                    |
-     ------------------------------------------------------------------------------
-     | Name                   | String     | Hostname value                       |
-     ---------------------- -------------------------------------------------------
-     | SessionID              | String     | AUTH string returned from API        |
-     ------------------------------------------------------------------------------
-     | ApplianceType          | String     | Indicate connected appliance type.   |
-     -------------------- ---------------------------------------------------------
-     | UserName               | String     | Username value                       |
-     ------------------------------------------------------------------------------
-     | AuthType               | String     | Credential or Certificate/2FA        |
-     ------------------------------------------------------------------------------
-     | ActivePermissions      | IList      | Collection of Scopes and permissions |
-     ------------------------------------------------------------------------------
-     | ApplianceSecurityRoles | IList      | Collection of roles                  |
-     ------------------------------------------------------------------------------
-     | Default                | Boolean    | Is connection default for library    |
-     ------------------------------------------------------------------------------
-
-_**System.Management.Automation.ErrorRecord**_
-
-On error, appliance response is returned as a terminating error.
+=== "System.Management.Automation.ErrorRecord"
+    On error, appliance response is returned as a terminating error.
+    
 
 ## Related Links
 
 * [Disconnect-OVMgmt](disconnect-ovmgmt.md)
-* [about_Appliance_Connection_Permissions](https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connection_permissions)
-* [[${Global:ConnectedSessions}]](https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections)
+* [about_Appliance_Connection_Permissions](../../about/about_appliance_connection_permissions.md)
+* [[${Global:ConnectedSessions}]](../../about/about_appliance_connections.md)

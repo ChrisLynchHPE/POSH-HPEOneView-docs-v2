@@ -105,19 +105,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
+=== "System.String"
+    Logical Interconnect Group Name or URI
+    
 
-Logical Interconnect Group Name or URI
-
-_**System.Management.Automation.PSCustomObject**_
-
-Logical Interconnect Group resource object
+=== "System.Management.Automation.PSCustomObject"
+    Logical Interconnect Group resource object
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Removal Task
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Removal Task
+    
 
 ## Related Links
 

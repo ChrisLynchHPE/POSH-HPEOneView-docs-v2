@@ -72,15 +72,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
-Resource object to create
+=== "System.Management.Automation.PSCustomObject"
+    Resource object to create
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-The newly created resource, or async task
+=== "System.Management.Automation.PSCustomObject"
+    The newly created resource, or async task
+    
 
 ## Related Links
 

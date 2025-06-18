@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12129,11 +12131,11 @@
     <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
-<p>HPE GreenLake for Compute Ops Management is a cloud-based as-a-Service application that manages various operations of HPE OneView appliances.  By integrating HPE OneView with HPE GreenLake for Compute Ops Management will unify server inventory and centralize management to a single console.  To enable the cloud management service for HPE OneView, you must onboard the appliance in the Compute Ops Management application in HPE GreenLake by using this Cmdlet to first generate the appliance ID.  Once the Cmdlet completes successfully, use the Get-OVComputeOpsManagement Cmdlet to retreive the appliance ID needed in the HPE GreenLake for Compute Ops Management to generate an activation key.  You can use this same Cmdlet with the -ActivationKey parameter, or Set-OVComputeOpsManagement Cmdlet to set the activation key for the appliance.</p>
+<p>HPE GreenLake for Compute Ops Management is a cloud-based as-a-Service application that manages various operations of HPE OneView appliances.  By integrating HPE OneView with HPE GreenLake for Compute Ops Management will unify server inventory and centralize management to a single console.  To enable the cloud management service for HPE OneView, you must onboard the appliance in the Compute Ops Management application in HPE GreenLake by using this Cmdlet to first generate the appliance ID.  Once the Cmdlet completes successfully, use the Get-OVComputeOpsManagement Cmdlet to retreive the appliance ID needed in the HPE GreenLake for Compute Ops Management to generate an activation key.  You can use this same Cmdlet with the <code>-ActivationKey</code> parameter, or Set-OVComputeOpsManagement Cmdlet to set the activation key for the appliance.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="c"># Create the appliance ApplianceID.  An async task is returned.</span>
@@ -12277,10 +12279,15 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Async task resource to monitor.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../connect-ovcomputeopsmanagement/">Connect-OVComputeOpsManagement</a></li>

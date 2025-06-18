@@ -23,11 +23,11 @@ Hewlett Packard Enterprise strongly recommends that you enable strict certificat
 This Cmdlet will enables certificate revocation validation on the specified appliance.  When enabled and a certificate revocation list URL is present within a certificate authority's certificate, the appliance will validate if the certificate has been revoked.  A revoked certificate is then no longer valid and must be replaced on the device.  This setting has no applicability to self-signed certificates.
 
 ???+ warning
- Appliance will reboot when executing this Cmdlet.
+     Appliance will reboot when executing this Cmdlet.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -134,14 +134,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+None.  You cannot pipe objects to this cmdlet.
+
 
 ## Return Values
 
-_**None**_
-
-Appliance will reboot.
-
+=== "None"
+    Appliance will reboot.
+    
+    
 
 ## Related Links
 

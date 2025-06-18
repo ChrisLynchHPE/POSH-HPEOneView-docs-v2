@@ -29,7 +29,7 @@ HPE OneView supports the use of both self signed certificates and certificate au
 This Cmdlet will return the appliance HTTPS certificate.  The certificate can then be examined for validity, or to import the public certificate into a certificate trust store.
 
 ???+ info
-Minimum required privileges: No minimum required
+    Minimum required privileges: No minimum required
 
 ## Examples
 
@@ -61,13 +61,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.ApplianceSslCertificateStatus [System.Management.Automation.PSCustomObject]**_
-
-Formatted table display of the SSL Certificate object.
+=== "HPEOneView.Appliance.ApplianceSslCertificateStatus [System.Management.Automation.PSCustomObject]"
+    Formatted table display of the SSL Certificate object.
+    
 
 ## Related Links
 

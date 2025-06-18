@@ -27,7 +27,7 @@ Interconnects enable communication between the server hardware in the enclosure 
 This Cmdlet will retrieve a list of all supported interconnect types (Ethernet, FC, Converged Network, and/or SAS) or specific ones via a query if the name parameter is provided. The output can be sent to a file using the Export parameter.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -99,21 +99,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Networking.InterconnectType [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Networking.InterconnectType [System.Management.Automation.PSCustomObject]"
+    Single Interconnect Type resource.
+    
 
-Single Interconnect Type resource.
+=== "System.Collections.ArrayList <HPEOneView.Networking.InterconnectType>"
+    Multiple Interconnect Type resources or formatted table dispalying basic Interconnect Type information.
+    
 
-_**System.Collections.ArrayList <HPEOneView.Networking.InterconnectType>**_
-
-Multiple Interconnect Type resources or formatted table dispalying basic Interconnect Type information.
-
-_**An Interconnect Type or collection of Interconnect Types.**_
-
-
+=== "An Interconnect Type or collection of Interconnect Types."
+    
+    
 
 ## Related Links
 

@@ -62,11 +62,11 @@ If the user name is not an email address (denoted by the presence of an @ charac
 * The user name is treated as Common Name (CN).
 
 ???+ info
-If the Active Directory Server Service configured in HPE OneView has a user lock-out policy (defined, for example, on n number of successive failed login attempts), Hewlett Packard Enterprise recommends that you use the email or the domain\user name format to log into HPE OneView. If email or domain\user name format is not used (instead, just the user name is used), HPE OneView internally tries different login formats as described previously. This may result in locking out the user from the GUI on a single failed login attempt (wrong password). To minimize login attempts, configure the directory display name to be the same as the first component of the directories fully qualified domain name. For example, assign the HPE OneView name example for the directory example.com.
+    If the Active Directory Server Service configured in HPE OneView has a user lock-out policy (defined, for example, on n number of successive failed login attempts), Hewlett Packard Enterprise recommends that you use the email or the domain\user name format to log into HPE OneView. If email or domain\user name format is not used (instead, just the user name is used), HPE OneView internally tries different login formats as described previously. This may result in locking out the user from the GUI on a single failed login attempt (wrong password). To minimize login attempts, configure the directory display name to be the same as the first component of the directories fully qualified domain name. For example, assign the HPE OneView name example for the directory example.com.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -194,15 +194,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]**_
-
-Authentication Directory object that will have the LDAP Server added to.
+=== "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
+    Authentication Directory object that will have the LDAP Server added to.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]**_
-
-Updated Authentication Directory.
+=== "HPEOneView.Appliance.AuthDirectory [System.Management.Automation.PSCustomObject]"
+    Updated Authentication Directory.
+    
 
 ## Related Links
 

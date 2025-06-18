@@ -39,7 +39,7 @@ You can configure the HPE Synergy Composer2 for remote access through its embedd
 Use this Cmdlet to disable remote access to the HPE Synergy Composer2 iLO.  Disabling external iLO access will delete the configured iLO user account and unassign the user specified static IPv4 and IPv6 addresses.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -157,15 +157,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]**_
-
-The appliance hardware configuration object from Get-OVComposerIloStatus.
+=== "HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]"
+    The appliance hardware configuration object from Get-OVComposerIloStatus.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource to monitor.
+    
 
 ## Related Links
 

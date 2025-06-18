@@ -21,13 +21,13 @@ ConvertTo-OVImageStreamerConfiguration
 Convert Logical Enclosure and associated Enclosure Group and Logical Interconnect Group to support Internal Image Streamer configuration.  HPE Synergy Virtual Connect Logical Interconnect Group must reside in Bays 3 and 6 in order to be reconfigured.
 
 When using this Cmdlet, a service outage will occur, as the Logical Enclosure will need to be recreated.  This means Server Profiles will be unassigned, Logical Enclosure removed then recreated, and then Server Profiles reassigned to their original location.  If the Logical Enclosure contains HPE Synergy SAS Logical Interconnects, data loss may occur,
-as the Server Profiles may not be assigned in the right order, which would cause disk selection to assign different physical disks.  Please make sure all data is backed up prior to migration.  By Default, the Cmdlet will not migrate a Logical Enclosure if SAS Logical Interconnects are found.  To override, use the -IgnoreSasLogicalInterconnects switch,
+as the Server Profiles may not be assigned in the right order, which would cause disk selection to assign different physical disks.  Please make sure all data is backed up prior to migration.  By Default, the Cmdlet will not migrate a Logical Enclosure if SAS Logical Interconnects are found.  To override, use the `-IgnoreSasLogicalInterconnects` switch,
 which again may cause loss of data.
 
 Any associated Enclosure Groups with the Virtual Connect Ethernet Logical Interconnect Group will also be modified.  If this is not intended, you should first remove the Logical Interconnect Group from the Enclosure Group before executing this Cmdlet.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator.
+    Minimum required privileges: Infrastructure administrator or Server administrator.
 
 ## Examples
 
@@ -123,19 +123,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]**_
-
-HPE Synergy Logical Enclosure to convert.
+=== "HPEOneView.LogicalEnclosure [System.Management.Automation.PSCustomObject]"
+    HPE Synergy Logical Enclosure to convert.
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
+=== "System.Management.Automation.PSCustomObject"
+    If the Logical Enclosure cannot be removed or re-created, as PSCustomObject with original Server Profile location is provided.  Object properties are Name, ProfileUri, ServerSerialNumber.
+    
 
-If the Logical Enclosure cannot be removed or re-created, as PSCustomObject with original Server Profile location is provided.  Object properties are Name, ProfileUri, ServerSerialNumber.
-
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-The async task for each Server Profile that will be re-assigned for the caller to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    The async task for each Server Profile that will be re-assigned for the caller to monitor.
+    
 
 ## Related Links
 

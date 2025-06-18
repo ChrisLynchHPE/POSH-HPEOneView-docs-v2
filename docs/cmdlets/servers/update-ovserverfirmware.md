@@ -33,7 +33,7 @@ The following installation modes are supported:
 *  FirmwareOnlyOfflineMode or FirmwareOffline - Manages the firmware through HPE OneView. Selecting this option requires the server hardware to be powered down.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Server administrator or Server firmware operator
+    Minimum required privileges: Infrastructure administrator or Server administrator or Server firmware operator
 
 ## Examples
 
@@ -209,19 +209,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
-Server hardware resource from Get-OVServer.
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+    Server hardware resource from Get-OVServer.
+    
 
 ## Return Values
 
-_**HPEOneView.Servers.ServerHardware+FirmwareCompliancePreview**_
+=== "HPEOneView.Servers.ServerHardware+FirmwareCompliancePreview"
+    A collection of server firmware installation report.  Will contain identified installed components and which have available updates from the supplied baseline.
+    
 
-A collection of server firmware installation report.  Will contain identified installed components and which have available updates from the supplied baseline.
-
-_**HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource to monitor.
+=== "HPOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource to monitor.
+    
 
 ## Related Links
 

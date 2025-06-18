@@ -71,16 +71,16 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.IO.FileInfo**_
-
-The file object to parse and update.
+=== "System.IO.FileInfo"
+    The file object to parse and update.
+    
 
 ## Return Values
 
-_**System.String**_
-
-Output of script that would have been modified.  Using the `-Replace` parameter will generate no output.
-
+=== "System.String"
+    Output of script that would have been modified.  Using the `-Replace` parameter will generate no output.
+    
+    
 
 ## Related Links
 

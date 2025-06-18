@@ -51,14 +51,14 @@ Requirements
 * The iLO username cannot be Administrator or start with an _.
 
 ???+ info
-The iLO user account is assigned a predefined set of privileges that allows the user to perform a restricted set of iLO operations. Specifically, the iLO account has permissions to control power, use the iLO Integrated Remote Console (iLO IRC), and use the iLO Virtual Media.
+    The iLO user account is assigned a predefined set of privileges that allows the user to perform a restricted set of iLO operations. Specifically, the iLO account has permissions to control power, use the iLO Integrated Remote Console (iLO IRC), and use the iLO Virtual Media.
 
 
 Use this Cmdlet to retrieve the iLO configuration of the support HPE Synergy Composer.  This will return an object detailing if the iLO is remotely accessible, configured iLO username and configured IP address(es).  The object will not contain the configued iLO username's password.
 
 ???+ info
-Minimum required privileges: Read-only
-
+    Minimum required privileges: Read-only
+    
 
 ## Examples
 
@@ -93,14 +93,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+None.  You cannot pipe objects to this cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]**_
-
-The existing iLO configuration of an HPE Synergy Composer.
-
+=== "HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]"
+    The existing iLO configuration of an HPE Synergy Composer.
+    
+    
 
 ## Related Links
 

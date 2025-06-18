@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12141,12 +12143,12 @@
 <p>The appliance also monitors iPDU to remain synchronized with changes to hardware and power connections. However, some changes to devices made outside of the control of the appliance (from iLO or the OA, for example) may cause them to become out of synchronization with the appliance. You may have to manually refresh devices that lose synchronization with the appliance.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Hewlett Packard Enterprise recommends that you do not use iLO or the OA to make changes to a device. Making changes to a device from its iLO or OA could cause it to lose synchronization with the appliance.</p>
+</details>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Read-only</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$powerDevices</span> <span class="p">=</span> <span class="nb">Get-OVPowerDevice</span>
@@ -12263,12 +12265,18 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  You cannot pipe objects to this Cmdlet.</strong></em></p>
+<p>None.  You cannot pipe objects to this Cmdlet.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.PowerDeliveryDevice [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.PowerDeliveryDevice [System.Management.Automation.PSCustomObject]</label><label for="__tabbed_1_2">System.Collections.ArrayList <HPEOneView.PowerDeliveryDevice></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>The matching power device resources</p>
-<p><em><strong>System.Collections.ArrayList <HPEOneView.PowerDeliveryDevice></strong></em></p>
+</div>
+<div class="tabbed-block">
 <p>The matching power device resources</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../add-ovpowerdevice/">Add-OVPowerDevice</a></li>

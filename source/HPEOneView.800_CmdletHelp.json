@@ -3856,31 +3856,31 @@
             "Value": "HPEOneView.Appliance.Connection",
             "Text": [
               "When a valid connection is established with an appliance, this object is then added to ${Global:ConnectedSessions} connection tracker variable.",
-              "",
+              "\n",
               "The object returned will contain the following public properties:",
-              "",
-              "    ==============================================================================\n",
-              "    | Name                   | Type       | Value                                |\n",
-              "    |-----------------------------------------------------------------------------\n",
-              "    | AuthLoginDomain        | String     | Local                                |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | ConnectionId           | Int        | 1                                    |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | Name                   | String     | Hostname value                       |\n",
-              "    ---------------------- -------------------------------------------------------\n",
-              "    | SessionID              | String     | AUTH string returned from API        |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | ApplianceType          | String     | Indicate connected appliance type.   |\n",
-              "    -------------------- ---------------------------------------------------------\n",
-              "    | UserName               | String     | Username value                       |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | AuthType               | String     | Credential or Certificate/2FA        |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | ActivePermissions      | IList      | Collection of Scopes and permissions |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | ApplianceSecurityRoles | IList      | Collection of roles                  |\n",
-              "    ------------------------------------------------------------------------------\n",
-              "    | Default                | Boolean    | Is connection default for library    |\n",
+              "\n",
+              "    ==============================================================================",
+              "    | Name                   | Type       | Value                                |",
+              "    ------------------------------------------------------------------------------",
+              "    | AuthLoginDomain        | String     | Local                                |",
+              "    ------------------------------------------------------------------------------",
+              "    | ConnectionId           | Int        | 1                                    |",
+              "    ------------------------------------------------------------------------------",
+              "    | Name                   | String     | Hostname value                       |",
+              "    ------------------------------------------------------------------------------",
+              "    | SessionID              | String     | AUTH string returned from API        |",
+              "    ------------------------------------------------------------------------------",
+              "    | ApplianceType          | String     | Indicate connected appliance type.   |",
+              "    ------------------------------------------------------------------------------",
+              "    | UserName               | String     | Username value                       |",
+              "    ------------------------------------------------------------------------------",
+              "    | AuthType               | String     | Credential or Certificate/2FA        |",
+              "    ------------------------------------------------------------------------------",
+              "    | ActivePermissions      | IList      | Collection of Scopes and permissions |",
+              "    ------------------------------------------------------------------------------",
+              "    | ApplianceSecurityRoles | IList      | Collection of roles                  |",
+              "    ------------------------------------------------------------------------------",
+              "    | Default                | Boolean    | Is connection default for library    |",
               "    ------------------------------------------------------------------------------"
             ]
           },
@@ -3912,11 +3912,11 @@
             "Text": "Disconnect-OVMgmt"
           },
           {
-            "Uri": "https://hpe-docs.gitbook.io/posh-hponeview/cmdlets/v8.00/library/connect-ovmgmt",
+            "Uri": "",
             "Text": "about_Appliance_Connection_Permissions"
           },
           {
-            "Uri": "https://hpe-docs.gitbook.io/posh-hponeview/cmdlets/v8.00/library/connect-ovmgmt",
+            "Uri": "",
             "Text": "[${Global:ConnectedSessions}]"
           },
           {
@@ -5440,7 +5440,7 @@
       "Category": "Appliance",
       "Contents": {
         "Synopsis": "Disable appliance two-factor authentication settings.",
-        "Description": "Enabling two-factor authentication allows you to use smart cards (for example, Common Access Cards (CAC), or Personal Identity Verification (PIV) cards) to authenticate within HPE OneView. The client certificate embedded in the smart card is presented to HPE OneView by the library. The client certificate must be signed by a root or intermediate Certificate Authority (CA) that has been previously imported into the HPE OneView appliance. The appliance authenticates the client certificate to validate that the user name specified in the certificate is that of a valid user recognized by the directory server configuration in HPE OneView.\n\nWhen two-factor authentication is enabled, HPE OneView uses a Microsoft Active Directory service account set up and owned by the user to access an Active Directory entry for the user, rather than using an account associated with the user name received during first time login.\n\nUse this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.\n\nRequired: Infrastructure administrator",
+        "Description": "Enabling two-factor authentication allows you to use smart cards (for example, Common Access Cards (CAC), or Personal Identity Verification (PIV) cards) to authenticate within HPE OneView. The client certificate embedded in the smart card is presented to HPE OneView by the library. The client certificate must be signed by a root or intermediate Certificate Authority (CA) that has been previously imported into the HPE OneView appliance. The appliance authenticates the client certificate to validate that the user name specified in the certificate is that of a valid user recognized by the directory server configuration in HPE OneView.\n\nWhen two-factor authentication is enabled, HPE OneView uses a Microsoft Active Directory service account set up and owned by the user to access an Active Directory entry for the user, rather than using an account associated with the user name received during first time login.\n\nUse this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.\n\nMinimum required privileges: Infrastructure administrator",
         "Parameters": [
           {
             "Name": "ApplianceConnection",
@@ -45925,7 +45925,7 @@
       "Category": "Appliance",
       "Contents": {
         "Synopsis": "Configure appliance two-factor authentication settings.",
-        "Description": "Enabling two-factor authentication allows you to use smart cards ï¿½ for example, Common Access Cards (CAC), or Personal Identity Verification (PIV) cards ï¿½ to authenticate within HPE OneView. The client certificate embedded in the smart card is presented to HPE OneView by the library. The client certificate must be signed by a root or intermediate Certificate Authority (CA) that has been previously imported into the HPE OneView appliance. The appliance authenticates the client certificate to validate that the user name specified in the certificate is that of a valid user recognized by the directory server configuration in HPE OneView.\n\nWhen two-factor authentication is enabled, HPE OneView uses a Microsoft Active Directory service account set up and owned by the user to access an Active Directory entry for the user, rather than using an account associated with the user name received during first time login.\n\nUse this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.\n\nRequired: Infrastructure administrator",
+        "Description": "Enabling two-factor authentication allows you to use smart cards ï¿½ for example, Common Access Cards (CAC), or Personal Identity Verification (PIV) cards ï¿½ to authenticate within HPE OneView. The client certificate embedded in the smart card is presented to HPE OneView by the library. The client certificate must be signed by a root or intermediate Certificate Authority (CA) that has been previously imported into the HPE OneView appliance. The appliance authenticates the client certificate to validate that the user name specified in the certificate is that of a valid user recognized by the directory server configuration in HPE OneView.\n\nWhen two-factor authentication is enabled, HPE OneView uses a Microsoft Active Directory service account set up and owned by the user to access an Active Directory entry for the user, rather than using an account associated with the user name received during first time login.\n\nUse this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.\n\nMinimum required privileges: Infrastructure administrator",
         "Parameters": [
           {
             "Name": "ApplianceConnection",

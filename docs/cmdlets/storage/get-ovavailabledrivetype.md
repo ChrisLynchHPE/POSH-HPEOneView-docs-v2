@@ -15,10 +15,10 @@ Get-OVAvailableDriveType
 
 ## Description
 
-This helper Cmdlet will return a collection of available disk drives from a specified SAS Logical Interconnect or Drive Enclosure. The returned value will contain available quantity of drives based on interface, media type and capacity, organized by SAS Logical Interconnect.  The object can then be used to define the drive selection criteria for New-OVServerProfileLogicalDisk using the -AvailableDriveType parameter.
+This helper Cmdlet will return a collection of available disk drives from a specified SAS Logical Interconnect or Drive Enclosure. The returned value will contain available quantity of drives based on interface, media type and capacity, organized by SAS Logical Interconnect.  The object can then be used to define the drive selection criteria for New-OVServerProfileLogicalDisk using the `-AvailableDriveType` parameter.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -78,19 +78,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.SASLogicalInterconnect**_
+=== "HPEOneView.Storage.SASLogicalInterconnect"
+    A SAS Logical Interconnect resource from Get-OVSasLogicalInterconnect Cmdlet.
+    
 
-A SAS Logical Interconnect resource from Get-OVSasLogicalInterconnect Cmdlet.
-
-_**HPEOneView.Storage.DiskEnclosure**_
-
-A D3940 Drive Enclosure from Get-OVSasLogicalInterconnect Cmdlet.
+=== "HPEOneView.Storage.DiskEnclosure"
+    A D3940 Drive Enclosure from Get-OVSasLogicalInterconnect Cmdlet.
+    
 
 ## Return Values
 
-_**HPEOneView.Storage.AvailableDriveType**_
-
-A disk type object that defines available quantity of drives based on interface, media type and capacity, organized by SAS Logical Interconnect.
+=== "HPEOneView.Storage.AvailableDriveType"
+    A disk type object that defines available quantity of drives based on interface, media type and capacity, organized by SAS Logical Interconnect.
+    
 
 ## Related Links
 

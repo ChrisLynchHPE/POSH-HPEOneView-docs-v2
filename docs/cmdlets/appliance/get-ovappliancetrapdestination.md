@@ -21,7 +21,7 @@ HPE OneView can be used as a proxy to forward device traps from servers, enclosu
 Use this Cmdlet to retrieve configured SNMPv1 and/or SNMPv3 appliance trap destinations, configured by an Infrastructure Administrator.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -88,17 +88,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.SnmpV1TrapDestination**_
+=== "HPEOneView.Appliance.SnmpV1TrapDestination"
+    Appliance SNMPv1 trap destination, including trap community and target.
+    
 
-Appliance SNMPv1 trap destination, including trap community and target.
-
-_**HPEOneView.Appliance.SnmpV3TrapDestination**_
-
-Appliance SNMPv3 trap destination, including type, SNMPv3 user and target.
+=== "HPEOneView.Appliance.SnmpV3TrapDestination"
+    Appliance SNMPv3 trap destination, including type, SNMPv3 user and target.
+    
 
 ## Related Links
 

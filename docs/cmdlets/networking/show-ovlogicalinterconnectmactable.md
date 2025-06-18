@@ -140,19 +140,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Collections.ArrayList**_
+=== "System.Collections.ArrayList"
+    An Array of Logical Interconnect resource URI"s, Names or Objects
+    
 
-An Array of Logical Interconnect resource URI"s, Names or Objects
-
-_**System.Management.Automation.PSCustomObject**_
-
-Logical Interconnect Resource Object
+=== "System.Management.Automation.PSCustomObject"
+    Logical Interconnect Resource Object
+    
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
-Collection of MAC Address Table entries
+=== "System.Collections.ArrayList"
+    Collection of MAC Address Table entries
+    
 
 ## Related Links
 

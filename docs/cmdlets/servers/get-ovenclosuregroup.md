@@ -21,7 +21,7 @@ An enclosure group is a logical resource that defines a consistent configuration
 This Cmdlet will get all available enclosure group resources configured on an appliance.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -97,13 +97,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
-Enclosure Group resource.
+=== "HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+    Enclosure Group resource.
+    
 
 ## Related Links
 

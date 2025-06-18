@@ -59,7 +59,7 @@ You have the following options when updating firmware based on a logical interco
 * Activate - Activates the selected staged firmware by rebooting the interconnect modules.
 
 ???+ info
- When updating firmware based on the logical interconnect, if one or more interconnects are already running the targeted firmware version, HPE OneView excludes those interconnects from the firmware update.
+     When updating firmware based on the logical interconnect, if one or more interconnects are already running the targeted firmware version, HPE OneView excludes those interconnects from the firmware update.
 
 
 FORCE INSTALLATION
@@ -75,7 +75,7 @@ There are a few different activation methods available, depending on the platfor
 INSTALLATION METHODS
 
 ???+ warning
- Firmware updates using parallel activation must be performed during a maintenance window.
+     Firmware updates using parallel activation must be performed during a maintenance window.
 
 * OddEven - Will perform updates to all odd module bays first, then even.  An activation delay can be specified with the EthernetActivateDelay parameter.
 * Serial - Will perform updates to all device bays, starting with the first bay.  An activation delay can be specified with the EthernetActivateDelay parameter.
@@ -103,7 +103,7 @@ INSTALLATION METHODS
 
 * Manual - You can orchestrate the update in a stepwise approach using the following operations. These operations are not possible with the Parallel and Orchestrated firmware activation options.
 
-    * Select and update one side of the interconnect topology at a time by using the -ManualOrder parameter. You must specify the appropriate Bay side to update first.
+    * Select and update one side of the interconnect topology at a time by using the `-ManualOrder` parameter. You must specify the appropriate Bay side to update first.
     * Once the update for the chosen side is complete, proceed to update the other side. If the firmware update on the interconnect module side that is updated first is not satisfactory, roll back to the original firmware version.
         
         Manual orchestration is available on the following modules:
@@ -119,7 +119,7 @@ INSTALLATION METHODS
         NOTE:  After the interconnects in the first side of the logical interconnect are updated successfully, update the interconnects in the second side soon after. If the firmware versions of the interconnects in a logical interconnect are different, the interconnects remain in maintenance mode and you are not allowed to make any configuration changes until they are at the same version.
     
 ???+ info
-Minimum required privileges: Network administrator, Server administrator 
+    Minimum required privileges: Network administrator, Server administrator 
 (for the HPE Synergy 12Gb SAS Connection Module), or Infrastructure administrator.
 ## Examples
 
@@ -379,15 +379,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]**_
-
-Logical Interconnect Resource Object
+=== "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
+    Logical Interconnect Resource Object
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Returns an async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Returns an async task resource to monitor.
+    
 
 ## Related Links
 

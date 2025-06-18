@@ -25,7 +25,7 @@ The SAN Endpoints, or SAN zones, contain all device ports actively logged into o
 This Cmdlet will display the Managed SAN Zone details, which include Zone Name, state, status, Managed SAN and Alias members with their WWN(s). By default, all SAN Zones will be returned. You can filter the results based on Managed SAN resource.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -110,15 +110,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]**_
-
-Managed SAN resource from Get-OVManagedSan
+=== "HPEOneView.Storage.ManagedSan [System.Management.Automation.PSCustomObject]"
+    Managed SAN resource from Get-OVManagedSan
+    
 
 ## Return Values
 
-_**HPEOneView.Storage.ManagedSan.Zone [System.Management.Automation.PSCustomObject]**_
-
-Managed SAN Zone resource object
+=== "HPEOneView.Storage.ManagedSan.Zone [System.Management.Automation.PSCustomObject]"
+    Managed SAN Zone resource object
+    
 
 ## Related Links
 

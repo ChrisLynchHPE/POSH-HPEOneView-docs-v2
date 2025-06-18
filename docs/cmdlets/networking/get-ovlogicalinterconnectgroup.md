@@ -38,7 +38,7 @@ All references to a logical interconnect group by an enclosure group or logical 
 This Cmdlet retrieves a list of all Logical Interconnect Group or just specific ones via a query if the name parameter is provided. The output can be sent to a file using the exportFile parameter.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -177,15 +177,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]**_
-
-A logical interconnect resource.
+=== "HPEOneView.Networking.LogicalInterconnectGroup [System.Management.Automation.PSCustomObject]"
+    A logical interconnect resource.
+    
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
-A Logical Interconnect Group or collection of Logical Interconnect Groups
+=== "System.Collections.ArrayList"
+    A Logical Interconnect Group or collection of Logical Interconnect Groups
+    
 
 ## Related Links
 

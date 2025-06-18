@@ -20,7 +20,7 @@ The default selection is HPE Synergy Image Streamer, when an Image Streamer is d
 Adding a deployment server causes Image Streamer appliances to be clustered and configured to manage OS deployment artifacts.
 This Cmdlet will retrieve populated and discovered HPE Synergy Image Streamer appliances within the Synergy Management fabric. Image Streamer appliances can be in either a Claimed or Unclaimed state. Appliances will only belong in a single redundant High Availability (H/A) Pair, and all H/A pairs will participate within the same HPE Synergy OS Deployment Server. Redundant H/A pairs will automatically be created during the Create Logical Enclosure task.
 ???+ info
-Minimum required privileges: Read-only.
+    Minimum required privileges: Read-only.
 
 ## Examples
 
@@ -72,17 +72,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject [HPEOneView.Appliance.ImageStreamerAppliance]**_
+=== "System.Management.Automation.PSCustomObject [HPEOneView.Appliance.ImageStreamerAppliance]"
+    An HPE Synergy Image Streamer appliance object.
+    
 
-An HPE Synergy Image Streamer appliance object.
-
-_**System.Collections.ArrayList<HPEOneView.Appliance.ImageStreamerAppliance>**_
-
-A collection of HPE Synergy Image Streamer appliance objects.
+=== "System.Collections.ArrayList<HPEOneView.Appliance.ImageStreamerAppliance>"
+    A collection of HPE Synergy Image Streamer appliance objects.
+    
 
 ## Related Links
 

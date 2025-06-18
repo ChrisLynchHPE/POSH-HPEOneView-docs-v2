@@ -91,15 +91,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]**_
-
-SAN Manager resource object(s)
+=== "HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]"
+    SAN Manager resource object(s)
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-A PSCustomObject is returned indicating successful removal of the resource
+=== "System.Management.Automation.PSCustomObject"
+    A PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

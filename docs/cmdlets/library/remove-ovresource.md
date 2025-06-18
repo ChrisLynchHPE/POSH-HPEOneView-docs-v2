@@ -91,15 +91,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
-A valid resource object first retrieved by a call to a Get-OV*** Cmdlet
+=== "System.Management.Automation.PSCustomObject"
+    A valid resource object first retrieved by a call to a Get-OV*** Cmdlet
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Removal async task
+=== "System.Management.Automation.PSCustomObject"
+    Removal async task
+    
 
 ## Related Links
 

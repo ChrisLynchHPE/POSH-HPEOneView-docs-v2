@@ -59,7 +59,7 @@ If the cabling configuration is changed after the server profile assignment, ale
 Stacking links can be set from the originating peer or from the destination peer when two switches are participating in the MLAG environment.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -164,15 +164,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async Task resource object, from New-OVLogicalSwitch.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async Task resource object, from New-OVLogicalSwitch.
+    
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]**_
-
-Single Logical Switch resource.
+=== "HPEOneView.Networking.LogicalSwitch [System.Management.Automation.PSCustomObject]"
+    Single Logical Switch resource.
+    
 
 ## Related Links
 

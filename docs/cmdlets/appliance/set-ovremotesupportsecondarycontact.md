@@ -20,7 +20,7 @@ Register with Hewlett Packard Enterprise to allow automatic case creation for ha
 Use this Cmdlet to change or update the HPE OneView Remote Support secondary Contact.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -67,15 +67,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.RemoteSupport.Contact [System.Management.Automation.PSCustomObject]**_
-
-Remote support contact from Get-OVRemoteSupportContact.
+=== "HPEOneView.Appliance.RemoteSupport.Contact [System.Management.Automation.PSCustomObject]"
+    Remote support contact from Get-OVRemoteSupportContact.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Asynchronous task resource to monitor
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Asynchronous task resource to monitor
+    
 
 ## Related Links
 

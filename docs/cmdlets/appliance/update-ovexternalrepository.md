@@ -29,7 +29,7 @@ The recommended types of external web servers to use with the repository follow:
 * Internet Information Services (IIS)
 
 ???+ info
-Only one external repository can be added.
+    Only one external repository can be added.
 
 
 This Cmdlet supports refreshing an existing external repository.  Use this Cmdlet to refresh the details(advertized repo size) and contents of an external repository.
@@ -88,19 +88,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.BaselineRepository [System.Management.Automation.PSCustomObject]**_
-
-The external repository object from Get-OVBaselineRepository
+=== "HPEOneView.Appliance.BaselineRepository [System.Management.Automation.PSCustomObject]"
+    The external repository object from Get-OVBaselineRepository
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    The async task for the caller to monitor.
+    
 
-The async task for the caller to monitor.
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Multiple async task resource objects.
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Multiple async task resource objects.
+    
 
 ## Related Links
 

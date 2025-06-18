@@ -51,13 +51,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Resource deleted response.
+=== "System.Management.Automation.PSCustomObject"
+    Resource deleted response.
+    
 
 ## Related Links
 

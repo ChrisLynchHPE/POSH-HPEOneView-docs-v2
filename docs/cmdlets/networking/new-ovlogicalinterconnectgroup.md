@@ -233,7 +233,7 @@ HPE Synergy Support - A `[System.Collection.Hashtable]` object, with Frame and F
 $Bays = @{ Frame1 = @{Bay3 = "SEVC40f8"; Bay6 = "SE20ILM"}; Frame2 = @{Bay3 = "SE20ILM"; Bay6 = "SEVC40f8"} }
 
 ???+ info
-When configuring Synergy SAS Connection Module, no other device bays can be specified, and only a Single Frame can be configured.
+    When configuring Synergy SAS Connection Module, no other device bays can be specified, and only a Single Frame can be configured.
 
 
 | Aliases | None |
@@ -645,7 +645,7 @@ Default: 25
 Enables or disables the Cut-Through switching mode. When enabled, the switch starts forwarding the frame as soon as the switch has read the destination details in the packet header. When enabled, Pause flood protection is disabled.
 
 ???+ info
-This option is available for HPE Virtual Connect SE 100Gb F32 Module for HPE Synergy.
+    This option is available for HPE Virtual Connect SE 100Gb F32 Module for HPE Synergy.
 
 
     Default value:  Disabled
@@ -791,15 +791,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Collections.Hashtable**_
-
-Hashtable containing Interconnect Bay layout and associated interconnect module
+=== "System.Collections.Hashtable"
+    Hashtable containing Interconnect Bay layout and associated interconnect module
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Logical Interconnect Group creation async task
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Logical Interconnect Group creation async task
+    
 
 ## Related Links
 

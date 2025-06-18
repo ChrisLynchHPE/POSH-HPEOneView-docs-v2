@@ -67,8 +67,8 @@ For example, if you want to operate an HPE Virtual Connect SE 100Gb F32 Module f
 Similarly, you can configure the Forward Error Correction (FEC) mode using the Analyzer port FEC mode option. You can customize both the analyzer port speed and FEC mode based on the hardware requirement.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Network administrator
-
+    Minimum required privileges: Infrastructure administrator or Network administrator
+    
 
 ## Examples
 
@@ -231,15 +231,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]**_
-
-Logical Interconnect resource object from Get-OVLogicalInterconnect
+=== "HPEOneView.Networking.LogicalInterconnect [System.Management.Automation.PSCustomObject]"
+    Logical Interconnect resource object from Get-OVLogicalInterconnect
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 ## Related Links
 

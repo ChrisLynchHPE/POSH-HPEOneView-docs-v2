@@ -36,7 +36,7 @@ The resources are arranged by categories. All the resources in these categories 
 * Logical Switch Groups
 
 ???+ info
-Resources in other categories are considered to be included in all scopes, and they cannot be removed.
+    Resources in other categories are considered to be included in all scopes, and they cannot be removed.
 
 
 When scopes are defined and resources assigned to them, you can:
@@ -45,7 +45,7 @@ When scopes are defined and resources assigned to them, you can:
 * Filter email notifications for alerts based on the scope of the associated resources.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -117,13 +117,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.Scope [System.Management.Automation.PSCustomObject]**_
-
-Appliance Scope resource object.
+=== "HPEOneView.Appliance.Scope [System.Management.Automation.PSCustomObject]"
+    Appliance Scope resource object.
+    
 
 ## Related Links
 

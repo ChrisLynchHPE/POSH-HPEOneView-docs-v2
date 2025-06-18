@@ -96,19 +96,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]"
+    Storage System resource object
+    
 
-Storage System resource object
-
-_**System.Collections.ArrayList <HPEOneView.Storage.System>**_
-
-Collections of Storage System resource objects
+=== "System.Collections.ArrayList <HPEOneView.Storage.System>"
+    Collections of Storage System resource objects
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Returns an async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Returns an async task resource to monitor.
+    
 
 ## Related Links
 

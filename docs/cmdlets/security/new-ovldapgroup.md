@@ -103,7 +103,7 @@ Example: $roles = "Server administrator","Network administrator"
 ### -Username &lt;String&gt;
 
 ???+ warning
-This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
+    This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
 
 
 Directory Username to authenticate with
@@ -119,7 +119,7 @@ Directory Username to authenticate with
 ### -Password &lt;Object&gt;
 
 ???+ warning
-This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
+    This parameter is now obsolete.  Please transition to using the `-Credential` parameter.
 
 
 Directory User account password.  Can be `[System.String]` or `[System.Security.SecureString]` object.
@@ -176,15 +176,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.DirectoryGroup [System.Management.Automation.PSCustomObject]**_
-
-The external authentication directory object from `-Get`-OVLdapDirectory.
+=== "HPEOneView.Appliance.DirectoryGroup [System.Management.Automation.PSCustomObject]"
+    The external authentication directory object from `-Get`-OVLdapDirectory.
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-New LDAP Group object with role assignment(s)
+=== "System.Management.Automation.PSCustomObject"
+    New LDAP Group object with role assignment(s)
+    
 
 ## Related Links
 

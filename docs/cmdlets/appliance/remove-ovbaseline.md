@@ -104,15 +104,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.Baseline [System.Management.Automation.PSCustomObject]**_
-
-Source HPE OneView Baseline from Get-OVBaseline
+=== "HPEOneView.Appliance.Baseline [System.Management.Automation.PSCustomObject]"
+    Source HPE OneView Baseline from Get-OVBaseline
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-The progress of uploading the file to the appliance, and in-progress or completion result
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    The progress of uploading the file to the appliance, and in-progress or completion result
+    
 
 ## Related Links
 

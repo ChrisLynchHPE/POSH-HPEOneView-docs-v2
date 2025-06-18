@@ -354,13 +354,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Final Task status (for asynchronous appliance config)
+=== "System.Management.Automation.PSCustomObject"
+    Final Task status (for asynchronous appliance config)
+    
 
 ## Related Links
 

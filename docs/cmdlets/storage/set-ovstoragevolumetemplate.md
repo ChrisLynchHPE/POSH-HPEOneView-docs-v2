@@ -193,7 +193,7 @@ Default: Private
 ### -Thin &lt;SwitchParameter&gt;
 
 ???+ info
-This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
+    This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
 
 
 Include to change the provisioned type to Thin.
@@ -209,7 +209,7 @@ Include to change the provisioned type to Thin.
 ### -Full &lt;SwitchParameter&gt;
 
 ???+ info
-This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
+    This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
 
 
 Include to change the provisioned type to Full.
@@ -522,15 +522,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]**_
-
-Storage Volume Template resource.
+=== "HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]"
+    Storage Volume Template resource.
+    
 
 ## Return Values
 
-_**HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]**_
-
-Updated Storage Volume Template object.
+=== "HPEOneView.Storage.VolumeTemplate [System.Management.Automation.PSCustomObject]"
+    Updated Storage Volume Template object.
+    
 
 ## Related Links
 

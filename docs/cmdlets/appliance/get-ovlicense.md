@@ -54,7 +54,7 @@ If you purchase HPE OneView Advanced and HPE OneView Advanced w/o iLO licenses s
 This Cmdlet will retrieve licenses installed on the appliance. You can use this to get an inventory of what's installed and what licenses are consumed.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -143,13 +143,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.License**_
-
-HPE OneView License
+=== "HPEOneView.Appliance.License"
+    HPE OneView License
+    
 
 ## Related Links
 

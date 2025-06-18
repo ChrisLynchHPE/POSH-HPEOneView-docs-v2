@@ -164,23 +164,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware**_
+=== "HPEOneView.ServerHardware"
+    A Server Hardware resource object from Get-OVServer.
+    
 
-A Server Hardware resource object from Get-OVServer.
+=== "HPEOneView.ServerProfile"
+    A Server Profile resource object from Get-OVServerProfile.  If the Server Profile is not associated with a server hardware resource, an excpetion is thrown.  If the Server Profile has moved from one server hardware resource to another, only the currently assigned server hardware resource will be queried.
+    
 
-_**HPEOneView.ServerProfile**_
-
-A Server Profile resource object from Get-OVServerProfile.  If the Server Profile is not associated with a server hardware resource, an excpetion is thrown.  If the Server Profile has moved from one server hardware resource to another, only the currently assigned server hardware resource will be queried.
-
-_**HPEOneView.Enclosure**_
-
-An Enclosure resource object from Get-OVEnclosure.
+=== "HPEOneView.Enclosure"
+    An Enclosure resource object from Get-OVEnclosure.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.ServiceAlert**_
-
-The Service Alert object that contains the CaseID, associated resource name, URI and serial number, and description of the service event.
+=== "HPEOneView.Appliance.ServiceAlert"
+    The Service Alert object that contains the CaseID, associated resource name, URI and serial number, and description of the service event.
+    
 
 ## Related Links
 

@@ -22,7 +22,7 @@ Logical JBODs are created and assigned to server hardware from server profiles o
 This Cmdlet will help display the available  Synergy DAS Enclosures, and their associated inventory data.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -83,13 +83,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Storage.DriveEnclosure [System.Management.Automation.PSCustomObject]**_
-
-DAS enclosure resource object.
+=== "HPEOneView.Storage.DriveEnclosure [System.Management.Automation.PSCustomObject]"
+    DAS enclosure resource object.
+    
 
 ## Related Links
 

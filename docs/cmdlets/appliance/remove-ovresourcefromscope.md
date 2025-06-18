@@ -31,11 +31,11 @@ This Cmdlet will add supported resources to a specified Scope.  All the resource
 * Logical Switch Groups
 
 ???+ info
-Resources in other categories are considered to be included in all scopes, and they cannot be removed.
+    Resources in other categories are considered to be included in all scopes, and they cannot be removed.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -105,15 +105,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.ScopeCollection**_
-
-Scope resource object from Get-OVScope.
+=== "HPEOneView.Appliance.ScopeCollection"
+    Scope resource object from Get-OVScope.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Asynchronous task resource that updates the Scope and associated resources.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Asynchronous task resource that updates the Scope and associated resources.
+    
 
 ## Related Links
 

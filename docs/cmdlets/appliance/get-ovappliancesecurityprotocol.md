@@ -16,10 +16,10 @@ Get-OVApplianceSecurityProtocol
 
 ## Description
 
-Get the appliance available security protocols, and their active state. By default the appliance current security mode will return the available security protocols and their configuration state. Use the -SecurityMode parameter to specify one or more modes. Use the -TlsVersion to specify one or more security protocols to return.
+Get the appliance available security protocols, and their active state. By default the appliance current security mode will return the available security protocols and their configuration state. Use the `-SecurityMode` parameter to specify one or more modes. Use the `-TlsVersion` to specify one or more security protocols to return.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -91,13 +91,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.SecurityProtocol**_
-
-Available appliance security protocol, mode enabled and associated encryption ciphers.n
+=== "HPEOneView.Appliance.SecurityProtocol"
+    Available appliance security protocol, mode enabled and associated encryption ciphers.n
+    
 
 ## Related Links
 

@@ -18,7 +18,7 @@ Get-OVFixMeInstallationLog
 This Cmdlet will Retrieve any fixme patch installation log files needed by HPE Support to analyze for installation completion or errors.
 
 ???+ info
-Minimum required privileges: Infrastructure Administrator
+    Minimum required privileges: Infrastructure Administrator
 
 ## Examples
 
@@ -62,13 +62,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.IO.FileInfo**_
-
-The downloaded log file.
+=== "System.IO.FileInfo"
+    The downloaded log file.
+    
 
 ## Related Links
 

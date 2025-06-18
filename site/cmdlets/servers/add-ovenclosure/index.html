@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12369,18 +12371,18 @@
 <p>This Cmdlet will import an HPE BladeSystem c7000 enclosure for HPE OneView management. The Onboard Administrator needs to have at least an IP Address for each OA module, and a valid Administrator account. An Enclosure Group must also be created.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>HPE Synergy enclosures are automatically discovered when their frame link manager is connected to the Synergy management ring.</p>
+</details>
 <p>This Cmdlet will attempt a connection to the XML Reply interface to examine if an existing VC Domain is present. If so, you are prompted if you wish to continue and force import the enclosure. </p>
 <details class="danger" open="open">
 <summary>Danger</summary>
-</details>
 <p>FORCE IMPORT OF AN ENCLOSURE WILL DELETE ANY EXISTING VC DOMAIN CONFIGURATION, AND NOT PERFORM ANY VC DOMAIN CONFIGURATION MIGRATION. PLEASE BACKUP YOUR VC DOMAIN IF YOU WISH TO RESTORE TO ITS ORIGINAL CONFIGURATION.</p>
+</details>
 <p>If you wish to migrate the enclosure from a Virtual Connect Manager or Virtual Connect Enterprise Manager configuration, please use the Invoke-OVVcmMigration Cmdlet.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Infrastructure administrator or Server administrator.</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Add-OVEnclosure</span> <span class="n">-oa</span> <span class="s2">&quot;192.168.1.1&quot;</span> <span class="n">-enclGroupName</span> <span class="n">EG1</span> <span class="n">-user</span> <span class="n">admin</span> <span class="n">-pass</span> <span class="n">hpinvent</span> <span class="n">-license</span> <span class="n">OneView</span>
@@ -12823,11 +12825,21 @@ $Name = "HPE Service Pack For ProLiant  OneView 2014 11 13"</p>
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Enclosure Group Resource that will be used to set the Enlosure policy.</p>
+</div>
+</div>
+</div>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Async task Resource object for monitoring the enclosure import process.</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../get-ovenclosure/">Get-OVEnclosure</a></li>

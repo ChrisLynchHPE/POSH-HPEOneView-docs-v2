@@ -32,7 +32,7 @@ When you use a directory service, directory users are granted HPE OneView permis
 This Cmdlet will display the configured directory groups on the appliance, and display their assigned role(s).
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -113,17 +113,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.AuthDirectoryGroupRoleMapping [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.AuthDirectoryGroupRoleMapping [System.Management.Automation.PSCustomObject]"
+    Configured Directory Group role mapping
+    
 
-Configured Directory Group role mapping
-
-_**System.Collections.ArrayList**_
-
-Multiple configured Directory Group role mappings
+=== "System.Collections.ArrayList"
+    Multiple configured Directory Group role mappings
+    
 
 ## Related Links
 

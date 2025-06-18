@@ -94,15 +94,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.GlobalSetting**_
-
-Appliance global setting from Get-OVApplianceGlobalSetting.
+=== "HPEOneView.Appliance.GlobalSetting"
+    Appliance global setting from Get-OVApplianceGlobalSetting.
+    
 
 ## Return Values
 
-_**The setting object with updated parameters.**_
-
-
+=== "The setting object with updated parameters."
+    
+    
 
 ## Related Links
 

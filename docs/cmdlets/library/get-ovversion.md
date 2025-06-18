@@ -109,13 +109,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-The HPE OneView PowerShell Library or Appliance version information
+=== "System.Management.Automation.PSCustomObject"
+    The HPE OneView PowerShell Library or Appliance version information
+    
 
 ## Related Links
 

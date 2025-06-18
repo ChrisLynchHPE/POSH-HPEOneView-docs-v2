@@ -74,15 +74,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]**_
-
-HPE OneView appliance user account
+=== "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
+    HPE OneView appliance user account
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]**_
-
-Updated user account with new role(s)
+=== "HPEOneView.Appliance.User [System.Management.Automation.PSCustomObject]"
+    Updated user account with new role(s)
+    
 
 ## Related Links
 

@@ -38,7 +38,7 @@ For more details on the data items transmitted, see the security white paper in 
 This Cmdlet will return the Remote Support entitlement status for a compute or enclosure resource. If remote support has not been globally enabled and configured on the appliance, this Cmdlet will fail.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -91,19 +91,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+    A Gen8 or newer generation server hardware resource object from Get-OVServer.
+    
 
-A Gen8 or newer generation server hardware resource object from Get-OVServer.
-
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-A Gen8 or newer generation server hardware resource object from Get-OVServer.
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    A Gen8 or newer generation server hardware resource object from Get-OVServer.
+    
 
 ## Return Values
 
-_**HPEOneView.RemoteSupport.ContractAndWarrantyStatus**_
-
-The object with the current contract and warranty status.
+=== "HPEOneView.RemoteSupport.ContractAndWarrantyStatus"
+    The object with the current contract and warranty status.
+    
 
 ## Related Links
 

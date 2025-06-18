@@ -28,7 +28,7 @@ HPE OneView allows you to change the Cryptography Settings of a specific applian
 For additional information, see the CNSA standards site (https://www.iad.gov/iad/programs/iad-initiatives/cnsa-suite.cfm). This website uses a US Government Certificate Authority-signed certificate which is not present, by default, in most browser trust stores. See Establishing Site Trust (https://www.iad.gov/NSCAP/warnings.cfm) for more information on establishing trust with this website.
 
 ???+ info
- In HPE OneView releases prior to version 4.0, local user passwords are hashed using SHA256. Starting with release version 4.0, the first time the user logs in, irrespective of the appliance cryptography mode, the password gets rehashed and stored as SHA384.
+     In HPE OneView releases prior to version 4.0, local user passwords are hashed using SHA256. Starting with release version 4.0, the first time the user logs in, irrespective of the appliance cryptography mode, the password gets rehashed and stored as SHA384.
 
 
 When the iLO of a managed server is in the CNSA mode, the iLO user interface or console is not accessible from HPE OneView console user interface.
@@ -57,11 +57,11 @@ Not all devices that HPE OneView manages or monitors support these stronger cryp
 When opting for a higher security mode, use the Show-OVApplianceSecurityModeCompatibilityReport Cmdlet to generate a Compatibility report to get a complete report of any currently managed or monitored devices that are not compatible with the target mode.
 
 ???+ info
- Changing the cryptography mode might regenerate the web server or RabbitMQ certificates. The newly generated RabbitMQ client certificate, along with the CA and key pair, must be applied to the RabbitMQ client. When using CA-signed certificates you might need to issue a new certificate signing request (CSR), obtain a stronger certificate and re-import the certificate into your appliance. Check the compatibility report for details. The appliance automatically reboots as part of configuring the appliance in a different cryptographic mode.
+     Changing the cryptography mode might regenerate the web server or RabbitMQ certificates. The newly generated RabbitMQ client certificate, along with the CA and key pair, must be applied to the RabbitMQ client. When using CA-signed certificates you might need to issue a new certificate signing request (CSR), obtain a stronger certificate and re-import the certificate into your appliance. Check the compatibility report for details. The appliance automatically reboots as part of configuring the appliance in a different cryptographic mode.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -93,13 +93,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.SecurityMode**_
-
-The current appliance security mode.
+=== "HPEOneView.Appliance.SecurityMode"
+    The current appliance security mode.
+    
 
 ## Related Links
 

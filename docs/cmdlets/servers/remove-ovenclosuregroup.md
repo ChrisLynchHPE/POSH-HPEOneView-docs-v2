@@ -114,19 +114,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Collections.ArrayList**_
+=== "System.Collections.ArrayList"
+    Collection of Enclosure Resource Objects
+    
 
-Collection of Enclosure Resource Objects
-
-_**HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
-
-Single Enclosure Grou Resource Object
+=== "HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+    Single Enclosure Grou Resource Object
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-A PSCustomObject is returned indicating successful removal of the resource
+=== "System.Management.Automation.PSCustomObject"
+    A PSCustomObject is returned indicating successful removal of the resource
+    
 
 ## Related Links
 

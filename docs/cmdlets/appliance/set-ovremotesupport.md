@@ -49,7 +49,7 @@ Set-OVRemoteSupport
 Register with Hewlett Packard Enterprise to allow automatic case creation for hardware failures on servers and enclosures and to enable Proactive Care. Once enabled, all eligible devices added in the future will be automatically enabled for remote support.
 Eligible devices are Gen8 and newer blades and enclosures.
 ???+ info
-Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
+    Servers must be at iLO 2.1 firmware level or above to be enabled for remote support
 
 Hewlett Packard Enterprise will contact you to ship a replacement part or send an engineer for devices that are under warranty or support contract.
 Remote support enables Proactive Care services including Proactive Scan reports and Firmware/Software Analysis reports with recommendations that are based on collected configuration data.
@@ -198,13 +198,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.RemoteSupportConfig [System.Management.Automation.PSCustomObject]**_
-
-The appliance Remote Support configuration applied.
+=== "HPEOneView.Appliance.RemoteSupportConfig [System.Management.Automation.PSCustomObject]"
+    The appliance Remote Support configuration applied.
+    
 
 ## Related Links
 

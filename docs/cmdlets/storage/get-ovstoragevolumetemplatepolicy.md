@@ -50,13 +50,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.GlobalSetting**_
-
-Object resource with the global setting value
+=== "HPEOneView.Appliance.GlobalSetting"
+    Object resource with the global setting value
+    
 
 ## Related Links
 

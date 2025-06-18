@@ -28,7 +28,7 @@ This Cmdlet will get the available and configured address pools, and their assoc
 You can specify one, some or all of the Pool types. A Range switch is provided to include the associated Range objects. A report switch is provided to display a report of each address pool type.
 
 ???+ info
-Minimum required privileges: Network administrator 
+    Minimum required privileges: Network administrator 
 (virtual MAC addresses and virtual WWNs), Infrastructure administrator (all ID types)
 ## Examples
 
@@ -80,17 +80,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]"
+    Single address pool and its contents.
+    
 
-Single address pool and its contents.
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.AddressPool>**_
-
-Collection of address pools and their contents.
+=== "System.Collections.ArrayList <HPEOneView.Appliance.AddressPool>"
+    Collection of address pools and their contents.
+    
 
 ## Related Links
 

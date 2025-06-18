@@ -125,13 +125,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Collections.ArrayList**_
-
-The matching index entries
+=== "System.Collections.ArrayList"
+    The matching index entries
+    
 
 ## Related Links
 

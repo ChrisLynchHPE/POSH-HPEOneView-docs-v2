@@ -24,7 +24,7 @@ The appliance provides reliable and simplified firmware management across the da
 A firmware bundle, also known as an HPE Service Pack for ProLiant (SPP), is a comprehensive collection of firmware and system software components, all tested together as a single solution stack that includes drivers, agents, utilities, and firmware packages. Firmware bundles enable you to update firmware on HPE ProLiant servers, controllers, storage, servers, interconnects, and enclosures.
 
 ???+ info
-If you attempt to add a firmware bundle that does not contain the required firmware version and components, the firmware bundle is uploaded with a warning message in the appliance firmware repository. The warning message displays the missing components in the firmware bundle. All the components below the minimum required versions are considered as missing.
+    If you attempt to add a firmware bundle that does not contain the required firmware version and components, the firmware bundle is uploaded with a warning message in the appliance firmware repository. The warning message displays the missing components in the firmware bundle. All the components below the minimum required versions are considered as missing.
 
 
 Retrieve the list of SPPs or hotfixes which have been uploaded to the appliance, and their detail. You can examine the included components and their versions reported by the baseline.
@@ -34,7 +34,7 @@ Please note that any file name that contains the . (period, CHAR46) character wi
 Example: My.Spp.To.Upload.201605.iso will become My_Spp_To_Upload_201605.iso.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Network administrator, or Server administrator
+    Minimum required privileges: Infrastructure administrator, Network administrator, or Server administrator
 
 ## Examples
 
@@ -154,15 +154,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.IO.FileSystemInfo**_
-
-File System object from Get-ChildItem of the baseline ISO image to upload.
+=== "System.IO.FileSystemInfo"
+    File System object from Get-ChildItem of the baseline ISO image to upload.
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-The progress of uploading the file to the appliance, and in-progress or completion result.
+=== "System.Management.Automation.PSCustomObject"
+    The progress of uploading the file to the appliance, and in-progress or completion result.
+    
 
 ## Related Links
 

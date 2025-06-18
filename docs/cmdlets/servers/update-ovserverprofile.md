@@ -245,19 +245,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
-One or more Server Profile resources from Get-OVServerProfile.
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+    One or more Server Profile resources from Get-OVServerProfile.
+    
 
 ## Return Values
 
-_**HPEOneView.ServerProfile.CompliancePreview**_
+=== "HPEOneView.ServerProfile.CompliancePreview"
+    Object containing the operations to be performed when the Server Profile object is not compliant.
+    
 
-Object containing the operations to be performed when the Server Profile object is not compliant.
-
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object to monitoring.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object to monitoring.
+    
 
 ## Related Links
 

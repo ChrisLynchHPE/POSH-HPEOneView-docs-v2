@@ -102,15 +102,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
-Resource to remove label association.
+=== "System.Management.Automation.PSCustomObject"
+    Resource to remove label association.
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-The created or modified Label resource.
+=== "System.Management.Automation.PSCustomObject"
+    The created or modified Label resource.
+    
 
 ## Related Links
 

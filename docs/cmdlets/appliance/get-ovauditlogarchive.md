@@ -71,7 +71,7 @@ The audit log includes entries for all Maintenance console events except for vie
 Use this Cmdlet to retrieve appliance audit log archive, which contains all available audit log entries, in ZIP format.
 
 ???+ info
-Minimum required privileges:  Infrastructure administrator
+    Minimum required privileges:  Infrastructure administrator
 
 ## Examples
 
@@ -115,13 +115,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.IO.FileInfo**_
-
-The generated audit log File
+=== "System.IO.FileInfo"
+    The generated audit log File
+    
 
 ## Related Links
 

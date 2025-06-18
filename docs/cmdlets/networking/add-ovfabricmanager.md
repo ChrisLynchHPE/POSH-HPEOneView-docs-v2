@@ -41,7 +41,7 @@ The Cisco APIC administrator provides the user login information to HPE OneView 
 * Read only  Access level for accessing system configuration with no privileges to modify the system state.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Network administrator.
+    Minimum required privileges: Infrastructure administrator or Network administrator.
 
 ## Examples
 
@@ -174,7 +174,7 @@ Automatically resolve resource inconsistencies, using the Automatic remediation 
 When you disable automatic remediation, you must confirm to resolve all the inconsistencies that are eligible for remediation.
 
 ???+ info
- By default, automatic remediation is disabled on fabric managers that were added in older versions of HPE OneView.
+     By default, automatic remediation is disabled on fabric managers that were added in older versions of HPE OneView.
 
 
 Manual remediation
@@ -199,13 +199,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async Task resource to monitor progress.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async Task resource to monitor progress.
+    
 
 ## Related Links
 

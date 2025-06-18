@@ -145,13 +145,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.UnmanagedResource [System.Management.Automation.PSCustomObject]**_
-
-Newly created Unmanaged Device resource
+=== "HPEOneView.UnmanagedResource [System.Management.Automation.PSCustomObject]"
+    Newly created Unmanaged Device resource
+    
 
 ## Related Links
 

@@ -20,7 +20,7 @@ Set-OVServerHardwareType
 Use this Cmdlet to rename or set a description to one or more Server Hardware Type resource(s).
 
 ???+ info
-Minimum required privileges: Server administrator
+    Minimum required privileges: Server administrator
 
 ## Examples
 
@@ -88,15 +88,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardwareType**_
-
-Resource from Get-OVServerHardwareType.
+=== "HPEOneView.ServerHardwareType"
+    Resource from Get-OVServerHardwareType.
+    
 
 ## Return Values
 
-_**HPEOneView.ServerHardwareType**_
-
-The updated resource object.
+=== "HPEOneView.ServerHardwareType"
+    The updated resource object.
+    
 
 ## Related Links
 

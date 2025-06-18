@@ -38,7 +38,7 @@ HPE OneView supports the use of both self signed certificates and certificate au
 This Cmdlet will get X.509 compliant certificates and/or certificate authority trusted certificates an Infrastructure Administrator or other administrator who has added a trusted device from the appliance trusted store.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -114,23 +114,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware**_
+=== "HPEOneView.ServerHardware"
+    Server hardware resource from Get-OVServer.
+    
 
-Server hardware resource from Get-OVServer.
-
-_**HPEOneView.Enclosure**_
-
-Enclosure resource from Get-OVEnclosure.
+=== "HPEOneView.Enclosure"
+    Enclosure resource from Get-OVEnclosure.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TrustedCertificate**_
+=== "HPEOneView.Appliance.TrustedCertificate"
+    Appliance trusted certificate object.
+    
 
-Appliance trusted certificate object.
-
-_**HPEOneView.Appliance.TrustedCertificateAuthority**_
-
-Appliance trusted certificate authority object.
+=== "HPEOneView.Appliance.TrustedCertificateAuthority"
+    Appliance trusted certificate authority object.
+    
 
 ## Related Links
 

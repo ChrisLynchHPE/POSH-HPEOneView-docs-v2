@@ -21,7 +21,7 @@ When querying a Virtual Machine Appliance and the NTPServersproperty or field is
 When querying a Synergy Composer appliance and the NTPServersproperty or field is Null, the appliance will retrieve its Date and Time from the System ROM.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -59,13 +59,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.ApplianceServerDateTime [System.Management.Automation.PSCustomObject]**_
-
-Date/Time object.
+=== "HPEOneView.Appliance.ApplianceServerDateTime [System.Management.Automation.PSCustomObject]"
+    Date/Time object.
+    
 
 ## Related Links
 

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -12116,8 +12118,8 @@
 <p>Use this Cmdlet to retrieve the configured IPv4 or IPv6 address pool subnets.</p>
 <details class="info" open="open">
 <summary>Info</summary>
-</details>
 <p>Minimum required privileges: Network administrator, Infrastructure administrator</p>
+</details>
 <h2 id="examples">Examples</h2>
 <h3 id="example-1">Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-OVAddressPoolSubnet</span>
@@ -12195,12 +12197,18 @@
 <h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
 <p>This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable, and OutVariable. For more information, see about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216">http://go.microsoft.com/fwlink/?LinkID=113216</a>)</p>
 <h2 id="input-types">Input Types</h2>
-<p><em><strong>None.  This Cmdlet does not support pipeline operations.</strong></em></p>
+<p>None.  This Cmdlet does not support pipeline operations.</p>
 <h2 id="return-values">Return Values</h2>
-<p><em><strong>HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]</strong></em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]</label><label for="__tabbed_1_2">System.Collections.ArrayList <HPEOneView.Appliance.IPAddressSubnet></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Single IPv4 Subnet address pool range.</p>
-<p><em><strong>System.Collections.ArrayList <HPEOneView.Appliance.IPAddressSubnet></strong></em></p>
+</div>
+<div class="tabbed-block">
 <p>Collection of IPv4 Subnet address pool range(s).</p>
+</div>
+</div>
+</div>
 <h2 id="related-links">Related Links</h2>
 <ul>
 <li><a href="../new-ovaddresspoolsubnet/">New-OVAddressPoolSubnet</a></li>

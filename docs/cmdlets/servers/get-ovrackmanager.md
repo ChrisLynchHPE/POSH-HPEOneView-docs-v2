@@ -38,7 +38,7 @@ A rack manager platform consists of the following:
 This Cmdlet will retrieve available rack managers added to the appliance.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -119,13 +119,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Servers.RackManager**_
-
-Rack manager resource object, with associated sub components like managers, chassis and rack.
+=== "HPEOneView.Servers.RackManager"
+    Rack manager resource object, with associated sub components like managers, chassis and rack.
+    
 
 ## Related Links
 

@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Introduction
 
 ## Introduction
@@ -18,8 +23,8 @@ This PowerShell module requires the following minimum versions:
     | PowerShellCore | 7.0 or newer |
     | HPE OneView/HPE Synergy | 10.00 or newer |
 
-???+ note
-    .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) clients.
+    ???+ note
+        .NetStandard 2.0 API's are supported by both the [.NetFramework 4.7.2 Windows](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-2/) and [DotNetCore 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) clients.
 
 === "HPE OneView 9.10"
     | Component | Version |

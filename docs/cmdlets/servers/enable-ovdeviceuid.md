@@ -22,11 +22,11 @@ A UID icon is displayed on the Enclosures screen, the Server Hardware screen, an
 Use this Cmdlet to enable the UID light on a resource.
 
 ???+ info
-The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.
+    The UID light blinks automatically to indicate that a critical operation is underway, such as Remote Console access for server hardware or a firmware update. Do not remove power from a device when its UID light is blinking.
 
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator 
+    Minimum required privileges: Infrastructure administrator, Server administrator 
 (for enclosure, server, and frame link module UID lights), Network administrator (for interconnect UID lights)
 ## Examples
 
@@ -70,19 +70,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject] or HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-Server Hardware or Enclosure resource.
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject] or HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    Server Hardware or Enclosure resource.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    If successful, returns Appliance Async Task object to monitor.
+    
 
-If successful, returns Appliance Async Task object to monitor.
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Collection of Appliance Async Task objects to monitor.
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Collection of Appliance Async Task objects to monitor.
+    
 
 ## Related Links
 

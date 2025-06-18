@@ -31,10 +31,10 @@ The administrator must store the recovery AEK in a secure location, where it can
 
 If the downloaded recovery key and the AEK stored in the Composer NVRAM are both lost, the appliance data cannot be recovered.
 
-Using this Cmdlet will enable data at rest encryption for supported HPE Synergy composers.  The appliance encryption key (AEK) will automatically be downloaded and saved to the value of the -Location parameter.  By default, this will be the working directory where the Cmdlet is executed in.
+Using this Cmdlet will enable data at rest encryption for supported HPE Synergy composers.  The appliance encryption key (AEK) will automatically be downloaded and saved to the value of the `-Location` parameter.  By default, this will be the working directory where the Cmdlet is executed in.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -102,13 +102,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Asynchronous task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

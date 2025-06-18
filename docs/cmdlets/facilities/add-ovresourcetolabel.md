@@ -23,7 +23,7 @@ Resources supporting labels also have filters to allow you to filter by the labe
 Using this Cmdlet will add supported resources to a new or existing Label.  If the Label does not exist, it will be created.
 
 ???+ info
-Minimum required privileges: Edit privileges for the resource.
+    Minimum required privileges: Edit privileges for the resource.
 
 ## Examples
 
@@ -81,15 +81,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Array**_
-
-Collection of resources to associate with the label.
+=== "System.Array"
+    Collection of resources to associate with the label.
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-The created or modified Label resource.
+=== "System.Management.Automation.PSCustomObject"
+    The created or modified Label resource.
+    
 
 ## Related Links
 

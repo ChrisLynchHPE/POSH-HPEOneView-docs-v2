@@ -28,7 +28,8 @@ When two-factor authentication is enabled, HPE OneView uses a Microsoft Active D
 
 Use this Cmdlet to configure two factor authentication state of the connected appliance.  An Active Directory authentication directory must be configured, with a Service Account, and the root or issuing certificate authority Base64 certificate must be uploaded to appliance.
 
-Required: Infrastructure administrator
+???+ info
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -181,7 +182,7 @@ You can edit the value to enable HPE OneView to search for the user name within 
 Use a comma-separated list to include multiple values in the entry field, allowing HPE OneView to search multiple Subject Alternative Name attributes for a valid user name.
 
 ???+ info
-You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). See subject entry in the "Certificate owner" field for details.
+    You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). See subject entry in the "Certificate owner" field for details.
 
 
 Subject Alternative Name multiple attribute entry example
@@ -209,7 +210,7 @@ Microsoft Active Directory users must note that the DN is extracted as an aggreg
 Use a comma separated list to include multiple values in the entry field, allowing HPE OneView to search multiple Subject attributes for a valid user name. 
 
 ???+ info
-You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). 
+    You can instruct HPE OneView to search for the user name within the attributes of the "Subject" field of the smart card certificate (either in addition to, or instead of, searching within "Subject Alternative Name" attributes). 
 
 
 Subject multiple attribute entry example
@@ -221,7 +222,7 @@ Variations for the CN attribute: examples
     To match user names containing only numbers CN=(^[0-9]+$) 
 
 ???+ info
-This is applicable when there are multiple CN attributes configured in a certificate and the user wants to specify a specific attribute rather than the first available in the CN attribute. It is recommended to use patterns that begin with "^" and ends with "$" so that the system can perform an exact match. 
+    This is applicable when there are multiple CN attributes configured in a certificate and the user wants to specify a specific attribute rather than the first available in the CN attribute. It is recommended to use patterns that begin with "^" and ends with "$" so that the system can perform an exact match. 
 
 
 | Aliases | None |
@@ -239,7 +240,7 @@ This parameter allows you to configure who can access HPE OneView by specifying 
 By default, one combination is configured, containing the OID combination Smart Card Logon (1.3.6.1.4.1.311.20.2.2), Client Authentication (1.3.6.1.5.5.7.3.2). This combination requires the certificate on the smart card to be configured to allow the certificate to be used for smart card logon and for client authentication. It should work for most installations. You can edit this field to opt for a different combination of OIDs, or to add additional OIDs. A maximum of ten OIDs can be configured in a single string.
 
 ???+ info
-If you specify multiple OID combinations and one is a super-set of another, configure the more restrictive combination first.
+    If you specify multiple OID combinations and one is a super-set of another, configure the more restrictive combination first.
 
 
 | Aliases | None |
@@ -268,13 +269,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Appliance global security settings.
+=== "System.Management.Automation.PSCustomObject"
+    Appliance global security settings.
+    
 
 ## Related Links
 

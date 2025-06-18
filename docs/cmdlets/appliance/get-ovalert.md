@@ -33,10 +33,10 @@ While alerts have an active or locked state, they contribute to the overall disp
 
 You can filter the display of the activity list to help you locate and view specific activities. However, you cannot customize filters to otherwise manage the display of the activities.
 
-This Cmdlet allows the administrator to get an alert. Alerts can be filtered by using the -State parameter.  If a resource object is supplied using the -InputObject parameter, all associated alerts will be returned.  This Cmdlet also supports additional filtering by state, assigned to user, severity, count and date range.
+This Cmdlet allows the administrator to get an alert. Alerts can be filtered by using the `-State` parameter.  If a resource object is supplied using the `-InputObject` parameter, all associated alerts will be returned.  This Cmdlet also supports additional filtering by state, assigned to user, severity, count and date range.
 
 ???+ info
-Minimum required privileges: Network administrator, Server administrator, Infrastructure administrator, Backup administrator, Read only
+    Minimum required privileges: Network administrator, Server administrator, Infrastructure administrator, Backup administrator, Read only
 
 ## Examples
 
@@ -267,15 +267,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
-Resource object (i.e. Get-OVServer).
+=== "System.Management.Automation.PSCustomObject"
+    Resource object (i.e. Get-OVServer).
+    
 
 ## Return Values
 
-_**HPEOneView.Alert [System.Management.Automation.PSCustomObject]**_
-
-HPE OneView alert.
+=== "HPEOneView.Alert [System.Management.Automation.PSCustomObject]"
+    HPE OneView alert.
+    
 
 ## Related Links
 

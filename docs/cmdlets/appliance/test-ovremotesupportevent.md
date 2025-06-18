@@ -22,10 +22,10 @@ Hewlett Packard Enterprise recommends enabling all features and benefits provide
 
 Enabling Remote Support configures your devices being remotely supported to securely send support or service events, IT configuration information, diagnostic, and telemetry information to Hewlett Packard Enterprise, together with your support contact information. No other business information is collected and the data is managed according to the Hewlett Packard Enterprise's Privacy Statement.
 
-This Cmdlet will initiate a Remote Support test event for supported servers and compute modules.  Remote Support must be enabled globally on the appliance in order to use this Cmdlet.  Either basic connectivity (omitting -CreateTestCase parameter) or a support case (-CreateTestCase parameter) can be requested.  Requesting a test event may take up to 20 minutes and will send data back to Hewlett Packard Enterprise.
+This Cmdlet will initiate a Remote Support test event for supported servers and compute modules.  Remote Support must be enabled globally on the appliance in order to use this Cmdlet.  Either basic connectivity (omitting `-CreateTestCase` parameter) or a support case (-CreateTestCase parameter) can be requested.  Requesting a test event may take up to 20 minutes and will send data back to Hewlett Packard Enterprise.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator
+    Minimum required privileges: Infrastructure administrator, Server administrator, or Server firmware operator
 
 ## Examples
 
@@ -95,15 +95,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
-
-Supported server hardware from Get-OVServer Cmdlet.
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+    Supported server hardware from Get-OVServer Cmdlet.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource to monitor.
+    
 
 ## Related Links
 

@@ -19,7 +19,7 @@ Audit log forwarding enables the Infrastructure administrator to forward audit l
 The forwarding protocol used is the standard UDP-based syslog protocol described in RFC5424 and RFC5426. The syslog protocol is supported by all common syslog servers such as rsyslog, syslog-ng and SIEM products.
 
 ???+ info
- Ensure that any firewalls between HPE OneView and the remote syslog server allow UDP traffic. The default UDP port used is 514.
+     Ensure that any firewalls between HPE OneView and the remote syslog server allow UDP traffic. The default UDP port used is 514.
 
 
 As audit log entries are forwarded over UDP, the entries are not encrypted and delivery is not guaranteed. Even when you have HPE OneView and all managed devices on a dedicated, isolated management LAN, forwarding audit log entries to external systems can pose a security risk. In an environment where encryption is required, use the REST API /rest/audit-logs to schedule a job to download the appliance audit logs. 
@@ -27,7 +27,7 @@ As audit log entries are forwarded over UDP, the entries are not encrypted and d
 This Cmdlet will return the current status, remote Syslog destination and port currently configured on the appliance.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -59,13 +59,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.AuditLogForwardingConfig**_
-
-The appliance audit log forwarding configuration.
+=== "HPEOneView.Appliance.AuditLogForwardingConfig"
+    The appliance audit log forwarding configuration.
+    
 
 ## Related Links
 

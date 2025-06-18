@@ -575,19 +575,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.Volume [System.Management.Automation.PSCustomObject]**_
-
-Storage Volume Resource object
+=== "HPEOneView.Storage.Volume [System.Management.Automation.PSCustomObject]"
+    Storage Volume Resource object
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    When attaching a one or more Storage Volumes to an existing Server Profile, an Appliance Async Task will be created
+    
 
-When attaching a one or more Storage Volumes to an existing Server Profile, an Appliance Async Task will be created
-
-_**HPEOneView.Profile.SanVolume [System.Management.Automation.PSCustomObject]**_
-
-Returns a storage volume attachment object which may be used during profile creation.
+=== "HPEOneView.Profile.SanVolume [System.Management.Automation.PSCustomObject]"
+    Returns a storage volume attachment object which may be used during profile creation.
+    
 
 ## Related Links
 

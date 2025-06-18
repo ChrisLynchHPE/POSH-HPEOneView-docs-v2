@@ -105,19 +105,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource after a Logical Switch Group has been created.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource after a Logical Switch Group has been created.
+    
 
 ## Return Values
 
-_**HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Networking.LogicalSwitchGroup [System.Management.Automation.PSCustomObject]"
+    The async task resource object to monitor (if `-Async` was used) or results.
+    
 
-The async task resource object to monitor (if `-Async` was used) or results.
-
-_**System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitchGroup>**_
-
-Collection of Logical Switch Group resources.
+=== "System.Collections.ArrayList <HPEOneView.Networking.LogicalSwitchGroup>"
+    Collection of Logical Switch Group resources.
+    
 
 ## Related Links
 

@@ -199,7 +199,7 @@ Max volume capacity in GB.  `[e.g]`. 20 to specify 20GB.
 ### -Full &lt;SwitchParameter&gt;
 
 ???+ info
-This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
+    This parameter is being deprecated for the `-ProvisionType` parameter. Please update your scripts.
 
 
 Include this switch to enable Thick volume provisioning.  Omit to specify Thin storage provisioning.
@@ -430,15 +430,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.Pool [System.Management.Automation.PSCustomObject]**_
-
-Storage Pool resource object
+=== "HPEOneView.Storage.Pool [System.Management.Automation.PSCustomObject]"
+    Storage Pool resource object
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async create task
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async create task
+    
 
 ## Related Links
 

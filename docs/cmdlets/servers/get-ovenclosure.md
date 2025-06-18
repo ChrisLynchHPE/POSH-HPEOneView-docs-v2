@@ -42,7 +42,7 @@ An enclosure (HPE c-Class BladeSystem enclosure or Synergy frame) is a physical 
 This Cmdlet will get the managed and/or monitored enclosure resources from an appliance.  This can include HPE BladeSystem c7000, HPE Synergy or HPE Superdome X enclosure resources.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -210,17 +210,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Object**_
+=== "System.Object"
+    Enclosure Report
+    
 
-Enclosure Report
-
-_**HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]**_
-
-The matching enclosure hardware resources.
+=== "HPEOneView.Enclosure [System.Management.Automation.PSCustomObject]"
+    The matching enclosure hardware resources.
+    
 
 ## Related Links
 

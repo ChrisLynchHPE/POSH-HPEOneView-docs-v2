@@ -27,7 +27,7 @@ After Synergy frames are discovered automatically during hardware setup, you mus
 This Cmdlet will retrieve a collection of Logical Enclosure resources, or a single Logical Enclosure with the specified name.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -121,17 +121,18 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.EnclosureGroup [System.Management.Automation.PSCustomObject]"
+    Single Enclosure Group
+    
 
-Single Enclosure Group
-
-_**System.Collections.ArrayList**_
-
-Multiple Enclosure Groups
+=== "System.Collections.ArrayList"
+    Multiple Enclosure Groups
+    
 
 ## Related Links
 

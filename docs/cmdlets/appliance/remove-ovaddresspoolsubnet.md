@@ -92,15 +92,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]**_
-
-IPv4 or IPv6 Subnet Pool from Get-OVAddressPoolSubnet
+=== "HPEOneView.Appliance.IPAddressSubnet [System.Management.Automation.PSCustomObject]"
+    IPv4 or IPv6 Subnet Pool from Get-OVAddressPoolSubnet
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Result of resource removal
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Result of resource removal
+    
 
 ## Related Links
 

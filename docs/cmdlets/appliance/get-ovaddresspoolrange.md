@@ -36,7 +36,7 @@ This Cmdlet will display configured address pool ranges defined on an HPE OneVie
 You can specify one, some or all of the pool types.
 
 ???+ info
-Minimum required privileges: Network administrator 
+    Minimum required privileges: Network administrator 
 (virtual MAC addresses and virtual WWNs), Infrastructure administrator (all ID types)
 ## Examples
 
@@ -133,15 +133,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]**_
-
-Address pool resource object.
+=== "HPEOneView.Appliance.AddressPool [System.Management.Automation.PSCustomObject]"
+    Address pool resource object.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.AddressPoolRange [System.Management.Automation.PSCustomObject]**_
-
-Address pool range object.
+=== "HPEOneView.Appliance.AddressPoolRange [System.Management.Automation.PSCustomObject]"
+    Address pool range object.
+    
 
 ## Related Links
 

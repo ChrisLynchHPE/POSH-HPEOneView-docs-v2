@@ -83,23 +83,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.Connection**_
+=== "HPEOneView.Appliance.Connection"
+    Connected Appliance Session
+    
 
-Connected Appliance Session
-
-_**System.Collections.ArrayList**_
-
-Collection of HPEOneView.Appliance.Connection objects
+=== "System.Collections.ArrayList"
+    Collection of HPEOneView.Appliance.Connection objects
+    
 
 ## Return Values
 
-_**System.String**_
+=== "System.String"
+    Warning message the appliance is stopping
+    
 
-Warning message the appliance is stopping
-
-_**Management.Automation.ErrorRecord**_
-
-Generated error message
+=== "Management.Automation.ErrorRecord"
+    Generated error message
+    
 
 ## Related Links
 

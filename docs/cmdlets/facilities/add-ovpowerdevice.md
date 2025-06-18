@@ -65,7 +65,7 @@ Hostname of the iPDU, either IP Address or FQDN.
 ### -Username &lt;String&gt;
 
 ???+ warning
-This parameter is deprecated. Please transition to the `-Credential` parameter.
+    This parameter is deprecated. Please transition to the `-Credential` parameter.
 
 
 Administrator account of the target iPDU.
@@ -81,7 +81,7 @@ Administrator account of the target iPDU.
 ### -Password &lt;String&gt;
 
 ???+ warning
-This parameter is deprecated. Please transition to the `-Credential` parameter.
+    This parameter is deprecated. Please transition to the `-Credential` parameter.
 
 
 Account password of the iPDU specified.
@@ -196,13 +196,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async Task resource to monitor progress.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async Task resource to monitor progress.
+    
 
 ## Related Links
 

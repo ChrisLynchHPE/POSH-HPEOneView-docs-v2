@@ -212,15 +212,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Cluster.ClusterManager**_
-
-The cluster manager from Get-OVClusterManager.
+=== "HPEOneView.Cluster.ClusterManager"
+    The cluster manager from Get-OVClusterManager.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Asynchronous task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

@@ -43,19 +43,20 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this cmdlet.**_
+None.  You cannot pipe objects to this cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.NetworkInterface**_
+=== "HPEOneView.Appliance.NetworkInterface"
+    Network interface configured for virtual machine appliance.
+    
+    
 
-Network interface configured for virtual machine appliance.
-
-
-_**HPEOneView.Appliance.ComposerNetworkInterface**_
-
-Network interface(s) configured for HPE Synergy Composer appliance(s).
-
+=== "HPEOneView.Appliance.ComposerNetworkInterface"
+    Network interface(s) configured for HPE Synergy Composer appliance(s).
+    
+    
 
 ## Related Links
 

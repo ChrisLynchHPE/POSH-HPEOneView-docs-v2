@@ -26,7 +26,7 @@ Complex passwords must contain the following:
 * No whitespace
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -58,13 +58,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Appliance global security settings.
+=== "System.Management.Automation.PSCustomObject"
+    Appliance global security settings.
+    
 
 ## Related Links
 

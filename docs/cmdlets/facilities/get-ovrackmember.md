@@ -25,7 +25,7 @@ The appliance automatically discovers the rack height and rack model for a ProLi
 This Cmdlet will return members within a specified rack.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -90,15 +90,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Facilities.Rack**_
-
-Rack resource object from Get-OVRack.
+=== "HPEOneView.Facilities.Rack"
+    Rack resource object from Get-OVRack.
+    
 
 ## Return Values
 
-_**HPEOneView.Facilities.RackMember**_
-
-The individual rack member resource object.
+=== "HPEOneView.Facilities.RackMember"
+    The individual rack member resource object.
+    
 
 ## Related Links
 

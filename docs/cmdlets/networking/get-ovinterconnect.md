@@ -21,7 +21,7 @@ Get-OVInterconnect
 Interconnects enable communication between the server hardware in the enclosure and the data center networks. Interconnects that are managed are put in a Configured state when the Synergy frame is configured by creating a logical enclosure. An unmanaged interconnect remains in the Monitored state when the Synergy frame is configured by creating a logical enclosure.
 Retrieves a list of all Interconnects (Ethernet, FC, Converged Network, and/or SAS) or just specific ones via a query if the name parameter is provided. The output can be sent to a file using the Export parameter.
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -122,25 +122,26 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Networking.Interconnect [System.Management.Automation.PSCustomObject]"
+    Single Interconnect object.
+    
 
-Single Interconnect object.
+=== "HPEOneView.Networking.SasInterconnect [System.Management.Automation.PSCustomObject]"
+    Single SAS Interconnect object.
+    
 
-_**HPEOneView.Networking.SasInterconnect [System.Management.Automation.PSCustomObject]**_
+=== "System.Collections.ArrayList"
+    Multiple Interconnect objects.
+    
 
-Single SAS Interconnect object.
-
-_**System.Collections.ArrayList**_
-
-Multiple Interconnect objects.
-
-_**An Interconnect or collection of Interconnects**_
-
-
+=== "An Interconnect or collection of Interconnects"
+    
+    
 
 ## Related Links
 

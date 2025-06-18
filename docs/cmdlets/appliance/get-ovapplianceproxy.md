@@ -19,7 +19,7 @@ The setting an appliance proxy allows you to set the HTTP/HTTPS proxy, port numb
 This Cmdlet will return the configured appliance HTTP/HTTPS proxy configuration.
 
 ???+ info
-Minimum required privileges: Read only
+    Minimum required privileges: Read only
 
 ## Examples
 
@@ -51,13 +51,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.ProxyServer**_
-
-Appliance proxy server settings.
+=== "HPEOneView.Appliance.ProxyServer"
+    Appliance proxy server settings.
+    
 
 ## Related Links
 

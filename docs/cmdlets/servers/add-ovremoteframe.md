@@ -21,7 +21,7 @@ A Synergy frame is automatically added during hardware setup. If the Synergy fra
 Remote frame link topologies, which include remote HPE Synergy Frames, do not include Synergy Composers. Management LAN connectivity enables remote frame link topologies to be managed by the Synergy Composers in the primary frame link topology. You can use the Add remote enclosures option to bring remote frame link topologies under management. The remote frame link topology must be in the same VLAN as the primary frame link topology, due to IPv6 Link Local restrictions.  You can use this Cmdlet to add remote enclosures to manage enclosures for which LINK cabling is not directly connected to the primary frame link topology. This allows HPE OneView to manage enclosures that are spread across racks and rows in the datacenter.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator or Hardware setup.
+    Minimum required privileges: Infrastructure administrator or Hardware setup.
 
 ## Examples
 
@@ -77,13 +77,14 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object for monitoring.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object for monitoring.
+    
 
 ## Related Links
 

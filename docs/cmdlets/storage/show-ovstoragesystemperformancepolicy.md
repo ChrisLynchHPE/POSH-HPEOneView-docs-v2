@@ -59,15 +59,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]**_
-
-
+=== "HPEOneView.Storage.System [System.Management.Automation.PSCustomObject]"
+    
+    
 
 ## Return Values
 
-_**HPEOneView.Storage.PerformancePolicy**_
-
-One or more available storage system performance policy objects.
+=== "HPEOneView.Storage.PerformancePolicy"
+    One or more available storage system performance policy objects.
+    
 
 ## Related Links
 

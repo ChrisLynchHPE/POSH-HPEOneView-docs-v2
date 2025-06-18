@@ -18,7 +18,7 @@ Remove-OVApplianceTrapDestination
 Use this Cmdlet to remove configured SNMPv1 and/or SNMPv3 trap destinations.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -94,19 +94,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.SnmpV1TrapDestination**_
+=== "HPEOneView.Appliance.SnmpV1TrapDestination"
+    Appliance SNMPv1 trap destination from Get-OVApplianceTrapDestination.
+    
 
-Appliance SNMPv1 trap destination from Get-OVApplianceTrapDestination.
-
-_**HPEOneView.Appliance.SnmpV3TrapDestination**_
-
-Appliance SNMPv3 trap destination from Get-OVApplianceTrapDestination.
+=== "HPEOneView.Appliance.SnmpV3TrapDestination"
+    Appliance SNMPv3 trap destination from Get-OVApplianceTrapDestination.
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
-
-Success message of deleted resource.
+=== "System.Management.Automation.PSCustomObject"
+    Success message of deleted resource.
+    
 
 ## Related Links
 

@@ -40,10 +40,10 @@ In production environments, Hewlett Packard Enterprise strongly recommends that 
 This Cmdlet will allow an administrator to add X.509 compliant SSL certificates to the appliance trusted store.
 
 ???+ info
-Minimum required privileges:
-
-* Infrastructure Administrator to add certificate authority certificates and server certificates.
-* Network administrator, Server administrator, Software administrator, or Storage administrator to add server certificates.
+    Minimum required privileges:
+    
+    * Infrastructure Administrator to add certificate authority certificates and server certificates.
+    * Network administrator, Server administrator, Software administrator, or Storage administrator to add server certificates.
 
 ## Examples
 
@@ -187,15 +187,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.IO.FileInfo**_
-
-The filesystem object of the X.509 public SSL certificate to add.
+=== "System.IO.FileInfo"
+    The filesystem object of the X.509 public SSL certificate to add.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Asynchronous task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Asynchronous task resource to monitor.
+    
 
 ## Related Links
 

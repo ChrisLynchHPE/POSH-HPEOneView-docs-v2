@@ -230,19 +230,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Security.SecureString**_
-
-Account Password that will be used to validate the directory
+=== "System.Security.SecureString"
+    Account Password that will be used to validate the directory
+    
 
 ## Return Values
 
-_**System.Management.Automation.PSCustomObject**_
+=== "System.Management.Automation.PSCustomObject"
+    Configured Authentication Directory
+    
 
-Configured Authentication Directory
-
-_**System.Collections.ArrayList**_
-
-Multiple configured Authentication Directories
+=== "System.Collections.ArrayList"
+    Multiple configured Authentication Directories
+    
 
 ## Related Links
 

@@ -67,23 +67,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Storage.SanManager [System.Management.Automation.PSCustomObject]"
+    SAN Manager resource object from Get-OVSanManager
+    
 
-SAN Manager resource object from Get-OVSanManager
-
-_**System.Collections.ArrayList <HPEOneView.Storage.SanManager>**_
-
-Multiple SAN Manager resource objects from Get-OVSanManager
+=== "System.Collections.ArrayList <HPEOneView.Storage.SanManager>"
+    Multiple SAN Manager resource objects from Get-OVSanManager
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async Task to update SAN Manager
+    
 
-Async Task to update SAN Manager
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Single or Multiple Resources
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Single or Multiple Resources
+    
 
 ## Related Links
 

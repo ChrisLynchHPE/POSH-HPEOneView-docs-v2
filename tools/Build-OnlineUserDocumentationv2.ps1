@@ -4,9 +4,9 @@
 Param
 (
 
-    [Parameter (Mandatory = $false, HelpMessage = "Provide the root directory to where the Library source is located.")]
+    [Parameter (Mandatory, HelpMessage = "Provide the full path to the CmdletHelp JSON source to process.")]
     [ValidateNotNullorEmpty()]
-    [System.IO.FileInfo]$Path = ((Split-Path $MyInvocation.MyCommand.Path -parent) + '\..\source\HPEOneView.910_CmdletHelp.json'),
+    [System.IO.FileInfo]$Path = ((Split-Path $MyInvocation.MyCommand.Path -parent) + '\..\source\HPEOneView.1000_CmdletHelp.json'),
 
     [Parameter (Mandatory = $false, HelpMessage = "Provide the root directory path to save the generated help markdown files to.")]
     [ValidateNotNullorEmpty()]
@@ -18,6 +18,7 @@ Param
 
 $Script:FindTabbedItemListRegexPattern             = [System.Text.RegularExpressions.RegEx]::new('\s{4}\*\s', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindParameterRegexPattern                  = [System.Text.RegularExpressions.RegEx]::new('(?<=\s)-\w+', [System.Text.RegularExpressions.RegexOptions]::Multiline)
+$Script:FindVariableRegexPattern                   = [System.Text.RegularExpressions.RegEx]::new('(?:\$(\S+))', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindCmdletRegexPattern                     = [System.Text.RegularExpressions.RegEx]::new('\b(?<=\s\()\w*-\w*\b(?!`)(?<!-\))', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindFullyQualifiedClassWithoutBracePattern = [System.Text.RegularExpressions.RegEx]::new('(?<=\s)([a-zA-Z]+[.])+[a-zA-Z]+', [System.Text.RegularExpressions.RegexOptions]::Multiline)
 $Script:FindFullyQualifiedClassPattern             = [System.Text.RegularExpressions.RegEx]::new('(?<=\s)\[([a-zA-Z]+[.])+[a-zA-Z]+[\]]?', [System.Text.RegularExpressions.RegexOptions]::Multiline)
@@ -27,17 +28,17 @@ $Script:NoteMessagePattern                         = [System.Text.RegularExpress
 $Script:WarningMessagePattern                      = [System.Text.RegularExpressions.RegEx]::new("(?:^WARNING: (?'subtext'[\s\w]+.+)(?'table'\n*(\s{1,4}\*.+\n)+)?)", [System.Text.RegularExpressions.RegexOptions]::Multiline -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 $Script:CriticalMessagePattern                     = [System.Text.RegularExpressions.RegEx]::new("(?:^CRITICAL: (?'subtext'[\s\w]+.+))", [System.Text.RegularExpressions.RegexOptions]::Multiline -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 $Script:ParentLinkableAssociatedLinks              = [Ordered]@{
-    '[${Global:ConnectedSessions}]'          = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections';
-    '${Global:ConnectedSessions}'            = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections';
-    'about_appliance_connections'            = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connections'
-    'about_Appliance_Connection_Permissions' = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_appliance_connection_permissions';
-    'about_two_factor_authentication'        = 'https://hpe-docs.gitbook.io/posh-hpeoneview/about/about_two_factor_authentication'
+    '[${Global:ConnectedSessions}]'          = '../../about/about_appliance_connections.md';
+    '${Global:ConnectedSessions}'            = '../../about/about_appliance_connections.md';
+    'about_appliance_connections'            = '../../about/about_appliance_connections.md'
+    'about_Appliance_Connection_Permissions' = '../../about/about_appliance_connection_permissions.md';
+    'about_two_factor_authentication'        = '../../about/about_two_factor_authentication.md'
 }
 
 $H1 = "# "
 $H2 = "## "
 $H3 = "### "
-$Indent = '    '
+$script:Indent = '    '
 
 $StartSyntax = '```powershell'
 $EndSyntax   = '```{0}' -f [System.Environment]::NewLine
@@ -57,6 +58,7 @@ class DisplayHint
 {
 
     static [string]$StartHintStyle = '???+ {0}{1}'
+    static [string]$Indent = '    '
 
     static [String] Build ([HintStyleEnum]$HintStyleEnum, [String]$Description)
     {
@@ -65,7 +67,22 @@ class DisplayHint
 
         $_StartHintStyle = [DisplayHint]::StartHintStyle -f $HintStyleEnum, [System.Environment]::NewLine
         [void]$FinalString.Append($_StartHintStyle)
-        [void]$FinalString.Append($Description + [System.Environment]::NewLine)
+
+        # Need to split the $Description into individual lines so $Indent can be inserted as a prefix to each line
+        $DescriptionLines = $Description -split '\n'
+
+        ForEach ($line in $DescriptionLines)
+        {
+
+            $NumberOfIndents = $line.StartsWith("*") ? [DisplayHint]::Indent + [DisplayHint]::Indent : [DisplayHint]::Indent
+
+            $_Line = '{0}{1}{2}' -f $NumberOfIndents, $line, [System.Environment]::NewLine
+            [void]$FinalString.Append($_Line)
+
+        }
+
+        # This code shouldn't be needed, but it is here just in case
+        # [void]$FinalString.Append($Description + [System.Environment]::NewLine)
 
         return $FinalString.ToString()
 
@@ -73,27 +90,90 @@ class DisplayHint
 
 }
 
+# This class is used to build the tabs for Input Types and Return Values
+# It is used to create the tab entries for the documentation.
+
 class Tabs
 {
 
-    static [string]$NewTab           = '=== "{0}"'
-    static [string]$TabText          = '```text{0}{1}{0}```'
-    static [string]$EndTab           = '{0}' -f [System.Environment]::NewLine
+    static [string]$NewTab           = '=== "{0}"' 
+    static [string]$TabText          = '{0}{1}'
 
-    static [String] BuildTabEntry ([String]$Title, [String]$Description)
+    static [string] BuildTabEntry ([string]$Title, [string[]]$Description, [string]$CmdletName)
     {
 
-        $FinalString = [System.Collections.ArrayList]::new()
+        $TempDescriptionString = [System.Text.StringBuilder]::new()
+        $TempTableString       = [System.Text.StringBuilder]::new()
+        $FinalString           = [System.Text.StringBuilder]::new()
 
         $_NewTab = [Tabs]::NewTab -f $Title
-        [void]$FinalString.Add($_NewTab)
+        [void]$FinalString.AppendLine($_NewTab)
+      
+        # Process each line to provided FindVariableRegexPattern and replace the variables with a single tick
+        ForEach ($line in ($Description -split '\n'))
+        {
 
-        $_TabText = [Tabs]::TabText -f [System.Environment]::NewLine, $Description
-        [void]$FinalString.Add($_TabText)
+            # It is plain text and not part of a table we are looking for
+            if (-not ($line.ToString().StartsWith("    =") -or $line.ToString().StartsWith("    -") -or $line.ToString().StartsWith("    |") -or $line.ToString().StartsWith("\n")))
+            {
 
-        [void]$FinalString.Add([Tabs]::EndTab)
+                # Find variables in the description and encase with the single tick
+                $_Line = $Script:FindVariableRegexPattern.Replace($line.ToString(), "```$0``")
 
-        return $FinalString.ToArray()
+                $_Line = LinkifyString -String $_Line -CmdletName $CmdletName
+
+                # Add the processed line to the final string
+                [void]$TempDescriptionString.AppendLine($_Line)
+
+            }
+
+            else
+            {
+            
+                [void]$TempTableString.AppendLine($line.Trim())
+            
+            }
+
+        }
+
+        # Replace the table in the Return text with one that will format correctly in mkdocs
+        if ($CmdletName -eq 'Connect-OVMgmt')
+        {
+
+            # This regular express looks to match a markdown table format of "| some text | some text | some text |"
+            $Table = [regex]::Matches($TempTableString.ToString(), '^\|\s\w+\s+\|\s\w+\s+\|\s[\w\/\.\s]+\|', [System.Text.RegularExpressions.RegexOptions]::Multiline).Value 
+
+            if ($null -ne $Table)
+            {
+
+                For ($t = 0; $t -le $Table.Count; $t++)
+                {
+
+                    if ($t -eq 1)
+                    {
+                        [void]$TempDescriptionString.AppendLine('| :--- | :--- | :--- |')
+                    }
+                    else
+                    {
+                        [void]$TempDescriptionString.AppendLine($Table[$t])
+                    }
+                }
+
+            }
+
+        }
+
+        # Split the description into lines so that it can be processed
+        # Remove all empty space before each line, and then add a 4 space indentation to prefix
+        ForEach ($line in ($TempDescriptionString.ToString() -split '\n'))
+        {
+
+            $_Line = [Tabs]::TabText -f $script:Indent, $line.ToString().Trim()
+            [void]$FinalString.AppendLine($_Line)
+
+        }
+
+        return $FinalString.ToString()
 
     }
 
@@ -243,10 +323,11 @@ function LinkifyString ([String]$String, [String]$CmdletName)
 
     }
 
-    if ($FindAboutTopicReferencePattern.Matches($UpdatedString).Success)
+    ForEach ($HelpTopicReference in $FindAboutTopicReferencePattern.Matches($UpdatedString))
     {
 
-        $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, '[`$0`](../../../$0.md)')
+        $ReplaceString = "[`{0}`]({1})" -f $HelpTopicReference.Value, $ParentLinkableAssociatedLinks[$HelpTopicReference.Value]
+        $UpdatedString = $FindAboutTopicReferencePattern.Replace($UpdatedString, $ReplaceString)
 
     }
 
@@ -307,7 +388,7 @@ function LinkifyString ([String]$String, [String]$CmdletName)
 
     }
 
-    return $UpdatedString + [System.Environment]::NewLine
+    return $UpdatedString #+ [System.Environment]::NewLine
 
 }
 
@@ -370,7 +451,9 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
 
         }
 
-        $script:LibraryJsonContents = [System.IO.File]::ReadAllLines($File) | ConvertFrom-Json
+        $JsonFullPath = Resolve-Path $File
+
+        $script:LibraryJsonContents = [System.IO.File]::ReadAllLines($JsonFullPath) | ConvertFrom-Json
         $Version                    = '{0}.{1:00}' -f ([Version]$LibraryJsonContents.Version).Major, ([Version]$LibraryJsonContents.Version).Minor
 
         $c                   = 0
@@ -497,11 +580,11 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
 
                 $UpdatedDescription = LinkifyString -String $Description -CmdletName $Cmdlet.Name
 
-                if (($MinimumPermissionsPattern.Match($Description)).Success)
+                if (($MinimumPermissionsPattern.Match($UpdatedDescription)).Success)
                 {
 
-                    $UpdatedText        = [DisplayHint]::Build([HintStyleEnum]::info, '$0')
-                    $UpdatedDescription = $MinimumPermissionsPattern.Replace($Description, $UpdatedText)
+                    $UpdatedText        = [DisplayHint]::Build([HintStyleEnum]::info, $MinimumPermissionsPattern.Match($UpdatedDescription).Value)
+                    $UpdatedDescription = $MinimumPermissionsPattern.Replace($UpdatedDescription, $UpdatedText)
 
                 }
 
@@ -608,15 +691,24 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
                 ForEach ($Type in $Cmdlet.Contents.InputTypes)
                 {
 
-                    $InputTypeHeaderString = '_**{0}**_{1}' -f $Type.Value, [System.Environment]::NewLine
-                    [void]$FinalMarkdownOutput.Add($InputTypeHeaderString)
-
+                    # If the type is None, then skip creating a table view
                     if (-not $Type.Value.StartsWith('None.'))
                     {
 
-                        $InputTypeDescription = LinkifyString -String $Type.Text -CmdletName $Cmdlet.Name
-                        [void]$FinalMarkdownOutput.Add($InputTypeDescription)
+                        [Tabs]::BuildTabEntry($Type.Value, $Type.Text, $Cmdlet.Name) | ForEach-Object { 
+                        
+                            [void]$FinalMarkdownOutput.Add($_) 
+                        
+                        }
 
+                    }
+
+                    else
+                    {
+             
+                        [void]$FinalMarkdownOutput.Add($Type.Value)
+                        [void]$FinalMarkdownOutput.Add([System.Environment]::NewLine)
+                    
                     }
 
                 }
@@ -628,11 +720,10 @@ if (-not $PSBoundParameters['BuildAll'].Value) {
                 ForEach ($Return in $Cmdlet.Contents.ReturnValues)
                 {
 
-                    $ReturnValueHeaderString = '_**{0}**_{1}' -f $Return.Value, [System.Environment]::NewLine
-                    [void]$FinalMarkdownOutput.Add($ReturnValueHeaderString)
-
-                    $ReturnValueDescription = LinkifyString -String $Return.Text -CmdletName $Cmdlet.Name
-                    [void]$FinalMarkdownOutput.Add($ReturnValueDescription)
+                    # Need to figure out if there are many empty trailing lines in the ReturnValues text, as only a single line is needed
+                    $GeneratedReturnText = [Tabs]::BuildTabEntry($Return.Value, $Return.Text, $Cmdlet.Name)
+                    # $GeneratedReturnText = $GeneratedReturnText -replace '(\n\s*){2,}', [System.Environment]::NewLine
+                    [void]$FinalMarkdownOutput.Add($GeneratedReturnText)                   
 
                 }
 

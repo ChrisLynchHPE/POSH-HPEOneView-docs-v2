@@ -40,10 +40,10 @@ You can enable or disable this email notification feature, or you can enable or 
 
 The appliance provides for as many as 100 recipient and filter combinations, and allows as many as 50 recipients in a single email message. This flexibility lets you fine-tune which alert messages are sent and to whom. For example, you can configure the appliance to send Warning alerts to one recipient and Critical alerts to another.
 
-This Cmdlet will help create an advanced alert to the specified recipient(s).  You can also use the Cmdlet to add default OneView Remote Support alerting to specified recipient(s) using the -RemoteSupportFilter parameter.  Appliance Email notification must be configured.
+This Cmdlet will help create an advanced alert to the specified recipient(s).  You can also use the Cmdlet to add default OneView Remote Support alerting to specified recipient(s) using the `-RemoteSupportFilter` parameter.  Appliance Email notification must be configured.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator.
+    Minimum required privileges: Infrastructure administrator.
 
 ## Examples
 
@@ -201,15 +201,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**Net.Mail.MailAddress[]**_
-
-Array of email address recipient(s).
+=== "Net.Mail.MailAddress[]"
+    Array of email address recipient(s).
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}**_
-
-Returns an async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource {System.Management.Automation.PSCustomObject}"
+    Returns an async task resource to monitor.
+    
 
 ## Related Links
 

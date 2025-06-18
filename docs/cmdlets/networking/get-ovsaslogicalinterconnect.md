@@ -26,7 +26,7 @@ A SAS Logical Interconnect represents a single SAS fabric local to the physical 
 This Cmdlet retrieves a list of all SAS Logical Interconnect or just specific ones via a query if the name parameter is provided. The output can be sent to a file using the exportFile parameter.
 
 ???+ info
-Minimum required privileges: Read-only
+    Minimum required privileges: Read-only
 
 ## Examples
 
@@ -119,21 +119,22 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**None.  You cannot pipe objects to this Cmdlet.**_
+None.  You cannot pipe objects to this Cmdlet.
+
 
 ## Return Values
 
-_**HPEOneView.Storage.SasLogicalInterconnect [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Storage.SasLogicalInterconnect [System.Management.Automation.PSCustomObject]"
+    Logical Interconnect resource object from Get-OVLogicalInterconnect
+    
 
-Logical Interconnect resource object from Get-OVLogicalInterconnect
+=== "System.Collections.ArrayList <HPEOneView.Storage.SasLogicalInterconnect>    "
+    Multiple Logical Interconnects
+    
 
-_**System.Collections.ArrayList <HPEOneView.Storage.SasLogicalInterconnect>    **_
-
-Multiple Logical Interconnects
-
-_**A SAS Logical Interconnect or collection of SAS Logical Interconnects**_
-
-
+=== "A SAS Logical Interconnect or collection of SAS Logical Interconnects"
+    
+    
 
 ## Related Links
 

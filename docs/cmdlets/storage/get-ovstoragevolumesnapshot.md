@@ -79,19 +79,19 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Storage.Volume [System.Management.Automation.PSCustomObject]**_
-
-Storage Volume resource
+=== "HPEOneView.Storage.Volume [System.Management.Automation.PSCustomObject]"
+    Storage Volume resource
+    
 
 ## Return Values
 
-_**System.Collections.ArrayList <HPEOneView.Storage.VolumeSnapshot>**_
+=== "System.Collections.ArrayList <HPEOneView.Storage.VolumeSnapshot>"
+    Multiple storage volume snapshot resources
+    
 
-Multiple storage volume snapshot resources
-
-_**HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]**_
-
-Formatted table view of storage volume snapshot resources
+=== "HPEOneView.Storage.VolumeSnapshot [System.Management.Automation.PSCustomObject]"
+    Formatted table view of storage volume snapshot resources
+    
 
 ## Related Links
 

@@ -64,14 +64,14 @@ Requirements
 * The iLO username cannot be Administrator or start with an _.
 
 ???+ info
-The iLO user account is assigned a predefined set of privileges that allows the user to perform a restricted set of iLO operations. Specifically, the iLO account has permissions to control power, use the iLO Integrated Remote Console (iLO IRC), and use the iLO Virtual Media.
+    The iLO user account is assigned a predefined set of privileges that allows the user to perform a restricted set of iLO operations. Specifically, the iLO account has permissions to control power, use the iLO Integrated Remote Console (iLO IRC), and use the iLO Virtual Media.
 
 
 Use this Cmdlet to change the existing iLO configuration.  This Cmdlet supports changing the iLO Hostname, user account, its password, configured IPv4 or IPv6 addresses.
 
 ???+ info
-Minimum required privileges: Infrastructure Administrator
-
+    Minimum required privileges: Infrastructure Administrator
+    
 
 ## Examples
 
@@ -308,15 +308,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]**_
-
-The appliance hardware configuration object from Get-OVComposerIloStatus.
+=== "HPEOneView.Appliance.HardwareConfig [System.Management.Automation.PSCustomObject]"
+    The appliance hardware configuration object from Get-OVComposerIloStatus.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task resource to monitor.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task resource to monitor.
+    
 
 ## Related Links
 

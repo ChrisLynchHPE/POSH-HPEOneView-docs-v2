@@ -354,15 +354,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.Management.Automation.PSCustomObject**_
-
-Valid Enclosure Group resource the appliance will migrate the source enclosure into
+=== "System.Management.Automation.PSCustomObject"
+    Valid Enclosure Group resource the appliance will migrate the source enclosure into
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object for monitoring the enclosure import process
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object for monitoring the enclosure import process
+    
 
 ## Related Links
 

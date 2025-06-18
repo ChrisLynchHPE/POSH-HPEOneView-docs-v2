@@ -58,7 +58,7 @@ When you add a rack manager, either the HPE OneView Standard license or the HPE 
 This Cmdlet will assist with the installation of a new HPE OneView Advanced or HPE OneView Advanced without iLO Advanced license key.  The type is automatically detected based on the validity of the license key.
 
 ???+ info
-Minimum required privileges: Infrastructure administrator
+    Minimum required privileges: Infrastructure administrator
 
 ## Examples
 
@@ -123,15 +123,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**System.String**_
-
-License key in String Format, from Get-Content or an Array of String
+=== "System.String"
+    License key in String Format, from Get-Content or an Array of String
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.License**_
-
-The License resource just added to the apliance
+=== "HPEOneView.Appliance.License"
+    The License resource just added to the apliance
+    
 
 ## Related Links
 

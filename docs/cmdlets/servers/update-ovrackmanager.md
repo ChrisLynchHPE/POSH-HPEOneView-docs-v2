@@ -138,15 +138,15 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.Servers.RackManager**_
-
-The rack manager resource from Get-OVRackManager.
+=== "HPEOneView.Servers.RackManager"
+    The rack manager resource from Get-OVRackManager.
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
-
-Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task Resource object for configuring port monitoring on the requested logical intercinnect.
+    
 
 ## Related Links
 

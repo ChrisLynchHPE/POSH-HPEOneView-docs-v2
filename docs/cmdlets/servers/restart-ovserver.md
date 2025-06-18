@@ -133,23 +133,23 @@ This cmdlet supports the common parameters: Verbose, Debug, ErrorAction, ErrorVa
 
 ## Input Types
 
-_**HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.ServerHardware [System.Management.Automation.PSCustomObject]"
+    Server Hardware Resource
+    
 
-Server Hardware Resource
-
-_**HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]**_
-
-Server Profile Resource
+=== "HPEOneView.ServerProfile [System.Management.Automation.PSCustomObject]"
+    Server Profile Resource
+    
 
 ## Return Values
 
-_**HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]**_
+=== "HPEOneView.Appliance.TaskResource [System.Management.Automation.PSCustomObject]"
+    Async task that tracks the power state change
+    
 
-Async task that tracks the power state change
-
-_**System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>**_
-
-Multiple Async tasks
+=== "System.Collections.ArrayList <HPEOneView.Appliance.TaskResource>"
+    Multiple Async tasks
+    
 
 ## Related Links
 
