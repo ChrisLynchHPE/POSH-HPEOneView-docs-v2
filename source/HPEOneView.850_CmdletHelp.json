@@ -3912,11 +3912,11 @@
             "Text": "Disconnect-OVMgmt"
           },
           {
-            "Uri": "https://hpe-docs.gitbook.io/posh-hponeview/cmdlets/v8.50/library/connect-ovmgmt",
+            "Uri": "",
             "Text": "about_Appliance_Connection_Permissions"
           },
           {
-            "Uri": "https://hpe-docs.gitbook.io/posh-hponeview/cmdlets/v8.50/library/connect-ovmgmt",
+            "Uri": "",
             "Text": "[${Global:ConnectedSessions}]"
           },
           {

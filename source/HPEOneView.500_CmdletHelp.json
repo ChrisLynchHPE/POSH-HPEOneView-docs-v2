@@ -3756,11 +3756,11 @@
             "Text": "Disconnect-HPOVMgmt"
           },
           {
-            "Uri": "https://hpe-docs.gitbook.io/posh-hponeview/cmdlets/v5.00/library/connect-hpovmgmt",
+            "Uri": "",
             "Text": "about_Appliance_Connection_Permissions"
           },
           {
-            "Uri": "https://hpe-docs.gitbook.io/posh-hponeview/cmdlets/v5.00/library/connect-hpovmgmt",
+            "Uri": "",
             "Text": "[${Global:ConnectedSessions}]"
           },
           {
